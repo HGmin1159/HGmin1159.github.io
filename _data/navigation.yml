@@ -8,6 +8,8 @@ main:
     url: /categories/Dimension/
   - title: "Bayesian Statistics"
     url: /categories/Bayesian/
+  - title: "Convex Optimization"
+    url: /categories/convex/
   - title: "Quantum Computing"
     url: /categories/quantum/
   - title: "Technique"
