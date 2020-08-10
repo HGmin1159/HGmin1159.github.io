@@ -1,6 +1,6 @@
 ---
 title: \[수학\] Convex Optimization part1 - convex and duality
-categories: [others]
+categories: [convex]
 tags: [Others,Mathematics,수학]
 excerpt: meaning of convex and duality
 
