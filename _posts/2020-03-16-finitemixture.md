@@ -1,6 +1,5 @@
 ---
 title: \[베이즈통계\]베이지안 인퍼런스 - Finite Mixture Model 실습
-categories: [Bayesian]
 tags: [베이지안,Bayesian]
 excerpt: Finite Mixture Model를 이해하고 구현해보기
 ---
