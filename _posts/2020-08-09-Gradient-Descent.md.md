@@ -37,19 +37,19 @@ import seaborn as sns
 Gradient Descent Method는 다음과 같다.  
 
 > #### Gradient Descent
-For unconstrained optimization problem whose objective function $f(x)$ is smooth convex function, sequence $\{x_{k}\}$ that has folloing iteration form converges to problem's solution $x^*$ such that $x^* = \underset{x}{argmin} f(x)$ under appropriate step size $t_k$
-$$  x^{(k+1)} = x^{(k)} - t_k \nabla f(x^{(k)})$$
+For unconstrained optimization problem whose objective function $f(x)$ is smooth convex function, sequence $\{x_{k}\}$ that has folloing iteration form converges to problem's solution $x^\*$ such that $x^\* = \underset{x}{argmin} f(x)$ under appropriate step size $t_k$
+$  x^{(k+1)} = x^{(k)} - t_k \nabla f(x^{(k)})$
 
 ***
 
 ## 문제 0. 몸풀기 $f(x) = x^2-2x+1$의 최솟값을 구해보자.
 
  주어진 문제는 다음과 같은 mathematical optimization 문제라고 볼 수 있다.  
-$$ \underset{x}{min} \ x^2 -2x +1 $$  
+$\underset{x}{min} \ x^2 -2x +1$   
 이는 unconstrained convex optimization 문제이므로 기본적인 Gradient Descent를 이용해서 풀 수 있다.  
 
 Iteration Form을 유도해내면 다음과 같다.  
-$x^{(k+1)} = x^{(k)} - t_k \nabla f(x^{(k)}) \\ \quad =x^{(k)}- t_k (2x^{(k)}-2)$
+$x^{(k+1)} = x^{(k)} - t_k \nabla f(x^{(k)}) \\\ \quad =x^{(k)}- t_k (2x^{(k)}-2)$
 
 이 식을 이용해서 Gradient Descent를 설계해보자.  
 
@@ -176,18 +176,18 @@ x_result
  LSE는 오차의 제곱합(SSE;Sum of Squared Error)를 최소화 시켜주는 추정량을 찾음으로써 모수를 추정하는 방법이다.  
 
 선형 회귀모델 $y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \epsilon_i$ or $y= X\beta+\epsilon$의 SSE는 다음과 같다.  
-$f(\beta) = \sum_i^n \epsilon_i^2 = \epsilon^t\epsilon \\ \quad= (y-X\beta)^t(y-X\beta) \\ \quad = y^ty-2\beta^tX^ty + \beta^tX^tX\beta$
+$f(\beta) = \sum_i^n \epsilon_i^2 = \epsilon^t\epsilon \\\ \quad= (y-X\beta)^t(y-X\beta) \\\ \quad = y^ty-2\beta^tX^ty + \beta^tX^tX\beta$
 
  이때 목적함수 $f(\beta)$는 L2-Norm의 Affine Transformation 꼴이므로 Convex Function이다.  
  따라서 이에 대한 Convex Optimization Problem을 다음과 같이 설계 할 수 있다.  
-$$\underset{\beta}{min} \{y^ty-2\beta^tX^ty+\beta^tX^tX\beta\}$$
+$\underset{\beta}{min} \{y^ty-2\beta^tX^ty+\beta^tX^tX\beta\}$
 
 
 이에 대한 Gradient를 구하면 다음과 같다.  
-$\frac{\delta}{\delta \beta}\{y^ty-2\beta^tX^ty+\beta^tX^tX\beta\} \\ \quad = \{-2y^tX+2X^tX\beta\}$  
+$\frac{\delta}{\delta \beta}\{y^ty-2\beta^tX^ty+\beta^tX^tX\beta\} \\\ \quad = \{-2y^tX+2X^tX\beta\}$  
 
 따라서 이터레이션 폼은 다음과 같은 형태를 띈다.  
-$x^+ = x - t \nabla f(x) \\ \quad = x - 2t(X^tX\beta-y^tX)$
+$x^+ = x - t \nabla f(x) \\\ \quad = x - 2t(X^tX\beta-y^tX)$
 
 **우선 위에서 구한 공식을 이용해 현재의 $\beta$값을 넣으면 현재의 Gradient를 계산해주는 함수를 짜자.**
 
@@ -576,8 +576,8 @@ plt.show()
 Backtracking Line Search는 다음과 같은 알고리즘이다. 
 1. 우선 initial step size $t_0$를 임의로 정해준다. 
 2. 알고리즘의 하이퍼 파라미터인 $\alpha \in (0,0.5] , \beta \in (0,1)$를 임의로 정해주자. 
-3. 다음의 조건을 체크하고 조건이 성립하지 않을 때 까지 $t = \beta t$를 넣어주며 t를 축소해주자.  
-$$ f(x^+) > f(x) - \alpha t \parallel \nabla f(x) \parallel_2^2$$  
+3. 다음의 조건을 체크하고 조건이 성립하지 않을 때 까지 $t = \beta t$를 넣어주며 t를 축소해주자.   
+$ f(x^+) > f(x) - \alpha t \parallel \nabla f(x) \parallel_2^2$  
 4. 조건이 성립하지 않는다면 구해진 t값을 이용해서 Gradient Descent Step을 1회 진행하자.
 
 따라서 이 조건을 구현해 주기 위해서 현재의 t값을 넣었을 때 조건문을 체크해주는 함수를 짜보자.
@@ -763,17 +763,17 @@ plt.show()
 ## 문제 C. A의 Step Size를 Exact Line Search를 통해서 풀어보자.
 
  Gradient Descent에서 Convergence Analysis를 해보면 Strong Convexity Constant $\mu$와 Lipschitz Constant L을 찾아서 평균의 역수를 사용함으로써 최적의 Exact Step Size를 찾을 수 있다. 많은 방식이 있지만 이 문제에 대해서는 아래를 만족하는 Constant를 찾아서 구해줄 수 있다.  
-$$ LI \prec \nabla^2 f(x) \prec mI$$
+$ LI \prec \nabla^2 f(x) \prec mI$   
 
 
-$\nabla^2 f(x) = \nabla \{ \nabla f(x)\} \\ \qquad \quad = \nabla \{-2y^tX+2X^tX\beta \} \\ \qquad \quad = 2X^tX$  
+$\nabla^2 f(x) = \nabla \{ \nabla f(x)\} \\\ \qquad \quad = \nabla \{-2y^tX+2X^tX\beta \} \\\ \qquad \quad = 2X^tX$  
 
 
 
 Quadratic Form Theorem을 쓰면 아래와 같은 관계식을 얻을 수 있다.  
-$$\lambda_p \leq \frac{x^t A x}{x^t x} \leq \lambda_1$$
-$$\lambda_p x^t x \leq x^t A x \leq \lambda_1 x^t x$$ 
-$$ \lambda_p I \leq A \leq \lambda_1 I$$
+$\lambda_p \leq \frac{x^t A x}{x^t x} \leq \lambda_1$  
+$\lambda_p x^t x \leq x^t A x \leq \lambda_1 x^t x$  
+$ \lambda_p I \leq A \leq \lambda_1 I$  
 따라서 Hessian Matrix의 아이젠 밸류의 최대값과 최소값이 Lipschit Constant L과 Strong Convexity Constant $\mu$가 된다.  
 따라서 아래와 같이 분해를 해준 뒤 이론상의 정확한 step size를 찾아주자
 
