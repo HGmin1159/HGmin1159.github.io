@@ -8,6 +8,8 @@ main:
     url: /categories/Dimension/
   - title: "Bayesian Statistics"
     url: /categories/Bayesian/
+  - title: "Quantum Computing"
+    url: /categories/quantum/
   - title: "Technique"
     url: /categories/technique/
   - title: "Project"
