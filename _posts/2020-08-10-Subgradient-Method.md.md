@@ -50,17 +50,17 @@ x_mat = np.concatenate((np.ones((np.shape(x_mat)[0],1)),x_mat),axis=1)
 
 따라서 로지스틱 회귀모델은 다음과 같은 통계적 모델을 가정하여 MLE를 이용해서 풀어낸다.  
 
-$$y_i \sim Benoulli(\theta_i) \\ \frac{\theta_i}{1-\theta_i} = X_i \beta + \epsilon_i \\ \Rightarrow \theta_i = \frac{exp(X_i \beta)}{1+exp(X_i \beta)} + \epsilon_i' \\ \Rightarrow  \theta_i = g(X_i \beta) +\epsilon_i'$$
+$y_i \sim Benoulli(\theta_i) \\\ \frac{\theta_i}{1-\theta_i} = X_i \beta + \epsilon_i \\\ \Rightarrow \theta_i = \frac{exp(X_i \beta)}{1+exp(X_i \beta)} + \epsilon_i' \\\ \Rightarrow  \theta_i = g(X_i \beta) +\epsilon_i'$  
 
 
 
 
 이에 대해서 데이터 $D$와 모수 $\beta$의 log-Likelihood는 다음과 같다.  
-$$log L(\beta;D) \\ = log \prod Pr(y_i;\theta_i) = \sum log Pr(y_i ; \theta_i) \\ = \sum \{ log \theta_i^{y_i} + log (1-\theta_i)^{(1-y_i)}\} \\ = \sum \{ y_i log \frac{\theta_i}{1-\theta_i} + log (1-\theta_i) \} \\ = \sum \{ y_i log( \frac{exp(X_i \beta)/(1+exp(X_i \beta)}{1/(1+exp(X_i \beta)} ) + log (1/(1+exp(X_i \beta)) \} \\ =\sum \{ y_i X_i \beta -log (1+exp(X_i\beta)) \}$$
+$log L(\beta;D) \\\ = log \prod Pr(y_i;\theta_i) = \sum log Pr(y_i ; \theta_i) \\\ = \sum \{ log \theta_i^{y_i} + log (1-\theta_i)^{(1-y_i)}\} \\\ = \sum \{ y_i log \frac{\theta_i}{1-\theta_i} + log (1-\theta_i) \} \\\ = \sum \{ y_i log( \frac{exp(X_i \beta)/(1+exp(X_i \beta)}{1/(1+exp(X_i \beta)} ) + log (1/(1+exp(X_i \beta)) \} \\\ =\sum \{ y_i X_i \beta -log (1+exp(X_i\beta)) \}$  
 
 따라서 주어진 optimization 문제를 도식화 하면 다음과 같다.  
 
-$$\quad max \quad log L(\beta;D) \\ \Rightarrow \quad   min \quad - log L(\beta;D) \\  \Rightarrow  \quad min \sum \{-y_iX_i\beta + log(1+exp(X_i\beta))\}$$  
+$\quad max \quad log L(\beta;D) \\\ \Rightarrow \quad   min \quad - log L(\beta;D) \\\  \Rightarrow  \quad min \sum \{-y_iX_i\beta + log(1+exp(X_i\beta))\}$  
 
 즉 목적함수는 $f_A(\beta) = \sum \{-y_iX_i\beta + log(1+exp(X_i\beta))\}$가 된다.   
 
@@ -76,7 +76,7 @@ def cost_A(beta) :
 ```
 
 다음으로 함수의 Gradient를 계산하면 다음과 같다.  
-$\nabla f_A(\beta) = \sum \{ -y_iX_i^t + \frac{exp(X_i\beta)}{1+exp(X_i\beta)}X_i^t \} \\ \qquad =  \sum \{( -y_i + \frac{exp(X_i\beta)}{1+exp(X_i\beta)})X_i^t \}$   
+$\nabla f_A(\beta) = \sum \{ -y_iX_i^t + \frac{exp(X_i\beta)}{1+exp(X_i\beta)}X_i^t \} \\\ \qquad =  \sum \{( -y_i + \frac{exp(X_i\beta)}{1+exp(X_i\beta)})X_i^t \}$   
 
 **이를 이용하여 $\beta$를 넣으면 현재의 Gradient를 계산해주는 함수를 정의해보자.**
 
@@ -87,7 +87,7 @@ def gradient_A(beta) :
 ```
 
 BackTracking Line Search의 Condition은 다음과 같다.  
-$$f(\beta^+) > f(\beta) - \alpha t \parallel \nabla f(\beta) \parallel_2^2$$  
+$f(\beta^+) > f(\beta) - \alpha t \parallel \nabla f(\beta) \parallel_2^2$    
 
 **위에서 구한 식들을 활용하여 Backtracking Line Search Condition을 확인해주는 함수를 짜보자.**
 
@@ -101,7 +101,7 @@ def backtracking_A(t) :
 ```
 
 Gradient Descent에서는 Gradient가 충분히 작아졌을때 얼리스타핑을 해줄 수 있다. 일반적으로 L2-Norm을 쓰며 이를 표현하면 다음과 같다.  
-$$\mbox{Stop if } \parallel \nabla f(\beta) \parallel_2 < \epsilon$$  
+$\mbox{Stop if } \parallel \nabla f(\beta) \parallel_2 < \epsilon$  
 
 여기서 $\epsilon$은 적절한 상수이다.  
 
@@ -420,7 +420,7 @@ lr_A.coef_
 
 L2- Penalty가 추가된다면 목적함수의 꼴이 약간 달라진다. 구체적으로 다음과 같다. 
 
-$$f_{B}(\beta) = f_{A}(\beta) + \lambda \parallel \beta \parallel_2  \\ = \sum \{ y_i X_i \beta -log (1+exp(X_i\beta)) \} + \lambda \parallel \beta \parallel_2 $$
+$f_{B}(\beta) = f_{A}(\beta) + \lambda \parallel \beta \parallel_2  \\\ = \sum \{ y_i X_i \beta -log (1+exp(X_i\beta)) \} + \lambda \parallel \beta \parallel_2 $
 
 이를 이용해서 CostFunciton을 새로 정의해보자
 
@@ -432,7 +432,7 @@ def cost_B(beta,lamda) :
 
 이 목적함수의 Gradient를 구하면 다음과 같다.  
 
-$$\nabla f_B(\beta) = \nabla(f_A(\beta)+\lambda \parallel \beta \parallel_2) \\ \qquad = \nabla f_A(\beta) + \nabla \lambda \parallel \beta \parallel_2 \\ \qquad = \nabla f_A(\beta) + \lambda \beta \\ =  \sum \{( -y_i + \frac{exp(X_i\beta)}{1+exp(X_i\beta)})X_i^t \} + \lambda \beta$$  
+$\nabla f_B(\beta) = \nabla(f_A(\beta)+\lambda \parallel \beta \parallel_2) \\\ \qquad = \nabla f_A(\beta) + \nabla \lambda \parallel \beta \parallel_2 \\\ \qquad = \nabla f_A(\beta) + \lambda \beta \\\ =  \sum \{( -y_i + \frac{exp(X_i\beta)}{1+exp(X_i\beta)})X_i^t \} + \lambda \beta$  
 
 Gradient의 전반부는 앞서서 구한것과 똑같은 모습이다. 따라서 앞의 것에 약간만 추가해줌으로써 구현할 수 있다.  
 
@@ -674,7 +674,7 @@ A번과 마찬가지로 수렴이 잘 된 모습을 확인할 수 있다.
 ## 문제 C. A에 L1-Penalty를 추가하여 Sub Gradient 방법으로 풀어보자. 
 
 L2와 마찬가지로 L1-Penalty가 추가된다면 목적함수가 다음과 같이 바뀐다.  
-$$f_C(\beta) = f_A(\beta) + \lambda \parallel \beta \parallel_1 \\ = \sum \{ y_i X_i \beta -log (1+exp(X_i\beta)) \} + \lambda \parallel \beta \parallel_1 $$
+$f_C(\beta) = f_A(\beta) + \lambda \parallel \beta \parallel_1 \\\ = \sum \{ y_i X_i \beta -log (1+exp(X_i\beta)) \} + \lambda \parallel \beta \parallel_1 $  
 
 **마찬가지로 이를 이용해서 Cost Function을 구현해주자.**
 
@@ -696,11 +696,11 @@ $f(x)$에 대해 $f(y) \geq f(x) +g \cdot (y-x)$를 만족하는 g의 집합
 
 이러한 Subgradient를 계산하면 다음과 같다.  
 
-$$\partial f_C(\beta) = \partial\{f_A(\beta) + \lambda \parallel \beta \parallel_1\} \\ \qquad = \partial f_A(\beta) + \lambda \partial(\parallel \beta \parallel_1) \\ \qquad = \nabla f_A(\beta) + \lambda \partial(\parallel \beta \parallel_1)$$
+$\partial f_C(\beta) = \partial\{f_A(\beta) + \lambda \parallel \beta \parallel_1\} \\\ \qquad = \partial f_A(\beta) + \lambda \partial(\parallel \beta \parallel_1) \\\ \qquad = \nabla f_A(\beta) + \lambda \partial(\parallel \beta \parallel_1)$
 
 $\parallel \beta \parallel_1$의 subgradient는 다음과 같다.  
 
-$$\partial \parallel \beta \parallel_1 = \begin{cases} 1 \qquad \mbox{ if }\beta_i >0  \\ -1 \qquad \mbox{ if }\beta_i \mbox{<0} \\ [-1,1] \quad \mbox{ if }\beta_j =0   \end{cases} $$  
+$\partial \parallel \beta \parallel_1 = \begin{cases} 1 \qquad \mbox{ if }\beta_i >0  \\\ -1 \qquad \mbox{ if }\beta_i \mbox{<0} \\\ [-1,1] \quad \mbox{ if }\beta_j =0   \end{cases} $   
 
 **이를 이용하여 Subradient를 계산해주는 함수를 구현해보자.**
 
