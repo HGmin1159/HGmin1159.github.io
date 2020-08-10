@@ -1,12 +1,18 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "All Posts"
+    url: /all/
+  - title: "Recent Posts"
+    url: /recent/
+  - title: "Dimension Reduction"
+    url: /categories/Dimension/
+  - title: "Bayesian Statistics"
+    url: /categories/Bayesian/
+  - title: "Technique"
+    url: /categories/technique/
+  - title: "Project"
+    url: /categories/project/
+  - title: "Others"
+    url: /categories/others/
   # - title: "Sitemap"
   #   url: /sitemap/
