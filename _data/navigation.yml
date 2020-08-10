@@ -9,7 +9,7 @@ main:
   - title: "Bayesian Statistics"
     url: /categories/Bayesian/
   - title: "Convex Optimization"
-    url: /categories/convex/
+    url: /categories/Convex/
   - title: "Quantum Computing"
     url: /categories/quantum/
   - title: "Technique"
