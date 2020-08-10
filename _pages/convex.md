@@ -2,6 +2,6 @@
 title: "Convex Optimization"
 author_profile: true
 layout: category
-permalink: /categories/convex/
+permalink: /categories/Convex/
 taxonomy: Convex
 ---
