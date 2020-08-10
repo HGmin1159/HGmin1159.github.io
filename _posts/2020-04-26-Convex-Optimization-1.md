@@ -1,5 +1,5 @@
 ---
-title: \[\] Convex Optimization part1 - convex and duality
+title: \[최적화\] Convex Optimization part1 - convex and duality
 categories: [Convex]
 tags: [Convex Optizmiation]
 excerpt: meaning of convex and duality
