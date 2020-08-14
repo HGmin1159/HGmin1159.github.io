@@ -205,15 +205,15 @@ $\partial I_C(x)= \{g \in \R^n \mid g^tx\geq g^ty \quad \forall y \in C\} = N_C(
 >
 > For any f 
 >
-> $\qquad \qquad f(x^*) = \underset{x}{\min} f(x) \iff 0 \in \partial f(x^*) $
+> $\qquad \qquad f(x^0) = \underset{x}{\min} f(x) \iff 0 \in \partial f(x^0)$
 
 이는 최적화 문제에 있어서 f의 형태가 Convex Function이 아닐때에도 쓸 수 있는 가장 일반적으로 적용할 수 있는 최적값 조건이다. 이에 대한 증명은 매우 간단하다. 
 
-$0 \in \partial f(x^*) $이라는 말은 $x^*$에서 g=0인 subgradient가 있다는 말이므로 아래와 같이 적을 수 있다.
+$0 \in \partial f(x^0)$이라는 말은 $x^0$에서 g=0인 subgradient가 있다는 말이므로 아래와 같이 적을 수 있다.
 
-$f(y) \geq f(x^*)+0^t(y-x^*)= f(x^*) \quad \forall y$ 
+$f(y) \geq f(x^0)+0^t(y-x^0)= f(x^0) \quad \forall y$ 
 
-즉 정의역 안에 있는 모든 y에 대해서 $x^*$는 더 작은 값을 가진다. 따라서 $x^*$는 최소값을 만드는 최적화 문제의 근이다. 
+즉 정의역 안에 있는 모든 y에 대해서 $x^0$는 더 작은 값을 가진다. 따라서 $x^0$는 최소값을 만드는 최적화 문제의 근이다. 
 
 
 
