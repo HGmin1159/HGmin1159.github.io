@@ -75,7 +75,7 @@ $\def \a#1{\textbf{#1}}$
 
 어쨋든 이 Mercer Theorem을 이용하면  커널 펑션이 다음을 대체할 수 있다
 
-> $k(\textbf{x},\textbf{x}') = \left< \phi(\textbf{x}),\phi(\textbf{x}') \right>_{\nu}$ $\{\left< .,.\right>_{\nu}$는 inner product $\}$ 
+> $k(\textbf{x},\textbf{x}') = \left< \phi(\textbf{x}),\phi(\textbf{x}') \right>$ $\{\left< .,.\right>$는 inner product $\}$ 
 >
 > $K = ZZ^t$
 
