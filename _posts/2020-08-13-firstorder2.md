@@ -111,7 +111,7 @@ Subgradient는 개별 함수마다 찾아줘야 하지만 다행히 성질상 �
 >
 > 5. $f(x) = h(g(x)) = h(g_1(x),g_2(x),...,g_k(x)) $ where g is convex and h is nondecreasing
 >
->    $\partial f(x) = \sube \{p_1q_1+...+p_kq_k : p \in \partial h(g(x)).q_i \in \partial g_i(x)\}$
+>    $\partial f(x) = \subeq \{p_1q_1+...+p_kq_k : p \in \partial h(g(x)).q_i \in \partial g_i(x)\}$
 
 
 
@@ -185,7 +185,7 @@ $\begin{cases} \ \m{if } y \in C , 0 \geq 0 + g^t(y-x) \\\ \m{if } y \notin C, \
 
 두번째는 g가 어떤 값이든 만족하게 되고 g는 모든 y에 대해서 성립해야하므로 아래와 같이 표현 할 수 있다. 
 
-$\partial I_C(x)= \{g \in \R^n \mid g^tx\geq g^ty \quad \forall y \in C\} = N_C(x)$
+$\partial I_C(x)= \{g \in R^n \mid g^tx\geq g^ty \quad \forall y \in C\} = N_C(x)$
 
 이러한 형태를 가지는 집합을 특별히 C의 Normal Cone이라고 부른다. Normal Cone은 각을 잘 이용해서 그리면 다음과 같은 모양을 가진다. 
 
