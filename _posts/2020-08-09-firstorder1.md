@@ -66,7 +66,7 @@ $y = x -t\nabla f(x)$
 
 이렇게 나온 값은 Gradient Descent의 이터레이션 폼과 똑같다. 즉, Gradient Descent는 현재값에서 2차 테일러 근사한 함수를 최소화 시키는 값을 찾고 다시 그 값에서 2차 테일러 근사한 함수를 최소화 시키는 값을 찾아나가는 방식이라고 해석할 수 있다. 
 
-<img src="/assets/img/post/2020-08-09/figure1.png" style="zoom:50%;" />
+<img src="/assets/img/post/2020-08-09/figure1.PNG" style="zoom:50%;" />
 
 
 
