@@ -100,7 +100,7 @@ $\beta^+ = S_{\lambda t}(\beta +t X^t(y-X\beta))$
 
 Lasso Regression을 풀때는 이러한 방식으로 푸는 것이 전형이며 이전 챕터에서 다룬 Sub-Gradient를 이용하는 것보다 훨신 빠른 수렴 속도를 보여준다.
 
-![](assets/img/post/2020-08-31/figure1.PNG)
+![](/assets/img/post/2020-08-31/figure1.PNG)
 
 **ex+) Soft Thresholding Operator의 유도 과정**
 
@@ -206,7 +206,7 @@ $x^+ = \m{prox}_t(x-t\nabla g(x)) \\\ \quad = P_C(x-t\nabla g(x))$
 
 이 알고리즘의 Convergence Rate는 $O(1/\sqrt{\epsilon})$이다. 
 
-![](assets/img/post/2020-08-31/figure2.PNG)
+![](/assets/img/post/2020-08-31/figure2.PNG)
 
 **Back Tracking Line Search**
 
@@ -278,11 +278,11 @@ SGD : $x^+ = x -t \nabla f_{i_k}(x)$
 
 아래는 각 기법에 대한 Convergence Rate이다. Full Batch가 다른것에 비해 압도적으로 빨리 수렴했으며 Stochastic은 추정량의 불안정성으로 인해 흔들림이 큰것을 확인할 수 있다. 
 
-![](assets/img/post/2020-08-31/figure3.PNG)
+![](/assets/img/post/2020-08-31/figure3.PNG)
 
 아래는 각 기법의 전체 코스트이다. 전체로 따졌을때는 Stochastic 기법이 Full Batches에 비해 더 빠르게 수렴하는 것을 알 수 있다.
 
-![](assets/img/post/2020-08-31/figure4.PNG)
+![](/assets/img/post/2020-08-31/figure4.PNG)
 
 
 
