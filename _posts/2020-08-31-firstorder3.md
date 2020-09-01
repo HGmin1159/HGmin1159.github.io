@@ -1,5 +1,5 @@
 ---
-title: \[수학\] First-Order Method part3 - Proximal Gradient Descent
+title: \[최적화\] First-Order Method part3 - Proximal Gradient Descent
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Proximal Gradient Descent and Stochastic Gradient Descent
