@@ -1,5 +1,5 @@
 ---
-title: \[수학\] First-Order Method part1 - Gradient Descent
+title: \[최적화\] First-Order Method part1 - Gradient Descent
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Gradient Descent
