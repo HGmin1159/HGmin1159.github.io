@@ -1,5 +1,5 @@
 ---
-title: \[수학\] First-Order Method part2 - Subgradient Method
+title: \[최적화\] First-Order Method part2 - Subgradient Method
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Subgradient Method
