@@ -1,5 +1,5 @@
 ---
-title: \[\] Convex Optimization 실습2. - Subgradient method
+title: \[구현\] Convex Optimization 실습2. - Subgradient method
 categories: [Convex]
 tags: [Convex Optizmiation]
 excerpt: L1 penalty에 대한 subgradient method 실습
