@@ -123,6 +123,8 @@ $O(1/\epsilon^2)$
 
 ### C. Projected Gradient Descent
 
+링크 : https://hgmin1159.github.io/convex/firstorder3/
+
 위에서 본 GD나 subgradient method의 경우, 제약이 있을 경우 쓰기 어렵다는 한계를 벗어나지 못했다. 따라서 제약이 있을 때는 제약식을 만족하는 x집합 aka Feasible Set에 Projection 시켜줌으로써 제약을 극복할 수 있다.  즉 다음과 같다. 
 
 
@@ -159,6 +161,8 @@ C set이 Convex Set을 이룰 경우 Halfplane of Convex Set Theorem에 의해 C
 
 ### D. Proximal Gradient Descent
 
+링크 : https://hgmin1159.github.io/convex/firstorder3/
+
 subgradient method는 미분불가한 함수에도 적용가능하지만 느리다는 단점이 있다. 따라서 Proximal GD는 목적함수에서 미분가능한 부분을 분리해낸 다음 그 부분에 대해서만 GD를 진행하는 방식으로 가속화를 하는 기법이다. 즉 다음과 같다. 
 
 
@@ -190,6 +194,8 @@ $O(1/\epsilon)$
 
 
 ### E. Stochstic Gradient Descent
+
+링크 : https://hgmin1159.github.io/convex/firstorder3/
 
 목적함수가 개별 관측치 오차의 합으로 이루어져 있을때는 Gradient 함수도 개별 Gradient의 합으로 이루어져 있다. 따라서 이에 대해 데이터 포인트 하나를 추정치로 사용함으로써 개별이터레이션의 컴퓨테이션 스텝을 비약적으로 낮춰줄 수 있다. 즉 다음과 같다. 
 
