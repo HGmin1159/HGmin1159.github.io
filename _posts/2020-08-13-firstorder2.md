@@ -111,7 +111,7 @@ Subgradient는 개별 함수마다 찾아줘야 하지만 다행히 성질상 �
 >
 > 5. $f(x) = h(g(x)) = h(g_1(x),g_2(x),...,g_k(x)) $ where g is convex and h is nondecreasing
 >
->    $\partial f(x) = \subeq \{p_1q_1+...+p_kq_k : p \in \partial h(g(x)).q_i \in \partial g_i(x)\}$
+>    $\partial f(x) = \subset \{p_1q_1+...+p_kq_k : p \in \partial h(g(x)).q_i \in \partial g_i(x)\}$
 
 
 
