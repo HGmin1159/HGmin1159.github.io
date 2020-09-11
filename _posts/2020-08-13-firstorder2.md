@@ -69,9 +69,9 @@ $f(y) \geq f(x) + f'(x)(y-x) \quad \forall x,y $
 
 이것이 의미하는 바는 Convex Function은 항상 임의의 점에서 그은 접선보다 더 큰 값을 가진다는 것을 의미한다. 이 폼을 응용하면 Gradient Descent의 형태가 나온다. 
 
-Subgradient는 이 폼을 미분 불가능한 함수에까지 확장 시켜서 $\nabla f(x^0)$를 대체하는 값을 찾아내는 것이라고 볼 수 있다. 덫붙여 미분가능한 곳에서는 그냥 $\partial f(x^0) = \{\nabla f(x^0)\}$임에 유의하자.
+Subgradient는 이 폼을 미분 불가능한 함수에까지 확장 시켜서 $\nabla f(x^0)$를 대체하는 값을 찾아내는 것이라고 볼 수 있다. 덧붙여 미분가능한 곳에서는 그냥 $\partial f(x^0) = \{\nabla f(x^0)\}$임에 유의하자.
 
-![](assets/img/post/2020-08-12/figure.png)
+![](/assets/img/post/2020-08-12/figure.png)
 
 따라서 Subgradient method는 다음과 같이 정의된다. 
 
@@ -189,7 +189,7 @@ $\partial I_C(x)= \{g \in R^n \mid g^tx\geq g^ty \quad \forall y \in C\} = N_C(x
 
 이러한 형태를 가지는 집합을 특별히 C의 Normal Cone이라고 부른다. Normal Cone은 각을 잘 이용해서 그리면 다음과 같은 모양을 가진다. 
 
-<img src="assets/img/post/2020-08-12/figure1.png" style="zoom: 67%;" />
+<img src="/assets/img/post/2020-08-12/figure1.PNG" style="zoom: 67%;" />
 
 지금까지 Subgradient가 주로 쓰이는 두 가지 예시를 보았고, 좀 더 중요한 활용 예시는 많지만 다음에 천천히 다루자.
 
