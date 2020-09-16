@@ -23,9 +23,11 @@ Gradient Descent는 말 그대로 목적 함수의 경사를 따라서 내려감
 
 Mathematical Optimization에서 First-Order Method라 함은 목적함수를 한번 미분한 함수값(a.k.a Gradient)를 이용하는 기법들에 대한 것이다. 따라서 아래와 같은 항목으로 나누어 포스트를 할 예정이다. 
 
-1. Gradient Descent
-2. Subgradient Method
-3. Proximal Gradient Method
+최적화 알고리즘 바로가기  
+- (First Order Algorithm 1 - Gradient Descent)[https://hgmin1159.github.io/convex/firstorder1/]  
+- (First Order Algorithm 2 - Subgradient Method)[https://hgmin1159.github.io/convex/firstorder2/]  
+- (First Order Algorithm 3 - Proximal Gradient Descent)[https://hgmin1159.github.io/convex/firstorder3/]  
+- (Convex Optimization 리뷰)[https://hgmin1159.github.io/convex/convex_review/]  
 
 ## 1. Proximal Gradient Descent
 
