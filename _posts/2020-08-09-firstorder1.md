@@ -8,6 +8,11 @@ excerpt: Gradient Descent
 
  $\def\m#1{\mbox{#1}} \def\t#1{\textbf{#1}}$
 
+최적화 알고리즘 바로가기  
+- (First Order Algorithm 1 - Gradient Descent)[https://hgmin1159.github.io/convex/firstorder1/]  
+- (First Order Algorithm 2 - Subgradient Method)[https://hgmin1159.github.io/convex/firstorder2/]  
+- (First Order Algorithm 3 - Proximal Gradient Descent)[https://hgmin1159.github.io/convex/firstorder3/]  
+- (Convex Optimization 리뷰)[https://hgmin1159.github.io/convex/convex_review/]  
 
 
 # 1. Gradient Descent
