@@ -1,3 +1,10 @@
+---
+title: \[생성모델\] Basic Generative Model Part1 - Basic Preview of Generative Model and AutoEncoder
+categories: [generative]
+tags: [Generative Model, Autoencoder]
+excerpt: 생성모델의 개념과 Basic Autoencoder
+---
+
 ## 0. Generative Model
 
  우리가 통계학의 기본에서 배우는 대부분의 모델들은 Discriminant Model이다. 통계학적으로 표현하자면 $Pr(Y \mid X)$이며 이것이 가정하는 상황은 X 데이터를 알때 Y 데이터의 확률을 구하는 것이라고 말할 수 있다.  
