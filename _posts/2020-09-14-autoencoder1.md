@@ -50,7 +50,7 @@ E. Normalizing Flow
 
 AutoEncoder의 일반적인 프레임워크는 다음과 같다. 
 
-![](assets/img/post/2020-09-14/figure1.PNG)
+![](/assets/img/post/2020-09-14/figure1.PNG)
 
 Autoencoder를 구성하는 요소는 $n,p,f,g,\mathbb{F},\mathbb{G},\Delta$가 있다. 그에 대한 설명은 다음과 같다. 
 
@@ -136,7 +136,7 @@ Moore-Penrose Pseudoinverse는 unique하게 존재하며 SVD를 통해서 $A = \
 
 예전에 사진파일을 넣으면 그를 SVD한 뒤 차원축소 후 재구성해주는 어플리케이션을 만든적이 있었는데 당시에는 그것이 AutoEncoder를 한것인줄은 모르고 있었다. 아래는 차원을 낮추는 Linear AutoEncoder를 진행한 예시가 되겠다. 
 
-![](assets/img/post/2020-09-14/figure2.PNG)
+![](/assets/img/post/2020-09-14/figure2.PNG)
 
 
 
@@ -168,7 +168,7 @@ $\ \underset{f,g}{\min} E(f,g) = \sum_{t=1}^n \Delta ((g \circ f)(x_t) , x_t) \\
 
 이때의 Loss Function은 경험적으로 최적값을 가진다고 말해진다. 아래는 그에대한 성능의 비교이다. 
 
-![](assets/img/post/2020-09-14/figure3.PNG)
+![](/assets/img/post/2020-09-14/figure3.PNG)
 
 제일 위는 원본 자료이고 두번째는 30차원으로 한정지은 Neural-Net Autoencoder, 제일 아래는 Linear Autoencoder이다. 두번째와 세번째의 차원이 같은것을 감안한다면 한눈에 보기에도 딥러닝의 효율성을 파악할 수 있다. 
 
