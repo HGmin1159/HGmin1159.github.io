@@ -1,7 +1,7 @@
 ---
-title: "Technique"
+title: "Generative Model"
 author_profile: true
 layout: category
-permalink: /categories/technique/
-taxonomy: Technique
+permalink: /categories/generative/
+taxonomy: generative
 ---
