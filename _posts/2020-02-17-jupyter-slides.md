@@ -1,7 +1,7 @@
 ---
 title: \[기술\]주피터 노트북으로 슬라이드쇼 만들기
-categories: [Technique]
-tags: [기술,Technique]
+categories: [others]
+tags: [Others]
 excerpt: nbconvert,rise,reveal.js에 대한 설명
 ---
 
