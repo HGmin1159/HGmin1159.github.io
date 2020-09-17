@@ -35,11 +35,11 @@ feature_row2:
     url: "/categories/quantum/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/img/Technology.png
+  - image_path: /assets/img/generative.png
     alt: "placeholder image 5"
-    title: "Technique"
-    excerpt: '테크닉'
-    url: "/categories/technique/"
+    title: "Generative Model"
+    excerpt: '생성 모델'
+    url: "/categories/generative/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/others.png
