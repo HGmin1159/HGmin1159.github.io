@@ -12,8 +12,8 @@ main:
     url: /categories/Convex/
   - title: "Quantum Computing"
     url: /categories/quantum/
-  - title: "Technique"
-    url: /categories/technique/
+  - title: "Generative Model"
+    url: /categories/generative/
   - title: "Project"
     url: /categories/project/
   - title: "Others"
