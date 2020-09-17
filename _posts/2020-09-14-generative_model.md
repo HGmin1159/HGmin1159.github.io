@@ -177,7 +177,7 @@ Pierre Baldi. Autoencoders, Unsupervised Learning, and Deep Architectures(2012)
 
 위키피디아 - https://en.wikipedia.org/wiki/Autoencoder
 
-https://jinwonsohn.github.io/lecture/2020/01/10/Bayesian-Inference.html - Variational Autoencoder
+손진원 선배님의 블로그 - https://jinwonsohn.github.io/lecture/2020/01/10/Bayesian-Inference.html
 
 Elad Plaut.From Principal Subspaces to Principal Components with Linear Autoencoders(2018)
 
