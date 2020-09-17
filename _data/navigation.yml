@@ -14,8 +14,6 @@ main:
     url: /categories/quantum/
   - title: "Generative Model"
     url: /categories/generative/
-  - title: "Project"
-    url: /categories/project/
   - title: "Others"
     url: /categories/others/
   # - title: "Sitemap"
