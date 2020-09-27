@@ -67,7 +67,7 @@ $U_f \ket \psi = \frac{1}{\sqrt 8}\ket{000} +\frac{1}{\sqrt 8} \ket{001} - \frac
 
 Inversion about mean은 말그대로 평균을 중심으로 대칭이동 시켜주는 것이다. 8개의 확률진폭을 각각 평균 대칭이동 시켜줄 경우 혼자 확률진폭이 음수로 변한 $\ket {010}$만 매우 높아지게 되며 다른 것이 나올 확률은 극도로 낮아지게 된다. 아래의 그림을 살펴보자. 
 
-![](assets/img/post/2020-09-23/figure1.PNG)
+![](/assets/img/post/2020-09-23/figure1.PNG)
 
  
 
@@ -79,7 +79,7 @@ $U_\psi = 2\ket \psi \langle \psi \mid - I_{2^n} \quad (\ket \psi \mbox{ is hada
 
 결론적으로 다음과 같다. 
 
-![](assets/img/post/2020-09-23/figure2.PNG)
+![](/assets/img/post/2020-09-23/figure2.PNG)
 
 이는 확률이 증폭되는 가장 간단한 예시라고 말할 수 있다. 
 
@@ -97,7 +97,7 @@ $U_\psi = 2\ket \psi \langle \psi \mid - I_{2^n} \quad (\ket \psi \mbox{ is hada
 
 따라서 최소 1번, 최대 100번의 시간이 걸린다. 이를 일반화하면 상자의 집합을 S, 이 집합의 크기를 n이라고 두며 검색의 시간 복잡도 함수는 $O(n)$이라고 말할 수 있다.  각각의 상자를 연 후 이 데이터가 필요로 하는 데이터인지 아닌지에 대한 검정이 필요하며 이것을 수행하는 것이 곧 오라클이라고 말할 수 있다. 즉, 오라클 f를 최소 n번 수행하는 것이라고 말할 수 있다. 
 
-![](/assets/img/post/2020-09-23/figure3.png)
+![](/assets/img/post/2020-09-23/figure3.PNG)
 
 만약 이 상자의 집합에 대한 추가적인 정보가 있다면 좀 더 빠른 시간내에 찾을 수 있다. 예컨데 상자들이 초콜릿의 이름 순으로 정렬되어 있다고 가정하자.  100개의 상자 중 중간인 50번째 상자를 열어 봤을때 들어있는 초콜릿이 감귤 초콜릿 이면 감귤<민트 이므로 민트 초콜릿은 51~100번째에 들어있다고 생각할 수 있다. 
 
@@ -109,7 +109,7 @@ $U_\psi = 2\ket \psi \langle \psi \mid - I_{2^n} \quad (\ket \psi \mbox{ is hada
 
 **Grover's Algorithm**
 
-![](assets/img/post/2020-09-23/figure4.png)
+![](/assets/img/post/2020-09-23/figure4.PNG)
 
 Grover's Algorithm의 대략적인 과정은 다음과 같다. 
 
@@ -173,7 +173,7 @@ $H^{\otimes n +1} \ket {00...01} = \frac{1}{\sqrt{2^{n+1}}} \underset{v \in \{0,
 
 **Deutsch - Jozsa Algorithm**
 
-![](/assets/img/post/2020-09-23/figure5.png)
+![](/assets/img/post/2020-09-23/figure5.PNG)
 
 $U_f$ 이전 까지는 위에서 설명한 상황을 표현해주는 회로이다. $U_f$는 다음과 같은 함수이다. 
 
