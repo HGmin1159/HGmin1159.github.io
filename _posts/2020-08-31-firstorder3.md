@@ -69,7 +69,7 @@ $\mbox{prox}_{h,t}(x) = \underset{z}{\arg \min} \frac{1}{2t} \parallel x-z\paral
 
 Proxy라 함은 대리,위임이라고 번역되며 따라서 Proximal GD는 미분가능한 부분은 GD를 하고 미분 불가한 부분은 Proxy Function을 이용해서 대신 최적화해주는 것이라고 말할 수 있다. 
 
-$G_t(x)=\frac{1}{t} (x-\m{prox}_{ht}(x-t\nabla g(x)))$를 정의함으로써 좀더 익숙한 폼인 $x^{(k+1)} = x^{(k)} - t_k G_{t_k}(x^{(k)})$를 사용할 수 있다. 
+$G_t(x)=\frac{1}{t}(x-\m{prox}_{ht}(x-t\nabla g(x)))$를 정의함으로써 좀더 익숙한 폼인 $x^{(k+1)} = x^{(k)} - t_kG_{tk}(x^{(k)})$를 사용할 수 있다. 
 
 
 
