@@ -130,7 +130,7 @@ $\underset{f}{\min} L(f(\tilde x), x)$
 
 이런 단순한 구조로 학습시킨 모델도 괜찮은 효율을 보인다는 것이 알려져 있다.  아래는 Denoising AutoEncoder로 학습시킨 모델의 각각 레이어 아웃풋들이다. 
 
-![](/assets/img/post/2020-10-07/figure5.PNG)
+![](/assets/img/post/2020-10-07/figure5.png)
 
 일반적인 Autoencoder와 다른 점은 물론 Denoing 과정이다. 유용하게 쓰는 Denoising 함수 $\tilde x = d(x)$로는 다음과 같은 것들이 있다. 
 
