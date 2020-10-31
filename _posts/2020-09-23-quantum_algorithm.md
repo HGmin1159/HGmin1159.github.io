@@ -1,5 +1,5 @@
 ---
-title: \[양자 알고리즘\]양자 알고리즘의 기초
+title: \[양자 알고리즘\] Grover's Algorithm, Deutsch's Algorithm, Simon's Algorithm
 categories: [Quantum]
 tags: [양자컴퓨터]
 excerpt: 오라클과 확률 증폭 및 Grover, Deutsch's Algorithm
