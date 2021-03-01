@@ -15,7 +15,7 @@ $Ax = b$ 라는 연립 방정식은 우리가 중학교 때부터 보던 가장 
 
 > $Ax= b$ for known $A,b$를 만족하는 근 x는 다음과 같다. 
 >
-> 1) If $b \notin C(A) $, then $\not{\exist}$ x that hold Ax=b (불능)
+> 1) If $b \notin C(A) $, then $\nexist$ x that hold Ax=b (불능)
 >
 > 2) If $b \in C(A)$ and A is non-singular, then $x = A^{-1}b$ 
 >
@@ -25,13 +25,15 @@ $Ax = b$ 라는 연립 방정식은 우리가 중학교 때부터 보던 가장 
 
 일반적으로는 문제에 선형방정식이 사용될때는 Ax의 결과물로서 b를 관측하고 모르는 x를 추정하기 때문에 1과 같은 사례는 잘 발생하지 않는다. 따라서 2와 3의 사례에만 집중하면 되는데, 이 경우 A의 역행렬을 안다면 위와 같은 문제가 매우 쉽게 풀림을 알 수 있다.
 
- 그러나 A의 역행렬을 구하기가 매우 어렵다는 것이 문제이다. 이 어렵다는 의미는 수학적으로 어렵다는 의미가 아니라 전산적으로 구하기가 어렵다는 것이다. 여러 프로그래밍 언어에서 inverse matrix를 구해주는 함수가 있고 이들은 시간이 오래 걸릴지 역행렬을 구해주기는 한다.  물론 SVD를 이용해서 g-inverse도 구할 수 있다. 
+ 그러나 A의 역행렬을 구하기가 매우 어렵다는 것이 문제이다. 이 어렵다는 의미는 수학적으로 어렵다는 의미가 아니라 전산적으로 구하기가 어렵다는 것이다.
+ 
+ 여러 프로그래밍 언어에서 inverse matrix를 구해주는 함수가 있고 이들은 시간이 오래 걸릴지 역행렬을 구해주기는 한다. 물론 SVD를 이용해서 g-inverse도 구할 수 있다. 
 
  그러나 이러한 방식은 시간이 너무 오래걸린다.  따라서 이와 같은 방식을 피해 최적화 기법을 기반으로 문제를 푸는 방법도 연구가 깊이 되고 있다. (Convex Optimization의 Linear Programming)
 
 
 
-그러나 양자컴퓨터를 이용하면 역행렬을 곧바로 추정하는 방식으로 Linear Programming을 해결할 수 있다. 이것이 바로 HHL Algorithm이다. 
+ 그러나 양자컴퓨터를 이용하면 역행렬을 곧바로 추정하는 방식으로 Linear Programming을 해결할 수 있다. 이것이 바로 HHL Algorithm이다. 
 
 
 
@@ -39,9 +41,12 @@ $Ax = b$ 라는 연립 방정식은 우리가 중학교 때부터 보던 가장 
 
 **HHL Algorithm에 대해서**
 
- HHL Algorithm은 Harrow-Hassidim-Lloyd Algorithm의 줄임말로 2009년에 발표된 양자컴퓨터를 이용한 Linear Programming 기법이다.  기존의 고전 컴퓨터를 이용한 Linear Programming 기법의 경우 $O(Nsklog(1/\epsilon))$의 효율로 문제를 푼 반면 HHL Algorithm은 문제를 $O(\log (N)s^2k^2/\epsilon)$의 효율로 문제를 풀 수 있다. 여기서 N은 행렬 A의 Size를 의미하며, s는 A의 Sparsity, k는 제약식의 개수이다. 
+ HHL Algorithm은 Harrow-Hassidim-Lloyd Algorithm의 줄임말로 2009년에 발표된 양자컴퓨터를 이용한 Linear Programming 기법이다.
+ 
+ 기존의 고전 컴퓨터를 이용한 Linear Programming 기법의 경우 $O(Nsklog(1/\epsilon))$의 효율로 문제를 푼 반면 HHL Algorithm은 문제를 $O(\log (N)s^2k^2/\epsilon)$의 효율로 문제를 풀 수 있다. 여기서 N은 행렬 A의 Size를 의미하며, s는 A의 Sparsity, k는 제약식의 개수이다. 
 
-보다시피 행렬 사이즈 N에 대해서 지수적인 효율증가를 보이는 반면, 오차율 $\epsilon$에 대해서는 역으로 지수적인 효율 경감을 보인다. 따라서 HHL Algorithm은 대용량 데이터에 대해 특화가 되어 있지만, 나온 결과물의 근을 어디까지나 추정값으로 구해준다는 단점이 있다고 말할 수 있다. 
+ 보다시피 행렬 사이즈 N에 대해서 지수적인 효율증가를 보이는 반면, 오차율 $\epsilon$에 대해서는 역으로 지수적인 효율 경감을 보인다. 
+ 따라서 HHL Algorithm은 대용량 데이터에 대해 특화가 되어 있지만, 나온 결과물의 근을 어디까지나 추정값으로 구해준다는 단점이 있다고 말할 수 있다. 
 
  현재까지 양자컴퓨터에서 나온 Linear Programming 기법은 HHL Algorithm을 응용한 경우가 대다수 이므로 HHL Algorithm의 한계는 양자컴퓨터의 한계와 일치한다고도 말할 수 있다. 
 
@@ -85,29 +90,24 @@ HHL Algorithm을 사용하기 위해서는 기본적인 문제의 세팅이 필�
 
 이를 이용해 다음과 같은 Unitary Operator를 만들 수 있다. 
 
-> $U_{A} = e^{2\pi i A} = \sum_{j=1}^{r}e^{2\pi i \lambda_j} \ket {u_j} \langle u_j\mid$   -----  (1)
+> $U_{A} = e^{2\pi i A} = \sum_{j=1}^{r}e^{2\pi i \lambda_j} \ket {u_j} \langle u_j\mid$   -----  (주석의 1번 참고)
 
-이렇게 Unitary Matrix 안에 들어간 $\lambda_j$는 어떤 값이되든 $\lambda'_j \in (0,1)$로 치환될 수 있다.  ----- (2)
+이렇게 Unitary Matrix 안에 들어간 $\lambda_j$는 어떤 값이되든 $\lambda'_j \in (0,1)$로 치환될 수 있다.  ----- (주석의 2번 참고)
 
 따라서 A의 아이젠밸류를 0~1 사이의 값으로 가정할 수 있다. 이를 이진법으로 표현하면 다음과 같다. 
 
-> $\lambda_j = 0.b_1b_2b_3...b_n, \qquad b_j \in \{0,1\}$
+> $\lambda_j = 0.b_1b_2b_3...b_n \qquad b_j \in \{0,1\}$
 
  이는 곧 m개의 bit를 이용하여 아이젠밸류를 근사추정한 것으로 해석할 수 있고 m이 늘어나면 늘어날수록 정확해 질 것이다. 
 
-만약 아이젠밸류가 무한대가 아니라서 m개의 bit로 정확히 표현가능하다면 이를 일컬어 아이젠밸류가 perfectly m-estimated된다고 정의하며 어떤 행렬의 아이젠밸류 전체가 m개의 bit로 표현가능할시 행렬이 perfectly m-estimated된다고 정의한다. 
+만약 아이젠밸류가 무한소수가 아니라서 m개의 bit로 정확히 표현가능하다면 이를 아이젠밸류가 perfectly m-estimated된다고 정의하며 어떤 행렬의 아이젠밸류 전체가 m개의 bit로 표현가능할시 행렬이 perfectly m-estimated된다고 정의한다. 
 
 
-
-마지막으로 벡터 $\ket {b}$를 A의 아이젠 벡터를 Basis로 하여 표현하자.
+마지막으로 벡터 $\ket {b}$에 대해 A의 아이젠 벡터를 Basis로 삼아 표현해보자.
 
 $\ket{b} = \sum_{j=1}^{r} a_j \ket{u_j}$
 
-
-
 여기까지가 HHL Algorithm에 대한 사전 셋팅이다. 이제 본격적으로 HHL Algorithm에 대해서 알아보자. 
-
-
 
 **HHL Algorithm**
 
@@ -118,14 +118,13 @@ HHL Algorithm의 회로는 다음과 같다.
 ***
 
 
-
 인풋 큐빗은 세 종류로 이루어져 있다.
 
 $\mbox{input :} \ket{0}_A \otimes \ket{0}_R \otimes \ket{b}_V$ 
 
 - $\ket {0}_A$: 첫번째 큐빗은 AQE를 돌리기 위한 Ancillary Qubit이다. 
 - $\ket {0}_R^{\otimes m}$:두번째 큐빗은 아이젠벡터를 추정하기 위한 큐빗이다. 이 큐빗의 차원이 커질수록 아이젠밸류를 더 세밀한 자릿수까지 추정해낼 수 있다. 
-- $\ket {b}_V^{\otimes n} = \sum_{j=1}^{r} a_j \ket{u_j}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
+- $\ket {b}_{V}^{\otimes n} = \sum_{j=1}^{r} a_{j} \ket{u_j}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
 
 
 
