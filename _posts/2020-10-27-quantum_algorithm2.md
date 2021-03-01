@@ -124,14 +124,12 @@ $\mbox{input :} \ket{0}_A \otimes \ket{0}_R \otimes \ket{b}_V$
 
 - $\ket {0}_A$: 첫번째 큐빗은 AQE를 돌리기 위한 Ancillary Qubit이다. 
 - $\ket {0}_R^{\otimes m}$:두번째 큐빗은 아이젠벡터를 추정하기 위한 큐빗이다. 이 큐빗의 차원이 커질수록 아이젠밸류를 더 세밀한 자릿수까지 추정해낼 수 있다. 
-- $\ket{b}_V^{\otimes n}=\sum_{j=1}^{r} a_j \ket{u_j}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
+- $\ket{b}_V^{\otimes n}$=$\sum_{j=1}^{r} a_j \ket{u_j}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
 
 
 이 큐빗을 QPE를 통과시키면 다음과 같이 변한다. 
 
-$\mbox{(a)} : \ket{0}_{A} \otimes \overset{r}{\underset{j=1}{\sum}}$
-$\overset{2^m-1}{\underset{k=0}{\sum}} a_{j} \beta_{k \mid j}$
-$ \ket{\lambda_{k}}_{R} \otimes \ket{u_{j}}_{V}$
+$\mbox{(a)} : \ket{0}_{A} \otimes \overset{r}{\underset{j=1}{\sum}}\overset{2^m-1}{\underset{k=0}{\sum}} a_{j} \beta_{k \mid j} \ket{\lambda_{k}}_{R} \otimes \ket{u_{j}}_{V}$
 
 여기서 $\beta_{k \mid j} = \frac{1}{2^m} \sum_{y=0}^{2^m-1} e^{2 \pi i y (\lambda_j - x/2^m)}$이다.  여기서 $\lambda_k$는 eigenvalue의 후보들이다. 
 
