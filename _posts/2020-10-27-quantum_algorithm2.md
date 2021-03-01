@@ -124,9 +124,8 @@ $\mbox{input :} \ket{0}_A \otimes \ket{0}_R \otimes \ket{b}_V$
 
 - $\ket {0}_A$: 첫번째 큐빗은 AQE를 돌리기 위한 Ancillary Qubit이다. 
 - $\ket {0}_R^{\otimes m}$:두번째 큐빗은 아이젠벡터를 추정하기 위한 큐빗이다. 이 큐빗의 차원이 커질수록 아이젠밸류를 더 세밀한 자릿수까지 추정해낼 수 있다. 
-- $\ket{b}_V^{\otimes n}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
+- $\ket{b}_V^{\otimes n}=\sum_{j=1}^{r} a_j \ket{u_j}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
 
-$=\sum_{j=1}^{r} a_j \ket{u_j}$
 
 이 큐빗을 QPE를 통과시키면 다음과 같이 변한다. 
 
