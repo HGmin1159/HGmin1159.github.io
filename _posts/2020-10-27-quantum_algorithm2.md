@@ -130,7 +130,7 @@ $\mbox{input :} \ket{0}_A \otimes \ket{0}_R \otimes \ket{b}_V$
 
 이 큐빗을 QPE를 통과시키면 다음과 같이 변한다. 
 
-$\mbox{(a)} : \ket 0_A \otimes \overset{r}{\underset{j=1}{\sum}}  \overset{2^m-1}{\underset{k=0}{\sum}} a_j \beta_{k \mid j} \ket{\lambda_k}_R \otimes \ket{u_j}_V $
+$\mbox{(a)} : \ket{0}_{A} \otimes \overset{r}{\underset{j=1}{\sum}}  \overset{2^m-1}{\underset{k=0}{\sum}} a_{j} \beta_{k \mid j} \ket{\lambda_k}_{R} \otimes \ket{u_{j}}_{V} $
 
 여기서 $\beta_{k \mid j} = \frac{1}{2^m} \sum_{y=0}^{2^m-1} e^{2 \pi i y (\lambda_j - x/2^m)}$이다.  여기서 $\lambda_k$는 eigenvalue의 후보들이다. 
 
