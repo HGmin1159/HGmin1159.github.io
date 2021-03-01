@@ -118,7 +118,9 @@ Subgradient는 개별 함수마다 찾아줘야 하지만 다행히 성질상 �
 
 
 
-4번의  conv(A)은 A 집합의 Convex Hull,즉 A 집합의 모든 원소 쌍의 Linear Segment의 모임으로 확장한 것이다. 좀 더 문장으로 해석해보면 특정 x값에서 최대값이 되는 함수들의 subgradient의 linear segment(선분 위의 집합)라는 의미인데 다른 함수와 겹치는 것 없이 하나의 함수가 최대값을 차지하는 구간은 그냥 그 함수의 subgradient(그 구간에서 미분가능할시 그냥 Gradient이다.)이며 여러 개의 함수가 동시에 최대값을 가질때는 그 함수들의 subgradient 집합의 convex hull 이라는 의미이다. 
+4번의  conv(A)은 A 집합의 Convex Hull,즉 A 집합의 모든 원소 쌍의 Linear Segment의 모임으로 확장한 것이다. 
+
+좀 더 문장으로 해석해보면 특정 x값에서 최대값이 되는 함수들의 subgradient의 linear segment(선분 위의 집합)라는 의미인데 다른 함수와 겹치는 것 없이 하나의 함수가 최대값을 차지하는 구간은 그냥 그 함수의 subgradient(그 구간에서 미분가능할시 그냥 Gradient이다.)이며 여러 개의 함수가 동시에 최대값을 가질때는 그 함수들의 subgradient 집합의 convex hull 이라는 의미이다. 
 
 
 
@@ -244,7 +246,9 @@ $\nabla f(x)^t(y-x) \geq 0 \quad \forall y \in C$
 
 **Lasso Optimality Condition**
 
-Lasso regression이 Ridge regression에 비해서 가지는 특징은 Lasso에서는 패널티 파라미터를 늘림에 따라 계수가 완전히 0이 될 수 있다는 점이다. 이는 머신러닝을 접하면 많이 들을 수 있는 얘기지만, 어째서 계수가 0이 될 수 있는지에 대한 설명은 부족했다. 그 이유가 바로 Subgradient Optimality Condition에 있다.
+Lasso regression이 Ridge regression에 비해서 가지는 특징은 Lasso에서는 패널티 파라미터를 늘림에 따라 계수가 완전히 0이 될 수 있다는 점이다.  
+
+이는 머신러닝을 접하면 많이 들을 수 있는 얘기지만, 어째서 계수가 0이 될 수 있는지에 대한 설명은 부족했다. 그 이유가 바로 Subgradient Optimality Condition에 있다.
 
 
 
@@ -262,7 +266,11 @@ v는 $\parallel \beta \parallel_1$의 Subgradient이다. 이를 정리하면 다
 
 $\begin{cases} \ X_i^t(y-X\beta)=\lambda \cdot sign(\beta_i) \qquad \m{if }\beta_i \neq 0 \\\ \mid X_i^t(y-X\beta)\mid \leq \lambda  \qquad \qquad \quad \ \ \m{ if } \beta_i =0 \end{cases}$
 
-따라서 $\beta$를 찾는 과정에서 주어진 값이 $\lambda$보다 작아지면 $\beta_i$를 0으로 보내버릴 수 있다. 주어진 값을 잘 보면 $X_i^t\epsilon$이므로 실제 데이터에서 에러가 0이 되는 경우는 없음을 생각하면 해당 변수의 값에 Dependent한 값이며 psedo하게 얘기하면 잔차와 해당변수의 공분산이라고 말할 수 있다. 따라서 이 psedo-공분산 값이 너무 작아 별 관계가 없다면 계수를 0으로 보낼수 있다고 해석할 수 있다. 
+따라서 $\beta$를 찾는 과정에서 주어진 값이 $\lambda$보다 작아지면 $\beta_i$를 0으로 보내버릴 수 있다. 
+
+주어진 값을 잘 보면 $X_i^t\epsilon$이므로 실제 데이터에서 에러가 0이 되는 경우는 없음을 생각하면 해당 변수의 값에 Dependent한 값이며 psedo하게 얘기하면 잔차와 해당변수의 공분산이라고 말할 수 있다. 
+
+따라서 이 psedo-공분산 값이 너무 작아 별 관계가 없다면 계수를 0으로 보낼수 있다고 해석할 수 있다. 
 
  
 
