@@ -138,7 +138,7 @@ $O(1/\epsilon^2)$
 
 $f(x)$ is convex function
 
-$g_i(x) \not \equiv 0 \or h_j(x) \not \equiv 0 $
+$g_i(x) \not \equiv 0 \mbox{ or } h_j(x) \not \equiv 0 $
 
 
 
@@ -160,7 +160,9 @@ Convergecnt Rate의 경우 C Set의 복잡도와 문제의 복잡도에 따라�
 
 
 
-C set이 Convex Set을 이룰 경우 Halfplane of Convex Set Theorem에 의해 Convex Set을 둘러쌀수 있는 유한개의 직선(혹은 직면)을 그을 수 있다. 직선을 그을 수 있다면 그에 대한 Orthogonal Projection Matrix를 통해 프로젝션도 쉽게 가능하므로 Convex Set에 대한 Projected GD의 가능성을 말해줄 수 있다. 그러나 수학적인 가능성이 있음은 알아도 실제 실현 가능성은 다른 의미기 때문에 형태에 따라 불가능 할 수 도 있다. 
+C set이 Convex Set을 이룰 경우 Halfplane of Convex Set Theorem에 의해 Convex Set을 둘러쌀수 있는 유한개의 직선(혹은 직면)을 그을 수 있다. 직선을 그을 수 있다면 그에 대한 Orthogonal Projection Matrix를 통해 프로젝션도 쉽게 가능하므로 Convex Set에 대한 Projected GD의 가능성을 말해줄 수 있다. 
+
+ 그러나 수학적인 가능성이 있음은 알아도 실제 실현 가능성은 다른 의미기 때문에 형태에 따라 불가능 할 수 도 있다. 
 
 
 
@@ -230,7 +232,9 @@ $O(1/\epsilon^2)$
 
 
 
-그러나 실제로는 컴퓨테이션 량이 비약적으로 줄어 일반적인 GD보다 이터레이션을 더 많이 돌릴 수 있으므로 시간은 줄어들 수 있다. 이때 데이터 포인트 하나가 아니라 m개 만큼의 Gradient 평균치를 추정량으로 사용하는 것을 mini batch SGD라고 불러주며 일반적으로는 mini batch 기법을 더 자주 사용한다. 
+그러나 실제로는 컴퓨테이션 량이 비약적으로 줄어 일반적인 GD보다 이터레이션을 더 많이 돌릴 수 있으므로 시간은 줄어들 수 있다. 
+
+ 이때 데이터 포인트 하나가 아니라 m개 만큼의 Gradient 평균치를 추정량으로 사용하는 것을 mini batch SGD라고 불러주며 일반적으로는 mini batch 기법을 더 자주 사용한다. 
 
 
 
