@@ -15,7 +15,7 @@ $Ax = b$ 라는 연립 방정식은 우리가 중학교 때부터 보던 가장 
 
 > $Ax= b$ for known $A,b$를 만족하는 근 x는 다음과 같다. 
 >
-> 1) If $b \notin C(A) $, then $\not \exist$ x that hold Ax=b (불능)
+> 1) If $b \notin C(A) $, then $\not{\exist}$ x that hold Ax=b (불능)
 >
 > 2) If $b \in C(A)$ and A is non-singular, then $x = A^{-1}b$ 
 >
