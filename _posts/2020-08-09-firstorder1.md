@@ -143,8 +143,8 @@ $f(x^{k+1}) -f(x^\ast) \leq \frac{1}{2t}(\parallel x^{k} -x^\ast\parallel_2^2 - 
 
 여기에 양변의 k를 0부터 k 까지 더하면 다음과 같이 줄어든다. 
 
-$\sum _{i=0}^{k} \{f(x^{i})-f(x^\ast)\} \leq \sum_{i=0}^k\{ \frac{1}{2t}(\parallel x^{i} -x^\ast\parallel_2^2 - \parallel x^{i+1}-x^\ast \parallel_2^2)\}$  
-$\qquad \qquad \qquad \quad  \qquad = \frac{1}{2t} (\parallel x^0-x^\ast \parallel_2^2-\parallel x^{k+1}-x^\ast \parallel_2^2)$
+$\sum_{i=0}^{k} \{f(x^{i})-f(x^\ast)\} \leq \sum_{i=0}^k\{ \frac{1}{2t}(\parallel x^{i} -x^\ast\parallel_2^2 - \parallel x^{i+1}-x^\ast \parallel_2^2)\}$  
+$\qquad \qquad \qquad \quad  \qquad = \frac{1}{2t} (\parallel x^0-x^\ast \parallel_2^2-\parallel x^{k+1}-x^\ast \parallel_2^2)$  
 $\qquad \qquad \qquad \quad  \qquad \leq \frac{1}{2t}\parallel x^0 - x^\ast \parallel_2^2$
 
 
