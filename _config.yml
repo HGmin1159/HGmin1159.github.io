@@ -291,7 +291,6 @@ defaults:
     values:
       layout: single
       classes: wide
-      author_profile: true
       read_time: true
       use_math: true
       comments: true
