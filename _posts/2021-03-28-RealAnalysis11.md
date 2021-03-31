@@ -103,7 +103,7 @@ Space라 함은 매우 추상적인 개념이긴 하지만 직관적으로는 Se
 
 
 
-**$\sigma$ -algebra와 Borel Sets **
+**$\sigma$ -algebra와 Borel Sets**
 
  $\sigma$ - algebra라는 것을 굳이 새로 정하는 이유에 대해서는 차후에 simple function의 도입을 위해서 이다. 따라서 필요성과 성질에 대해서는 simple function을 다시 보면서 이해하기로 하고 일단은 받아들이도록 하자.  
 
@@ -219,10 +219,8 @@ Then for any measurable function f, $s_n  = \psi_n \circ f $ satisfies theorem's
 
  따라서 우리는 모든 positive measurable function을 simple function으로 근사시킬 수 있다. 여기서 positive라는 조건이 달려있지만 이는 trivial하다. 이는 르벡적분에서는 함수의 양수부분과 음수부분을 나누어서 다음과 같이 생각하는 관습이 있기 때문이다.
 
-수학적으로는 다음과 같은 정의를 사용한다.
-$$
-f^+(x) = \max (f(x),0), f^-(x) = -\min(f(x),0)
-$$
+수학적으로는 다음과 같은 정의를 사용한다.  
+$f^+(x) = \max (f(x),0), f^-(x) = -\min(f(x),0)$  
  f^+과 f^- 둘 모두 positive 함수인 것에 주목하자. 거기에 더해 원본 함수는 $f = f^+-f^-$로 매우 간단하게 구할 수 있다. 따라서 step function을 이용하면 사실 상 모든 measurable function에 근사시킬 수 있다. 
 
 
