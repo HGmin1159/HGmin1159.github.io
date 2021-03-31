@@ -292,6 +292,7 @@ defaults:
       layout: single
       classes: wide
       read_time: true
+      author_profile: true
       use_math: true
       comments: true
       share: true
