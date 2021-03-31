@@ -16,7 +16,7 @@ excerpt: Absatract Integration , lebesgue integration, measure zero
 >
 > - If $s: X \rightarrow [0, \infty)$ is a measurable simple function of the form $s = \overset{n}{\underset{i=1}{\sum}} \alpha_i \chi_{A_i}$ and $E$ is a member of $M$, then we define Lebesgue integration of $s$ on $E$ as follow  
 >   $\int_E s d \mu = \sum \alpha_i \mu(A_i \cap E)$  
->   여기서 A_i \cap E는 trivial하며 간결함을 위해 E를 무시하고 생각할시 $\sum \alpha_i \mu(A_i)$로 간단해진다.  또한 $0 \cdot \infty =0$으로 정의되기에, $\mu(A_i) = \infty$라도 $\alpha_i =0$일시 해당 부분의 값은 0이다.
+>   여기서 $A_i \cap E$는 trivial하며 간결함을 위해 E를 무시하고 생각할시 $\sum \alpha_i \mu(A_i)$로 간단해진다.  또한 $0 \cdot \infty =0$으로 정의되기에, $\mu(A_i) = \infty$라도 $\alpha_i =0$일시 해당 부분의 값은 0이다.
 >
 > **Lebesgue integration on positive measurable function**
 >
