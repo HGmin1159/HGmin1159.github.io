@@ -14,18 +14,14 @@ excerpt: Absatract Integration , lebesgue integration, measure zero
 
 > **Lebesgue integration on positive simple funcition**
 >
-> - If $s: X \rightarrow [0, \infty)$ is a measurable simple function of the form $s = \overset{n}{\underset{i=1}{\sum}} \alpha_i \chi_{A_i}$ and $E$ is a member of $M$, then we define Lebesgue integration of $s$ on $E$ as follow
->   $$
->   \int_E s d \mu = \sum \alpha_i \mu(A_i \cap E)
->   $$
+> - If $s: X \rightarrow [0, \infty)$ is a measurable simple function of the form $s = \overset{n}{\underset{i=1}{\sum}} \alpha_i \chi_{A_i}$ and $E$ is a member of $M$, then we define Lebesgue integration of $s$ on $E$ as follow  
+>   $\int_E s d \mu = \sum \alpha_i \mu(A_i \cap E)$  
 >   여기서 A_i \cap E는 trivial하며 간결함을 위해 E를 무시하고 생각할시 $\sum \alpha_i \mu(A_i)$로 간단해진다.  또한 $0 \cdot \infty =0$으로 정의되기에, $\mu(A_i) = \infty$라도 $\alpha_i =0$일시 해당 부분의 값은 0이다.
 >
 > **Lebesgue integration on positive measurable function**
 >
-> - If $f: X \rightarrow [0, \infty)$ is measurable and E is a member of M, then we define Lebesgue integration of $f$ on $E$ as follow
->   $$
->   \int_E f d \mu = \sup_{s \in S} \int_E s d \mu
->   $$
+> - If $f: X \rightarrow [0, \infty)$ is measurable and E is a member of M, then we define Lebesgue integration of $f$ on $E$ as follow  
+>   $\int_E f d \mu = \sup_{s \in S} \int_E s d \mu$  
 >   여기서 $S = \{s \mid s \mbox{ is a simple function which holds an inequality } s \leq f\}$이다. 
 >
 >   즉 이를 통해 우리는 모든 positive measurable function에 대한 lebesgue integration을 정의할 수 있다. 
