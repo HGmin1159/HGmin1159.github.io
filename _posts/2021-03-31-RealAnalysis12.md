@@ -1,5 +1,5 @@
 ---
-title: \[Math\] Real Analysis - ch1.Abstract Integration (2/2)
+title: \[수학\] Real Analysis - ch1.Abstract Integration (2/2)
 categories: [others]
 tags: [Others,Mathematics]
 excerpt: Absatract Integration , lebesgue integration, measure zero
