@@ -216,7 +216,7 @@ In this cases, covariances of each 1st and 2nd, 1st and 3rd, 2nd and 3rd are con
 
 $\left[\begin{array}{c} y_{11} \\\ y_{12} \\\ y_{13}\\\ y_{21} \\\ y_{22} \\\ \vdots \\\ y_{n3} \end{array}\right] = \left[\begin{array}{cc}  x_{111}  & x_{112} \\\ x_{121} & x_{122} \\\ x_{131} & x_{132} \\\ x_{211}  & x_{212} \\\ x_{221} & x_{222} \\\ \vdots & \vdots \\\ x_{n31} & x_{n32}\end{array}\right] \left[\begin{array}{c} \beta_{1} \\\  \beta_{2}\end{array}\right]+\left[\begin{array}{c} 1 & 0 & 0& \cdots & 0\\\ 1 & 0 & 0& \cdots & 0\\\ 1 & 0 & 0& \cdots & 0\\\ 0 & 1 & 0& \cdots & 0\\\ 0 & 1 & 0& \cdots & 0 \\\  \vdots & \vdots &\vdots &\vdots& \vdots \\\ 0&0&0&\cdots&1 \end{array}\right]\left[\begin{array}{c}u_1 \\\ u_2 \\\  u_3\\\ \vdots \\\  u_n\end{array}\right] + \left[\begin{array}{c} 1 & 0 & 0& \cdots & 0\\\ 2 & 0 & 0& \cdots & 0\\\ 3 & 0 & 0& \cdots & 0\\\ 0 & 1 & 0& \cdots & 0\\\ 0 & 2 & 0& \cdots & 0 \\\ \vdots & \vdots &\vdots &\vdots& \vdots \\\ 0&0&0&\cdots&3 \end{array}\right] \left[ \begin{array}{c} v_1 \\\ v_2 \\\ \vdots \\\ v_n \end{array}\right]+ \qquad   \left[\begin{array}{c} \epsilon_{11} \\\ \epsilon_{12} \\\ \epsilon_{13}\\\ \epsilon_{21} \\\ \epsilon_{22} \\\  \vdots \\\ \epsilon_{n3} \end{array}\right]$
 
-In model form, $y_{ij} =\beta_1 x_{ij1}+ \beta_2 x_{ij2} +u_i + v_{ij} \mbox{T}_{ij} + \epsilon_{ij}$
+In model form, $y_{ij} =\beta_1 x_{ij1}+ \beta_2 x_{ij2} +u_i + v_{ij} \mbox{T}_{ij} + \epsilon_{ij} $
 
 We again assume $v_{ij} \sim N(0, \tau_i^2)$.
 
@@ -232,11 +232,11 @@ In this case, we could make covariance structured as follow.
 >
 > - Individual variance is decomposed with General Variance($\epsilon_{ij}$) + Subject Variance($u_i$) + Time Variance($v_i T_{ij}$)
 >
-> $Cov(y_{ij},y_{ik}) = \sigma_i^2 + \mbox{T}_{ij}\mbox{T}_{ik} \tau_i^2$
+> $Cov(y_{ij},y_{ik}) = \sigma_i^2 + \mbox{T}_{ij}\mbox{T}_{ik} \tau_i^2 $
 >
 > - Covariance of results of same subject is decomposed with Subject Variance($u_i$) + Covariance weighted in time($v_{ij}$) 
 >
-> $Cov(y_{ij}, y_{lk}) = 0 \mbox{ where } i \neq l $  
+> $Cov(y_{ij}, y_{lk}) = 0 \mbox{ where } i \neq l$  
 >
 > - Covariance of results of different subjects is 0
 
