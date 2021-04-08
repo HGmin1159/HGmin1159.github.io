@@ -54,9 +54,9 @@ Then, why don't we just throw away time series data or cross sectional data and 
 > 4. Independence between independent variables and error term- $X_i \perp \epsilon_i$ for all i
 > 5. No Multicolinearlity
 
- However, correlated data violates 3th assumption. So we have to edify the model to fit with autocorrelation. In detail, we will construct the model by setting the structure of $Cov(\epsilon)$
+ However, correlated data violates 3th assumption. It the assumption is broken, then we cannot trust the result of LSE estimator(Gauss-Markov Theorem). So we have to change the assumption $Cov(\epsilon) = \sigma^2 I$ to $Cov(\epsilon) = D$ and under this structure, we could make credible estimator.
 
- There are three famous methods to mate them : Linear Mixed Model, Covariance Pattern Model, Generalized Estimating Equation.
+ There are three famous methods to make them : Linear Mixed Model, Covariance Pattern Model, Generalized Estimating Equation. But in this posting, we will see only Linear mixed model.
 
 
 
