@@ -343,7 +343,7 @@ lmer(formula, data = NULL, REML = TRUE, control = lmerControl(),
 
 And we could interpret results as follow.
 
-![](assets/img/post/2021-04-07/figure1.jpg)
+![](/assets/img/post/2021-04-07/figure1.jpg)
 
 
 
