@@ -40,8 +40,7 @@ Then, why don't we just throw away time series data or cross sectional data and 
 
 
 
-## 2. Methodology to construct model
-
+## 2. Structure of Linear Mixed Model 
 **Assumptions of Linear Model**
 
  The linear model is most famous statistical model and father of many statistical methods. However, to apply linear model to problem, we have to check the assumptions not broken. Below is said to be standard assumption of linear regression model. 
@@ -58,9 +57,6 @@ Then, why don't we just throw away time series data or cross sectional data and 
 
  There are three famous methods to make them : Linear Mixed Model, Covariance Pattern Model, Generalized Estimating Equation. But in this posting, we will see only Linear mixed model.
 
-
-
-### A. Linear Mixed Model 
 
  Mixed model is called "mixed" because it mixes fixed effect and random effect when constructing model.  In this cases, we call coefficients of independent variables and intercept as "effect". Then, "fixed effect" means that this coefficients are constants and "random effect" means taht this coefficients are random variable.
 
@@ -102,7 +98,7 @@ $Var(y) = E_{\alpha}(Var_\epsilon(y \mid \alpha)) + Var_{\alpha}(E_\epsilon(y \m
 
 
 
-### B. Example 1: Random intercept model
+## 3. Example 1: Random intercept model
 
 By observing the example, we could understand how this structure can work to make covariance. 
 
@@ -200,7 +196,7 @@ $Cov(y_{11}, y_{21}) = E(Cov(y_{11},y_{21} \mid u_1,u_2)) + Cov(E(y_{11} \mid u_
 
 
 
-### B. Example 2: Random Coefficient model
+## 4. Example 2: Random Coefficient model
 
 Example 1 is the form that the random effects are appled in intercept only like below.
 
@@ -320,7 +316,7 @@ or could add random effect to interaction term.
 
 
 
-### C. Analysis with R
+## 5. Analysis with R
 
 We could design such mixed model in R by using package "lme4".
 
@@ -347,7 +343,7 @@ And we could interpret results as follow.
 
 
 
-### d. Additional Strength
+## 6. Additional Strength
 
 1. It could be used Generalized linear model too.
 
