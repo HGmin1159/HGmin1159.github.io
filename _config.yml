@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "H.G Min"
   avatar           : "/assets/img/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Yonsei University,Seoul,Korea Mar.14-Jul.20"<\br>"- M.A. expected in applied statitstics" </br>"- B.A. in applied statistics"
+  bio              : "Yonsei University,Seoul,Korea Mar.14-Jul.20""- M.A. expected in applied statitstics""- B.A. in applied statistics"
   location         : "Seoul S.Korea"
   links:
     - label: "Email"
