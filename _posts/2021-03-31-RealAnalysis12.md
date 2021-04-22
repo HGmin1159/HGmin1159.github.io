@@ -236,3 +236,5 @@ $\mu =\{0,0,0,0,3,3,3,3\}$
 
  여기까지가 Abstract Integration의 내용이며 Rudin 책이 다루고 있는 1장이다. 공부할때도 죽을만큼 힘들었지만 정리를 하고나니 양이 말도안되게 많아서 왜 힘들었는지 알겠다.. 어쨋든 1장만으로도 지금까지 통계학에 나왔던 많은 부분들을 커버할 수 있었다. 다음 포스팅은 Positive Borel Measures로 Borel Measure에 대해서 좀 더 자세하게 보는 듯 하다.
 
+***
+walter rudin,[real and complex analysis],McGrawHill
