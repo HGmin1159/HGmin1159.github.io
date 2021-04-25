@@ -154,7 +154,7 @@ Integral multiples of x라 함은 x의 정수배 집합을 의미한다.
 
 이 성질들은 그림을 통해서 쉽게 파악할 수 있다. 
 
-![](/assets/img/post/2021-04-25/figure1.JPG)
+![](assets/img/post/2021-04-25/figure1.JPG)
 
 
 
@@ -272,7 +272,7 @@ Lebesgue measurable set의 정의 중에는 lebesgue measurable set의 집합이
 
 $C = [0,1] \setminus \cup_{n=0}^{\infty} \cup_{k=0}^{3^n-1} \left( \frac{3k+1}{3^{n+1}},\frac{3k+2}{3^{n+1}} \right)$
 
-![](/assets/img/post/2021-04-25/figure2.PNG)
+![](assets/img/post/2021-04-25/figure2.PNG)
 
 해당 집합은 measurable 하며 measure zero이지만 Borel set이 아니다.
 
