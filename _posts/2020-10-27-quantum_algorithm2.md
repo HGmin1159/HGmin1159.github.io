@@ -147,11 +147,11 @@ $\ket{0} \otimes \ket{\lambda_k}_R \rightarrow (\sqrt{1-\frac{c^2}{\lambda_k^2}}
 
 여기서 c는 $\frac{1}{\parallel A^{-1}b \parallel}$로 또 다른 방법으로 계산된다고 한다. AQE의 인풋값으로 A의 아이젠밸류가 b의 비율에 따라서 확률진폭으로 전달이 되기 때문에 나머지 모든 항은 접근 가능한 항들이다. 이러한 과정을 거쳐서 나온 결과물은 다음과 같다. 
 
-$\mbox{(b)} : \overset{r}{\underset{j=1}{\sum}}  \overset{2^m-1}{\underset{k=0}{\sum}} (\sqrt{1-\frac{c^2}{\lambda_k^2}}\ket{0}_{A} + \frac{c}{\lambda_k} \ket{1}_{A})\otimes a_{j} \beta_{k \mid j} \ket{\lambda_k}_{R} \otimes \ket{u_j}_{V} $
+$\mbox{(b)} : \overset{r}{\underset{j=1}{\sum}}  \overset{2^m-1}{\underset{k=0}{\sum}} (\sqrt{1-\frac{c^2}{\lambda_k^2}}\ket{0}_{A} + \frac{c}{\lambda_k} \ket{1}_{A})\otimes a_{j} \beta_{k \mid j} \ket{\lambda_k}_{R} \otimes \ket{u_j}_{V}$
 
 여기서 아이젠 밸류가 Fully- Esimated 되었다고 가정한다면 (가정을 만족하기는 쉽지 않지만 가정을 위반해도 오차는 매우 적다.) k항은 j로 축소 시킬수 있다. 즉 다음과 같다. 
 
-$\mbox{(b)} : \overset{r}{\underset{j=1}{\sum}}   (\sqrt{1-\frac{c^2}{\lambda_j^2}}\ket{0}_A + \frac{c}{\lambda_j} \ket{1}_A)\otimes a_j  \ket{\lambda_j}_R \otimes \ket{u_j}_V $
+$\mbox{(b)} : \overset{r}{\underset{j=1}{\sum}}   (\sqrt{1-\frac{c^2}{\lambda_j^2}}\ket{0}_A + \frac{c}{\lambda_j} \ket{1}_A)\otimes a_j  \ket{\lambda_j}_R \otimes \ket{u_j}_V$
 
 
 
