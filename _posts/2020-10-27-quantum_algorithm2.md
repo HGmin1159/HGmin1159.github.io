@@ -116,58 +116,9 @@ HHL Algorithm의 회로는 다음과 같다.
 ![](/assets/img/post/2020-10-27/figure1.PNG)
 
 ***
+![](/assets/img/post/2020-10-27/text1-1.png)
+![](/assets/img/post/2020-10-27/text1-2.PNG)
 
-
-인풋 큐빗은 세 종류로 이루어져 있다.
-
-$\mbox{input :} \ket{0}_{A} \otimes \ket{0}_{R} \otimes \ket{b}_{V}$ 
-
-- $\ket {0}_{A}$: 첫번째 큐빗은 AQE를 돌리기 위한 Ancillary Qubit이다. 
-- $\ket {0}_{R}^{\otimes m}$:두번째 큐빗은 아이젠벡터를 추정하기 위한 큐빗이다. 이 큐빗의 차원이 커질수록 아이젠밸류를 더 세밀한 자릿수까지 추정해낼 수 있다. 
-- $\ket{b}_{V}^{\otimes n} = \sum_{j=1}^{r} a_{j} \ket{u_j}$: 세번째 큐빗은 벡터 b를 표현한 벡터이다. 
-
-
-이 큐빗을 QPE를 통과시키면 다음과 같이 변한다. 
-
-$\mbox{(a)} : \ket{0}_{A} \otimes \overset{r}{\underset{j=1}{\sum}}\overset{2^m-1}{\underset{k=0}{\sum}} a_{j} \beta_{k \mid j} \ket{\lambda_{k}}_{R} \otimes \ket{u_{j}}_{V}$
-
-여기서 $\beta_{k \mid j} = \frac{1}{2^m} \sum_{y=0}^{2^m-1} e^{2 \pi i y (\lambda_j - x/2^m)}$이다.  여기서 $\lambda_k$는 eigenvalue의 후보들이다. 
-
-일반적으로 QPE는 인풋에 eigenvector들이 들어가면 correspondent eigenvalue를 추정해주는 알고리즘이지만 여기서 $\ket{b}$를 eigenvalue의 선형결합꼴로 해석하여 eigenvector의 계수 값을 eigenvector를 상태로 가질 확률진폭 값으로 사용함으로써 여러개의 Case를 한꺼번에 다룰 수 있다. 
-
-쉽게 말해 $\ket{b}$의 확률진폭 $a_j$를 양자얽힘을 이용해 QPE의 결과물 $\ket{\lambda k}_{R}$에 엮어넣을 수 있다. ($a_j$가 앞으로 이동해 $a_{j} \beta_{k \mid j}$로써 엮임)
-
-
-
-다음으로 이 큐빗을 AQE 파트에 넣어보자. (Ancilla Quantum Encoding의 준말)
-
-AQE Operator는 큐빗을 다음과 같은 꼴로 바꾸어준다. 
-
-$\ket{0} \otimes \ket{\lambda_k}_R \rightarrow (\sqrt{1-\frac{c^2}{\lambda_k^2}}\ket{0}_A + \frac{c}{\lambda_k} \ket{1}_A) \otimes \ket{\lambda_k}_R$
-
-여기서 c는 $\frac{1}{\parallel A^{-1}b \parallel}$로 또 다른 방법으로 계산된다고 한다. AQE의 인풋값으로 A의 아이젠밸류가 b의 비율에 따라서 확률진폭으로 전달이 되기 때문에 나머지 모든 항은 접근 가능한 항들이다. 이러한 과정을 거쳐서 나온 결과물은 다음과 같다. 
-
-$\mbox{(b)} : \overset{r}{\underset{j=1}{\sum}}  \overset{2^m-1}{\underset{k=0}{\sum}} (\sqrt{1-\frac{c^2}{\lambda_k^2}}\ket{0}_{A} + \frac{c}{\lambda_k} \ket{1}_{A})\otimes a_{j} \beta_{k \mid j} \ket{\lambda_k}_{R} \otimes \ket{u_j}_{V}$
-
-여기서 아이젠 밸류가 Fully- Esimated 되었다고 가정한다면 (가정을 만족하기는 쉽지 않지만 가정을 위반해도 오차는 매우 적다.) k항은 j로 축소 시킬수 있다. 즉 다음과 같다. 
-
-$\mbox{(b)} : \overset{r}{\underset{j=1}{\sum}}   (\sqrt{1-\frac{c^2}{\lambda_j^2}}\ket{0}_A + \frac{c}{\lambda_j} \ket{1}_A)\otimes a_j  \ket{\lambda_j}_R \otimes \ket{u_j}_V$
-
-
-
-마지막으로 여기서 Inverse QPE를 시행하면 큐빗은 다음과 같이 변한다. 
-
-$\mbox{(c)} : \overset{r}{\underset{j=1}{\sum}}   (\sqrt{1-\frac{c^2}{\lambda_j^2}}\ket{0}_A + \frac{c}{\lambda_j} \ket{1}_A)\otimes   \ket{0}_R \otimes\alpha_j \ket{u_j}_V $
-
-첫번째 큐빗이 $\ket 1$이라면 세번째 큐빗은 $\sum_{j=1}^{r} c \frac{\alpha_j }{\lambda_j} \ket{u_j}_V $가 된다. 
-
-이는 다음과 같은 꼴이다. 
-
-$\sum_{j=1}^{r} c \frac{\alpha_j }{\lambda_j} \ket{u_j}_V =\frac{1}{\parallel A^{-1}\ket b \parallel}\sum \frac{\alpha_j}{\lambda_j} \ket{u_j}_V = \frac{A^{-1}\ket b}{\parallel A^{-1} \ket b \parallel} = \ket x$   ----- (3)
-
-즉, 세번째 큐빗이 선형방정식의 근이 된다. 
-
-물론 첫번째 큐빗이 1일때만 성립하므로 이 근이 다른 알고리즘에서 필요하다면 세번째 큐빗을 연결시켜 회로를 돌린다음 첫번째 큐빗이 1인지 확인함으로써 근을 이용할 수 있다. 만약 근의 값을 직접적으로 계산하고자 한다면 반복시행을 통해서 확률값을 추정 할 수 있다. 
 
 ## 3. Additional Topic
 
