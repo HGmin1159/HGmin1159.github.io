@@ -19,7 +19,7 @@ excerpt: Reproducing Kernel Hilbert Space
 
 그러나 1. 선형적 관계성을 가지지 않는 케이스, 2. 선형 가정된 모형과 현실 데이터의 오차, 3. 전체의 일부인 표본을 관찰하기에 생기는 오차의 세가지 문제를 해결하기 위한 목적으로, 기존의 선형적 모형을 비선형적 모형까지 확대하고자 하는 움직임이 활발하다.
 
- ![image-20210502102347528](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20210502102347528.png)
+ ![](/assets/img/post/2021-05-01/figure1.JPG)
 
 이러한 비선형적인 접근을 하기 위해 가장 많이 쓰이는 개념이 Reproducing Kernel Hilbert Space이다. 
 
