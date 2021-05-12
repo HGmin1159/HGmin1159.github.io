@@ -304,3 +304,6 @@ i 행렬을 모두 복원 한다면 GU가 모든 정보량을 보존한 행렬�
 
 지금까지 RKHS의 유클리드 공간에서의 표기법 및 그를 이용한 KPCA까지 구현을 진행해보았다. 다음 포스팅 에서는 Sliced Inverse Regression을 Nonlinear을 이용해서 진행해보자. 
 
+***
+1) Bing Li. 2018, Sufficient Dimension Reduction MEthods and Applications with R, Newyork, CRC Press
+
