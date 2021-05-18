@@ -205,20 +205,24 @@ $\mbox{subject to } \coor{f}{Bx}^t G_x^2 \coor{f}{Bx}$
  Continuous Kernel에서 가장 많이 쓰이는 커널은 Gaussian Kernel이고 Discrete kernel에서 가장 많이 쓰이는 커널은 Kroneckor Delta Kernel이다. 이를 이용해서 구현해보자. 
 
 ```python
+def stand(x) : return(np.matmul(x-np.apply_along_axis(np.mean,0,x),np.diag(np.apply_along_axis(np.var,0,x))))
 def matpower(mat,power,thre):
     eig = np.linalg.eig(mat)
     val = np.diag([np.real(i**power) if i >thre else 0 for i in eig[0]])
     vec = np.real(eig[1])
     return(np.matmul(np.matmul(vec,val),vec.T))
-def Gram_gaussian(data) : 
+
+def Gram_gaussian(data,comp) : 
     n = data.shape[0];p = data.shape[1] 
     U = np.matmul(data,data.T)
     M = np.outer(np.diag(U),np.ones(shape=(n,1)))
     J = np.outer(np.ones(shape=(n,1)),np.ones(shape=(n,1)))
     Q = np.identity(n)-J/n
     K = M+M.T-2*U
-    sigma = n*(n-1)/(np.sum(np.sqrt(K))-np.trace(np.sqrt(K)))/2
-    return(np.matmul(Q,np.exp(-(M+M.T-2*U)/sigma/sigma),Q))
+    sigma = (np.sum(np.sqrt(K))-np.trace(np.sqrt(K)))/n/(n-1)
+    gamma = comp/sigma/sigma
+    return(np.matmul(Q,np.exp(-K*gamma),Q))
+
 def Gram_discrete(data) :  
     n = data.shape[0]
     J = np.outer(np.ones(shape=(n,1)),np.ones(shape=(n,1)))
@@ -232,10 +236,18 @@ def Gram_discrete(data) :
 
 
 ```python
-def GSIR(y,X):
+def KPCA(X,comp,thre = 10**(-8)) :
+    X = stand(X)
+    G = Gram_gaussian(X,comp)
+    eig = np.linalg.eig(G)
+    V = np.real(eig[1])
+    U = np.matmul(matpower(G,-0.5,10**(-8)),V)
+    return(np.matmul(G,U))
+def GSIR(y,X,comp):
+    X = stand(X)
     n = X.shape[0];p = X.shape[1] 
     G_y = Gram_discrete(y)
-    G_X = Gram_gaussian(X)
+    G_X = Gram_gaussian(X,comp)
     Ginv = np.linalg.pinv(G_X)
     candi_matrix = np.matmul(np.matmul(np.matmul(np.matmul(np.matmul(Ginv,G_X),G_y),Ginv),G_X),Ginv)
     eig = np.linalg.eig(candi_matrix)
