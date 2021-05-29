@@ -11,7 +11,7 @@ excerpt: Non-linear Dimension Reduction - 2. Coordinate Representation and KPCA
 
 어떠한 Hilbert space H에 대해서 H 내부의 모든 원소가 다른 원소 집합들의 선형결합으로 표현될 수 있다면 그 다른 원소 집합을 일컬어 Complete Basis라고 한다. 
 
-즉 어떤 원소 $x \in H$에 대해 $x = \sum_{i=1}^{\infty} x_i e_i$로 표현이 될 시 $\{e_i\}$는 complete basis라고 말할 수 있다. 이때 $e_i$마다 곱해져 있는 스칼라 값 $x_i$를 coordinate(좌표)라고 한다.$\def\inn#1{\left<#1\right>}$
+즉 어떤 원소 $x \in H$에 대해 $x = \sum_{i=1}^{\infty} x_i e_i$로 표현이 될 시 $\{e_i\}$는 complete basis라고 말할 수 있다. 이때 $e_i$마다 곱해져 있는 스칼라 값 $x_i$를 coordinate(좌표)라고 한다.
 
 Complete basis는 힐버트 공간의 차원이 유한할 때는 반드시 존재하며, 무한할 지라도 우리가 관심있는 대부분의 공간은 이러한 Complete basis가 존재한다. 
 
@@ -20,16 +20,16 @@ Complete basis는 힐버트 공간의 차원이 유한할 때는 반드시 존�
 따라서 우리는 좀 더 느슨하게 정의된 베이시스를 이용하여, 함수조차도 좌표를 이용해서 표현할 수 있다.
 
 구체적으로 다음과 같이 정의하자.
-
+\def\coor#1#2{\left[ #1 \right]_{\mathfrak{#2}}}$\def\inn#1{\left<#1\right>}$
 > **Coordinate representation of Elements**
 >
 > For any $f \in H$ with spanning system $\{b_1,b_2,...b_m\}$, there is coordinates $(c_1,c_2,...,c_m)$ such that $f = c_1b_1+c_2b_2+...+c_m b_m$. 
 >
-> Let's denote basis as $b_{1:m}$ and coordinates $[f]_{\mathfrak{B}}=(c_1,c_2,...,c_m)^t$, then $f = [f]_{\mathfrak{B}}^tb_{1:m}$.
+> Let's denote basis as $b_{1:m}$ and coordinates $\coor{f}{B}=(c_1,c_2,...,c_m)^t$, then $f = \coor{f}{B}^t b_{1:m}$.
 
 베이시스를 유한개로 한정지은 것과 베이시스간 직교성은 없다는 것에 유의하자. 
 
-이 경우, 베이시스를 규정해 놓으면 $f$를 대표해서 $[f]_{\mathfrak{B}}$를 대신 사용할 수 있다. 
+이 경우, 베이시스를 규정해 놓으면 $f$를 대표해서 $\coor{f}{B}$를 대신 사용할 수 있다. 
 
 
 
@@ -41,7 +41,7 @@ For $f = \sum f_i k(\cdot,s_i)$ , $g = \sum g_i k(\cdot,s_i)$, the inner product
 
 > **Coordinate representation of Inner Product**
 >
-> $\inn{f,g}_{H} = \sum_i \sum_j ([f]_{\mathfrak{B}})_i ([g]_{\mathfrak{B}})_j k(s_i,s_j) =: [f]_{\mathfrak{B}}^t G_{\mathfrak{B}}[g]_{\mathfrak{B}}$
+> $\inn{f,g}_{H} = \sum_i \sum_j (\coor{f}{B})_i (\coor{g}{B})_j k(s_i,s_j) =: \coor{f}{B}^t G_{\mathfrak{B}}\coor{g}{B}$
 >
 > where $G_{\mathfrak{B}} = \{k(s_i,s_j)\}_{ij}$ and called as **Gram Matrix**
 
@@ -51,29 +51,29 @@ Gram Matrix는 basis가 되는 모든 커널들을 내적해서 표현한 행렬
 
 다음으로 힐버트 공간에서 정의되는 Linear Operator도 살펴보자. 
 
-Let $A: H_1 \rightarrow H_2$ be a linear operator where $H_1 = span(b_{1}^{(1)},b_{2}^{(1)},...,b_{n}^{(1)})$ and $H_2 = span(b_{1}^{(2)},b_{2}^{(2)},...,b_{m}^{(2)})$ , then
+Let $A: H_1 \rightarrow H_2$ be a linear operator where $H_1 = span(b_{1}^{(1)} ,b_{2}^{(1)} ,...,b_{n}^{(1)} )$ and $H_2 = span(b_{1}^{(2)} ,b_{2}^{(2)} ,...,b_{m}^{(2)} )$ , then
 
-$Af = A\sum_i ([f]_{\mathfrak{B}})_i b_i^{(1)}$
+$Af = A\sum_i (\coor{f}{B})_i b_i^{(1)}$
 
-​       $= \sum_i ([f]_{\mathfrak{B}})_iA b_i^{(1)} = \sum_i ([f]_{\mathfrak{B1}})_i \sum_j ([A b_i^{(1)}]_{\mathfrak{B2}})_j b_j^{(2)}$
+​       $= \sum_i (\coor{f}{B})_i A b_i^{(1)} = \sum_i (\coor{f}{B})_i \sum_j (\coor{A b_i^{(1)}}{B2})_j b_j^{(2)}$
 
-​       $= \sum_j [\sum_i ([f]_{\mathfrak{B1}})_i  ([A b_i^{(1)}]_{\mathfrak{B2}})_j] b_j^{(2)}$
+​       $= \sum_j [\sum_i (\coor{f}{B})_i  (\coor{A b_i^{(1)}}{B2})_j] b_j^{(2)}$
 
-여기서 가온데 항 $[\sum_i ([f]_{\mathfrak{B1}})_i  ([A b_i^{(1)}]_{\mathfrak{B2}})_j]$는 스칼라 값이다. 따라서 위는 아래와 같이 표기할 수 있다. 
+여기서 가온데 항 $[\sum_i (\coor{f}{B})_i  (\coor{A b_i^{(1)}}{B2})_j]$는 스칼라 값이다. 따라서 위는 아래와 같이 표기할 수 있다. 
 
-​      $=: \sum_j ([A f]_{\mathfrak{B2}})_j b_j^{(2)}$
+​      $=: \sum_j (\coor{A_f}{B2})_j b_j^{(2)}$
 
-​      $=: [Af]_{\mathfrak{B2}} b^{(2)}$
+​      $=: \coor{Af}{B2} b^{(2)}$
 
-여기서 $[\sum_i ([f]_{\mathfrak{B1}})_i  ([A b_i^{(1)}]_{\mathfrak{B2}})_j]$ 항은 다시 행렬의 형태로 표현 될 수 있다. 즉 다음과 같다.
+여기서 $[\sum_i (\coor{f}{B1})_i  (\coor{A b_i^{(1)}}{B2})_j]$ 항은 다시 행렬의 형태로 표현 될 수 있다. 즉 다음과 같다.
 
-$[Af]_{\mathfrak{B2}} = \left[ \begin{array}{c} [\sum_i ([f]_{\mathfrak{B1}})_i  ([A b_i^{(1)}]_{\mathfrak{B2}})_1] \\\ [\sum_i ([f]_{\mathfrak{B1}})_i  ([A b_i^{(1)}]_{\mathfrak{B2}})_2] \\\ \vdots \\\ [\sum_i ([f]_{\mathfrak{B1}})_i  ([A b_i^{(1)}]_{\mathfrak{B2}})_n] \end{array} \right] $
+$\coor{Af}{B2} = \left[ \begin{array}{c} [\sum_i (\coor{f}{B1})_i  (\coor{A b_i^{(1)}}{B2})_1] \\\ [\sum_i (\coor{f}{B1})_i  (\coor{A b_i^{(1)}}{B2})_2] \\\ \vdots \\\ [\sum_i (\coor{f}{B1})_i  (\coor{A b_i^{(1)}}{B2})_n] \end{array} \right] $
 
-​              $= \left[ \begin{array}{cccc}   ([A b_1^{(1)}]_{\mathfrak{B2}})_1 &([A b_2^{(1)}]_{\mathfrak{B2}})_1 & \cdots &([A b_m^{(1)}]_{\mathfrak{B2}})_1 \\\ ([A b_1^{(1)}]_{\mathfrak{B2}})_2 &([A b_2^{(1)}]_{\mathfrak{B2}})_2 & \cdots &([A b_m^{(1)}]_{\mathfrak{B2}})_2 \\\ \vdots & \vdots & \ddots & \vdots \\\ ([A b_1^{(1)}]_{\mathfrak{B2}})_n &([A b_2^{(1)}]_{\mathfrak{B2}})_n & \cdots &([A b_m^{(1)}]_{\mathfrak{B2}})_n \end{array} \right]\left[ \begin{array}{c} ([f]_{\mathfrak{B1}})_1  \\\ ([f]_{\mathfrak{B1}})_2\\\ \vdots \\\ ([f]_{\mathfrak{B1}})_m\end{array} \right]$
+​              $= \left[ \begin{array}{cccc}   (\coor{A b_i^{(1)}}{B2})_1 &(\coor{A b_i^{(1)}}{B2})_1 & \cdots &(\coor{A b_i^{(1)}}{B2})_1 \\\ (\coor{A b_i^{(1)}}{B2})_2 &(\coor{A b_i^{(1)}}{B2})_2 & \cdots &(\coor{A b_i^{(1)}}{B2})_2 \\\ \vdots & \vdots & \ddots & \vdots \\\ (\coor{A b_i^{(1)}}{B2})_n &(\coor{A b_i^{(1)}}{B2})_n & \cdots &(\coor{A b_i^{(1)}}{B2})_n \end{array} \right]\left[ \begin{array}{c} (\coor{f}{B1})_1  \\\ (\coor{f}{B1})_2\\\ \vdots \\\ (\coor{f}{B1})_m\end{array} \right]$
 
-​              $=: (_{\mathfrak{B2}}[A]_{\mathfrak{B1}}) [f]_{\mathfrak{B1}}$
+​              $=: (_{\mathfrak{B2}}\coor{A}{B1}) \coor{f}{B1}$
 
-즉 오퍼레이터 A는 A를 두 베이시스를 통해 평가한 원소가 들어가게 된다. $\{A_{ij}\} =([Ab_i^{(1)}]_{\mathfrak{B2}})_j$
+즉 오퍼레이터 A는 A를 두 베이시스를 통해 평가한 원소가 들어가게 된다. $\{A_{ij}\} =(\coor{A b_i^{(1)}}{B2})_j$
 
 추가적으로 만약 베이시스들이 orthonormal basis라면 $\{A_{ij}\} = \inn{Ab_i^{(1)},b_j^{(2)}}$가 된다. 
 
@@ -81,7 +81,7 @@ $[Af]_{\mathfrak{B2}} = \left[ \begin{array}{c} [\sum_i ([f]_{\mathfrak{B1}})_i 
 
 > **Coordinate representation of Linear Operator**
 >
-> $Af = (_{\mathfrak{B2}}[A]_\mathfrak{B1}) [f]_{\mathfrak{B1}}b^{(1)}$
+> $Af = (_{\mathfrak{B2}}\coor{A}{B1}) \coor{f}{B1} b^{(1)}$
 >
 > where $G_{\mathfrak{B}} = \{\inn{s_i,s_j}\}_{ij}$ and called as **Gram Matrix**
 
