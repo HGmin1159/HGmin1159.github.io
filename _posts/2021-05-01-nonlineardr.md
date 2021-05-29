@@ -99,7 +99,7 @@ $\inn{af+bg,h} = \sum \sum (a \alpha_i+b\beta_i)\gamma_i k(s_i,s_j) = a\sum \sum
 
 Let $f = \sum \alpha_i k_i$
 
-$\inn{f,f} = \sum \sum \alpha_i \alpha_j k(s_i,s_j) = \Alpha^t K \Alpha > 0$ if $A\neq 0$ 
+$\inn{f,f} = \sum \sum \alpha_i \alpha_j k(s_i,s_j) = A^t K A > 0$ if $A\neq 0$ 
 
 이는 $k$의 positive definite 성질을 그대로 활용한 것이다. 
 
