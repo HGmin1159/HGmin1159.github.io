@@ -20,7 +20,7 @@ Complete basis는 힐버트 공간의 차원이 유한할 때는 반드시 존�
 따라서 우리는 좀 더 느슨하게 정의된 베이시스를 이용하여, 함수조차도 좌표를 이용해서 표현할 수 있다.
 
 구체적으로 다음과 같이 정의하자.
-\def\coor#1#2{\left[ #1 \right]_{\mathfrak{#2}}}$\def\inn#1{\left<#1\right>}$
+$\def\coor#1#2{\left[ #1 \right]_{\mathfrak{#2}}}$\def\inn#1{\left<#1\right>}$
 > **Coordinate representation of Elements**
 >
 > For any $f \in H$ with spanning system $\{b_1,b_2,...b_m\}$, there is coordinates $(c_1,c_2,...,c_m)$ such that $f = c_1b_1+c_2b_2+...+c_m b_m$. 
