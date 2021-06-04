@@ -11,7 +11,7 @@ excerpt: Generalized version of SDR and SIR
 
 앞선 Linear SDR 분석에서는 다음과 같은 프레임워크를 취했다. 
 
-Assumption of **conditional independence** given linear SDR space: There is a $\beta \mbox{ such that }Y \perp X \mid \beta^t X$ which means for the linear connection between Y and X,  $\beta^t X$ is sufficient to estimate Y 
+Assumption of **conditional independence** given linear SDR space: There is a $\beta \mbox{ such that }Y \perp X \mid \beta^t X$ which means for the linear connection between Y and X,  $$\beta^t X$$ is sufficient to estimate Y 
 
  **SDR space** : $S =span(\beta;X \perp Y \mid \beta^tX)$
 
