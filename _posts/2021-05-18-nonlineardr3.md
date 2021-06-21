@@ -272,3 +272,8 @@ KPCA는 Y값의 정보가 있지 않은 반면 GSIR에는 Y값이라는 정보�
 
 
 
+
+***
+
+"Sufficient Dimension Reduction - Methods and Applications with R" Bing Li
+
