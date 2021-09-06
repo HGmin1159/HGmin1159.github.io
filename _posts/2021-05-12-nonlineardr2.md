@@ -42,7 +42,7 @@ For $f = \sum f_i k(\cdot,s_i)$, $g = \sum g_i k(\cdot,s_i)$, the inner product 
 
 > **Coordinate representation of Inner Product**
 >
-> $$\inn{f,g}_{H} = \sum_i \sum_j (\coor{f}{B})_i (\coor{g}{B})_j k(s_i,s_j) =: \coor{f}{B}^t G_{\mathfrak{B}}\coor{g}{B}$$
+> $\inn{f,g}_{H} = \sum_i \sum_j (\coor{f}{B})_i (\coor{g}{B})_j k(s_i,s_j) =: \coor{f}{B}^t G_{\mathfrak{B}}\coor{g}{B}$
 >
 > where $G_{\mathfrak{B}} = \{k(s_i,s_j)\}_{ij}$ and called as **Gram Matrix**
 
