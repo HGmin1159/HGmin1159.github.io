@@ -2,7 +2,7 @@
 title: \[양자 데이터 사이언스\] HHL Algorithm과 Hybrid HHL Algorithm
 categories: [Quantum]
 tags: [양자컴퓨터]
-excerpt: Quantum Linear Solver
+excerpt: 양자컴퓨터를 이용한 행렬 계산법
 ---
 
 $\def\ket#1{\mid #1 \rangle}$
