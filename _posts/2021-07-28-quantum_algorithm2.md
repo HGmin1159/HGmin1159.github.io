@@ -1,5 +1,5 @@
 ---
-title: \[양자 알고리즘\]HHL Algorithm과 Hybrid HHL Algorithm
+title: \[양자 데이터 사이언스\] HHL Algorithm과 Hybrid HHL Algorithm
 categories: [Quantum]
 tags: [양자컴퓨터]
 excerpt: Quantum Linear Solver
