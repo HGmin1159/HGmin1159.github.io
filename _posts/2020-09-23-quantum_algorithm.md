@@ -2,7 +2,7 @@
 title: \[양자컴퓨터 기초 이론\] 5. 그로버 알고리즘과 도이치 알고리즘
 categories: [Quantum]
 tags: [양자컴퓨터]
-excerpt: 오라클과 확률 증폭 및 Grover, Deutsch's Algorithm
+excerpt: 오라클, 확률증폭, Grover's Algorithm과 Deutsch's Algorithm
 ---
 
 $\def\ket#1{\mid #1 \rangle}$
