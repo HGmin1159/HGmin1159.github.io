@@ -5,6 +5,16 @@ tags: [양자컴퓨터]
 excerpt: 오라클, 확률증폭, Grover's Algorithm과 Deutsch's Algorithm
 ---
 
+양자컴퓨터의 기본 바로가기 
+- [양자컴퓨터 기초이론 1. 양자컴퓨터와 큐빗](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-10-quantum1.md)  
+- [양자컴퓨터 기초이론 2. 양자게이트와 회로](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-11-quantum2.md)  
+- [양자컴퓨터 기초이론 3. 복소수의 기본과 푸리에 변환](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-17-quantum3.md)  
+- [양자컴퓨터 기초이론 4. 양자 페이즈 추정과 내적 계산법](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-24-quantum4.md)  
+- [양자컴퓨터 기초이론 5. 그로버 알고리즘과 도이치 알고리즘](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-24-quantum_algorithm.md)  
+- [양자컴퓨터 기초이론 6. 키스킷 시작하기](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-24-qiskit1.md)  
+- [양자컴퓨터 기초이론 7. RSA 보안체계와 양자프로토콜](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-24-qiskit2.md)  
+
+
 $\def\ket#1{\mid #1 \rangle}$
 
 ## 1. 양자 알고리즘의 기본
