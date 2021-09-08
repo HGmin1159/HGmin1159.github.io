@@ -1,6 +1,6 @@
 ---
 title: \[생성모델\] Basic Generative Model Part1 - Basic Preview of Generative Model and AutoEncoder
-categories: [generative]
+categories: [others]
 tags: [Generative Model, Autoencoder]
 excerpt: 생성모델의 개념과 Basic Autoencoder
 ---
