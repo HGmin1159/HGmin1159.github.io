@@ -6,12 +6,6 @@ excerpt: Introduction and fundametals of Quantum computer
 
 ---
 
-양자컴퓨터의 기본 바로가기 
-- [Basic of Quantum Computer Part 1.Concept of Quantum Computer and Qubit](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-10-quantum1.md)  
-- [Basic of Quantum Computer Part 2.Quantum Gate and Basic Circuit](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-11-quantum2.md)  
-- [Basic of Quantum Computer Part 3.Complex Number and Quantum Fourier Transformation](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-17-quantum3.md)  
-- [Basic of Quantum Computer Part 4.Quantum Phase Estimation and Quantum Distance Measure](https://github.com/HGmin1159/HGmin1159.github.io/edit/master/_posts/2020-08-24-quantum4.md)  
-
 ## Chapter 1. Concepts of Quantum Computer and Qubits
 
 ## 0. What is Quantum Computer?
