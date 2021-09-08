@@ -2,7 +2,7 @@
 title: \[Basic of Quantum Computer\] Part 2.Quantum Gate and Basic Circuit
 categories: [Quantum]
 tags: [Quantum computer]
-excerpt: 
+excerpt: basic component of the quantum computer.
 ---
 
 양자컴퓨터의 기본 바로가기 
