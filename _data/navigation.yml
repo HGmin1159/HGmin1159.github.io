@@ -4,16 +4,14 @@ main:
     url: /all/
   - title: "Recent Posts"
     url: /recent/
+  - title: "Quantum Computing"
+    url: /categories/quantum/
   - title: "Dimension Reduction"
     url: /categories/Dimension/
   - title: "Bayesian Statistics"
     url: /categories/Bayesian/
   - title: "Convex Optimization"
     url: /categories/Convex/
-  - title: "Quantum Computing"
-    url: /categories/quantum/
-  - title: "Generative Model"
-    url: /categories/generative/
   - title: "Others"
     url: /categories/others/
   # - title: "Sitemap"
