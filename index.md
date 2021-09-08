@@ -6,18 +6,11 @@ header:
   image: /assets/img/main.png
 
 feature_row1:
-  - image_path: /assets/img/convex.png
-    alt: "placeholder image 1"
-    title: "Convex Optimization"
-    excerpt: '최적화 이론'
-    url: "/categories/Convex/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/bayes.png
-    alt: "placeholder image 2"
-    title: "Bayesian Statistics"
-    excerpt: '베이즈 통계학'
-    url: "categories/Bayesian/"
+  - image_path: /assets/img/quantum.png
+    alt: "placeholder image 4"
+    title: "Quantum Computing"
+    excerpt: '양자컴퓨터 알고리즘'
+    url: "/categories/quantum/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/dimension.png
@@ -27,19 +20,19 @@ feature_row1:
     url: "categories/Dimension/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row2:
-  - image_path: /assets/img/quantum.png
-    alt: "placeholder image 4"
-    title: "Quantum Computing"
-    excerpt: '양자컴퓨터 알고리즘'
-    url: "/categories/quantum/"
+  - image_path: /assets/img/convex.png
+    alt: "placeholder image 1"
+    title: "Convex Optimization"
+    excerpt: '최적화 이론'
+    url: "/categories/Convex/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/img/generative.png
-    alt: "placeholder image 5"
-    title: "Generative Model"
-    excerpt: '생성 모델'
-    url: "/categories/generative/"
+feature_row2:
+  - image_path: /assets/img/bayes.png
+    alt: "placeholder image 2"
+    title: "Bayesian Statistics"
+    excerpt: '베이즈 통계학'
+    url: "categories/Bayesian/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/others.png
