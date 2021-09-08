@@ -1,6 +1,6 @@
 ---
 title: \[생성모델\] Basic Generative Model Part2 - Regulized AutoEncoder
-categories: [generative]
+categories: [others]
 tags: [Generative Model, Autoencoder]
 excerpt: Sparse Autoencoder, Denoising AutoEncoder, Contractive Autoencoderㅇ
 ---
