@@ -1,5 +1,5 @@
 ---
-title: \[Basic of the Quantum Computer\] Part 4. Quantum Phase Estimation and Quantum Distance Measure
+title: \[Basic of Quantum Computer\] Part 5. Quantum Phase Estimation and Quantum Distance Measure
 categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Quantum Phase Estimation와 Quantum State Distance Measure
