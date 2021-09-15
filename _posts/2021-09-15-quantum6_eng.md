@@ -1,5 +1,5 @@
 ---
-title: \[Basic of Quantum Computer\] Part 6. Start Qiskit
+title: \[Basic of Quantum Computer\] Part 6. Starting Qiskit
 categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Installing qiskit and constructing basic circuit Qiskit
