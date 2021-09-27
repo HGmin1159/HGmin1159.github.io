@@ -4,7 +4,8 @@ categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Quantum Phase Estimation와 Quantum State Distance Measure
 sidebar:
-  Nav: "Quantum_eng"
+  - title: "Basic of Quantum Computing"
+    nav: Quantum_eng
 ---
 
 $\def\ket#1{\mid #1 \rangle} \def\inner#1{\langle #1 \rangle}$
