@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 
 header:
-  image: /assets/img/main.png
+  image: /assets/img/mintwall.png
 
 feature_row1:
   - image_path: /assets/img/avatar.jpg
