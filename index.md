@@ -16,7 +16,7 @@ feature_row1:
   - url: "/assets/SOP.pdf"
     btn_label: "My SOP"
     btn_class: "btn--primary"
-    excerpt: '**Intersting Field** <br> - Dimensionality Reduction <br> - Quantum Machine Learning <br> - Thoery of Optimization'
+    excerpt: '**Field of Interest** <br> - Dimensionality Reduction <br> - Quantum Machine Learning <br> - Thoery of Optimization'
 feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
