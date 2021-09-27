@@ -17,6 +17,7 @@ feature_row1:
     btn_label: "My SOP"
     btn_class: "btn--primary"
     excerpt: '**Field of Interest** <br> - Dimensionality Reduction <br> - Quantum Machine Learning <br> - Thoery of Optimization'
+
 feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
@@ -39,6 +40,7 @@ feature_row2:
     url: "/categories/Convex/"
     btn_label: "Read More"
     btn_class: "btn--primary"
+    
 feature_row3:
   - image_path: /assets/img/bayes.png
     alt: "placeholder image 2"
