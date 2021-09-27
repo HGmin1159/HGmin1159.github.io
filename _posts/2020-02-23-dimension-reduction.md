@@ -3,6 +3,12 @@ title: \[차원축소\]PCA,MCA,FA를 활용한 차원축소
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: PCA,MCA,FA에 대한 대략적인 설명
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 # 1. 차원 축소란?
