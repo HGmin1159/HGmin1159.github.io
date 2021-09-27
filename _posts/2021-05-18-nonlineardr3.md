@@ -3,6 +3,12 @@ title: \[Dimension Reduction\] Non-linear Dimension Reduction - 3. Central sigma
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Generalized version of SDR and SIR
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 # Non-linear Dimension Reduction - 3. Central Class for Nonlinear SDR and GSIR
