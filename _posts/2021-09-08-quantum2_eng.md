@@ -3,6 +3,8 @@ title: \[Basic of Quantum Computer\] Part 2.Quantum Gate and Basic Circuit
 categories: [Quantum]
 tags: [Quantum computer]
 excerpt: basic component of the quantum computer.
+sidebar:
+  Nav:"Quantum_eng"
 ---
 
 
