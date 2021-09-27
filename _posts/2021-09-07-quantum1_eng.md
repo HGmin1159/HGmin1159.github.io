@@ -4,7 +4,7 @@ categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Introduction and fundametals of Quantum computer
 sidebar:
-  nav: Quantum_eng
+  - nav: Quantum_eng
 ---
 
 ## Chapter 1. Concepts of Quantum Computer and Qubits
