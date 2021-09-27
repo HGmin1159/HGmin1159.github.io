@@ -3,6 +3,12 @@ title: \[차원축소\] 군집분석(Cluster Analysis)
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: 분할기법,계층기법,밀도기법에 대한 설명
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 ## 1. 군집분석이란?
