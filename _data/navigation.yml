@@ -17,7 +17,26 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   
-  
+
+Bayesian:
+  - title: "Bayesian Statistics"
+    children:
+      - title: "Gibbs Sampling to Normal Prior Regression (KOR)"
+        url: /bayesian/gibbs-reg-normal-prior/
+      - title: " Variational Inference (KOR)"
+        url: /bayesian/vi/
+      - title: "GMM Implementation (KOR)"
+        url: /bayesian/GMM/
+      - title: "Markov Chain Monte Carlo (KOR)"
+        url: /bayesian/MCMC/
+      - title: "VI Implementation (KOR)"
+        url: /bayesian/VI-practive/
+      - title: "FMM Implementation (KOR)"
+        url: /bayesian/finitemixture/
+      - title: "Hidden Markov Chain (KOR)"
+        url: /bayesian/HMM/
+
+
 Quantum_eng:
   - title: "Part 1. Concept of Quantum Computer and Qubit"
     url: /quantum/quantum1_eng/
