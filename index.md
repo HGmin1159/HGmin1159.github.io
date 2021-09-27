@@ -8,7 +8,7 @@ header:
 feature_row1:
   - image_path: /assets/img/avatar.jpg
     alt: "placeholder image 4"
-    title: "Quantum Computing"
+    title: "H.G Min"
     excerpt: '\bold{Education} <br> Yonsei University,Korea Mar.14-present <br> - M.A. expected in Applied Statitstics <br> - B.A. in Applied Statistics'
     
     url: "/assets/CV.pdf"
