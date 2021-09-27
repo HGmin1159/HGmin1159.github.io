@@ -3,6 +3,12 @@ title: \[베이즈통계\]베이지안 인퍼런스 - Finite Mixture Model 실�
 categories: [Bayesian]
 tags: [베이지안,Bayesian]
 excerpt: Finite Mixture Model를 이해하고 구현해보기
+sidebar:
+  - title: "Bayesian Statistics"
+    image: /assets/img/bayes.png
+    image_alt: "image"
+    nav: Bayesian
+    author_profile: False
 ---
 
 다음과 같은 모델을 가정하자
