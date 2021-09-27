@@ -8,7 +8,7 @@ sidebar:
     image: /assets/img/bayes.png
     image_alt: "image"
     nav: Bayesian
-    author_profile: False
+author_profile: False
 ---
 
 다음과 같은 모델을 가정하자
