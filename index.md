@@ -12,6 +12,7 @@ feature_row1:
   - url: "/assets/CV.pdf"
     btn_label: "My CV"
     btn_class: "btn--primary"
+    excerpt: '**Yonsei University** <br> - **Master\'s degree** expected in Applied Statitstics <br> - **Bachelor\'s degree** in Applied Statistics <br> - **Consulting Assistant** in Institute of Statistics and DataScience'
   - url: "/assets/SOP.pdf"
     btn_label: "My SOP"
     btn_class: "btn--primary"
