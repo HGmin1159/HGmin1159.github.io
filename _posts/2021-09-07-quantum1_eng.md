@@ -3,7 +3,8 @@ title: \[Basic of Quantum Computer \]Part 1.Concept of Quantum Computer and Qubi
 categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Introduction and fundametals of Quantum computer
-
+sidebar:
+  Nav:"Quantum_eng"
 ---
 
 ## Chapter 1. Concepts of Quantum Computer and Qubits
