@@ -3,6 +3,12 @@ title: \[차원축소\] Kernel Trick을 활용한 알고리즘 (Polynomial Regre
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Kernel Trick을 활용한 High-Dimension Mapping Computing의 간소화
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 
