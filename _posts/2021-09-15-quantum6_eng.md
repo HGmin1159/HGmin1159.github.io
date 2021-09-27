@@ -5,7 +5,10 @@ tags: [Quantum Computer]
 excerpt: Installing qiskit and constructing basic circuit Qiskit
 sidebar:
   - title: "Basic of Quantum Computing"
+    image: /assets/img/quantum.png
+    image_alt: "image"
     nav: Quantum_eng
+author_profile: False
 ---
 
 ## 0. What is Qiskit?
