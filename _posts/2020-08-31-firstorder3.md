@@ -3,6 +3,12 @@ title: \[최적화\] First-Order Method part3 - Proximal Gradient Descent
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Proximal Gradient Descent and Stochastic Gradient Descent
+sidebar:
+  - title: "Convex Optimization"
+    image: /assets/img/convex.png
+    image_alt: "image"
+    nav: Convex_Optimization
+author_profile: False
 ---
 
  $\def\m#1{\mbox{#1}} \def\t#1{\textbf{#1}}$
