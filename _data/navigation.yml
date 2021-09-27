@@ -18,7 +18,7 @@ main:
   #   url: /sitemap/
   
   
-Quantum_eng:
+quantum_eng:
   - title: "Part 1.Concept of Quantum Computer and Qubit"
     url: /quantum/quantum1_eng/
   - title: "Part 2.Quantum Gate and Basic Circuit"
