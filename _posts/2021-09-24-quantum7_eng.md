@@ -4,7 +4,8 @@ categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Comparing security of quantum and classical computer and Quantum protocol
 sidebar:
-  Nav: "Quantum_eng"
+  - title: "Basic of Quantum Computing"
+    nav: Quantum_eng
 ---
 
 $\def\ket#1{\mid #1\rangle}$
