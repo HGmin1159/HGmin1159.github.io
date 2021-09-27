@@ -9,8 +9,6 @@ feature_row1:
   - image_path: /assets/img/avatar.jpg
     alt: "placeholder image 4"
     title: "H.G Min"
-    excerpt: 'Yonsei University,Korea Mar.14-present <br> - M.A. expected in Applied Statitstics <br> - B.A. in Applied Statistics'
-    
   - url: "/assets/CV.pdf"
     btn_label: "CV"
     btn_class: "btn--primary"
@@ -18,6 +16,7 @@ feature_row1:
   - url: "/assets/SOP.pdf"
     btn_label: "SOP"
     btn_class: "btn--primary"
+    excerpt: 'Intersting Field <br> - Dimension Reduction <br> - Quantum Computing <br> - Optimization'
 feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
