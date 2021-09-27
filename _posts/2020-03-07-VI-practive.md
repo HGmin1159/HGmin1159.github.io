@@ -3,6 +3,12 @@ title: \[베이즈통계\]베이지안 인퍼런스 - VI 공식 적용 및 실�
 categories: [Bayesian]
 tags: [베이지안,Bayesian]
 excerpt: VI를 통해 다중 회귀분석 적용해보기  
+sidebar:
+  - title: "Bayesian Statistics"
+    image: /assets/img/bayes.png
+    image_alt: "image"
+    nav: Bayesian
+    author_profile: False
 ---
 문제의 가정은 다음과 같다.  
 
