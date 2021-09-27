@@ -2,8 +2,6 @@
 main:
   - title: "All Posts"
     url: /all/
-  - title: "Recent Posts"
-    url: /recent/
   - title: "Quantum Computing"
     url: /categories/quantum/
   - title: "Dimension Reduction"
