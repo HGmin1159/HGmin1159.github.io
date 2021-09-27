@@ -2,7 +2,9 @@
 title: \[Basic of Quantum Computer\] Part 3.Complex Number and Quantum Fourier Transformation
 categories: [Quantum]
 tags: [Quantum computer]
-excerpt: Basic concept of the complex number and its usage in the quantum computer
+excerpt: Basic concept of the complex number and its usage in the quantum computer]
+sidebar:
+  Nav:"Quantum_eng"
 ---
 
 
