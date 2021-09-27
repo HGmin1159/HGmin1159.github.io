@@ -3,6 +3,12 @@ title: \[Dimension Reduction\] Non-linear Dimension Reduction - 1. Reproducing K
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Reproducing Kernel Hilbert Space
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 # Nonlinear Dimension Reduction - 1. Reproducing Kernel Hilbert Space
