@@ -34,4 +34,38 @@ Quantum_eng:
   - title: "Part 7. Security System of the Quantum computer and Quantum Protocol"
     url: /quantum/quantum7_eng/
   
-  
+Dimension:
+  - title: "Basic Dimension Reduction"
+    children:
+      - title: "PCA,MCA,FA (KOR)"
+        url: /dimension/dimension-reduction/
+      - title: "Cluster Analysis (KOR)"
+        url: /dimension/cluster-analysis/
+      - title: "Bregman Divergence (KOR)"
+        url: /dimension/mf1/
+      - title: "Non Negative Matrix Factorization (KOR)"
+        url: /dimension/mf2/
+      - title: "Independent Components Analysis (KOR)"
+        url: /dimension/mf3/
+      - title: "Kernel Trick (KOR)"
+        url: /dimension/kernel-method/
+      - title: "Advanced PCA (KOR)"
+        url: /dimension/mf4/
+  - title: "Sufficient Dimension Reduction"
+    children:
+      - title: "Part 1.Introduction and Sliced Inverse Regression"
+        url: /dimension/sdr1/
+      - title: "Part 2.Advanced algorithm of SIR"
+        url: /dimension/sdr2/
+      - title: "Part 3.Contour Regression and Directional Regression"
+        url: /dimension/sdr3/
+      - title: "Part 4.Central Mean Space"
+        url: /dimension/sdr4/
+  - title: "Non-linear Dimension Reduction"
+    children:
+      - title: "Part 1.Reproducing Kernel Hilbert Space"
+        url: /dimension/nonlineardr/
+      - title: "Part 2.Coordinate Representation and KPCA"
+        url:  /dimension/nonlineardr2/
+      - title: "Part 3.Central sigma-Field for Nonlinear SDR and GSIR"
+        url: /dimension/nonlineardr3/
