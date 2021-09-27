@@ -4,7 +4,8 @@ categories: [Quantum]
 tags: [Quantum computer]
 excerpt: Basic concept of the complex number and its usage in the quantum computer]
 sidebar:
-    Nav: "Quantum_eng"
+  - title: "Basic of Quantum Computing"
+    nav: Quantum_eng
 ---
 
 
