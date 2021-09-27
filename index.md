@@ -14,7 +14,6 @@ feature_row1:
   - url: "/assets/CV.pdf"
     btn_label: "CV"
     btn_class: "btn--primary"
-    
     excerpt: 'Yonsei University,Korea Mar.14-present <br> - M.A. expected in Applied Statitstics <br> - B.A. in Applied Statistics'
   - url: "/assets/SOP.pdf"
     btn_label: "SOP"
