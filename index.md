@@ -9,7 +9,7 @@ feature_row1:
   - image_path: /assets/img/avatar.jpg
     alt: "placeholder image 4"
     title: "Quantum Computing"
-    excerpt: ' "Yonsei University,Korea Mar.14-present <br> - M.A. expected in applied statitstics <br> - B.A. in applied statistics"'
+    excerpt: 'Yonsei University,Korea Mar.14-present <br> - M.A. expected in Applied Statitstics <br> - B.A. in Applied Statistics'
     url: "/assets/CV.pdf"
     btn_label: "CV"
     btn_class: "btn--primary"
