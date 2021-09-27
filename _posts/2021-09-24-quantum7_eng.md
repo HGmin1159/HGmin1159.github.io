@@ -1,5 +1,5 @@
 ---
-title: \[Basic of Quantum Computer\] Security System of the Quantum computer and Quantum Protocol
+title: \[Basic of Quantum Computer\] Part 7. Security System of the Quantum computer and Quantum Protocol
 categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Comparing security of quantum and classical computer and Quantum protocol
