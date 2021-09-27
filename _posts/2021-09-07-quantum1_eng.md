@@ -4,7 +4,9 @@ categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Introduction and fundametals of Quantum computer
 sidebar:
-  - nav: Quantum_eng
+  - title: "Basic of Quantum Computing"
+    nav: Quantum_eng
+author_profile: True
 ---
 
 ## Chapter 1. Concepts of Quantum Computer and Qubits
