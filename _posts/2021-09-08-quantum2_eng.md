@@ -5,7 +5,10 @@ tags: [Quantum computer]
 excerpt: basic component of the quantum computer.
 sidebar:
   - title: "Basic of Quantum Computing"
+    image: /assets/img/quantum.png
+    image_alt: "image"
     nav: Quantum_eng
+author_profile: False
 ---
 
 
