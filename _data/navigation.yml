@@ -77,7 +77,7 @@ Convex_Optimization:
         url: /convex/Duality1/
       - title: "Application of Duality (KOR)"
         url: /convex/Duality2/
-      - title: "Review of Optimization Algorithm"
+      - title: "Review of Optimization Algorithm (KOR)"
         url: /convex/convex_review/
   - title: "First Order Method"
     children:
@@ -89,5 +89,5 @@ Convex_Optimization:
         url: /convex/firstorder3/
       - title: "Example 1. Gradient Descent (KOR)"
         url: /convex/Gradient-Descent/
-      - title: "Example 2. Subgradient method"
+      - title: "Example 2. Subgradient method (KOR)"
         url: /convex/Subgradient-Method/
