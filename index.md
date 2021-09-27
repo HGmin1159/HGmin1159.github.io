@@ -16,7 +16,7 @@ feature_row1:
   - url: "/assets/SOP.pdf"
     btn_label: "My SOP"
     btn_class: "btn--primary"
-    excerpt: 'Intersting Field <br> - Dimension Reduction <br> - Quantum Computing <br> - Optimization'
+    excerpt: '**Intersting Field** <br> - Dimension Reduction <br> - Quantum Computing <br> - Optimization'
 feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
