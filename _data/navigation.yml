@@ -19,21 +19,19 @@ main:
   
   
 Quantum_eng:
-  -title: "Basic of Quantum Computing"
-   children:
-       - title: "Part 1.Concept of Quantum Computer and Qubit"
-         url: /quantum/quantum1_eng/
-       - title: "Part 2.Quantum Gate and Basic Circuit"
-         url: /quantum/quantum2_eng/
-       - title: "Part 3.Complex Number and Quantum Fourier Transformation"
-         url: /quantum/quantum3_eng/
-       - title: "Part 4. Grover’s Algorithm, Deutsch’s Algorithm"
-         url: /quantum/quantum4_eng/
-       - title: "Part 5. Quantum Phase Estimation and Quantum Distance Measure"
-         url: /quantum/quantum5_eng/
-       - title: "Part 6. Starting Qiskit"
-         url: /quantum/quantum6_eng/
-       - title: "Part 7. Security System of the Quantum computer and Quantum Protocol"
-         url: /quantum/quantum7_eng/
+  - title: "Part 1.Concept of Quantum Computer and Qubit"
+    url: /quantum/quantum1_eng/
+  - title: "Part 2.Quantum Gate and Basic Circuit"
+    url: /quantum/quantum2_eng/
+  - title: "Part 3.Complex Number and Quantum Fourier Transformation"
+    url: /quantum/quantum3_eng/
+  - title: "Part 4. Grover’s Algorithm, Deutsch’s Algorithm"
+    url: /quantum/quantum4_eng/
+  - title: "Part 5. Quantum Phase Estimation and Quantum Distance Measure"
+    url: /quantum/quantum5_eng/
+  - title: "Part 6. Starting Qiskit"
+    url: /quantum/quantum6_eng/
+  - title: "Part 7. Security System of the Quantum computer and Quantum Protocol"
+    url: /quantum/quantum7_eng/
   
   
