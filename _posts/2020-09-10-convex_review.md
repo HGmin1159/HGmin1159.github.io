@@ -3,6 +3,12 @@ title: \[최적화\] Convex Optimization의 최적화 기법 총정리
 categories: [Convex]
 tags: [Convex Optizmiation]
 excerpt: Gradient Descent와 Newtown's Method의 정리
+sidebar:
+  - title: "Convex Optimization"
+    image: /assets/img/convex.png
+    image_alt: "image"
+    nav: Convex_Optimization
+author_profile: False
 ---
 
  $\def\m#1{\mbox{#1}} \def\t#1{\textbf{#1}}$
