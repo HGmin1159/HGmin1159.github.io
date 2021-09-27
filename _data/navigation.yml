@@ -19,11 +19,11 @@ main:
   
   
 Quantum_eng:
-  - title: "Part 1.Concept of Quantum Computer and Qubit"
+  - title: "Part 1. Concept of Quantum Computer and Qubit"
     url: /quantum/quantum1_eng/
-  - title: "Part 2.Quantum Gate and Basic Circuit"
+  - title: "Part 2. Quantum Gate and Basic Circuit"
     url: /quantum/quantum2_eng/
-  - title: "Part 3.Complex Number and Quantum Fourier Transformation"
+  - title: "Part 3. Complex Number and Quantum Fourier Transformation"
     url: /quantum/quantum3_eng/
   - title: "Part 4. Grover’s Algorithm, Deutsch’s Algorithm"
     url: /quantum/quantum4_eng/
@@ -53,19 +53,41 @@ Dimension:
         url: /dimension/mf4/
   - title: "Sufficient Dimension Reduction"
     children:
-      - title: "Part 1.Introduction and Sliced Inverse Regression"
+      - title: "Part 1. Introduction and Sliced Inverse Regression"
         url: /dimension/sdr1/
-      - title: "Part 2.Advanced algorithm of SIR"
+      - title: "Part 2. Advanced algorithm of SIR"
         url: /dimension/sdr2/
-      - title: "Part 3.Contour Regression and Directional Regression"
+      - title: "Part 3. Contour Regression and Directional Regression"
         url: /dimension/sdr3/
-      - title: "Part 4.Central Mean Space"
+      - title: "Part 4. Central Mean Space"
         url: /dimension/sdr4/
   - title: "Non-linear Dimension Reduction"
     children:
-      - title: "Part 1.Reproducing Kernel Hilbert Space (KOR)"
+      - title: "Part 1. Reproducing Kernel Hilbert Space (KOR)"
         url: /dimension/nonlineardr/
-      - title: "Part 2.Coordinate Representation and KPCA (KOR)"
+      - title: "Part 2. Coordinate Representation and KPCA (KOR)"
         url:  /dimension/nonlineardr2/
-      - title: "Part 3.Central sigma-Field for Nonlinear SDR and GSIR (KOR)"
+      - title: "Part 3. Central sigma-Field for Nonlinear SDR and GSIR (KOR)"
         url: /dimension/nonlineardr3/
+        
+Convex_Optimization:
+  - title: "General Concepts"
+    children:
+      - title: "Convexity and Duality (KOR)"
+        url: /convex/Duality1/
+      - title: "Application of Duality (KOR)"
+        url: /convex/Duality2/
+      - title: "Review of Optimization Algorithm"
+        url: /convex/convex_review/
+  - title: "First Order Method"
+    children:
+      - title: "Part 1. Gradient Descent (KOR)"
+        url: /convex/firstorder1/
+      - title: "Part 2. Subgradient Method (KOR)"
+        url:  /convex/firstorder2/
+      - title: "Part 3. Proximal Gradient Descent (KOR)"
+        url: /convex/firstorder3/
+      - title: "Example 1. Gradient Descent (KOR)"
+        url: /convex/Gradient-Descent/
+      - title: "Example 2. Subgradient method"
+        url: /convex/Subgradient-Method/
