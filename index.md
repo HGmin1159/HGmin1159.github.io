@@ -10,11 +10,11 @@ feature_row1:
     alt: "placeholder image 4"
     title: "H.G Min"
   - url: "/assets/CV.pdf"
-    btn_label: "CV"
+    btn_label: "My CV"
     btn_class: "btn--primary"
     excerpt: 'Yonsei University,Korea Mar.14-present <br> - M.A. expected in Applied Statitstics <br> - B.A. in Applied Statistics'
   - url: "/assets/SOP.pdf"
-    btn_label: "SOP"
+    btn_label: "My SOP"
     btn_class: "btn--primary"
     excerpt: 'Intersting Field <br> - Dimension Reduction <br> - Quantum Computing <br> - Optimization'
 feature_row2:
