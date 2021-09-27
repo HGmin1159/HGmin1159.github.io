@@ -4,7 +4,8 @@ categories: [Quantum]
 tags: [Quantum computer]
 excerpt: Oracle, Amplitude Amplification, Grover's and Deutsch's Algorithm
 sidebar:
-  Nav: "Quantum_eng"
+  - title: "Basic of Quantum Computing"
+    nav: Quantum_eng
 ---
 
 $\def\ket#1{\mid #1 \rangle}$
