@@ -3,6 +3,8 @@ title: \[Basic of Quantum Computer\] Part 4. Grover's Algorithm, Deutsch's Algor
 categories: [Quantum]
 tags: [Quantum computer]
 excerpt: Oracle, Amplitude Amplification, Grover's and Deutsch's Algorithm
+sidebar:
+  Nav: "Quantum_eng"
 ---
 
 $\def\ket#1{\mid #1 \rangle}$
