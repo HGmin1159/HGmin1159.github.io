@@ -10,7 +10,6 @@ sidebar:
     nav: Convex_Optimization
 author_profile: False
 ---
----
 
 ```python
 import numpy as np
