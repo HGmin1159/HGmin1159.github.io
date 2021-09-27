@@ -63,9 +63,9 @@ Dimension:
         url: /dimension/sdr4/
   - title: "Non-linear Dimension Reduction"
     children:
-      - title: "Part 1.Reproducing Kernel Hilbert Space"
+      - title: "Part 1.Reproducing Kernel Hilbert Space (KOR)"
         url: /dimension/nonlineardr/
-      - title: "Part 2.Coordinate Representation and KPCA"
+      - title: "Part 2.Coordinate Representation and KPCA (KOR)"
         url:  /dimension/nonlineardr2/
-      - title: "Part 3.Central sigma-Field for Nonlinear SDR and GSIR"
+      - title: "Part 3.Central sigma-Field for Nonlinear SDR and GSIR (KOR)"
         url: /dimension/nonlineardr3/
