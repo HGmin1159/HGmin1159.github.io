@@ -6,6 +6,14 @@ header:
   image: /assets/img/main.png
 
 feature_row1:
+  - image_path: /assets/img/avatar.jpg
+    alt: "placeholder image 4"
+    title: "Quantum Computing"
+    excerpt: ' "Yonsei University,Korea Mar.14-present <br> - M.A. expected in applied statitstics <br> - B.A. in applied statistics"'
+    url: "/assets/CV.pdf"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
     title: "Quantum Computing"
@@ -27,7 +35,7 @@ feature_row1:
     url: "/categories/Convex/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row2:
+feature_row3:
   - image_path: /assets/img/bayes.png
     alt: "placeholder image 2"
     title: "Bayesian Statistics"
@@ -49,5 +57,6 @@ feature_row2:
 ---
 
 {% include feature_row id="intro" type="center"%}
-{% include feature_row id="feature_row1" %}
+{% include feature_row id="feature_row1" type="left"%}
 {% include feature_row id="feature_row2" %}
+{% include feature_row id="feature_row3" %}
