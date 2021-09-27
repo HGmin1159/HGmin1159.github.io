@@ -3,6 +3,13 @@ title: \[구현\] Convex Optimization 실습2. - Subgradient method
 categories: [Convex]
 tags: [Convex Optizmiation]
 excerpt: L1 penalty에 대한 subgradient method 실습
+sidebar:
+  - title: "Convex Optimization"
+    image: /assets/img/convex.png
+    image_alt: "image"
+    nav: Convex_Optimization
+author_profile: False
+---
 ---
 
 ```python
