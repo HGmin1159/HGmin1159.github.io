@@ -12,7 +12,7 @@ feature_row1:
   - url: "/assets/CV.pdf"
     btn_label: "My CV"
     btn_class: "btn--primary"
-    excerpt: '**Yonsei University**,Korea Mar.14-present <br> - **M.A.** expected in Applied Statitstics <br> - **B.A.** in Applied Statistics <br> '
+    excerpt: '**Yonsei University** <br> - **M.A.** expected in Applied Statitstics <br> - **B.A.** in Applied Statistics <br> '
   - url: "/assets/SOP.pdf"
     btn_label: "My SOP"
     btn_class: "btn--primary"
