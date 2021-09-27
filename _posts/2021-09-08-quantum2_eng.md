@@ -4,7 +4,7 @@ categories: [Quantum]
 tags: [Quantum computer]
 excerpt: basic component of the quantum computer.
 sidebar:
-  Nav:"Quantum_eng"
+  Nav: "Quantum_eng"
 ---
 
 
