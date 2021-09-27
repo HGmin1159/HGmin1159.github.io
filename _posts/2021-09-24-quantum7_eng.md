@@ -5,7 +5,10 @@ tags: [Quantum Computer]
 excerpt: Comparing security of quantum and classical computer and Quantum protocol
 sidebar:
   - title: "Basic of Quantum Computing"
+    image: /assets/img/quantum.png
+    image_alt: "image"
     nav: Quantum_eng
+author_profile: False
 ---
 
 $\def\ket#1{\mid #1\rangle}$
