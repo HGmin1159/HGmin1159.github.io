@@ -11,7 +11,10 @@ feature_row1:
     title: "Quantum Computing"
     excerpt: ' "Yonsei University,Korea Mar.14-present <br> - M.A. expected in applied statitstics <br> - B.A. in applied statistics"'
     url: "/assets/CV.pdf"
-    btn_label: "Read More"
+    btn_label: "CV"
+    btn_class: "btn--primary"
+    url: "/assets/SOP.pdf"
+    btn_label: "SOP"
     btn_class: "btn--primary"
 feature_row2:
   - image_path: /assets/img/quantum.png
