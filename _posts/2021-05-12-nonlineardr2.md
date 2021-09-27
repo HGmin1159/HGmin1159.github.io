@@ -3,6 +3,12 @@ title: \[Dimension Reduction\] Non-linear Dimension Reduction - 2. Coordinate Re
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Non-linear Dimension Reduction - 2. Coordinate Representation and KPCA
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 # Non-linear Dimension Reduction - 2. Coordinate Representation and KPCA
