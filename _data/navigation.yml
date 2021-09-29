@@ -20,7 +20,7 @@ Bayesian:
   - title: "Bayesian Statistics"
     children:
       - title: "Gibbs Sampling to Normal Prior Regression (KOR)"
-        url: /bayesian/gibbs-reg-normal-prior/
+        url: /bayesian/gibbs_reg_normal_prior/
       - title: " Variational Inference (KOR)"
         url: /bayesian/vi/
       - title: "GMM Implementation (KOR)"
@@ -55,9 +55,9 @@ Dimension:
   - title: "Basic Dimension Reduction"
     children:
       - title: "PCA,MCA,FA (KOR)"
-        url: /dimension/dimension-reduction/
+        url: /dimension/dimension_reduction/
       - title: "Cluster Analysis (KOR)"
-        url: /dimension/cluster-analysis/
+        url: /dimension/cluster_analysis/
       - title: "Bregman Divergence (KOR)"
         url: /dimension/mf1/
       - title: "Non Negative Matrix Factorization (KOR)"
@@ -65,7 +65,7 @@ Dimension:
       - title: "Independent Components Analysis (KOR)"
         url: /dimension/mf3/
       - title: "Kernel Trick (KOR)"
-        url: /dimension/kernel-method/
+        url: /dimension/kernel_method/
       - title: "Advanced PCA (KOR)"
         url: /dimension/mf4/
   - title: "Sufficient Dimension Reduction"
@@ -105,9 +105,9 @@ Convex_Optimization:
       - title: "Part 3. Proximal Gradient Descent (KOR)"
         url: /convex/firstorder3/
       - title: "Example 1. Gradient Descent (KOR)"
-        url: /convex/Gradient-Descent/
+        url: /convex/Gradient_Descent/
       - title: "Example 2. Subgradient method (KOR)"
-        url: /convex/Subgradient-Method/
+        url: /convex/Subgradient_Method/
    - title: "Second Order Method"
      children:
       - title: "Part 1. Newton Rapshon Method"
