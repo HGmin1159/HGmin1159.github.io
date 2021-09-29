@@ -112,3 +112,4 @@ Convex_Optimization:
      children:
       - title: "Part 1. Newton Rapshon Method"
         url: /convex/secondorder1/
+      - title: "Part 2. Barrier Method"
