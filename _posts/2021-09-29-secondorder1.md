@@ -1,5 +1,5 @@
 ---
-title: \[최적화\] Scond-Order Method part1 - Newton-Rapshon Method
+title: \[최적화\] Scond-Order Method part1 - Newton Rapshon Method
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Newton Rapshon Method
