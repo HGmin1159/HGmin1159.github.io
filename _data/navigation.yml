@@ -108,3 +108,7 @@ Convex_Optimization:
         url: /convex/Gradient-Descent/
       - title: "Example 2. Subgradient method (KOR)"
         url: /convex/Subgradient-Method/
+   - title: "Second Order Method"
+    children:
+      - title: "Part 1. Newton Rapshon Method"
+        url: /convex/secondorder1/
