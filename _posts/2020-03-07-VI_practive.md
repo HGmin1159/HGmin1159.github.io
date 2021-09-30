@@ -1,5 +1,5 @@
 ---
-title: \[베이즈통계\]베이지안 인퍼런스 - VI 공식 적용 및 실습
+title: \[Bayesian Inference\] VI 공식 적용 및 실습
 categories: [Bayesian]
 tags: [베이지안,Bayesian]
 excerpt: VI를 통해 다중 회귀분석 적용해보기  
