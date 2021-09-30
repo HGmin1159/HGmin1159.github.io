@@ -1,5 +1,5 @@
 ---
-title: \[차원축소\]PCA,MCA,FA를 활용한 차원축소
+title: \[Basic Dimension Reduction\] PCA,MCA,FA를 활용한 차원축소
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: PCA,MCA,FA에 대한 대략적인 설명
