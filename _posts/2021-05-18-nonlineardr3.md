@@ -1,5 +1,5 @@
 ---
-title: \[Dimension Reduction\] Non-linear Dimension Reduction - 3. Central sigma-Field for Nonlinear SDR and GSIR
+title: \[Non-linear Dimension Reduction\] Part 3. Central sigma-Field for Nonlinear SDR and GSIR
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Generalized version of SDR and SIR
