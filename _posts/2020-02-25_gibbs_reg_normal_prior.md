@@ -1,5 +1,5 @@
 ---
-title: \[베이즈통계\] 베이지안 인퍼런스 - Gibbs Sampling to Normal Prior Regression
+title: \[Bayesian Inference\] Gibbs Sampling to Normal Prior Regression
 categories: [Bayesian]
 tags: [베이지안,Bayesian]
 excerpt: 정규 사전분포를 가진 회귀분석에 대한 깁스 샘플링
