@@ -1,5 +1,5 @@
 ---
-title: \[최적화\] Convex Optimization의 최적화 기법 총정리
+title: \[Theory of Optimization\] Convex Optimization의 최적화 기법 총정리
 categories: [Convex]
 tags: [Convex Optizmiation]
 excerpt: Gradient Descent와 Newtown's Method의 정리
