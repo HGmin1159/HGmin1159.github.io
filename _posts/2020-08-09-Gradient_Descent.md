@@ -1,5 +1,5 @@
 ---
-title: \[구현\] Convex Optimization 실습1.Basic Gradient Descent 
+title: \[First-Order Method\] Example1. Basic Gradient Descent 
 categories: [Convex]
 tags: [Convex Optizmiation]
 excerpt: OLS에 대한 Gradient Descent 실습
