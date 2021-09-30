@@ -1,5 +1,5 @@
 ---
-title: \[차원축소\] 군집분석(Cluster Analysis)
+title: \[Basic Dimension Reduction\] 군집분석(Cluster Analysis)
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: 분할기법,계층기법,밀도기법에 대한 설명
