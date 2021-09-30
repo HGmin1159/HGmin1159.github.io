@@ -1,5 +1,5 @@
 ---
-title: \[Dimension Reduction\] Non-linear Dimension Reduction - 2. Coordinate Representation and KPCA
+title: \[Non-linear Dimension Reduction\] Part 2. Coordinate Representation and KPCA
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Non-linear Dimension Reduction - 2. Coordinate Representation and KPCA
