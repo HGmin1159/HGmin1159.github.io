@@ -1,5 +1,5 @@
 ---
-title: \[Dimension Reduction\] Non-linear Dimension Reduction - 1. Reproducing Kernel Hilbert Space
+title: \[Non-linear Dimension Reduction\] Part 1. Reproducing Kernel Hilbert Space
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Reproducing Kernel Hilbert Space
