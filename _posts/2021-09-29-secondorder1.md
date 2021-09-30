@@ -1,5 +1,5 @@
 ---
-title: \[Scond-Order Method\] art1 - Newton Rapshon Method
+title: \[Scond-Order Method\] Part1 - Newton Rapshon Method
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Newton Rapshon Method
