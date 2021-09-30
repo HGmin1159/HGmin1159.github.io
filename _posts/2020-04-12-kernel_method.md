@@ -1,5 +1,5 @@
 ---
-title: \[차원축소\] Kernel Trick을 활용한 알고리즘 (Polynomial Regression,Kernel PCA,SVM)
+title: \[Basic Dimension Reduction\] Kernel Trick을 활용한 알고리즘 (Polynomial Regression,Kernel PCA,SVM)
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Kernel Trick을 활용한 High-Dimension Mapping Computing의 간소화
