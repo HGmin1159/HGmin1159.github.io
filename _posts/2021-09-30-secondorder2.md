@@ -1,5 +1,5 @@
 ---
-title: \[Scond-Order Method\] part1 - Barrier Method
+title: \[Scond-Order Method\] Part2 - Barrier Method
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Solving convex problem with inequality constraints
