@@ -151,7 +151,7 @@ So the problem takes $O(\log \frac{1}{\epsilon})$ step.
 
 If we see the form of barrier problem, then we can notice that it is a combination of constraints function and objective functions. The ratio of the combination is determined by a constant t. If t is small, then the affects of constraints function dominates an entire shape of function. If t is large, then the affects of objective function dominates the shape of function. Let's see below figure.
 
-![figure1](/asset/img/post/2021-09-30/figure1.png)
+![figure1](/assets/img/post/2021-09-30/figure1.png)
 
  The left function is polynomial function$(f(x) = x^2(x-2)(x+1))$ and the right function is log barrier function for simple constraint ($-\log x ;x>0$).
 
@@ -163,7 +163,7 @@ $$
 $$
  The shapes of the log barrier problems which take t as 0.1,1,10 are as follow
 
-![figure2](/asset/img/post/2021-09-30/figure2.png)
+![figure2](/assets/img/post/2021-09-30/figure2.png)
 
 The red line indicates optima. As use can see that, all function success to make shape restricted to positive value. At the small t, the shape resembles the constraint function. At the large t, the shape resembles original function which satisfies the constraint. 
 
