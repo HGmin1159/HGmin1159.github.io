@@ -1,5 +1,5 @@
 ---
-title: \[Scond-Order Method\] Part2 - Barrier Method
+title: \[Scond-Order Method\] part1 - Barrier Method
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Solving convex problem with inequality constraints
@@ -144,3 +144,27 @@ If the $\mu$ and $t^{(0)}$ are too small, then we have to take more 2,3 step and
 > The barrier method after k centering steps satisfies $f(x^{(k)}) -f^{\ast} \leq \frac{m}{\mu^{k}t^{(0)}}$
 
 So the problem takes $O(\log \frac{1}{\epsilon})$ step.
+
+
+
+# 3. Visualization of Barrier Method
+
+If we see the form of barrier problem, then we can notice that it is a combination of constraints function and objective functions. The ratio of the combination is determined by a constant t. If t is small, then the affects of constraints function dominates an entire shape of function. If t is large, then the affects of objective function dominates the shape of function. Let's see below figure.
+
+![figure1](/asset/img/posts/2020-09-30/figure1.png)
+
+ The left function is polynomial function$(f(x) = x^2(x-2)(x+1))$ and the right function is log barrier function for simple constraint ($-\log x ;x>0$).
+
+ So the problem would be as follow.
+$$
+\underset{x}{\min} \quad  x^2(x-2)(x+1)
+\\
+\mbox{ s.t. }\quad \quad  x>0
+$$
+ The shapes of the log barrier problems which take t as 0.1,1,10 are as follow
+
+![figure2](/asset/img/posts/2020-09-30/figure2.png)
+
+The red line indicates optima. As use can see that, all function success to make shape restricted to positive value. At the small t, the shape resembles the constraint function. At the large t, the shape resembles original function which satisfies the constraint. 
+
+ But if you carefully see the plot, then you can notice that optima value represented by red line are different along t. Specifically, each red line indicates 1.76,1.49,1.44. The true optima is 1.443. So we can observe that as t increases, the barrier optima reaches to true optima.
