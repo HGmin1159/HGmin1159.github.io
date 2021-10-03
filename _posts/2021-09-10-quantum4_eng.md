@@ -278,5 +278,5 @@ Therefore  $[ \underset{x \in \{0,1\}^n}{\sum} (-1)^{f(x)}] = 0$ and the probabi
  Until now, we have seen the Grover's algorithm and Deutsch's algorithm. This two algorithms are two of the most simple algorithms and good examples to understand how the probability transfer and the amplitude amplification works.
 
 ***
- Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
