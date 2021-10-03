@@ -286,3 +286,6 @@ where $b_j = \frac{1}{\sqrt{N}}\underset{k=0}{\overset{N-1}{\sum}} a_k e^{\frac{
 
  By using the Quantum Fourier Transformation, we can generate various algorithms. In the next posting, we'll gonna see these algorithms.
 
+***
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
