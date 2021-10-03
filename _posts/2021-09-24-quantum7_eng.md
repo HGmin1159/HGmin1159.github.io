@@ -4,7 +4,8 @@ categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Comparing security of quantum and classical computer and Quantum protocol
 sidebar:
-  - image: /assets/img/quantum.png
+  - title: "Quantum Computing"
+    image: /assets/img/quantum.png
     image_alt: "image"
     nav: Quantum_eng
 author_profile: False
