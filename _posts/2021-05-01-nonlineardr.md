@@ -288,9 +288,7 @@ To be more concrete proof, let $$f = M_{xy}g$$, then $$\inn{M_{xy}g,M_{xy}g}= \n
 
 여기까지 Reproducing Kernel Hilbert Space에 대해서 알아봤다. 다음 포스팅에서는 이 오퍼레이터들의 행렬폼을 알아본후 kernel PCA에 대해서 다루려고 한다.
 
+
 ***
-
-1) Vern L. Paulesen and Mrinal Raghupathi. 2016. An introduction to the Theory of Reproducing Kernel Hilbert Spaces, Cambridge, Cambridge University Press.
-
-2) Bing Li. 2018, Sufficient Dimension Reduction MEthods and Applications with R, Newyork, CRC Press
-
+Debnath, L.& Mikusinski, P. (2005). Introduction to Hilbert Space.London,UK.:Elsevire Academic Press   
+Li, B. (2018). Sufficient Dimension Reduction. Boca Raton,FL:CRC Press.
