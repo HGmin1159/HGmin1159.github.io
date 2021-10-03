@@ -4,7 +4,7 @@ categories: [Quantum]
 tags: [Quantum Computer]
 excerpt: Quantum Phase Estimation와 Quantum State Distance Measure
 sidebar:
-  - title: "Basic of Quantum Computing"
+  - title: "Quantum Computing"
     image: /assets/img/quantum.png
     image_alt: "image"
     nav: Quantum_eng
