@@ -943,3 +943,7 @@ plt.show()
 
 
 결과를 보니 잘 수렴한 것을 알 수 있다. 
+
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Tibshirani,R. "Subgradient Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
