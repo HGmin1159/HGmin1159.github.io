@@ -266,9 +266,5 @@ $H^{\otimes n}(\frac{1}{\sqrt {2^n}}\underset{x \in \{0,1\}^n}{\sum} (-1)^{f(x)}
 
 
 ***
-
-참고자료
-
-\[Dancing with Qubits\](2019),Robert S. Sutor
-
-\[Quantum Computing for Everyone\](2019), Chris Bernhardt
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
