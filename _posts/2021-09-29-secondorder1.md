@@ -149,4 +149,4 @@ We can say three important properties with it.
 
  ***
  Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
- Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
+ Tibshirani,R. "Newton's Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
