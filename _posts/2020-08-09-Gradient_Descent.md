@@ -1625,5 +1625,5 @@ plt.show()
 - 더 많은 변수, 더 많은 데이터, 더 먼 시작점에서 어떤 식으로 변할 지에 대해서 생각해보자. 
 
  ***
- Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Gradient Descent" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
