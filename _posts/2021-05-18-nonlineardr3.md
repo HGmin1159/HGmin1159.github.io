@@ -280,6 +280,5 @@ KPCA는 Y값의 정보가 있지 않은 반면 GSIR에는 Y값이라는 정보�
 
 
 ***
-
-"Sufficient Dimension Reduction - Methods and Applications with R" Bing Li
-
+Debnath, L.& Mikusinski, P. (2005). Introduction to Hilbert Space.London,UK.:Elsevire Academic Press   
+Li, B. (2018). Sufficient Dimension Reduction. Boca Raton,FL:CRC Press.
