@@ -147,3 +147,6 @@ We can say three important properties with it.
 - If the hessian matrix of the problem is structured such as diagonal or block diagonal matrix, then the step complexity could be improved much more. 
 - Or, we can estimate the hessian matrix rather than exactly derive. It is called as Quasi- Newton's method.
 
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
