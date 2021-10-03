@@ -287,5 +287,5 @@ We can see that state of third qubit is exactly same with state of first random 
 
 
 ***
- Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
