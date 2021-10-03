@@ -306,6 +306,6 @@ SGD : $x^+ = x -t \nabla f_{i_k}(x)$
 이들은 머신러닝 이론의 기본이 되는 기법들이니 잘 공부해두자. 
 
  ***
- Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Proximal Gradient Descent" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
 
