@@ -340,5 +340,5 @@ Feasible Set C는 일반적으로 행렬을 통한 Linear System 안에 있다�
 여기까지 Subgradient-Method에 대해 살펴보았다. 다음 포스팅에서는 이 보다 좀 더 잘쓰이는 알고리즘으로 보이는 Proximal Gradient Descent를 살펴보자. 
 
  ***
- Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Subgradient Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
