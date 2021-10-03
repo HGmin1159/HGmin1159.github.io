@@ -232,5 +232,5 @@ Backtracking Line Search를 보면 처음 근과 시작점이 멀때는 스텝�
 다음 포스팅에서는 이 단점들을 해결해주는 Sub-gradient Method에 대해서 다뤄보자.
 
  ***
- Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Gradient Descent" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
