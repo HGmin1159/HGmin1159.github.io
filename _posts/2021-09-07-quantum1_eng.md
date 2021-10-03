@@ -200,5 +200,5 @@ $\mid \psi\rangle = \cos \theta \mid 0 \rangle + \sin \theta e^{i \phi} \mid 1 \
  Until now, we see the concepts of the quantum computer and basic unit qubit. In the next posting, we'll gonna see the basic quantum gates and circuits.
 
 ***
- Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
