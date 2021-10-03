@@ -219,5 +219,7 @@ plot_bloch_vector_spherical(coords) # Bloch Vector with spherical coordinates
 ![](/assets/img/post/2021-03-11/figure4.PNG)
 
 
-
+***
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
  
