@@ -148,5 +148,5 @@ We can say three important properties with it.
 - Or, we can estimate the hessian matrix rather than exactly derive. It is called as Quasi- Newton's method.
 
  ***
- Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Newton's Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
