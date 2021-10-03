@@ -1623,3 +1623,7 @@ plt.show()
 ## 보완점  
 - Objective Function을 SSE가 아니라 MSE를 쓴다면 결국 분산의 차이에 대한 보정이 들어가서 스케일링 없이도 어느정도 가속화가 될것으로 생각된다. 
 - 더 많은 변수, 더 많은 데이터, 더 먼 시작점에서 어떤 식으로 변할 지에 대해서 생각해보자. 
+
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Tibshirani,R. "Gradient Descent" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
