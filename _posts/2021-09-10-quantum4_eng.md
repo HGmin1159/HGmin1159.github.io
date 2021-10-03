@@ -4,7 +4,7 @@ categories: [Quantum]
 tags: [Quantum computer]
 excerpt: Oracle, Amplitude Amplification, Grover's and Deutsch's Algorithm
 sidebar:
-  - title: "Basic of Quantum Computing"
+  - title: "Quantum Computing"
     image: /assets/img/quantum.png
     image_alt: "image"
     nav: Quantum_eng
