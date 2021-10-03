@@ -482,3 +482,6 @@ $g_i(x) \equiv 0 , h_j(x) \equiv 0 \quad \forall i,j $
 
 쉽게말해 국소적으로 $O(\log 1/\epsilon)$ 보다는 빠르고 $O(\log \log 1/\epsilon)$보다는 느리다고 말할 수 있다. 
 
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Tibshirani,R. Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
