@@ -210,5 +210,5 @@ Let's see the result of this circuit mathematically.
  We have seem the basic components of the quantum computer. But as mentioned above, to make more complicated circuits, we have to understand the phase and fourier transformation. Therefore, in the next posting, we'll gonna see this part. 
 
 ***
- Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt
+ Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
