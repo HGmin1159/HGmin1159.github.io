@@ -168,3 +168,9 @@ $$
 The red line indicates optima. As use can see that, all function success to make shape restricted to positive value. At the small t, the shape resembles the constraint function. At the large t, the shape resembles original function which satisfies the constraint. 
 
  But if you carefully see the plot, then you can notice that optima value represented by red line are different along t. Specifically, each red line indicates 1.76,1.49,1.44. The true optima is 1.443. So we can observe that as t increases, the barrier optima reaches to true optima.
+ 
+ 
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press
+ Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
+
