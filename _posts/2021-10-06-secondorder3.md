@@ -145,4 +145,8 @@ By using two techniques, we can implement interior point method as follow
 > 6. Repeat 2~5 and stop if $\eta^+ \leq \epsilon$ and $ (\parallel r_{prim}\parallel_2^2 + \parallel r_{dual} \parallel_2^2)^{1/2} \leq \epsilon$
 
 
+ 
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
+ Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
 
