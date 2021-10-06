@@ -122,3 +122,5 @@ Convex_Optimization:
         url: /convex/secondorder1/
       - title: "Part 2. Barrier Method"
         url: /convex/secondorder2/
+      - title: "Part 3. Primal-Dual Interior Point Method"
+        url: /convex/secondorder3/
