@@ -52,8 +52,12 @@ Quantum_eng:
         url: /quantum/quantum6_eng/
       - title: "Part 7. Security System of the Quantum computer and Quantum Protocol"
         url: /quantum/quantum7_eng/
+  - title: "Quantum Data Science"
+    children:
       - title: "Part 1. Introduction to Quantum Theory"
         url: /quantum/quantumml1/
+      - title: "Part 2. Quantum Information Encoding Methods"
+        url: /quantum/quantumml2/
   
 Dimension:
   - title: "Basic Dimension Reduction"
