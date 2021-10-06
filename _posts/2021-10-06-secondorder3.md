@@ -127,7 +127,7 @@ The value $\eta$ is called as a surrogate duality gap. However, it is only theor
 
 When using interior point method, we have to use backtracking line search to guarantee feasibility as follow.
 
->  start with $s_{\max} \leq 1$$ (; s_{\max} = \min \{1, \min\{-u_i/ \nabla u_i : \nabla u_i <0\})$
+>  start with $s_{\max} \leq 1$ $(; s_{\max} = \min \{1, \min\{-u_i/ \nabla u_i : \nabla u_i <0\})$
 >
 > - This will makes $u_i+s_{\max}\nabla u_i >0$ (Dual feasibility)
 >
