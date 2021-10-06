@@ -22,16 +22,21 @@ By using Gradient Descent or Newton Raphson Method, We can solve unconstrained c
 
 
 Assume following canonical convex optimization problem. 
+
 $$
 \underset{x}{ \min} f(x) \\ \mbox{ s.t. } \begin{cases}h_i(x)\leq 0 , i=1,2,...,m \\ Ax =b \end{cases}
 $$
+
 For the problem, we'll gonna define $\phi(x) = - \underset{i=1}{\overset{m}{\sum}} \log ( -h_i (x))$ which is called as **log barrier function**. For it, domain of $\phi(x)$ is $\{x : h_i(x)<0\}$ which is strictly feasible set. Therefore, strong duality which means that the gab between primal and dual is zero holds for the problem by Slater's condition.
 
 When we directly inject the constraints to problem, then it becomes as follow
+
 $$
 \underset{x}{\min} f(x) + \underset{i=1}{\overset{m}{\sum}} I_{\{h_i(x) \leq 0 \}}(x)
 $$
+
  Because the indicator functions can not be differentiable, so we can use the log barrier function instead.
+ 
 $$
 \underset{x}{\min} f(x) - \frac{1}{t} \underset{i=1}{\overset{m}{\sum}} \log ( -h_i (x))
 $$
@@ -39,13 +44,10 @@ $$
 
 Let's compare them. 
 
-> $\underset{i=1}{\overset{m}{\sum}} I_{\{h_i(x) \leq 0 \}}(x)$ would be infinity if one of the $h_i(x)$ becomes positive
->
-> $-\frac{1}{t} \underset{i=1}{\overset{m}{\sum}} \log ( -h_i (x))$would be close to infinity if one of the $h_i(x)$ goes to zero
->
-> $\underset{i=1}{\overset{m}{\sum}} I_{\{h_i(x) \leq 0 \}}(x)$ would be zero if all of the $h_i(x)$ are negative
->
-> $-\frac{1}{t} \underset{i=1}{\overset{m}{\sum}} \log ( -h_i (x))$would be $\frac{c}{t}$ if all of the $h_i(x)$ are negative and become zero as $t$ increases
+- $\underset{i=1}{\overset{m}{\sum}} I_{\{h_i(x) \leq 0 \}}(x)$ would be infinity if one of the $h_i(x)$ becomes positive
+- $-\frac{1}{t} \underset{i=1}{\overset{m}{\sum}} \log ( -h_i (x))$would be close to infinity if one of the $h_i(x)$ goes to zero
+- $\underset{i=1}{\overset{m}{\sum}} I_{\{h_i(x) \leq 0 \}}(x)$ would be zero if all of the $h_i(x)$ are negative
+- $-\frac{1}{t} \underset{i=1}{\overset{m}{\sum}} \log ( -h_i (x))$would be $\frac{c}{t}$ if all of the $h_i(x)$ are negative and become zero as $t$ increases
 
 Because two functions work in the similar way, so with delicate handling with t, we can substitute it.
 
@@ -53,11 +55,9 @@ Because two functions work in the similar way, so with delicate handling with t,
 
 For the log barrier function, we can get derivatives as follow. 
 
-$\phi (x) = -\underset{i=1}{\overset{m}{\sum}} \log (- h_i(x))$
-
-$$\nabla \phi (x) = -\underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i(x)}\nabla h_i(x))$$
-
-$\nabla^2 \phi (x) = \underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i^2(x)}\nabla h_i(x)\nabla h_i(x)^t -\underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i (x)}\nabla^2 h_i(x)$
+- $\phi (x) = -\underset{i=1}{\overset{m}{\sum}} \log (- h_i(x))$
+- $\nabla \phi (x) = -\underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i(x)}\nabla h_i(x))$
+- $\nabla^2 \phi (x) = \underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i^2(x)}\nabla h_i(x)\nabla h_i(x)^t -\underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i (x)}\nabla^2 h_i(x)$
 
 
 
@@ -66,9 +66,11 @@ $\nabla^2 \phi (x) = \underset{i=1}{\overset{m}{\sum}} \frac{1}{h_i^2(x)}\nabla 
  Even though we can use the log barrier method, two problems are different essentially. Therefore, we have to use special routine called as central path. 
 
   Assume barrier problem
+  
 $$
 \underset{x}{\min} t f(x) + \phi(x) \\ \mbox{ s. t. } Ax =b
 $$
+
 This problem highly depends on t. Therefore, we have to define the solution as $x^{\ast}(t)$.
 
 
@@ -156,11 +158,13 @@ If we see the form of barrier problem, then we can notice that it is a combinati
  The left function is polynomial function$(f(x) = x^2(x-2)(x+1))$ and the right function is log barrier function for simple constraint ($-\log x ;x>0$).
 
  So the problem would be as follow.
+ 
 $$
 \underset{x}{\min} \quad  x^2(x-2)(x+1)
 \\
 \mbox{ s.t. }\quad \quad  x>0
 $$
+
  The shapes of the log barrier problems which take t as 0.1,1,10 are as follow
 
 ![figure2](/assets/img/post/2021-09-30/figure2.png)
