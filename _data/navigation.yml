@@ -124,3 +124,5 @@ Convex_Optimization:
         url: /convex/secondorder2/
       - title: "Part 3. Primal-Dual Interior Point Method"
         url: /convex/secondorder3/
+      - title: "Part 4. Quasi Newton Method"
+        url: /convex/secondorder4/
