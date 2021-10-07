@@ -175,6 +175,9 @@ There is Hybrid version of BFGS method and DFP method. It estimate two of them l
 > $B^+ = (1-\phi) B^+_{BFGS}+\phi B^+_{DFP}$
 
 
+ 
+ ***
+ Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
+ Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
 
-***
 
