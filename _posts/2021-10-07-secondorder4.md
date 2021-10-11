@@ -15,11 +15,11 @@ $\def\array#1#2{\left[ \begin{array}{#1} #2 \end{array}\right]}$
 
 # 1. Quasi Newton Methods
 
- In the gradient descent method, there is a accelerating method called as Stochastic Gradient Descent. It lessen the computation in each steps by estimating gradients instead of fully calculating them.  Similarly, Quasi newton's method accelerate newton's method by estimating a hessian matrix. 
+ In the gradient descent method, there is an accelerating method called Stochastic Gradient Descent. It lessens the computation in each step by estimating gradients instead of fully calculating them.  Similarly, Quasi newton's method accelerates newton's method by estimating a hessian matrix. 
 
 
 
- There are several ways to estimate the hessian matrix, but all of them follows below routine. 
+ There are several ways to estimate the hessian matrix, but all of them follow the below routine. 
 
 > **Quasi Newton Method**
 >
@@ -29,7 +29,7 @@ $\def\array#1#2{\left[ \begin{array}{#1} #2 \end{array}\right]}$
 
 
 
-To estimate the hessian matrix, we can use following information. 
+To estimate the hessian matrix, we can use the following information. 
 
 > **Secant Equation**  
 >
@@ -39,7 +39,7 @@ Notice that $s = \nabla x = x^+-x$. And the secant equation is derived with the 
 
 
 
-Along with the secant equation, the hessian estimator have to satisfy following properties.
+Along with the secant equation, the hessian estimator has to satisfy following properties.
 
 > Hessian Estimate Condition
 >
@@ -50,7 +50,7 @@ Along with the secant equation, the hessian estimator have to satisfy following 
 
 
 
-Based on above equation, there are various algorithm to implement it. 
+Based on the above equation, there are various algorithms to implement it. 
 
  
 
@@ -58,17 +58,17 @@ Based on above equation, there are various algorithm to implement it.
 
 **SR1 Algorithm (Symmetric Rank - One)**
 
-SR1 algorithm use below iterative form.
+SR1 algorithm uses below iterative form.
 
 - $B^+ = B + a u u^t$  ($a$ is scalar and $u$ is vector)
 
-If we multiply s on both sides, we can get following form. 
+If we multiply s on both sides, we can get the following form. 
 
 $B^+ s = y = Bs + a u u^t s$
 
 $\Rightarrow y -Bs = a(u^t s) u$
 
- Notice that $y - Bs $ and $u$ are vectors and $a(u^ts)$ is scalar.
+ Notice that $y - Bs $ and $u$ are vectors and $a(u^ts)$ is a scalar.
 
 Therefore, $u \propto y-Bs $ and we can set $u = y-Bs$  simply. Then above equation becomes as follow
 
@@ -76,19 +76,19 @@ $y -B s = a (y-Bs)^ts (y-Bs)$
 
 The scalar $\alpha (y-Bs)^t s $ have to be one so $a = \frac{1}{(y-Bs)^ts}$
 
-By plugging above equation, we can get SR1 hessian update equation.
+By plugging the above equation, we can get the SR1 hessian update equation.
 
 > **SR1 update equation**
 >
 > $B^+ = B+ \frac{(y-Bs)(y-Bs)^t}{(y-Bs)^tS}$
 
-Notice that above form satisfies hessian estimate conditions 1~3. 
+Notice that the above form satisfies hessian estimate conditions 1~3. 
 
 
 
 In the real computation, we need $B^{-1}$ rather than $B$ itself. Therefore, it is more efficient to update $C=B^{-1}$ instead of $B$
 
-If we set $C = B^{-1}, C^+ = (B^+)^{-1}$ , then we can derive following expression by using Sherman-Morrison Formula.
+If we set $C = B^{-1}, C^+ = (B^+)^{-1}$ , then we can derive the following expression by using Sherman-Morrison Formula.
 
 $C^{+} = (B^+)^{-1} = (B+\frac{(y-Bs)(y-Bs)^t}{(y-Bs)^tS})^{-1} = C+\frac{(s-Cy)(s-Cy)^t}{(s-Cy)^ty}$
 
@@ -112,9 +112,9 @@ Therefore, we need another method.
 
 **BFGS Method (Broyden-Fletcher-Goldfarb-Shanno Update)**
 
-To edify the positive definiteness, we can use BFGS Method. 
+To edify the positive definiteness, we can use the BFGS Method. 
 
-The BFGS method has a following iterative equation form.
+The BFGS method has the following iterative equation form.
 
 $B^+ = B + a u u^t + b v v^t$
 
@@ -142,7 +142,7 @@ $B^+ = B + a u u^t + bvv^t$
 
 
 
-Like the SR1 algorithm, we can use Woodbury's formula to derive following form.
+Like the SR1 algorithm, we can use Woodbury's formula to derive the following form.
 
 $C^+ = (I-\frac{sy^t}{y^ts})C(I-\frac{ys^t}{y^ts})+\frac{ss^t}{y^ts}$
 
@@ -156,7 +156,7 @@ The former term is positive because of the positive definiteness of C and the la
 
 **DFP Method (Davidon-Fletcher_Powell Update)**
 
-Similar to BFGS Method, we can design C update equation directly.
+Similar to the BFGS Method, we can design the C update equation directly.
 
 $C^+ = C + a  u u^t + b vv^t$
 
@@ -168,7 +168,7 @@ And use $s =C^+y$, we can derive following form
 
 
 
-There is Hybrid version of BFGS method and DFP method. It estimate two of them like below.
+There is Hybrid version of the BFGS method and the DFP method. It estimates two of them like below.
 
 > **Broyden Class**
 >
