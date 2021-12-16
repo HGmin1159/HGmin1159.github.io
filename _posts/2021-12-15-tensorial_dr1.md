@@ -1,5 +1,5 @@
 ---
-title: \[Tensorial Dimension Reduction\] 1. Sufficient Dimension Folding for Regression Mean Function
+title: \[Tensorial Dimension Reduction\] Part 1.  Introduction to Sufficient Dimension Folding
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Sufficient Dimension Folding Theory and Techniques to reduce the dimension of tensorial data.
