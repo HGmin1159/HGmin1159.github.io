@@ -94,6 +94,10 @@ Dimension:
         url:  /dimension/nonlineardr2/
       - title: "Part 3. Central sigma-Field for Nonlinear SDR and GSIR (KOR)"
         url: /dimension/nonlineardr3/
+  - title: "Tensorial Dimension Reduction"
+    children:
+      - title: "Part 1.  Introduction to Sufficient Dimension Folding"
+        url: /dimension/tensorial_dr1/
         
 Convex_Optimization:
   - title: "General Concepts"
