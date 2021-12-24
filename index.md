@@ -6,7 +6,7 @@ header:
   image: /assets/img/mintwall.jpg
 
 feature_row1:
-  - image_path: /assets/img/avatar.jpg
+  - image_path: /assets/img/avatar2.jpg
     alt: "placeholder image 4"
     title: "H.G Min"
   - url: "/assets/CV.pdf"
