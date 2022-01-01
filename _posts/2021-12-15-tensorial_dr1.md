@@ -1,14 +1,8 @@
 ---
-title: \[Tensorial Dimension Reduction\] Part 1.  Introduction to Sufficient Dimension Folding
+title: \[Tensorial Dimension Reduction\] 1. Sufficient Dimension Folding for Regression Mean Function
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Sufficient Dimension Folding Theory and Techniques to reduce the dimension of tensorial data.
-sidebar:
-  - title: "Dimensionality Reduction"
-    image: /assets/img/dimension.png
-    image_alt: "image"
-    nav: Dimension
-author_profile: False
 ---
 
 # [Sufficient Dimension Folding] Part 1. Sufficient Dimension Folding for Regression Mean Function
@@ -51,7 +45,7 @@ However, because the exact relation is $S_{Y \mid vec(X) }\subset S_{Y \circ X \
 
 Moreover, the original paper also claimed the concept of Kronecker Envelope which is defined as follow. 
 $$
-\mbox{For a random matrix }U \in \mathbb{R}^{(d_R d_L) \times k}, \mbox{ the smallest Kronecker product }S_{U \circ} \otimes S_{\circ U} \mbox{ satisfying } \\\ S(U) \subset S_{U \circ} \otimes S_{\circ U} \mbox{ almost surely} \mbox{ is Kronecker Envelopes and written as }\epsilon^{\otimes}(U)
+\mbox{For a random matrix }U \in \mathbb{R}^{(d_R d_L) \times k}, \mbox{ the smallest Kronecker product }S_{U \circ} \otimes S_{\circ U} \mbox{ satisfying } \\\ S(U) \subset S_{U \circ} \otimes S_{\circ U} \mbox{ almost surely} \mbox{ is Kronecker Envelopes and written as }\Epsilon^{\otimes}(U)
 $$
 
 Based on the theory, we can develop various SDR methods.
@@ -82,14 +76,14 @@ First of all, we need following theorem. (Proof is in Ref.2)
 >
 > For global minima $(a^{\ast},b^{\ast},f^{\ast})$ for  $E \parallel AU - A(b \otimes a)f(W) \parallel^2$, 
 > $$
-> span(b^{\ast} \otimes a^{\ast}) = \epsilon^{\otimes}(U)
+> span(b^{\ast} \otimes a^{\ast}) = \Epsilon^{\otimes}(U)
 > $$
 
 ***
 
 Proof)
 
-Since $span(\beta_0 \otimes \alpha_0 ) =\epsilon^{\otimes}(U)$ and the elements of U are measurable with respect to W, there is a random matrix $\phi(W) \in L_2^{m_Lm_R \times k}(\Omega_W)$ such that $U = (\beta_0 \otimes \alpha_0 ) \phi(W),$ which is equivalent to $AU = A(\beta_0 \otimes \alpha_0) \phi(W)$.
+Since $span(\beta_0 \otimes \alpha_0 ) =\Epsilon^{\otimes}(U)$ and the elements of U are measurable with respect to W, there is a random matrix $\phi(W) \in L_2^{m_Lm_R \times k}(\Omega_W)$ such that $U = (\beta_0 \otimes \alpha_0 ) \phi(W),$ which is equivalent to $AU = A(\beta_0 \otimes \alpha_0) \phi(W)$.
 
 Therefore, the minimizer $(\alpha^{\ast},\beta^{\ast},f^{\ast})$ have to satisfy $AU = A(\beta^{\ast} \otimes \alpha^{\ast}) f(W)$ almost surely.
 
