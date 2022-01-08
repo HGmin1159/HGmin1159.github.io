@@ -219,7 +219,7 @@ We can calculate them with Hadamard test and SWAP test
 
 Circuit of Hadamard Test is like below
 
-![](assets/img/post/2020-08-24/figure3.PNG)
+![](/assets/img/post/2020-08-24/figure3.PNG)
 
  Let's tracking it down. 
 
@@ -247,7 +247,7 @@ That is, we can measure the metric by iterating the circuit multiple time and ob
 
 **SWAP Test**
 
-![](assets/img/post/2020-08-24/figure4.PNG)
+![](/assets/img/post/2020-08-24/figure4.PNG)
 
  The Swap test have almost similar role with Hadamard test
 
