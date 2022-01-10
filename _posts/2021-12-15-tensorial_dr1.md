@@ -3,6 +3,12 @@ title: \[Tensorial Dimension Reduction\] 1. Sufficient Dimension Folding for Reg
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Sufficient Dimension Folding Theory and Techniques to reduce the dimension of tensorial data.
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 # [Sufficient Dimension Folding] Part 1. Sufficient Dimension Folding for Regression Mean Function
