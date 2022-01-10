@@ -13,23 +13,23 @@ author_profile: False
 
 ## 0. What is Qiskit?
 
- Qiskit is a python package developed by IBM. It is open source quantum computing framework which is designed to approach the quantum computer using cloud system and constructing the quantum circuits.
+ Qiskit is a python package developed by IBM. It is an open source quantum computing framework which is designed to approach the quantum computer using a cloud system and constructing the quantum circuits.
 
- The research of the quantum computing is done with the process that researcher send the pre-designed circuits to IBM and IBM operates the received cirtuit with their quantum computer. Qiskit is the framework to control these processes. 
+ The research of quantum computing is done with the process that researchers send the pre-designed circuits to IBM and IBM operates the received circuit with their quantum computer. Qiskit is the framework to control these processes. 
 
- Qiskit contains various abilities but this posting focuses on construction of the quantum circuits. We'll gonna see 1. start the qiskit, 2. design circuit, 3. request experiments and 4. get the results
+ Qiskit contains various abilities but this posting focuses on construction of quantum circuits. We're gonna see 1. start the qiskit, 2. design circuit, 3. request experiments and 4. get the results
 
- In actual, Qiskit provides a lot better tutorials than this posting. Check it https://qiskit.org/documentation/getting_started.html
+ In actuality, Qiskit provides a lot better tutorials than this posting. Check it https://qiskit.org/documentation/getting_started.html
 
 
 
 ## 1. Starting Qiskit
 
- Qiskit is best working with Jupyter notebook of Anaconda. Therefore, we have to install the notebook at https://www.anaconda.com/products/individual 
+ Qiskit is best working with the Jupyter notebook of Anaconda. Therefore, we have to install the notebook at https://www.anaconda.com/products/individual 
 
 
 
-Qiskit is distributed with name "qiskit". So it can be easily installed by typing "pip install qiskit" in prompt like below.
+Qiskit is distributed with the name "qiskit". So it can be easily installed by typing "pip install qiskit" in the prompt like below.
 
 ```
 pip install qiskit
@@ -42,13 +42,13 @@ Now, we can call qiskit by "import qiskit" in the jupyter notebook
 
 
 
-To approach real quantum computer, we have to get authorities at the IBMQ. With follow link(https://quantum-computing.ibm.com/) , sign in IBMQ.
+To approach real quantum computers, we have to get authorities at the IBMQ. With the following link(https://quantum-computing.ibm.com/) , sign in IBMQ.
 
 
 
 
 
-Let's copy API token in the red lectangular in the below figure. 
+Let's copy API token in the red rectangular in the below figure. 
 
 ![](/assets/img/post/2021-03-11/figure1.png)
 
@@ -66,7 +66,7 @@ IBMQ.save_account('MY_API_TOKEN')
 
 #### A.  Importing Qiskit
 
- To import qiskit, we need to type following command.
+ To import qiskit, we need to type the following command.
 
 ```
 from qiskit import QuantumCircuit, execute, Aer
@@ -78,7 +78,7 @@ from qiskit import QuantumCircuit, execute, Aer
 
  Quantum circuits are not that complex. Therefore, we can save them in one instance. 
 
- The command to build a instance to store the circuit is below.
+ The command to build an instance to store the circuit is below.
 
 ```
 circ = QuantumCircuit(n_input,n_output)
@@ -92,7 +92,7 @@ circ = QuantumCircuit(n_input,n_output)
 
 #### C. Adding measure
 
- We can add the measurement with below command. 
+ We can add the measurement with the below command. 
 
 ```
 circ.measure(i,j)
@@ -106,13 +106,13 @@ circ.measure(i,j)
 
 #### ㄹ. Visualizing Circuit
 
-We can visulalize them with follow command.
+We can visualize them with the following command.
 
 ```
 circ.draw(output='mpl',justify='none')
 ```
 
-- It visualize circ instance.
+- It visualizes circ instances.
 
 - By adding "output='mpl'", it shows more fancy plot by using the package "matplotlib"
 
@@ -120,7 +120,7 @@ circ.draw(output='mpl',justify='none')
 
 ex)
 
-The result of above command is below.
+The result of the above command is below.
 
 ![](/assets/img/post/2021-03-11/figure2.PNG)
 
@@ -128,24 +128,24 @@ The result of above command is below.
 
 #### D. Testing circuit
 
-We can use a real quantum computer or use simulator. The relevant command is below.
+We can use a real quantum computer or use a simulator. The relevant command is below.
 
 ```
 result =execute(circ,Aer.get_backend('qasm_simulator')).result()
 ```
 
 - Inject designed circuit in the "circ" 
-- By using Aer.get_backend(), we can assign computer or simulator.
+- By using Aer.get_backend(), we can assign a computer or simulator.
   - There are simulator named as "qasm_simulator" or "statevectorsimulator" 
   - By using "imbq.jobs", we can use real quantum computer of IBM
 
-- If there is no additioanl options, they iterate 1024 times 
+- If there is no additional options, they iterate 1024 times 
 
   
 
-#### ㅂ. Adding gates
+#### E. Adding gates
 
- We can add other gates in the same way like adding measurement. It is added from front of the circuits.
+ We can add other gates in the same way like adding measurement. It is added from the front of the circuits.
 
 ```
 # Pauli Gate : Apply to n_q qubit
@@ -186,9 +186,9 @@ circ.barrier()
 
 
 
-#### ㅂ. Visualizing
+#### F. Visualizing
 
- The results of the quantum algorithm are results of 1024 shots at usual. So for the simple algorithm, histograms are working well.
+ The results of the quantum algorithm are the results of 1024 shots as usual. So for the simple algorithm, histograms are working well.
 
 ```
 from qiskit.visualization import plot_histogram
@@ -207,7 +207,7 @@ plot_histogram([counts, second_counts], legend=legend)
 
 
 
-At final, we can draw the bloch sphere like below.
+Finally, we can draw the Bloch sphere like below.
 
 ```
 from math import sqrt, pi
@@ -223,3 +223,4 @@ plot_bloch_vector_spherical(coords) # Bloch Vector with spherical coordinates
  Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
  
+
