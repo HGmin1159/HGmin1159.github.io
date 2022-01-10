@@ -1,3 +1,4 @@
+
 ---
 title: \[Basic of Quantum Computer\] Part 5. Quantum Phase Estimation and Quantum Distance Measure
 categories: [Quantum]
@@ -19,7 +20,7 @@ $\def\ket#1{\mid #1 \rangle} \def\inner#1{\langle #1 \rangle}$
 
 
 
- Let's see second important quantum routine. 
+ Let's see the second important quantum routine. 
 
 
 
@@ -27,7 +28,7 @@ $\def\ket#1{\mid #1 \rangle} \def\inner#1{\langle #1 \rangle}$
 
  Quantum gates are expressed by the matrix. But the norms of each Qubit always have to be one before and after it passes the operator.  This is because the sum of all probabilities have to be one. 
 
- Therefore, we can develop following expression.
+ Therefore, we can develop the following expression.
 
 $\inner{\phi\mid A\mid \phi}=1$ for all $\ket{\phi} $ where $\inner{\phi \mid \phi}=1$
 
@@ -37,11 +38,11 @@ It can be expressed as follow
 
 $\min_{v \mid v^tv =1}( \mid v^t A  v \mid)=\lambda_1 , \max_{v \mid v^tv =1} (\mid v^t A v \mid) = \lambda_n $ 
 
-Therefore, we can say that absolute value of all of eigen value of the A is 1 and we can generalized them as follow
+Therefore, we can say that absolute value of all of eigenvalue of the A is 1 and we can generalized them as follow
 
 $\lambda =e^{2\pi \psi i} \mbox{ where } \psi \in [0,1)$ 
 
- Quantum Phase Estimation is estimating eigenvalue by estimating phase of certain operator.
+ Quantum Phase Estimation is estimating eigenvalue by estimating phase of a certain operator.
 
 
 
@@ -63,7 +64,7 @@ $U^{2^{j}} \mid \Psi \rangle= e^{2^{j+1}\pi \psi i}\mid \Psi \rangle$
 
 
 
- Therefore, if the U is applied to eigenvector, then it works as same way with $U=e^{2 \pi \psi i}I$. So we can simplify it as follow.
+ Therefore, if the U is applied to an eigenvector, then it works the same way with $U=e^{2 \pi \psi i}I$. So we can simplify it as follows.
 
 $e^{2\pi \psi i} \left[ \begin{array}{cc} 1 & 0 \\\ 0 & 1 \end{array}\right] = \left[ \begin{array}{cc} e^{2\pi \psi i} & 0 \\\ 0 & e^{2\pi \psi i} \end{array}\right] $
 
@@ -79,13 +80,13 @@ then $cU(\ket {\Psi_1},\ket {\Psi_2}) = a\ket 0\otimes \ket  {\Psi_2}+b\ket 1 \o
 
 
 
-**Quantum Phase Esitmation Circuit**
+**Quantum Phase Estimation Circuit**
 
  The circuit of quantum phase estimation(;QPE) is below.
 
 ![](/assets/img/post/2020-08-24/figure2.PNG)
 
- This is QPE of 2-qubit quantum gate. Let's track it down
+ This is the QPE of a 2-qubit quantum gate. Let's track it down
 
  First of all, let' see $q_0$ and $q_1$ to check the state of $\ket{\phi_1}$
 
@@ -95,20 +96,20 @@ then $cU(\ket {\Psi_1},\ket {\Psi_2}) = a\ket 0\otimes \ket  {\Psi_2}+b\ket 1 \o
 
 $cU^{2^1}(H\ket 0 , \ket \Psi) = cU^{2^1}(\frac{1}{\sqrt{2}}(\ket 0 + \ket 1 ),\ket \Psi) \\\ \qquad \qquad \qquad \quad \ = \frac{1}{\sqrt{2}}(\ket 0 \ket \Psi + \ket 1 U^{2^1}\ket \Psi) \\\ \qquad \qquad \qquad \quad \ =\frac{1}{\sqrt{2}}(\ket 0 \ket \Psi + \ket 1 e^{2^ 2 \pi \psi i }\ket \Psi) \\\ \qquad \qquad \qquad \quad \ = \frac{1}{\sqrt{2}}(\ket 0  + e^{2 \pi 2^1 \psi i }\ket 1 ) \otimes\ket \Psi)$
 
-$q_1$ can be inferred as follow.
+$q_1$ can be inferred as follows.
 
 $cU^{2^0}(H\ket 0 , \ket \Psi)= \frac{1}{\sqrt{2}}(\ket 0  + e^{2 \pi 2^0 \psi i }\ket 1 ) \otimes\ket \Psi)$
 
- Therefore, $\ket{\phi}_1$ is as follow.
+ Therefore, $\ket{\phi}_1$ is as follows.
 
 $\ket \phi_1 = \frac{1}{2}(\ket 0  + e^{2 \pi 2^1 \psi i }\ket 1 ) \otimes (\ket 0  + e^{2 \pi 2^0\psi i }\ket 1 ) \otimes \ket \Psi \\\ \quad \ \ = \frac{1}{2}(\ket{00}+e^{2\pi2^0\psi i}\ket{01}+e^{2 \pi 2^1 \psi i }\ket{10}+e^{2 \pi (2^2-1) \psi i}\ket{11})  \otimes \ket \Psi\\\ \quad \ \ =\frac{1}{\sqrt{2}^2} \sum_{j=0}^{2^2-1}e^{2\pi j \psi i} \ket j_2 \otimes \ket \Psi$
 
 
 ***
 
- Next part is Inverse QFT gate, let's see how is it working.
+ Next part is the Inverse QFT gate. Let's see how it works.
 
-For the $N=2^n$, inverse - QFT works as follow.
+For the $N=2^n$, inverse - QFT works as follows.
 
 $\ket \chi = \sum_{j=0}^{2^2-1}a_j\ket j _2$ 
 
@@ -139,7 +140,7 @@ It takes its highest value at $j=2^m \psi$ which means that if we iterate the ci
 Now, see j
 
 - j takes value between $0$ and $2^m -1$ so $\frac{j}{2^m}$ lies in $(0, \frac{2^m -1}{2^m})$. $\psi$ represent the phase  
-- j get its name by assigning combination of computational basis. For example, with 5-qubit, we can name each basis as follow $\ket{j}$ 
+- j gets its name by assigning a combination of computational basis. For example, with 5-qubit, we can name each basis as follow $\ket{j}$ 
 
 > $\ket{0} = \ket {00000}$
 >
@@ -175,13 +176,13 @@ Let's change them as binary expression
 >
 > $32 =100000_{(2)}$
 
- Each pair exactly matches with above naming. Therefore, the $\frac{j}{2^m}$ have following meaning.
+ Each pair exactly matches with the above naming. Therefore, the $\frac{j}{2^m}$ have the following meaning.
 
  
 
 $0.b_1b_2b_3b_4...b_m$ $(b_i \in \{0,1\} \quad \forall i)$ ($b_i$is observation of $\ket {q}_{2^m}$)
 
-For example, assume that we get following value as mode by iterating the circuit multiple times.
+For example, assume that we get the following value as mode by iterating the circuit multiple times.
 
 $\ket{110010110011}$ 
 
@@ -189,11 +190,11 @@ Then the estimate of the eigenvalue is $0.110010110011_{(2)}$
 
 
 
-The eigenvalues are usually infinite values, so QPE estimates the eigenvalues in $log_{10}(2^{-m})$  digit. Therefore, there follow some errors which can be lessened by iteration. That is, by increasing the number of the iteration and m-qubit, we can promote the estimative power.
+The eigenvalues are usually infinite values, so QPE estimates the eigenvalues in $log_{10}(2^{-m})$  digit. Therefore, there are some errors which can be lessened by iteration. That is, by increasing the number of the iteration and m-qubit, we can promote the estimative power.
 
 ***
 
- Some people might wonder that we use eigenvectors even though the purpose of the circuit is to find eigenvalues. This is because, any random vector can be analyzed by the linear combination of eigenvalue as follow $\ket{b} = \sum \lambda_i \ket{\psi_i}$. 
+ Some people might wonder why we use eigenvectors even though the purpose of the circuit is to find eigenvalues. This is because any random vector can be analyzed by the linear combination of eigenvalues as follows $\ket{b} = \sum \lambda_i \ket{\psi_i}$. 
 
 By assuming them, we can make some practical algorithm like HHL algorithm for linear solver
 
@@ -205,7 +206,7 @@ By assuming them, we can make some practical algorithm like HHL algorithm for li
 
 
 
- Standard metric unit L2-distance can be measured as follow.
+ Standard metric unit L2-distance can be measured as follows.
 
 $\mid \ket{\psi_\alpha} - \ket{\psi_{\beta}}\mid_2^2 =  (\ket{\psi_\alpha} - \ket{\psi_{\beta}})^t(\ket{\psi_\alpha} - \ket{\psi_{\beta}}) \\\ \qquad\qquad \qquad= \langle \psi_{\alpha},\psi_\beta \rangle - \langle \psi_{\alpha},\psi_\alpha \rangle-\langle \psi_{\alpha},\psi_\beta \rangle+\langle \psi_{\beta},\psi_\beta \rangle \\\ \qquad\qquad \qquad= 2-2RE\{\langle \psi_{\alpha},\psi_\beta \rangle\}$
 
@@ -221,7 +222,7 @@ Circuit of Hadamard Test is like below
 
 ![](/assets/img/post/2020-08-24/figure3.PNG)
 
- Let's tracking it down. 
+ Let's track it down. 
 
 1. $\ \ket{\psi_1} = \frac{1}{\sqrt 2}( \ket 0 + \ket 1) \ket 0 \\\ \qquad  \propto \ket {00} + \ket {10}$
 
@@ -241,7 +242,7 @@ $p(1) =  \frac{1}{2}^2\mid\ket{\psi_\alpha}+\ket{\psi_\beta}\mid^2 = \frac{1}{2}
 
 
 
-That is, we can measure the metric by iterating the circuit multiple time and observing the ratio of zero and one.
+That is, we can measure the metric by iterating the circuit multiple times and observing the ratio of zero and one.
 
 
 
@@ -269,3 +270,4 @@ We can measure it like above.
 ***
  Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
+
