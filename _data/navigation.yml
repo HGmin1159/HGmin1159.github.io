@@ -58,6 +58,10 @@ Quantum_eng:
         url: /quantum/quantumml1/
       - title: "Part 2. Quantum Information Encoding Methods"
         url: /quantum/quantumml2/
+      - title: "Part 3. Parameterized Quantum Circuit"
+        url: /quantum/quantumml3/
+      - title: "Part 4. Quantum Kernel Space"
+        url: /quantum/quantumml4/
   
 Dimension:
   - title: "Basic Dimension Reduction"
