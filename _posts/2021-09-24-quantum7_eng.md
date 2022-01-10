@@ -15,9 +15,9 @@ $\def\ket#1{\mid #1\rangle}$
 
 ## 1. Security System of the Classical Computer
 
-Quantum computer can show amazing performance for not only speed but also security.
+Quantum computers can show amazing performance for not only speed but also security.
 
-Exaggeratively speaking, it has "theoretically perfect security system". 
+Exaggeratedly speaking, it has a "theoretically perfect security system". 
 
 
 
@@ -25,13 +25,13 @@ Exaggeratively speaking, it has "theoretically perfect security system".
 
 There is a simple and famous example when handling the security problem: ABE situation. Alice(A) wants to send some messages to Bob(B), but Eve(E) tries to steal the messages.
 
- For example, suppose that Alice is going to send a message "1225" to Bob to see him at Christmas. Alice is going to write 1225 at a paper, but she is worry that her rival Eve will steal the message. Therefore, Alice  send the message in a way that Bob can understand but Eve cannot.
+ For example, suppose that Alice is going to send a message "1225" to Bob to see him at Christmas. Alice is going to write 1225 on a paper, but she is worried that her rival Eve will steal the message. Therefore, Alice  sends the message in a way that Bob can understand but Eve cannot.
 
-The most general way is sharing the way to interpret the message with Bob. For example, encode 1225 as 2336 with addition 1 to each element. If the Bob know the encoding method, he can easily interpret the message but Eve cannot interpret it.
+The most general way is sharing the way to interpret the message with Bob. For example, encode 1225 as 2336 with addition 1 to each element. If Bob knows the encoding method, he can easily interpret the message but Eve cannot interpret it.
 
-Like this way, the information shared by the communication party is called as Key. This procedure is used more or less for almost every cryptography.
+This way, the information shared by the communication party is called a Key. This procedure is used more or less for almost every cryptography.
 
- But there is a problem in this method. If Eve is expert on the cryptography, then she can infer the method of encoding and can interpret the message.
+ But there is a problem with this method. If Eve is an expert on cryptography, then she can infer the method of encoding and can interpret the message.
 
 ![](/assets/img/post/2021-03-13/figure1.PNG)
 
@@ -39,69 +39,69 @@ Like this way, the information shared by the communication party is called as Ke
 
 #### RSA Cryptosystem (Rivest/Shamir/Adlemam cryptosystem)
 
- Therefore, we need some problem hard to be inferred for outsider but easy to be solved for the party. This can be called as NP-hard problem. NP-hard problem is a concept used at Algorithm which means that the problem needs exponential time to derive some solutions but takes polynomial time to confirm the solutions. The simplest and hardest problem which meet the conditions is a factorization problem. In general, it is hard to find the factor but easy to confirm it. 
+ Therefore, we need some problems hard to be inferred for outsiders but easy to be solved for the party. This can be called an NP-hard problem. NP-hard problem is a concept used at Algorithm which means that the problem needs exponential time to derive some solutions but takes polynomial time to confirm the solutions. The simplest and hardest problem which meets the conditions is a factorization problem. In general, it is hard to find the factor but easy to confirm it. 
 
- For example, when Alice send the number 1225, they can share a specific number like 1001 and multiply it to the message. In this time, Alice will send the number $1226225(1225\times 1001)$. Bob can understand the number intended by Alice is 1225 by devide 1226225 with 1001.
+ For example, when Alice send the number 1225, they can share a specific number like 1001 and multiply it to the message. In this time, Alice will send the number $1226225(1225\times 1001)$. Bob can understand the number intended by Alice is 1225 by dividing 1226225 with 1001.
 
- To figure out the number 1001, Eve have to do factorization. She have to see the result of deviding the number with prime numbers and examine whether the remainder is zero or not and it takes a lot of time. When the problem become complex, then it is almost impossible to solve the problem. 
+ To figure out the number 1001, Eve has to do factorization. She has to see the result of dividing the number with prime numbers and examine whether the remainder is zero or not and it takes a lot of time. When the problem becomes complex, then it is almost impossible to solve the problem. 
 
 ![](/assets/img/post/2021-03-13/figure2.PNG)
 
-In reality, people use much more complex system based on the RSA system so they protect the message with multiple layers .
+In reality, people use a much more complex system based on the RSA system so they protect the message with multiple layers .
 
 
 
 ## 2. The Cryptosystem of the Quantum Computer.
 
-#### Adverse of the Quantum Computer and Nuetralization of RSA cryptosystem
+#### Adverse of the Quantum Computer and Neutralization of RSA cryptosystem
 
- The RSA system can be nuetralized when the quantum computer become commercialized. It is because the quantum computer can solve the factorization problem in polynomial time.
+ The RSA system can be neutralized when the quantum computer becomes commercialized. It is because the quantum computer can solve the factorization problem in polynomial time.
 
- According to the research of Dr. John Martinis in UCSB, to factorize 2048 bit number, we have to invest $1,000,000 Trillion to make a super computer which has size as large as entire north America and use 1 Trillion GW for ten years. (Contemporary annual electricity products of world is 3000 GW)  
+ According to the research of Dr. John Martinis in UCSB, to factorize the 2048 bit number, we have to invest $1,000,000 Trillion to make a super computer which is as large as the entire North America and uses 1 Trillion GW for ten years. (Contemporary annual electricity products of world is 3000 GW)  
 
- Meanwhile, if we use the quantum computer, we have to invest $100 billion to make 1cm chip storing 10 million qubit and spend 0.01GW for 16 hours. It takes 0.000001% of money and 0.0003% of electricity and incomparable size of space.
+ Meanwhile, if we use the quantum computer, we have to invest $100 billion to make a 1cm chip storing 10 million qubit and spend 0.01GW for 16 hours. It takes 0.000001% of money and 0.0003% of electricity and an incomparable size of space.
 
- Therefore, most of the RSA cryptosystem based on the factorization can be destroied. Fortunatively, there is a substitute in the quantum algorithm. 
+ Therefore, most of the RSA cryptosystem based on the factorization can be destroyed. Fortunately, there is a substitute in the quantum algorithm. 
 
   
 
 ####  The cryptosystem of the Quantum Computer 
 
- Like the classical cryptosystem, quantum system also share some key. The shared key is not numbers but the direction of measurement. By the direction of the qubit and measurement, the interpretation is changed. (Reference- https://hgmin1159.github.io/quantum/quantum1_eng/) 
+ Like the classical cryptosystem, quantum systems also share some keys. The shared key is not numbers but the direction of measurement. By the direction of the qubit and measurement, the interpretation is changed. (Reference- https://hgmin1159.github.io/quantum/quantum1_eng/) 
 
 ![](/assets/img/post/2021-03-13/figure4.PNG)
 
- First of all, let assume Alice wants to deliver binary numbers 1001 to Bob. Alice and Bob share some measurement direction as 0',90',0',270'. Alice encode her value with predetermined directions. (figure-1)
+ First of all, let's assume Alice wants to deliver binary numbers 1001 to Bob. Alice and Bob share some measurement directions as 0',90',0',270'. Alice encodes her value with predetermined directions. (figure-1)
 
  Bob can interpret the number with shared key and can know the Alice's number is 1001(figure-2)
 
- Assume that Eve want to steal the message. Eve have to interpret the qubit with her own key. Suppose that Eve measure the qubit with the direction of 0',0',0',0'. Of course, Eve cannot interpret the number because it is different from the Alice's one. (figure-3) 
+ Assume that Eve wants to steal the message. Eve has to interpret the qubit with her own key. Suppose that Eve measures the qubit with the direction of 0',0',0',0'. Of course, Eve cannot interpret the number because it is different from the Alice's one. (figure-3) 
 
 
 
- The important difference between the classical computer and quantum computer is, Eve distort the entire message which Alice want to deliver to Bob. Therefore, Eve cannot reverse the state of qubit before she measure them.  (figure-4) 
+ The important difference between the classical computer and quantum computer is, Eve distorts the entire message which Alice wants to deliver to Bob. Therefore, Eve cannot reverse the state of qubit before she measures them.  (figure-4) 
 
 
 
- The advantage of this system is follow.
+ The advantages of this system are as follows.
 
-- Infinitely many cases - we have seen the measurement key of 0,90,180,270 but the measurement degree can be any number between 0~360. If we consider the dimension and entanglement, then the fidelity of the number can be more.  The number of the key means when solving the cryptosystem, Eve have to consider the cases as many as the number.
-- Restricted Trial - In the classical cryptography, people can do some trial and error to capture exact key. This means that they can try to divide some numbers with prime numbers several times. However, in the quantum computer, they cannot do that because the whole information would disappear with just one trial. 
-- Capture the interference of 3rd person - If 3rd person tries to do interference, then the information become directly distorted. This means that we cannot see origin information and Alice and Bob can directly know that someone else tries to steal their messages.
+- Infinitely many cases - we have seen the measurement key of 0,90,180,270 but the measurement degree can be any number between 0~360. If we consider the dimension and entanglement, then the fidelity of the number can be more.  The number of the key means when solving the cryptosystem, Eve has to consider the cases as many as the number.
+- Restricted Trial - In classical cryptography, people can do some trial and error to capture the exact key. This means that they can try to divide some numbers with prime numbers several times. However, in the quantum computer, they cannot do that because the whole information would disappear with just one trial. 
+- Capture the interference of 3rd person - If 3rd person tries to do interference, then the information becomes directly distorted. This means that we cannot see origin information and Alice and Bob can directly know that someone else tries to steal their messages.
 
-With above advantage, we can say that quantum computer cannot be hacked in theoretically. Of course above procedure is not realized yet and there might be a lot obstacles to deal with problems. 
+With the above advantage, we can say that quantum computers cannot be hacked theoretically. Of course the above procedure is not realized yet and there might be a lot of obstacles to deal with problems. 
 
 
 
 ## 3. Quantum Protocol
 
-Exchanging quantum information between quantum computers is not yet practical. Therefore, there are detours to exchange the information. Most famous one of them is Superdense Code and Quantum Teleportation which are called as Quantum Protocol.
+Exchanging quantum information between quantum computers is not yet practical. Therefore, there are detours to exchange the information. Most famous one of them is Superdense Code and Quantum Teleportation which are called Quantum Protocol.
 
 
 
 #### Superdense Code
 
-Superdense Code is algorithm to deliver two bit by deliver one qubit.
+Superdense Code is an algorithm to deliver two bit by delivering one qubit.
 
 ![](/assets/img/post/2021-03-13/figure11.PNG)
 
@@ -109,7 +109,7 @@ Superdense Code is algorithm to deliver two bit by deliver one qubit.
 
 Phase 1. 
 
-- First input $\ket{q_0q_1}$ is $\ket{00}$. By passing this qubits to Bell's circuit, we can make totally entangled qubits.   
+- First input $\ket{q_0q_1}$ is $\ket{00}$. By passing these qubits to Bell's circuit, we can make totally entangled qubits.   
 
   $\ket{00} \Rightarrow \frac{1}{\sqrt 2}(\ket{0}+\ket{1})\otimes\ket{0} \Rightarrow \frac{1}{\sqrt{2}}(\ket{00}+\ket{11})$
 
@@ -121,7 +121,7 @@ Phase 2.
 
 - Alice can deliver the information by manipulate the qubit
 
-The total information represented by one qubit is 2 bit and it is one of the 00,01,10,11. Below table shows manipulating gates and its corresponding result bits.
+The total information represented by one qubit is 2 bits and it is one of the 00,01,10,11. Below table shows manipulating gates and its corresponding result bits.
 
 | Gate  | Result bit |
 | ----- | ---------- |
@@ -138,7 +138,7 @@ $ \frac{1}{\sqrt{2}}(\ket{00}+\ket{11}) \Rightarrow  \frac{1}{\sqrt{2}}(\ket{10}
 
 Phase 3. 
 
-- Bob then pass inverse Bell's circuit with shared qubit and his own qubit. In this time, the qubit become as follow.
+- Bob then passes inverse Bell's circuit with a shared qubit and his own qubit. In this time, the qubit becomes as follows.
 
 $\frac{1}{\sqrt{2}}(\ket{10}+\ket{01}) \Rightarrow \frac{1}{\sqrt{2}}(\ket{11}+\ket{01}) \Rightarrow \ket{01}$
 
@@ -152,7 +152,7 @@ Phase 4.
 
 If we use this circuit, then we have to deliver N qubits to deliver 2N bits
 
-We can do them in actual by using qiskit and python like below.
+We can do them in actuality by using qiskit and python like below.
 
 ```python
 from qiskit import QuantumCircuit, execute, Aer
@@ -172,7 +172,7 @@ circ.draw(output='mpl',justify='none')
 
 ![](/assets/img/post/2021-03-13/figure5.PNG)
 
-Circuit is above, If we learn the circuit at QASM simulator, then we can get following result.
+Circuit is above. If we learn the circuit at the QASM simulator, then we can get the following result.
 
 ```python
 job_result = execute(circ, Aer.get_backend('qasm_simulator'))
@@ -187,15 +187,15 @@ We can see that it returns 10 with 100%
 
 #### Quantum Teleportation
 
-Quantum Teleportation is algorithm to deliver the qubit of Alice to Bob. It has following circuit
+Quantum Teleportation is an algorithm to deliver the qubit of Alice to Bob. It has following circuit
 
 ![](/assets/img/post/2021-03-13/figure7.PNG)
 
 Phase 1 
 
-- $\ket{q_0}$ is target qubit that Alice wants to deliver. Let's represent it as follow $\ket{q_0} = a\ket{0}+b\ket{1}$
+- $\ket{q_0}$ is the target qubit that Alice wants to deliver. Let's represent it as follow $\ket{q_0} = a\ket{0}+b\ket{1}$
 
-- Alice and Bob share two perfectly entangled qubit each other as follow.
+- Alice and Bob share two perfectly entangled qubits with each other as follows.
 
   $\ket{q_0}\otimes\ket{00} \Rightarrow \ket{q_0}\otimes\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})\otimes\ket{0} \Rightarrow \ket{q_0}\otimes\frac{1}{\sqrt{2}}(\ket{00}+\ket{11})$
 
@@ -203,11 +203,11 @@ Phase 1
 
 Phase 2
 
-- Alice pass the her qubit and shared qubit into inverse Bell's circuit. In this time, following qubit become below. 
+- Alice passes her qubit and shared qubit into inverse Bell's circuit. In this time, the following qubit is below. 
 
 $\ket{q_0}\otimes\frac{1}{\sqrt{2}}(\ket{00}+\ket{11})\\ \Rightarrow \frac{a}{\sqrt{2}}\ket{0}\otimes(\ket{00}+\ket{11})+\frac{b}{\sqrt{2}}\ket{1}\otimes(\ket{11}+\ket{01})\\ \Rightarrow \frac{1}{2}[\ket{00}(a\ket{0}+b\ket{1})+\ket{01}(b\ket{0}+a\ket{1})+\ket{10}(a\ket{0}-b\ket{1})+\ket{11}(-b\ket{0}+a\ket{1})]$
 
-- In this time, the hardamard gate makes the qubit as follow. 
+- In this time, the hadamard gate makes the qubit as follows. 
 
  $\ket{0} \rightarrow \frac{1}{\sqrt 2}(\ket{0}+\ket{1}),\ket{1} \rightarrow \frac{1}{\sqrt 2}(\ket{0}-\ket{1})$
 
@@ -215,7 +215,7 @@ $\ket{q_0}\otimes\frac{1}{\sqrt{2}}(\ket{00}+\ket{11})\\ \Rightarrow \frac{a}{\s
 
  Phase 3
 
-- Alice send the result of measuring the qubit to Bob. If the result is 00, then Bob have to takes I gates to $\ket{q_2}$ and if 01 then X, if 10 then Z and if 11,then  takes ZX gates to $\ket{q_2}$  
+- Alice sends the result of measuring the qubit to Bob. If the result is 00, then Bob have to takes I gates to $\ket{q_2}$ and if 01 then X, if 10 then Z and if 11,then  takes ZX gates to $\ket{q_2}$  
 - That is, if the result is 00, then Bob's qubit is $(a\ket{0}+b\ket{1})$, so remain unchanged and if it is 01, then Bob's qubit is $(b\ket{0}+a\ket{1})$, so takes X gate.
 - With above procedure, Bob can change his qubit into $\ket{q_0} = a\ket{0}+b\ket{1}$
 
@@ -223,7 +223,7 @@ $\ket{q_0}\otimes\frac{1}{\sqrt{2}}(\ket{00}+\ket{11})\\ \Rightarrow \frac{a}{\s
 
 Let's do this.
 
-To implement it, we need c_if method. To use them we have to use ClassicalRegister() function as below.
+To implement it, we need the c_if method. To use them we have to use the ClassicalRegister() function as below.
 
 ```python
 from qiskit import QuantumRegister, ClassicalRegister
@@ -234,7 +234,7 @@ crx = ClassicalRegister(1, name="crx")
 
 
 
-And then let's make random state as below. There is a function in qiskit to experiment.
+And then let's make a random state as below. There is a function in qiskit to experiment.
 
 ```python
 from qiskit_textbook.tools import random_state
@@ -248,7 +248,7 @@ plot_bloch_multivector(psi)
 
 ![](/assets/img/post/2021-03-13/figure9.PNG)
 
-Now let's make circuit with them. 
+Now let's make a circuit with them. 
 
 ```
 circ = QuantumCircuit(qr,crz,crx)
@@ -272,7 +272,7 @@ circ.draw(output='mpl',justify='none')
 
 
 
-We need Statevector Simulator to check the state of the qubit. And let's use Bloch sphere to see the exact state of it.
+We need a Statevector Simulator to check the state of the qubit. And let's use the Bloch sphere to see the exact state of it.
 
 ```python
 backend= Aer.get_backend('statevector_simulator')
@@ -283,9 +283,10 @@ plot_bloch_multivector(psi)
 
 ![](/assets/img/post/2021-03-13/figure10.PNG)
 
-We can see that state of third qubit is exactly same with state of first random qubit.
+We can see that the state of the third qubit is exactly the same as the state of the first random qubit.
 
 
 ***
  Sutor, R. (2019). Dancing With Qubits. Birmingham,UK:Packt  
  Bernhardt, C. (2019). Quantum computing for everyone. Boston, Massachusetts:The MIT Press
+
