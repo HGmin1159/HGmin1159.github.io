@@ -1,5 +1,5 @@
 ---
-title: \[Scond-Order Method\] Part4 - Quasi Newton Method.
+title: \[Second-Order Method\] Part4 - Quasi Newton Method.
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Quasi Newton's Method to accelerate learning.
@@ -15,11 +15,11 @@ $\def\array#1#2{\left[ \begin{array}{#1} #2 \end{array}\right]}$
 
 # 1. Quasi Newton Methods
 
- In the gradient descent method, there is an accelerating method called Stochastic Gradient Descent. It lessens the computation in each step by estimating gradients instead of fully calculating them.  Similarly, Quasi newton's method accelerates newton's method by estimating a hessian matrix. 
+ In the gradient descent method, there is an accelerating method called Stochastic Gradient Descent. It lessens the computation in each step by estimating gradients instead of fully calculating them.  Similarly, Quasi Newton's method accelerates Newton's method by estimating a Hessian matrix. 
 
 
 
- There are several ways to estimate the hessian matrix, but all of them follow the below routine. 
+ There are several ways to estimate the Hessian matrix, but all of them follow the below routine. 
 
 > **Quasi Newton Method**
 >
@@ -29,7 +29,7 @@ $\def\array#1#2{\left[ \begin{array}{#1} #2 \end{array}\right]}$
 
 
 
-To estimate the hessian matrix, we can use the following information. 
+To estimate the Hessian matrix, we can use the following information. 
 
 > **Secant Equation**  
 >
@@ -39,7 +39,7 @@ Notice that $s = \nabla x = x^+-x$. And the secant equation is derived with the 
 
 
 
-Along with the secant equation, the hessian estimator has to satisfy following properties.
+Along with the secant equation, the hessian estimator has to satisfy the following properties.
 
 > Hessian Estimate Condition
 >
@@ -58,7 +58,7 @@ Based on the above equation, there are various algorithms to implement it.
 
 **SR1 Algorithm (Symmetric Rank - One)**
 
-SR1 algorithm uses below iterative form.
+SR1 algorithm uses the below iterative form.
 
 - $B^+ = B + a u u^t$  ($a$ is scalar and $u$ is vector)
 
@@ -118,7 +118,7 @@ The BFGS method has the following iterative equation form.
 
 $B^+ = B + a u u^t + b v v^t$
 
-Like the SR1, multiply s and derive following form.
+Like the SR1, multiply s and derive the following form.
 
 $y - Bs = a (u^ts)u+b(v^ts)v$
 
@@ -146,7 +146,7 @@ Like the SR1 algorithm, we can use Woodbury's formula to derive the following fo
 
 $C^+ = (I-\frac{sy^t}{y^ts})C(I-\frac{ys^t}{y^ts})+\frac{ss^t}{y^ts}$
 
-This formula preserves the positive definiteness of C as follow.
+This formula preserves the positive definiteness of C as follows.
 
 $x^tCx = (x-\frac{s^tx}{y^ts}y)^tC(x- \frac{s^tx}{y^ts}y)+\frac{(s^tx)^2}{y^ts}$
 
@@ -179,5 +179,6 @@ There is Hybrid version of the BFGS method and the DFP method. It estimates two 
  ***
  Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
+
 
 
