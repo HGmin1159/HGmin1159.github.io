@@ -15,27 +15,27 @@ author_profile: False
 
 ## 0. Sufficient Dimension Folding
 
-The sufficient dimension reduction is really good method to capture sufficient predictor space for target. However, it only concerns for the 1d-vectorized predictor. When we want to use the methods onto 2d matrix, we usually vectorize our matrix. That is, we abandon the structure and return the result as 1d array. For example, when we analyze pixel data, we flatten the pixel matrix into vector, apply dimension reduction methods and get data matrix. 
+The sufficient dimension reduction is a really good method to capture sufficient predictor space for the target. However, it only concerns the 1d-vectorized predictor. When we want to use the methods onto a 2d matrix, we usually vectorize our matrix. That is, we abandon the structure and return the result as a 1d array. For example, when we analyze pixel data, we flatten the pixel matrix into vectors, apply dimension reduction methods and get a data matrix. 
 
-The sufficient dimension folding (SDF) aims to capture such structural information. They can be applied to raw matrix directly and can exploit essential information of the data. Unlike the sufficient dimension reduction method which shrink the original $p \times 1$ vector into $r \times 1$ vector, sufficient dimension folding shrink the original $p \times q$ matrix into $r \times d$ matrix. Also, because each predictor is not vector, the data matrix have a shape of 3d-array.
+The sufficient dimension folding (SDF) aims to capture such structural information. They can be applied to raw matrices directly and can exploit essential information of the data. Unlike the sufficient dimension reduction method which shrinks the original $p \times 1$ vector into the $r \times 1$ vector, sufficient dimension folding shrinks the original $p \times q$ matrix into the $r \times d$ matrix. Also, because each predictor is not a vector, the data matrix has a shape of 3d-array.
 
 ![](\assets\img\post\2021-12-15\figure1.png)
 
 There are several methods of SDF such as folded SIR, folded SAVE, folded DR. Such structure can also be used at conditional mean folding subspace such as folded OPG and folded MAVE. 
 
-Let's see fundamentals of sufficient dimension folding.
+Let's see the fundamentals of sufficient dimension folding.
 
 ## 1. Central Folding Subspace
 
-Before see the detail structure, let $S(M)$ denote a columns space of a matrix M and let $P_M = M(M^tM)^{-1}M$ denote the orthogonal projection matrix onto $S(M)$.
+Before seeing the detailed structure, let $S(M)$ denote a column space of a matrix M and let $P_M = M(M^tM)^{-1}M$ denote the orthogonal projection matrix onto $S(M)$.
 
 We will consider target random variable $Y (1 \times 1)$ and feature random matrix $X(p \times q)$. $\{y_i ,\textbf{x}_i\},i=1,2,...,n$ are iid random samples from $(Y,X)$
 
-For them, we will consider following structure.
+For them, we will consider the following structure.
 $$
 Y \perp X \mid A^t X B \\\ \mbox{where } A \in \mathbb{R}^{p \times d} \mbox{ and } B \in \mathbb{R}^{q \times r}
 $$
-Notice that A matrix abstract the raw feature of X and B matrix abstract the column feature of X. Each $S(A)$ and $S(B)$ is called a left dimension folding subspace for $Y \mid X$ and a right dimension folding subspace for $Y \mid X$ respectively. As we did in SDR subspace, we will define $S_{Y \mid \circ X}$ and $S_{Y \mid X \circ}$ as the intersection of all left and right dimension folding subspaces for $Y \mid X$. The subspace $S_{Y \mid X \circ } \otimes S_{Y \mid \circ X} =:S_{Y \mid \circ X \circ}$ is defined as the **Central Dimension Folding Subspace** which is our main target. 
+Notice that A matrix abstract the raw feature of X and B matrix abstract the column feature of X. Each $S(A)$ and $S(B)$ is called a left dimension folding subspace for $Y \mid X$ and a right dimension folding subspace for $Y \mid X$ respectively. As we did in the SDR subspace, we will define $S_{Y \mid \circ X}$ and $S_{Y \mid X \circ}$ as the intersection of all left and right dimension folding subspaces for $Y \mid X$. The subspace $S_{Y \mid X \circ } \otimes S_{Y \mid \circ X} =:S_{Y \mid \circ X \circ}$ is defined as the **Central Dimension Folding Subspace** which is our main target. 
 
 
 
@@ -49,7 +49,7 @@ Therefore, we can see the relation between $S_{Y \mid vec(X)}$ and $S_{Y \mid \c
 
 However, because the exact relation is $S_{Y \mid vec(X) }\subset S_{Y \circ X \circ}$, the original paper claimed that $S_{Y \mid vec(X) }$ can reduce the information more but if we want to preserve the data structure, then $S_{\circ X \circ}$ is better method. 
 
-Moreover, the original paper also claimed the concept of Kronecker Envelope which is defined as follow. 
+Moreover, the original paper also claimed the concept of Kronecker Envelope which is defined as follows. 
 $$
 \mbox{For a random matrix }U \in \mathbb{R}^{(d_R d_L) \times k}, \mbox{ the smallest Kronecker product }S_{U \circ} \otimes S_{\circ U} \mbox{ satisfying } \\\ S(U) \subset S_{U \circ} \otimes S_{\circ U} \mbox{ almost surely} \mbox{ is Kronecker Envelopes and written as }\Epsilon^{\otimes}(U)
 $$
@@ -60,7 +60,7 @@ Based on the theory, we can develop various SDR methods.
 
 ## 2. Method to find Kronecker Envelopes
 
-We can develop folded version of SIR,SAVE and DR by using the Kronecker envelopes. Because $\beta := (B\otimes A)^t$ could work as ordinary sufficient dimension reduction estimator, we can find dimension folding estimator by finding $S(\beta) \in S_{Y \mid vec(X)}$ and its envelopes $\beta_1$ and $\beta_2$ satisfying $\beta = \beta_1 \otimes \beta_2$.
+We can develop folded versions of SIR,SAVE and DR by using the Kronecker envelopes. Because $\beta := (B\otimes A)^t$ could work as ordinary sufficient dimension reduction estimator, we can find dimension folding estimator by finding $S(\beta) \in S_{Y \mid vec(X)}$ and its envelopes $\beta_1$ and $\beta_2$ satisfying $\beta = \beta_1 \otimes \beta_2$.
 
 We will use following setting 
 
@@ -74,11 +74,11 @@ We will use following setting
 
 
 
-First of all, we need following theorem. (Proof is in Ref.2)
+First of all, we need the following theorem. (Proof is in Ref.2)
 
 > **Theorem 1**
 >
-> Suppose that variances of each entries of random matrix U is finite and measurable with respect to a random vector W and that A is a nonrandom and nonsingular matrix.
+> Suppose that variances of each entry of random matrix U is finite and measurable with respect to a random vector W and that A is a nonrandom and nonsingular matrix.
 >
 > For global minima $(a^{\ast},b^{\ast},f^{\ast})$ for  $E \parallel AU - A(b \otimes a)f(W) \parallel^2$, 
 > $$
@@ -97,7 +97,7 @@ Therefore, the minimizer $(\alpha^{\ast},\beta^{\ast},f^{\ast})$ have to satisfy
 
 
 
-Therefore, by using above theorem, we can develop following several folded SDR algorithm. Remark that each multiplication AU is kernel matrix of SDR.
+Therefore, by using the above theorem, we can develop the following several folded SDR algorithms. Remark that each multiplication AU is kernel matrix of SDR.
 
 > Folded SIR
 >
@@ -117,15 +117,15 @@ Therefore, by using above theorem, we can develop following several folded SDR a
 > - $W = (Y,\tilde{Y})$
 > - $U = \Sigma^{-1}[2\Sigma - E[\left(vec(X)-var(\tilde X)\right)\left(vec(X)-var(\tilde X)\right)^t  \mid Y,\tilde Y)]\Sigma^{-1/2}$
 
-The original paper proved that if the SDR $\beta$ is exhaustive, then the envelopes of it is also exhaustive.
+The original paper proved that if the SDR $\beta$ is exhaustive, then the envelope of it is also exhaustive.
 
 
 
 ## 3. Estimation
 
-However, the above structure is not that easy to optimize. There is unusual operator $\otimes$ and matrix valued function $f$. Moreover, the number of parameter usually be over the thousand. But the original paper separated the algorithm in three simple least squares parts. 
+However, the above structure is not that easy to optimize. There is an unusual operator $\otimes$ and a matrix valued function $f$. Moreover, the number of parameters is usually over a thousand. But the original paper separated the algorithm into three simple least squares parts. 
 
-First of all, we need the notion of commutation matrix which makes $K_{r_1,r_2}vec(A) = vec(A^t)$ for $A(r_1 \times r_2)$. If we use them, then we can get other properties that $A\otimes B = K_{r_1,r_3}(B \otimes A) K_{r_4 r_2}$ and $K_{r,1} = K_{1,r} = I_r $ for any integer $r$.
+First of all, we need the notion of a commutation matrix which makes $K_{r_1,r_2}vec(A) = vec(A^t)$ for $A(r_1 \times r_2)$. If we use them, then we can get other properties that $A\otimes B = K_{r_1,r_3}(B \otimes A) K_{r_4 r_2}$ and $K_{r,1} = K_{1,r} = I_r $ for any integer $r$.
 
 > **Lemma**
 >
@@ -139,11 +139,11 @@ First of all, we need the notion of commutation matrix which makes $K_{r_1,r_2}v
 
 The proof is in Ref.2.
 
-Therefore, by using above method, we can find optima efficiently.
+Therefore, by using the above method, we can find optima efficiently.
 
 
 
-We have seen the concepts of sufficient dimension folding. In the next posing, I'll focus on folding version of central mean subspace; Folded OPG and Folded MAVE.
+We have seen the concepts of sufficient dimension folding. In the next post, I'll focus on the folding version of the central mean subspace; Folded OPG and Folded MAVE.
 
 
 
@@ -155,3 +155,5 @@ We have seen the concepts of sufficient dimension folding. In the next posing, I
 **- Ref.1 - Yuan Xue(2012),[Sufficient Dimension Folding Theory and Methods](https://getd.libs.uga.edu/pdfs/xue_yuan_201212_phd.pdf)**
 
 **- Ref.2 - BING LI, MIN KYUNG KIM AND NAOMI ALTMAN(2010) [ON DIMENSION FOLDING OF MATRIX- OR ARRAY-VALUED STATISTICAL OBJECTS](https://projecteuclid.org/journals/annals-of-statistics/volume-38/issue-2/On-dimension-folding-of-matrix--or-array-valued-statistical/10.1214/09-AOS737.full)**
+
+
