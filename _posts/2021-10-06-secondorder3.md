@@ -1,5 +1,5 @@
 ---
-title: \[Scond-Order Method\] Part3 - Primal-Dual Interior-Point Methods
+title: \[Second-Order Method\] Part3 - Primal-Dual Interior-Point Methods
 categories: [Convex]
 tags: [Convex Optimization]
 excerpt: Solving convex problem with inequality constraints
@@ -17,7 +17,7 @@ $\def\array#1#2{\left[ \begin{array}{#1} #2 \end{array}\right]}$
 
  In addition to the Barrier Method, there is another method to solve the convex problems with inequality constraints: the Primal-Dual Interior Point Method. 
 
- Compared with the barrier method, there are some characteristics in the interior point method. First of all, the barrier method runs the newton rapshon method several times along with barrier parameter t, but the interior point method runs it only once. Secondly, in the procedure of the barrier method, the target variables have to be in the feasible set, but in the interior point method, they don't have to be. Third, it could be more efficient but less intuitive. 
+ Compared with the barrier method, there are some characteristics in the interior point method. First of all, the barrier method runs the newton raphson method several times along with barrier parameter t, but the interior point method runs it only once. Secondly, in the procedure of the barrier method, the target variables have to be in the feasible set, but in the interior point method, they don't have to be. Third, it could be more efficient but less intuitive. 
 
  It is based on the perturbed KKT condition. Let's remark the perturbed KKT condition in the barrier method.
 
@@ -31,7 +31,7 @@ $\def\array#1#2{\left[ \begin{array}{#1} #2 \end{array}\right]}$
 
 
 
-Notice that the perturbed KKT condition is a modified version of original KKT condition that complementary slackness conditions are lessened.
+Notice that the perturbed KKT condition is a modified version of the original KKT condition that complementary slackness conditions are lessened.
 
 
 
@@ -85,7 +85,7 @@ Then the equation would be
 
 $DF(y) = \array{ccc}{\nabla^2f(x) + \sum_{i=1}^{m}u_i \nabla^2h_i(x) & Dh(x)^t & A^t \\\ -diag(u) Dh(x) & - diag(h(x)) & 0 \\\ A & 0 &0 }$
 
-By using them, we can design the newton's iterative equation as below.
+By using them, we can design Newton's iterative equation as below.
 
 
 $$
@@ -119,7 +119,7 @@ $g(u^{\ast},v^{\ast}) = f(x^{\ast}) + u^{\ast t}h(x)+ v^{\ast t}(Ax^{\ast}-b)$
 
 $\Rightarrow g(u^\ast , v^\ast) - f(x^{\ast}) \leq -u^{\ast t}h(x) =: \eta$
 
-The value $\eta$ is called as a surrogate duality gap. However, it is only a theoretical value because it cannot guarantee $r_{dual} =0$ and $r_{prim} =0 $ in reality. Therefore, we use the combination of them as criteria; $\eta, (\parallel r_{prim}\parallel_2^2 + \parallel r_{dual} \parallel_2^2)$. 
+The value $\eta$ is called a surrogate duality gap. However, it is only a theoretical value because it cannot guarantee $r_{dual} =0$ and $r_{prim} =0 $ in reality. Therefore, we use the combination of them as criteria; $\eta, (\parallel r_{prim}\parallel_2^2 + \parallel r_{dual} \parallel_2^2)$. 
 
 
 
@@ -149,4 +149,6 @@ By using two techniques, we can implement interior point method as follow
  ***
  Boyd,S. & Vandenberghe, L. (2004) Convex Optimization.Cambridge, UK: Cambridge Press  
  Tibshirani,R. "Barrier Method" Convex Optimization, Oct. 2019, Carnegie Mellon University, Pittsburgh
+
+
 
