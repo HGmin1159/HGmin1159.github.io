@@ -94,7 +94,7 @@ $\coor{Af}{B2} = \left[ \begin{array}{c} [\sum_i (\coor{f}{B1})_i  (\coor{A b_i^
 
 
 
-일반적으로 RKHS에서의 오퍼레이터는 대부분 tensor product의 형태로 구성된다. 만약 오퍼레이터가 tensor product일시 다음과 같이 더 직관적인 형태로 변한다. $\def\coor#1#2{\left[#1 \right]_{\mathfrak{#2}}}$
+일반적으로 RKHS에서의 오퍼레이터는 대부분 tensor product의 형태로 구성된다. 만약 오퍼레이터가 tensor product일시 다음과 같이 더 직관적인 형태로 변한다. 
 
 $\coor{(g\otimes f) b_i^{(1)}}{B2} = \coor{g}{B2} \inn{f , b_i ^{(1)}}_{H1} = \coor{g}{B2} \coor{f}{B1}^t G_{\mathfrak{B1}} \coor{b_i^{(1)}}{B1}$
 
@@ -249,7 +249,7 @@ $\mbox{subject to } \coor{f}{Bx}^t G_{\mathfrak{Bx}} \coor{f}{Bx} = 1$
 사용된 코드는 다음과 같다.
 
 ```python
-def stand(data):return(np.apply_along_axis(np.var, 0, X)**(-0.5)*(X - np.apply_along_axis(sum, 0, X)))
+stand(data):return(np.apply_along_axis(np.var, 0, X)**(-0.5)*(X - np.apply_along_axis(sum, 0, X)))
 def Gram(data) : 
     n = X.shape[0];p = X.shape[1] 
     U = np.matmul(X,X.T)
