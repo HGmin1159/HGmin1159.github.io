@@ -1,5 +1,5 @@
 ---
-title: \[Tensorial Dimension Reduction\] 1. Sufficient Dimension Folding for Regression Mean Function
+title: \[Tensorial Dimension Reduction\] 1. Sufficient Dimension Folding
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Sufficient Dimension Folding Theory and Techniques to reduce the dimension of tensorial data.
@@ -82,14 +82,14 @@ First of all, we need the following theorem. (Proof is in Ref.2)
 >
 > For global minima $(a^{\ast},b^{\ast},f^{\ast})$ for  $E \parallel AU - A(b \otimes a)f(W) \parallel^2$, 
 > $$
-> span(b^{\ast} \otimes a^{\ast}) = \Epsilon^{\otimes}(U)
+> span(b^{\ast} \otimes a^{\ast}) = \epsilon^{\otimes}(U)
 > $$
 
 ***
 
 Proof)
 
-Since $span(\beta_0 \otimes \alpha_0 ) =\Epsilon^{\otimes}(U)$ and the elements of U are measurable with respect to W, there is a random matrix $\phi(W) \in L_2^{m_Lm_R \times k}(\Omega_W)$ such that $U = (\beta_0 \otimes \alpha_0 ) \phi(W),$ which is equivalent to $AU = A(\beta_0 \otimes \alpha_0) \phi(W)$.
+Since $span(\beta_0 \otimes \alpha_0 ) =\epsilon^{\otimes}(U)$ and the elements of U are measurable with respect to W, there is a random matrix $\phi(W) \in L_2^{m_Lm_R \times k}(\Omega_W)$ such that $U = (\beta_0 \otimes \alpha_0 ) \phi(W),$ which is equivalent to $AU = A(\beta_0 \otimes \alpha_0) \phi(W)$.
 
 Therefore, the minimizer $(\alpha^{\ast},\beta^{\ast},f^{\ast})$ have to satisfy $AU = A(\beta^{\ast} \otimes \alpha^{\ast}) f(W)$ almost surely.
 
