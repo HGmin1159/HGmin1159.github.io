@@ -101,7 +101,7 @@ Dimension:
   - title: "SDR for Unusual Data Structure"
     children:
       - title: "Part 1. Sufficient Dimension Folding for Tensorial Data"
-        url: /dimension/tensorial_dr1/
+        url: /dimension/unusual_dr1/
         
 Convex_Optimization:
   - title: "General Concepts"
