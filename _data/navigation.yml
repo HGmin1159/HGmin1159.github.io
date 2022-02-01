@@ -98,10 +98,10 @@ Dimension:
         url:  /dimension/nonlineardr2/
       - title: "Part 3. Central sigma-Field for Nonlinear SDR and GSIR (KOR)"
         url: /dimension/nonlineardr3/
-  - title: "SDR for Unusual Data Structure"
+  - title: "SDR for Specific Data Structure"
     children:
       - title: "Part 1. Sufficient Dimension Folding for Tensorial Data"
-        url: /dimension/unusual_dr1/
+        url: /dimension/specific_dr1/
         
 Convex_Optimization:
   - title: "General Concepts"
