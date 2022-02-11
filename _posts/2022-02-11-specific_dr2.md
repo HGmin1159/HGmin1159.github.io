@@ -11,7 +11,8 @@ excerpt: Sparse Sufficient Dimension Reduction using Penalty
 
  Sparse data means data with too many empty values. This empty values might means zero, null values or very small values. In any cases, we can consider the sparse data as data that does not have much information compared to its size
 
-<img src="\assets\img\post\2022-02-11\figure1.png" style="zoom:50%;" />
+
+![figure1](\assets\img\post\2022-02-11\figure1.png)
 
  There are several patterns how the sparse data generate. First of all, when the data is gathered from experiment or survey, if the procedure of them is not that perfectly handled then the data can contains a lot of zero or empty values. For example, people can check the 0 or 5 without thinking when they fill the surveys. 
 
