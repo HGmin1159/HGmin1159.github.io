@@ -84,7 +84,7 @@ Finally, there is more specific structural function called as metric. The metric
 
  The complete Inner product space is called Hilbert space and the complete normed space is called Banach space. The complete metric space is called Baire space. We can set following relation between three functions. 
 
-<img src="\assets\img\post\2022-02-16\figure1.png" alt="figure1" style="zoom: 33%;" />
+<img src="\assets\img\post\2022-02-16\figure1.png" alt="figure1" style="zoom: 66%;" />
 
 Notice that some norms could be defined without inner product. 
 
@@ -132,7 +132,7 @@ It satisfies every axioms of norm. Moreover, by using the above norm, we can def
 
  Because the definition of the norm is same with the Lp space, we can easily imagine that every Lp space is normed space. And because the Lp space is complete, we can conclude that Lp space is Banach space endowed with Lp norm. The graphical depiction of the Lp norm would help understanding the concepts. 
 
-<img src="\assets\img\post\2022-02-16\figure2.png" alt="figure1" style="zoom: 33%;" />
+<img src="\assets\img\post\2022-02-16\figure2.png" alt="figure1" style="zoom: 66%;" />
 
 
 
