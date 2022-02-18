@@ -196,6 +196,120 @@ It means that any linear functional is eventually connected with inner product. 
 To develop the coordinate representation theorem, we have to use the more specific structural theory : Reproducing Kernel Hilbert Space. 
 
 
-
 ## 4. Reproducing Kernel Hilbert Space
+
+ Reproducing Kernel Hilbert Space(RKHS) is functional Hilbert Space whose inner product is made with reproducing kernel. Moreover, its basis consist with the kernel too. 
+
+ Therefore, we can summarize the components of the RKHS as follow. 
+
+> **Components of RKHS**
+>
+> For the functional space H whose elements are functions such that $\{f; f: \Omega \rightarrow \mathbb{R}\}$
+>
+> - **Kernel :**  Kernel used in RKHS could be defined as positive definite kernel with bivariate inputs. That is, $$k(\cdot,\cdot): \Omega \times \Omega \rightarrow \mathbb{R}$$ with positive definite property. 
+> - **Positive definite kernel :** The kernel is positive definite if for any finite subset with size n $$\ S \subset \Omega$$, the matrix $$\{k(s_i,s_j)\}, i=1,2,...,n,j=1,2,...,n$$ is positive definite matrix. Moreover, to satisfy the condition, the kernel have to be symmetric which means $k(a,b) = k(b,a)$. (It have to be conjugate symmetric if the space handles a complex field.)
+> - **Basis of RKHS**
+>   - The basis of RKHS is kernel whose second input is fixed with some point in $$\Omega$$. That is $$H = \mbox{span}(k(\cdot, x_1),k(\cdot, x_2),\cdots ,k(\cdot, x_n)) \mbox{ where } x_i \in \Omega$$ and for any function $f \in H$, there is unique scalar vector $\alpha = (\alpha_1 ,\alpha_2 ,\cdots , \alpha_n)$ such that $$f = \sum_{i=1}^n \alpha_i k(\cdot , x_i)$$
+> - **Inner product of RKHS**
+>   - For $$f = \sum_{i=1}^n \alpha_i k(\cdot, x_i),g=\sum_{j=1}^n \beta_i k(\cdot,x_j)$$, the inner product of RKHS is defined as $$\inner{f}{g} = \sum_{i=1}^n\sum_{j=1}^n \alpha_i \beta_j k(x_i,x_j)$$. ($$\inner{k(\cdot,x_i)}{k(\cdot,x_j)} = k(x_i,x_j)$$)
+>   - If the kernel is positive definite, then the above definition satisfies the axioms of inner product. This is why the kernel have to be positive definite. 
+> - **Reproducing Property of RKHS**
+>   - With the above structure, the RKHS have unique property called as reproducing property. Remark that each base kernel itself also can be represented using basis. That is,  $$k(\cdot, x_i) = \sum_{j=1}^n \beta_j k(\cdot, x_j) \mbox{ where } \beta_j=\begin{cases} 1 \mbox{ if }j=i \\ 0 \mbox{ if }j\neq i \end{cases}$$
+>   - Therefore, the inner product of sum function $f$ and kernel $k(\cdot,x_i)$ become value of the function $$f(x_i)$$. $$\inner{f}{k(\cdot, x_i)} = \sum_{i=1}^n\sum_{j=1}^n \alpha_i \beta_j k(x_i,x_j) = \sum_{j=1}^n \alpha_j k(x_i,x_j) = f(x_i)$$
+
+
+
+The important characteristic of RKHS is that the inner product of RKHS could be calculated like real vectors of linear algebra. First of all, let's define a matrix $$G$$ whose i-th row and j-th column entree is $k(x_i,x_j)$. This matrix is called as Gram Matrix. 
+
+Then the inner product could be calculated as follow. 
+
+> $$\inner{f}{g} = \sum_{i=1}^n\sum_{j=1}^n \alpha_i \beta_j k(x_i,x_j) = [f]^t G [g]$$
+>
+> $$\inner{f}{Ag} = [f]^t G [Ag] = [f^t]G [A][g]$$
+
+
+
+We can develop the theory onto real world by applying the concepts onto statistics
+
+
+
+## 5. Application of RKHS onto Statistics
+
+We can define following statistical operators in the RKHS. 
+
+> **Mean Operator**
+>
+> - $\inner{f}{\mu_X} = E(f(X))$
+>
+> **Second Moment Operator**
+>
+> - $$\inner{f}{M_{XX}g} = E(f(X)g(X))$$
+>
+> **Cross Moment Operator**
+>
+> - $$\inner{f}{M_{XY}g} = E(f(X),g(Y))$$
+>
+> **Variance Operator**
+>
+> - $$\inner{f}{\Sigma_{XX}f} = Var(f(X))$$
+>
+> **Covariance Opeator**
+>
+> - $$\inner{f}{\Sigma_{XY}f}=Cov(f(X),f(Y))$$
+
+
+
+ First of all, we can see that $$E(f(X))$$ as linear operator onto f. $$E(af(X)+bg(X))= aE(f(X))+bE(g(X))$$. Therefore, by using the Riesz representation theorem, we could know that there is unique element $$\mu_X$$ which make $$\inner{f}{\mu_X} = E(f(X))$$ for any $$f \in H$$. If we use the RKHS, then $$E[k(\cdot,X)]$$ works as it. $(;\inner{f}{E(\kappa(\cdot,X))} = E(\inner{f}{k(\cdot,X)}) = E(f(X)))$
+
+
+
+Secondly, there is tensor product $$A = f \otimes g : H \rightarrow H$$ which makes $(f \otimes g)h = f \inner{g}{h}$. Then, define $$M_{XX} = E(k(\cdot, X)\otimes k(\cdot, X))$$ and get follows. 
+
+$$\inner{f}{M_{XX}g} = \inner{f}{E(k(\cdot,X)\otimes k(\cdot,X))g} \\\ = E(\inner{f}{k(\cdot,X)\otimes k(\cdot,X)g})\\\ =E(\inner{f}{k(\cdot,X)}\inner{g}{k(\cdot,X)}) \\\  = E(f(X)g(X))$$
+
+Finally, if we define $\Sigma_{XX}$ as $M_{XX}-\mu_{X}\otimes \mu_X$, then we can get $$Cov(f(X),g(X)) = E(f(X)g(X))-E(f(X))E(g(X)).$$
+
+Consequently, we could construct various statistical operators.
+
+
+
+We can estimate above operators as follow. 
+
+- $$\mu_X = \frac{1}{n}k(\cdot,X)$$
+- $[\Sigma_{XY}] = \frac{1}{n}G$
+
+
+
+By using them, we can develop various nonlinear statistics. Let's see KPCA
+
+ Optimization problem of the ordinary PCA is as follow.
+
+$$\underset{\beta}{\max} Var(\beta^t X)  \\ \mbox{ subject to } \parallel \beta \parallel =1  $$
+
+
+
+This could be seen as finding reducing function $f(X)$ restricted as linear combination form $f_\beta(X) = \beta^t X$. We could generalized them as follow. 
+$$
+\underset{f}{\max} Var(f(X)) \\ \mbox{ subject to } \parallel f \parallel=1
+$$
+ By using RKHS structure, we can change them as follow. 
+$$
+\underset{f}{\max} \inner{f}{\Sigma_{XX}f} \\ \mbox{ subject to } \inner{f}{f} =1
+$$
+And by using the Gram matrix, we could know that $$\inner{f}{\Sigma_{XX}f} = [f]^tG^2[f]$$ and $$\inner{f}{f} = [f]^tG[f]$$
+
+Therefore, we can solve above problem using Lagrange problem form $$L(f) = [f]^tG^2[f]-\lambda ([f]^tG[f]-1)$$. The optimal values of them leads to $GEV(G^2,G)$ which means the solutions of the generalized eigenvalue problem $$G^2 \beta = \lambda G\beta$$. 
+
+Therefore, we can find vector $[f]$ and can find reducing function $f = \sum_{i=1}^n f_i k(\cdot , x_i)$.
+
+
+
+Notice that $$x_i$$ is data points and $$k(\cdot,x_i)$$ is usually means distance functions. By linear combination, we can develop nonlinear functions which consists of distance with known data points. It could be visualize as follow. 
+
+<img src="\assets\img\post\2022-02-16\figure3.png" alt="figure1" style="zoom: 66%;" />
+
+***
+
+ We have seen the Hilbert space and function space for data science. Because the quantum theory is developed at the Hilbert space(Dirac notation), the quantum computing could see the problem in the form of Hilbert space directly. Therefore, by understanding above structure, we might be able to find brand new approach on current problems. 
+
 
