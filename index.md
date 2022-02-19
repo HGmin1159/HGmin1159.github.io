@@ -22,21 +22,21 @@ feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
     title: "Quantum Computing"
-    excerpt: '양자컴퓨터 알고리즘'
+    excerpt: 'Theory and Experiment of Quantum Computing'
     url: "/categories/quantum/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/dimension.png
     alt: "placeholder image 3"
     title: "Dimension Reduction"
-    excerpt: '차원축소'
+    excerpt: 'Theory and Experiment of Dimension Reduction'
     url: "categories/Dimension/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/convex.png
     alt: "placeholder image 1"
     title: "Convex Optimization"
-    excerpt: '최적화 이론'
+    excerpt: 'Theory and Experiment of Convex Optimization'
     url: "/categories/Convex/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -45,14 +45,21 @@ feature_row3:
   - image_path: /assets/img/bayes.png
     alt: "placeholder image 2"
     title: "Bayesian Statistics"
-    excerpt: '베이즈 통계학'
+    excerpt: 'Theory and Experiment of Bayesian Statistics'
     url: "categories/Bayesian/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/img/Analysis.png
+    alt: "placeholder image 6"
+    title: "Analysis"
+    excerpt: 'Real, Complex and Functional Analysis'
+    url: "/categories/others/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/others.png
     alt: "placeholder image 6"
     title: "Others"
-    excerpt: '해석학 등 기타 내용'
+    excerpt: 'Other Data Science Methodology'
     url: "/categories/others/"
     btn_label: "Read More"
     btn_class: "btn--primary"
