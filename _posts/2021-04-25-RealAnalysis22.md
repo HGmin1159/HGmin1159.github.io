@@ -3,6 +3,12 @@ title: \[Real Analysis\] Ch2.Positive Lebesgue measure(2/2)
 categories: [Analysis]
 tags: [Analysis,Mathematics]
 excerpt: Positive Lebesgue Measure 
+sidebar:
+  - title: "Analysis"
+    image: /assets/img/Analysis.png
+    image_alt: "image"
+    nav: Analysis
+author_profile: False
 ---
 
 # 2. Positive Lebesgue Measures
