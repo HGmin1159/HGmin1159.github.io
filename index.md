@@ -4,16 +4,21 @@ permalink: /
 
 header:
   image: /assets/img/mintwall.jpg
+  - excerpt: "Hello. I'm graduate students majoring in Data Science. This blog was created to organize my studies and use them in lectures and group studies. Postings of the blog cover theories, implementation and my own intuition in various fields. My email adress is mhg9511@gmail.com. If you find any errors or have some issues, please contact me."
 
 feature_row1:
   - image_path: /assets/img/avatar2.jpg
     alt: "placeholder image 4"
     title: "H.G Min"
-  - url: "/assets/CVandSOP.pdf"
-    btn_label: "My CV and SOP"
+  - url: "/assets/CV.pdf"
+    btn_label: "My CV"
     btn_class: "btn--primary"
-    excerpt: "Hello. I'm graduate students majoring in Data Science. This blog was created to organize my studies and use them in lectures and group studies. Postings of the blog cover theories, implementation and my own intuition in various fields. My email adress is mhg9511@gmail.com. If you find any errors or have some issues, please contact me."
-  
+    excerpt: "**Yonsei University** <br> - **Master's degree** expected in Applied Statitstics <br> - **Bachelor's degree** in Applied Statistics <br> - **Consulting Assistant** in Institute of Data Science"
+  - url: "/assets/SOP.pdf"
+    btn_label: "My SOP"
+    btn_class: "btn--primary"
+    excerpt: '**Fields of Interest** <br> - **Dimensionality Reduction** <br> - **Quantum Machine Learning** <br> - **Theory of Optimization**'
+    
 feature_row2:
   - image_path: /assets/img/quantum.png
     alt: "placeholder image 4"
