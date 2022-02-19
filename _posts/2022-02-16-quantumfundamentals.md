@@ -1,5 +1,5 @@
 ---
-title: \[Hilbert Space Theory\] Introduction to Function Space
+title: \[Hilbert Space\] Introduction to Function Space
 categories: [Analysis]
 tags: [Analysis]
 excerpt: Exploring function space with Hilbert Space Framwork
