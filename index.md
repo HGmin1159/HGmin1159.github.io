@@ -53,7 +53,7 @@ feature_row3:
     alt: "placeholder image 6"
     title: "Analysis"
     excerpt: 'Real, Complex and Functional Analysis'
-    url: "/categories/others/"
+    url: "/categories/Analysis/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/img/others.png
