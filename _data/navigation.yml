@@ -140,18 +140,18 @@ Analysis:
   - title: "Abstract Integration"
     children:
       - title: "Ch1. Abstract Integration(1/2)"
-        url: /Analysis/RealAnalysis11/
+        url: /analysis/RealAnalysis11/
       - title: "Ch1. Abstract Integration(2/2)"
-        url: /Analysis/RealAnalysis11/
+        url: /analysis/RealAnalysis11/
       - title: "Ch2. Positive Lebsegue Measure(1/2)"
-        url: /Analysis/RealAnalysis21/
+        url: /analysis/RealAnalysis21/
       - title: "Ch2. Positive Lebsegue Measure(2/2)"
-        url: /Analysis/RealAnalysis22/
+        url: /analysis/RealAnalysis22/
   - title: "Hilbert Space Theory"
     children:
       - title: "Summary of Hilbert Space and RKHS"
         url: /quantum/quantumfundamentals/
       - title: "Summary of Operators in Hilbert Space"
-        url: /Analysis/advmat/
+        url: /analysis/advmat/
         
       
