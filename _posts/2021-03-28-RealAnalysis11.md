@@ -3,6 +3,12 @@ title: \[Real Analysis\] Ch1.Abstract Integration (1/2)
 categories: [Analysis]
 tags: [Analysis,Mathematics]
 excerpt: Absatract Integration, sigma-algebra, simple function, measure
+sidebar:
+  - title: "Analysis"
+    image: /assets/img/Analysis.png
+    image_alt: "image"
+    nav: Analysis
+author_profile: False
 ---
 
 # 1. Abstract Integration
