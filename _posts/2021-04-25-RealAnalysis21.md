@@ -1,5 +1,5 @@
 ---
-title: \[Math\] Real Analysis - ch2.Positive Lebesgue measure(1/2)
+title: \[Real Analysis\] Ch2.Positive Lebesgue measure(1/2)
 categories: [Analysis]
 tags: [Analysis,Mathematics]
 excerpt: Riesz representation theorem
