@@ -1,8 +1,14 @@
 ---
-title: \[Fundamentals\] Introduction to Function Space
-categories: [Quantum]
-tags: [Quantum Computer]
+title: \[Hilbert Space Theory\] Introduction to Function Space
+categories: [Analysis]
+tags: [Analysis]
 excerpt: Exploring function space with Hilbert Space Framwork
+sidebar:
+  - title: "Analysis"
+    image: /assets/img/Analysis.png
+    image_alt: "image"
+    nav: Analysis
+author_profile: False
 ---
 
 $\def\ket#1{\mid #1 \rangle}\def\bra#1{\langle #1 \mid}$
