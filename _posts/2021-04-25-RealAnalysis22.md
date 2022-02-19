@@ -1,7 +1,7 @@
 ---
 title: \[Math\] Real Analysis - ch2.Positive Lebesgue measure(2/2)
-categories: [others]
-tags: [Others,Mathematics]
+categories: [Analysis]
+tags: [Analysis,Mathematics]
 excerpt: Positive Lebesgue Measure 
 ---
 
