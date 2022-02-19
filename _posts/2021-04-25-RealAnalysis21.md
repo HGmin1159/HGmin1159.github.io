@@ -3,6 +3,12 @@ title: \[Real Analysis\] Ch2.Positive Lebesgue measure(1/2)
 categories: [Analysis]
 tags: [Analysis,Mathematics]
 excerpt: Riesz representation theorem
+sidebar:
+  - title: "Analysis"
+    image: /assets/img/Analysis.png
+    image_alt: "image"
+    nav: Analysis
+author_profile: False
 ---
 
 # 2. Positive Lebesgue Measures
