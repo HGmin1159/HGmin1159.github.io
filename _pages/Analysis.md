@@ -6,7 +6,7 @@ permalink: /categories/Analysis/
 taxonomy: Analysis
 sidebar:
   - title: "Analysis"
-    image: /assets/img/analysis.png
+    image: /assets/img/Analysis.png
     image_alt: "image"
     nav: Analysis
 author_profile: False
