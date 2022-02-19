@@ -1,5 +1,5 @@
 ---
-title: \[Paper Review\] 1. Sufficient Dimension Folding for Tensorial Data
+title: \[Paper Review\] Sufficient Dimension Folding for Tensorial Data
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Sufficient Dimension Folding Theory and Techniques to reduce the dimension of tensorial data.
