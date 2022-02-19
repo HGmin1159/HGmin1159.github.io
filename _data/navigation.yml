@@ -10,6 +10,8 @@ main:
     url: /categories/Bayesian/
   - title: "Convex Optimization"
     url: /categories/Convex/
+  - title: "Analysis"
+    url: /categories/Analysis/
   - title: "Others"
     url: /categories/others/
   # - title: "Sitemap"
