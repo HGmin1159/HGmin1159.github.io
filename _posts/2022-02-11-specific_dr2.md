@@ -3,6 +3,12 @@ title: \[Paper Review\] Sparse Sufficient Dimension Reduction
 categories: [Dimension]
 tags: [차원 축소,Dimension reduction]
 excerpt: Sparse Sufficient Dimension Reduction using Penalty
+sidebar:
+  - title: "Dimensionality Reduction"
+    image: /assets/img/dimension.png
+    image_alt: "image"
+    nav: Dimension
+author_profile: False
 ---
 
 
