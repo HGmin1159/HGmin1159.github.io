@@ -6,7 +6,7 @@ header:
   image: /assets/img/mintwall.jpg
   
 intro: 
-  excerpt: "Hello. I'm graduate students majoring in Data Science. This blog was created to organize my studies and use them in lectures and group studies. Postings of the blog cover theories, implementation and my own intuition in various fields. My email adress is mhg9511@gmail.com. If you find any errors or have some issues, please contact me."
+  - excerpt: "Hello. I'm graduate students majoring in Data Science. This blog was created to organize my studies and use them in lectures and group studies. Postings of the blog cover theories, implementation and my own intuition in various fields. My email adress is mhg9511@gmail.com. If you find any errors or have some issues, please contact me."
 
 feature_row1:
   - image_path: /assets/img/avatar2.jpg
