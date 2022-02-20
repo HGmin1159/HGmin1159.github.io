@@ -64,6 +64,8 @@ Quantum_eng:
         url: /quantum/quantumml3/
       - title: "Part 4. Quantum Kernel Space"
         url: /quantum/quantumml4/
+      - title: "Part 5. Quantum Algorithm for Finance"
+        url: /quantum/quantumml5/
   
 Dimension:
   - title: "Basic Dimension Reduction"
