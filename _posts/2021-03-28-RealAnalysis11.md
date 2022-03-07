@@ -1,5 +1,5 @@
 ---
-title: \[Real Analysis\] Ch1.Abstract Integration (1/2)
+title: \[RCA\] Ch1.Abstract Integration (1/2)
 categories: [Analysis]
 tags: [Analysis,Mathematics]
 excerpt: Absatract Integration, sigma-algebra, simple function, measure
