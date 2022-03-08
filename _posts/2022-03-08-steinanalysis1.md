@@ -37,9 +37,9 @@ $$\def\inner#1{\left<#1\right>}$$
 >
 > **Inner Product :** $$\inner{x,y} := \sum_{i=1}^d x_iy_i$$
 >
-> **Norm : ** $$\parallel x \parallel := \left( \sum_{i=1}^d x_i^2 \right)^{1/2}$$
+> **Norm :** $$\parallel x \parallel := \left( \sum_{i=1}^d x_i^2 \right)^{1/2}$$
 >
-> **Metric : ** $$d(x,y) := \left( \sum_{i=1}^d (x_i-y_i)^2\right)^{1/2}$$
+> **Metric :** $$d(x,y) := \left( \sum_{i=1}^d (x_i-y_i)^2\right)^{1/2}$$
 >
 > There is a relation between components that $$\inner{x,x} = \parallel x\parallel^2 , d(x,y) = \parallel x-y\parallel$$
 
@@ -57,7 +57,7 @@ To handle the analytic property and theorem of the Real Analysis, the theory of 
 >
 > ​                          $$\bigcap_{i=1}^d A_i = \{z ; z \in A_1 \mbox{ and } A_2 \mbox{ and } ... \mbox{ and } A_d\}$$
 >
-> **Complement : ** $$A-B =\{z ; z \in A \mbox{ and }z \notin B\}$$. 
+> **Complement :** $$A-B =\{z ; z \in A \mbox{ and }z \notin B\}$$. 
 >
 > **Metric of sets :** $$d(A,B) = \inf_{x \in A, y \in B} d(x,y)$$
 >
@@ -67,17 +67,17 @@ To handle the analytic property and theorem of the Real Analysis, the theory of 
 
 Most important concepts of the set in analysis is topological properties of the set. Because most of the concepts want to talk about extreme situation, they are defined using epsilon which is very small positive scalar closed to zero but not the zero itself.  
 
-> **Open Ball : ** An open ball is defined as a set $$B_{r} (x) = \{y ; \parallel  x-y \parallel < r \}$$
+> **Open Ball :** An open ball is defined as a set $$B_{r} (x) = \{y ; \parallel  x-y \parallel < r \}$$
 >
-> **Open Set  : ** A set E is open if $$\forall x \in E, \forall \epsilon >0, B_{\epsilon}(x) \subset E $$. 
+> **Open Set  :** A set E is open if $$\forall x \in E, \forall \epsilon >0, B_{\epsilon}(x) \subset E $$. 
 >
-> **Closed Set : ** A set F is closed if a complement $$F^c$$ is open set. 
+> **Closed Set :** A set F is closed if a complement $$F^c$$ is open set. 
 >
 > Because the complement is relative concepts by its mother set, the closeness is also relative concepts. 
 >
-> **Bounded Set : ** A set E is bounded if $$\exist x , \exist r < \infty ,E \subset  B_{r}(x)  $$
+> **Bounded Set :** A set E is bounded if $$\exists x , \exists r < \infty ,E \subset  B_{r}(x)  $$
 >
-> **Compact Set : ** A set in Euclidean space is compacted if it is bounded and closed. 
+> **Compact Set :** A set in Euclidean space is compacted if it is bounded and closed. 
 
 We can consider the open set as a set whose every element is surrounded by the set or there is no point in contact with the outside directly.
 
@@ -103,19 +103,19 @@ There is important theorem of them.
 
 There is additional concepts about boundary of the set. 
 
-> **Limit Point : ** A point $$x$$ is a limit point of the set E if $$ \forall r >0$$, $$B_r(x) \cap E \neq \phi$$.
+> **Limit Point :** A point $$x$$ is a limit point of the set E if $$ \forall r >0$$, $$B_r(x) \cap E \neq \phi$$.
 >
-> **Isolated Point : ** A point $$x \in E$$ is an isolated point of the set E if $$\forall r >0, B_{r}(x) \cap E = \{x\}$$.
+> **Isolated Point :** A point $$x \in E$$ is an isolated point of the set E if $$\forall r >0, B_{r}(x) \cap E = \{x\}$$.
 >
-> **Interior Point : ** A point $$x \in E$$ is an interior point of the set E if $$\exist r >0 \mbox{ such that }B_r (x) \subset E$$.
+> **Interior Point :** A point $$x \in E$$ is an interior point of the set E if $$\exists r >0 \mbox{ such that }B_r (x) \subset E$$.
 >
-> **Interior : ** An interior $$Int(E)$$ of a set $$E$$ is a set of all interior points of $$E$$. 
+> **Interior :** An interior $$Int(E)$$ of a set $$E$$ is a set of all interior points of $$E$$. 
 >
-> **Closure : ** A closure $$Cl(E) = \overline{E}$$ of a set E is the union of E and its all limit points. 
+> **Closure :** A closure $$Cl(E) = \overline{E}$$ of a set E is the union of E and its all limit points. 
 >
-> **Boundary : ** A boundary $$\partial E $$ of a set E is $$Cl(E) - Int(E) \mbox{ i.e. } \{z ; z \in Cl(E) , z \notin Int(E)\}$$
+> **Boundary :** A boundary $$\partial E $$ of a set E is $$Cl(E) - Int(E) \mbox{ i.e. } \{z ; z \in Cl(E) , z \notin Int(E)\}$$
 >
-> **Perfect : ** A closed set E is perfect if E does not have isolated points
+> **Perfect :** A closed set E is perfect if E does not have isolated points
 
  
 
@@ -125,13 +125,13 @@ There is additional concepts about boundary of the set.
 
  In measure theory, the rectangles is one of the important concepts in that the volume of it could be easily evaluated using the usual formula and sense and almost every region could be approximated using the rectangles. The basic concepts about rectangles in Euclidean space is defined as below. 
 
-> **Rectangles : ** A closed rectangle R in $$\mathbb{R}^d$$ is defined as $$R = [a_1,b_1] \otimes [a_2,b_2] \otimes ... \otimes [a_d,b_d]$$ or $$R = \{(x_1,x_2,...,x_d) \in \mathbb{R}^d ; a_j \leq x_j \leq b_j,  \forall j \in \{1,2,...d\}\}$$
+> **Rectangles :** A closed rectangle R in $$\mathbb{R}^d$$ is defined as $$R = [a_1,b_1] \otimes [a_2,b_2] \otimes ... \otimes [a_d,b_d]$$ or $$R = \{(x_1,x_2,...,x_d) \in \mathbb{R}^d ; a_j \leq x_j \leq b_j,  \forall j \in \{1,2,...d\}\}$$
 >
-> **Volume : ** A volume of rectangle R is defined as $$\prod _{j=1}^d (b_j-a_j)$$ and denoted as $$\mid R \mid $$.
+> **Volume :** A volume of rectangle R is defined as $$\prod _{j=1}^d (b_j-a_j)$$ and denoted as $$\mid R \mid $$.
 >
-> **Cube : ** If every length $$(b_j-a_j)$$ of rectangle is equal for all j, then the rectangle is called as cube.
+> **Cube :** If every length $$(b_j-a_j)$$ of rectangle is equal for all j, then the rectangle is called as cube.
 >
-> **Almost disjoint : ** If a union of rectangles is said to be almost disjoint if intersect of their interiors is null set i.e. $$\bigcap_i Int(R_i) = \phi$$ . 
+> **Almost disjoint :** If a union of rectangles is said to be almost disjoint if intersect of their interiors is null set i.e. $$\bigcap_i Int(R_i) = \phi$$ . 
 
 
 
@@ -139,11 +139,11 @@ There is additional concepts about boundary of the set.
 
 > **Lemma 1.** If a rectangle is the almost disjoint union of finitely many rectangles i.e. $$R = \bigcup_{k=1}^N R_k$$ ,then the volume of the rectangle is calculated as $$\mid R \mid = \sum_{k=1}^N \mid R_k \mid$$
 >
-> **Lemma 2. ** If $$R , R_1,...R_k$$ are rectangles and $$R \subset \bigcup_{k=1}^N R_k ,$$ then $$\mid R \mid \leq \sum_{k=1}^N \mid R_k \mid$$
+> **Lemma 2.** If $$R , R_1,...R_k$$ are rectangles and $$R \subset \bigcup_{k=1}^N R_k ,$$ then $$\mid R \mid \leq \sum_{k=1}^N \mid R_k \mid$$
 >
-> **Theorem 3. ** Every open subset $$O$$ of $$\mathbb{R}$$ can be written uniquely as a countable union of disjoint open intervals. 
+> **Theorem 3.** Every open subset $$O$$ of $$\mathbb{R}$$ can be written uniquely as a countable union of disjoint open intervals. 
 >
-> **Theorem 4. ** Every open subset $$O$$ of $$\mathbb{R}^d$$, can be written as a countable union of almost disjoint closed cubes. 
+> **Theorem 4.** Every open subset $$O$$ of $$\mathbb{R}^d$$, can be written as a countable union of almost disjoint closed cubes. 
 
 First lemma could be understood without other explanation. Lemma 2 is modified version of lemma 1. 
 
