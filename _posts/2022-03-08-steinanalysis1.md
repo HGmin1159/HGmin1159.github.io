@@ -167,7 +167,7 @@ The Cantor set is defined as $$C := \lim_{n \rightarrow \infty} C_n = \bigcap_{i
 
 The visual expression of the cantor set is below.(From wikipedia https://en.wikipedia.org/wiki/Cantor_set )
 
-![image-20220308170208559](C:\Users\mhg95\Desktop\[Real-Analysis]-Ch1.-Measure-Theory.assets\image-20220308170208559.png)
+ <img src="\assets\img\post\2022-03-08\figure1.png" alt="figure1" style="zoom: 100%;" />
 
 
 
