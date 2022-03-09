@@ -103,7 +103,7 @@ There is important theorem of them.
 
 There is additional concepts about boundary of the set. 
 
-> **Limit Point :** A point $$x$$ is a limit point of the set E if $$ \forall r >0$$, $$B_r(x) \cap E \neq \phi$$.
+> **Limit Point :** A point $$x$$ is a limit point of the set E if $$ \forall r >0$$, $$(B_r(x)-\{x\}) \cap E \neq \phi$$.
 >
 > **Isolated Point :** A point $$x \in E$$ is an isolated point of the set E if $$\forall r >0, B_{r}(x) \cap E = \{x\}$$.
 >
