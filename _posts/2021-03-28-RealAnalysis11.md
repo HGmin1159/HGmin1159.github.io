@@ -130,15 +130,15 @@ $ \sigma $ - algebra는 위와 같이 해당 개념이 지녀야 하는 성질�
 
  이러한 $\sigma$ - algebra는 유일하지 않다. 그런데 유일하지 않으면 체계적으로 생각하기도 애매하다. 따라서 여기에 몇가지 성질들을 추가해 유일성을 가진 $\sigma$ - alebra인 Borel Sets을 만들 수 있다. Borel Set의 정의는 다음과 같다.  
 
-> **Borel \sigma algebra in X**
+> **Borel $\sigma$ algebra in X**
 >
 > - Smallest $\sigma$ -algebra which contains every open set in X
 
- 정의를 잘 살펴보면 topology의 원소가 open set이라고 불리며 모든 open set이 Borel \sigma algebra에 포함되므로 Borel \sigma algebra는 topology를 품고 있는 공간으로 생각할 수 있다. 
+ 정의를 잘 살펴보면 topology의 원소가 open set이라고 불리며 모든 open set이 Borel $\sigma$ algebra에 포함되므로 Borel $\sigma$ algebra는 topology를 품고 있는 공간으로 생각할 수 있다. 
 
-거기에 더해 $\sigma$ - algebra는 여집합이 포함되므로 every closed set도 Borel \sigma algebra에 포함되며, 차집합도 포함되므로 half open set 또한 포함된다. 따라서  Borel \sigma algebra에는 사실상 생각할 수 있는 모든 것들이 포함된다고 생각하면 된다.(하지만 나중에 반례가 등장한다)
+거기에 더해 $\sigma$ - algebra는 여집합이 포함되므로 every closed set도 Borel $\sigma$ algebra에 포함되며, 차집합도 포함되므로 half open set 또한 포함된다. 따라서  Borel $\sigma$ algebra에는 사실상 생각할 수 있는 모든 것들이 포함된다고 생각하면 된다.(하지만 나중에 반례가 등장한다)
 
-Borel \sigma algebra의 원소 하나하나를 Borel set이라고 부른다. 
+Borel $\sigma$ algebra의 원소 하나하나를 Borel set이라고 부른다. 
 
 마지막으로 Borel Function을 살펴보자.
 
