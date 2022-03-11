@@ -179,3 +179,59 @@ There are several interesting properties about the Cantor set.
 > 4. The total length of the Cantor set is zero. 
 
 The last property could be proved as follow. The volum of $$C_k$$ is $$\left( \frac{2}{3}\right) ^{k}$$. And the Cantor set is subset of the $$C_k, \forall k$$. By lemma 2, we can easily know that $$0 \leq \mid C \mid \leq \mid C_k \mid, \forall k$$ . By using the sandwitch lemma, we can know that $$\mid C \mid =0.$$
+
+
+
+
+## 2. The exterior measure
+
+ It is hard to construct a definition or formula about the volume of a set with some irregular shape like pond. But, by stacking the cube, we can build almost every shape of set. Because we can easily calculate the volume of each cube, we can define the volume of any set as a sum of volumes of cubes consisting the set. 
+
+
+
+ More exactly, we can measure the volume of any set as by approximating it from outside. This method is called as exterior measure. 
+
+> **Exterior Measure**
+>
+> The exterior measure $m_{\ast}(\cdot)$ of E is defined as $$m_{\ast} (E) = \inf_{Q_j \in \Omega} \sum_{j=1}^{\infty} \mid Q_j \mid , \mbox{ where } \Omega = \{\{Q_j\} ; E \subset \bigcup_{j=1}^{\infty} Q_j,Q_j \mbox{ is a closed cube}\}$$ 
+
+The exterior measure could be infinity but have to be nonnegative. And the covering method could be replaced with ball or rectangles too. 
+
+
+
+There are important application of the exterior measure on several set. 
+
+> **Application 1.** The exterior measure of **a point** is **zero**
+>
+> **Application 2.**The exterior measure of **a closed cube** is equal to **its volume.**
+>
+> **Application 3.** The exterior measure of **an open cube** is equal to **volume of its closure**. 
+>
+> **Application 4.** The exterior measure of **a rectangle R** is equal to **its volume**. 
+>
+> **Application 5.** The exterior measure of $$\mathbb{R}^{d}$$ is **infinite**. 
+>
+> **Application 6.** The exterior measure of **the Cantor set** is **zero**. 
+
+ The values of each examples are calculated through the properties of rectangles and cubes. We can see the most of them matching with our intuition or former expectation. 
+
+
+
+To apply the exterior measure at more abstract sets, we have to derive additional properties of it. 
+
+> **Proposition 1.**$$\forall \epsilon >0 , \exists \{ Q_{i}\} \mbox{ such that } E \subset \bigcup_{i=1}^\infty Q_{i} \mbox{ and } \sum_{j=1}^{\infty} m_{\ast} (Q_j) \leq m_{\ast} (E) + \epsilon$$
+>
+> **Proposition 2.** (Monotonicity) If $$E_{1} \subset E_2 ,$$ then $$m_{\ast} (E_1) \leq m_{\ast} (E_2)$$
+>
+> **Proposition 3.** (Countable Sub-additivity)If $$E = \bigcup_{j=1}^{\infty} E_j ,$$ then $$m_{\ast}(E) \leq \sum_{j=1}^{\infty} m_{\ast} (E_j)$$
+>
+> **Proposition 4.** If $$E \subset \mathbb{R}^d$$, then $$m_{\ast}(E) = \inf_{O \in \Omega} m_{\ast}(O), \mbox{ where } \Omega = \{O \mbox{: open set} ; E \subset O \}$$
+>
+> **Proposition 5.** If $$E = E_1 \cup E_2,$$ and $$d(E_1 ,E_2) >0 ,$$ then $$m_{\ast}(E) = m_{\ast}(E_1) + m_{\ast}(E_2)$$
+>
+> **Proposition 6.** If $$E = \bigcup_{j=1}^{\infty} Q_j$$ where $$\{Q_j\}$$ is set of almost disjoint closed cubes. then $$m_{\ast}(E) = \sum_{j=1}^{\infty} \mid Q_{j} \mid . $$
+
+
+
+The book states that even though above propositions hold, we cannot say if $$E$$ is disjoint union of subsets $$E_1$$ and $$E_2$$ in $$\mathbb{R}^d$$, $$m_{\ast} (E) = m_{\ast}(E_1)+m_{\ast}(E_2)$$
+
