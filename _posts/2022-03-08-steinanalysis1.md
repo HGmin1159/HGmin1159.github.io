@@ -235,3 +235,150 @@ To apply the exterior measure at more abstract sets, we have to derive additiona
 
 The book states that even though above propositions hold, we cannot say if $$E$$ is disjoint union of subsets $$E_1$$ and $$E_2$$ in $$\mathbb{R}^d$$, $$m_{\ast} (E) = m_{\ast}(E_1)+m_{\ast}(E_2)$$
 
+
+## 3. Measurable sets and the Lebesgue measure
+
+ Now we can define the concept of the Lebesgue measure using exterior measure. 
+
+> **Definition. [Measurable Set]**
+>
+>  A set E of $\mathbb{R}^d$ is (Lebesgue) measurable, if $$\forall \epsilon >0 , \exists O :$$ open set such that $$E \subset O$$ and $$m_{\ast}(O-E) < \epsilon$$
+>
+> **Definition. [Lebesgue Measure]**
+>
+> If $$E$$ is measurable, we define its measure $$m(E)$$ by $$m(E) = m_{\ast}(E)$$.
+
+
+
+ In the [W. Rudin (1987), Real and Complex Analysis], it defines the measurable space and set as a space that have $\sigma$ - algebra and the member of $\sigma$- algebra. For example, the probability space $(\Omega,F,p)$ is also measurable space where $$\Omega$$ is sample space, $$F$$ is its $\sigma$ - algebra and $$p$$ is probability measure function.
+
+ Therefore, we can regard the measurable set of above definition as measurable set in Lebesgue sense. 
+
+
+
+ The measurable set and Lebesgue measure have following properties.
+
+> **Property 1. ** Every open set in $$\mathbb{R}^d$$ is measurable.
+>
+> **Property 2. ** If $$m_{\ast} (E) = 0,$$ then $$E$$ is measurable.
+>
+> **Property 3. ** A countable union of measurable sets is measurable.
+>
+> **Property 4. ** Closed set is measurable. 
+>
+> **Property 5. ** The complement of a measurable set is measurable
+>
+> **Property 6. ** A countable intersection of measurable sets is measurable
+
+
+
+There is an important theorem of measure. 
+
+> **Theorem. [Countable Additivity]**
+>
+>  If $$\{E_j\}_{j \in \mathbb{N}}$$ is a sequence of mutually disjoint measurable sets and $$E = \bigcup_{j \in \mathbb{N}} E_j$$, then $$m(E) = \sum_{j \in \mathbb{N}} m(E_j)$$
+>
+> **Corollary. **
+>
+> Suppose $$\{E_j\}_{j \in \mathbb{N}}$$ is a sequence of measurable sets and $$E = \bigcup_{j\in \mathbb{N}} E_j$$ and $$F = \bigcap_{j \in \mathbb{N}} E_j$$
+>
+> 1. If $$\{E_{k} \subset E_{k+1}, k \in \mathbb{N}\}$$, then $$m(E) = \lim_{j \rightarrow \infty} m(E_j)$$
+> 2. If $$\{E_{k+1} \subset E_{k}, k \in \mathbb{N}\}$$ and $$m(E_1) < \infty$$, then $$m(E) = \lim_{j \rightarrow \infty} m(E_j)$$
+
+
+
+ The general definition of measure is defined axiomatically. That is, the set function mapping $\sigma$- algebra to non-negative real number could be worked as measure if it satisfies below three axioms 
+
+> **Non-negativity: ** For all $$E$$ in $$\Sigma$$m we have $$\mu(E) \geq 0 $$.
+>
+> **Null empty set: ** $$\mu(\phi) =0 $$
+>
+> **Countable additivity** : For all countable collections $$\{E_k\}_{k=1}^{\infty}$$ of pairwise disjoint sets in $$\Sigma$$, $$\mu(\bigcup_{k=1}^{\infty} E_k) = \sum_{k=1}^{\infty} \mu(E_k)$$
+
+As we have seen, the property of exterior measure and Lebesgue measure satisfies first two axioms of measure. The countable additivity theorem of Lebesgue measure says that the Lebesgue measure also satisfies the third axiom of measure. 
+
+
+
+But as we said above, to say the theorem holds, we need secondary lemma that if $$F$$ is closed, $$K$$ is compact and they are disjoint, then $$d(F,K) >0$$.
+
+
+
+For the measurable sets, there are useful concepts for analytic proof of additional theorem. 
+
+> **Theorem [Well approximation for measurable sets]**
+>
+> Suppose E is measurable, then $$\forall \epsilon >0$$
+>
+> 1) $$\exists O:$$ open set with $$E \subset O$$ and $$m(O-E) \leq \epsilon$$
+> 2) $$\exists F :$$ closed set with $$F \subset E$$ and $$m(E-F) \leq \epsilon$$
+> 3) If $$m(E)$$ is finite, then $$\exists K : $$ compact set with $K \subset E$ and $$m(E-K)\leq \epsilon$$
+> 4) If $$m(E)$$ is finite, $$\exists F = \bigcup_{j=1}^N Q_j, (Q_j$$ is a closed cube$$)$$ such that $$m ( E \triangle F) \leq \epsilon$$.
+>
+> $$(\mbox{where } E \triangle F = (E-F) \cup (F-E))$$
+
+It states that the Lebesgue measure of some set have equal values with little bit bigger sets and little bit smaller sets. We can regard the property stating some kinds of continuity of measure. 
+
+ <img src="\assets\img\post\2022-03-08\figure1.png" alt="figure2" style="zoom: 100%;" />
+
+ Even though we have to study more, but we can infer the reason the book weight on the interior closed set and exterior open set not interior open set and exterior closed set as follow. If we think about largest interior open set and smallest exterior closed set of some set $$E$$, then we can easily find the sets whose boundary perfectly match with original set regardless of the original set.
+
+ But if we imagine the smallest exterior open set of some closed set, then we hardly imagine the set because boundary of the exterior set have to approach to the boundary of the original set but it can not reach it. This means that the former conditions (interior closed set and exterior open set) are more difficult than latter conditions (interior open set and exterior closed set). 
+
+ Analytically stating, for closed set $$F$$ and open set $$O$$, if $$O \subset E \subset F$$, then we can find $$O$$ and $$F$$ which satisfy the relation $$cl(O) = cl(E) = cl(F)$$ but if $$F \subset E \subset O$$,then there is no $$O$$ and $$F$$ which satisfies the relation $$cl(O) = cl(E)=cl(F)$$ 
+
+ Therefore, if we make the definition of the measure which satisfies the latter conditions, then it might not satisfies the former conditions. But if we make definition of the measure satisfying the former conditions, then it naturally satisfies the latter conditions. 
+
+
+
+ The Lebesgue measure has peculiar property about invariance. It is invariant with transaction, dilation and reflection. We can state them as below. 
+
+> **Invariance Property of Lebesgue Measure**
+>
+> 1) **Transaction Invariance (Location Invariance)**
+>    - For a measurable set $$E \subset \mathbb{R}^d$$ and any point $$h \in \mathbb{R}^d$$ , measure of $$E+h = \{x+h ; x \in E\}$$ equals with the measure of $$E$$ i.e. $$m(E+h)=m(E)$$.
+> 2) **Dilation Invariance (Scale Invariance)**
+>    - For a measurable set $$E \subset \mathbb{R}^d$$ and some scalar $$\delta \in \mathbb{R}^+$$, measure of $$\delta E = \{\delta x ; x \in E\}$$ equals with $$\delta^d$$ times of the measure of E i.e. $$m(\delta E) = \delta^d m(E)$$
+> 3) **Reflection Invariance**
+>    - For a measurable set $$E \subset \mathbb{R}^d$$, measure of $$- E = \{-x ; x \in E\}$$ equals with the measure of E i.e. $$m(- E) = m(E)$$
+
+
+
+
+
+## 4. $\sigma$- algebra and Borel Sets
+
+> **Definition**
+>
+> **$$\sigma$$-algebra** : A $$\sigma$$-algebra of set is a collection of subsets of $$\mathbb{R}^d$$ closed under 1. countable union, 2. countable intersection and 3. complements.
+>
+> **Borel $$\sigma$$-algebra : **The Borel $$\sigma$$- algebra in $$\mathbb{R}^d$$ denoted as $$B_{\mathbb{R}^d}$$ is the smallest $$\sigma$$-algebra that contains all open sets of $$\mathbb{R}^d$$.
+>
+> **Borel set : ** The Borel set is a element of the Borel $$\sigma$$-algebra.
+
+
+
+ We can easily infer that every closed sets and clopen sets(half closed and half open set) is also in the Borel $$\sigma$$-algebra because every closed set is a complement of some open set and clopen set is complement of open set on closed set or vice versa. Notice that countable intersection of open set (denoted as $$G_{\delta}$$) and countable union of closed set($$F_{\sigma}$$) could be neither open set nor closed set. Therefore, all of these set is in the Borel $$\sigma$$- algebra. 
+
+
+
+ With above definition, the following statement is equivalent.
+
+> **Theorem. [Equivalence of Lebesgue Measure]**
+>
+> Let $$E$$ be a subset of $$\mathbb{R}^d$$, then the followings are equivalent.
+>
+> 1. $$E$$ is measurable.
+> 2. For every $$\epsilon >0$$, $$\exists O:$$ open set with $$E \subset O$$ s.t. $$m_{\ast}(O-E)\leq \epsilon$$.
+> 3. For every $$\epsilon >0$$, $$\exists F:$$ closed set with $$F \subset E$$ s.t. $$m_{\ast}(E-F)\leq \epsilon$$.
+> 4. There exists a $$G_{\delta}$$ set $$\tilde{G}$$ with $$E \subset \tilde{G}$$ such that $$m_{\ast}(\tilde{G}-E)=0$$
+> 5. There exists a $$F_{\sigma}$$ set $$\tilde{F}$$ with $$\tilde{F} \subset E $$ such that $$m_{\ast}(E-\tilde{F})=0$$
+> 6. For each set $$A \subset \mathbb{R}^d$$, $$m_{\ast}(A) = m_{\ast}(A \cap E)+m_{\ast}(A \cap E^c)$$
+>
+> If we assume the $$m(E) < \infty$$, then below statement could be included at above relation.
+>
+> 7. For every $$\epsilon>0, \exists F = \bigcup_{j=1}^N Q_j (Q_j \mbox{ is a closed cube})$$ such that $$m_{\ast}(E \triangle F )\leq \epsilon$$
+
+
+
+
+
