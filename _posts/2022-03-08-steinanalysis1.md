@@ -258,17 +258,17 @@ The book states that even though above propositions hold, we cannot say if $$E$$
 
  The measurable set and Lebesgue measure have following properties.
 
-> **Property 1. ** Every open set in $$\mathbb{R}^d$$ is measurable.
+> **Property 1.** Every open set in $$\mathbb{R}^d$$ is measurable.
 >
-> **Property 2. ** If $$m_{\ast} (E) = 0,$$ then $$E$$ is measurable.
+> **Property 2.** If $$m_{\ast} (E) = 0,$$ then $$E$$ is measurable.
 >
-> **Property 3. ** A countable union of measurable sets is measurable.
+> **Property 3.** A countable union of measurable sets is measurable.
 >
-> **Property 4. ** Closed set is measurable. 
+> **Property 4.** Closed set is measurable. 
 >
-> **Property 5. ** The complement of a measurable set is measurable
+> **Property 5.** The complement of a measurable set is measurable
 >
-> **Property 6. ** A countable intersection of measurable sets is measurable
+> **Property 6.** A countable intersection of measurable sets is measurable
 
 
 
@@ -278,7 +278,7 @@ There is an important theorem of measure.
 >
 >  If $$\{E_j\}_{j \in \mathbb{N}}$$ is a sequence of mutually disjoint measurable sets and $$E = \bigcup_{j \in \mathbb{N}} E_j$$, then $$m(E) = \sum_{j \in \mathbb{N}} m(E_j)$$
 >
-> **Corollary. **
+> **Corollary.**
 >
 > Suppose $$\{E_j\}_{j \in \mathbb{N}}$$ is a sequence of measurable sets and $$E = \bigcup_{j\in \mathbb{N}} E_j$$ and $$F = \bigcap_{j \in \mathbb{N}} E_j$$
 >
@@ -289,9 +289,9 @@ There is an important theorem of measure.
 
  The general definition of measure is defined axiomatically. That is, the set function mapping $\sigma$- algebra to non-negative real number could be worked as measure if it satisfies below three axioms 
 
-> **Non-negativity: ** For all $$E$$ in $$\Sigma$$m we have $$\mu(E) \geq 0 $$.
+> **Non-negativity:** For all $$E$$ in $$\Sigma$$m we have $$\mu(E) \geq 0$$.
 >
-> **Null empty set: ** $$\mu(\phi) =0 $$
+> **Null empty set:** $$\mu(\phi) =0$$
 >
 > **Countable additivity** : For all countable collections $$\{E_k\}_{k=1}^{\infty}$$ of pairwise disjoint sets in $$\Sigma$$, $$\mu(\bigcup_{k=1}^{\infty} E_k) = \sum_{k=1}^{\infty} \mu(E_k)$$
 
@@ -351,9 +351,9 @@ It states that the Lebesgue measure of some set have equal values with little bi
 >
 > **$$\sigma$$-algebra** : A $$\sigma$$-algebra of set is a collection of subsets of $$\mathbb{R}^d$$ closed under 1. countable union, 2. countable intersection and 3. complements.
 >
-> **Borel $$\sigma$$-algebra : **The Borel $$\sigma$$- algebra in $$\mathbb{R}^d$$ denoted as $$B_{\mathbb{R}^d}$$ is the smallest $$\sigma$$-algebra that contains all open sets of $$\mathbb{R}^d$$.
+> **Borel $$\sigma$$-algebra :**The Borel $$\sigma$$- algebra in $$\mathbb{R}^d$$ denoted as $$B_{\mathbb{R}^d}$$ is the smallest $$\sigma$$-algebra that contains all open sets of $$\mathbb{R}^d$$.
 >
-> **Borel set : ** The Borel set is a element of the Borel $$\sigma$$-algebra.
+> **Borel set :** The Borel set is a element of the Borel $$\sigma$$-algebra.
 
 
 
