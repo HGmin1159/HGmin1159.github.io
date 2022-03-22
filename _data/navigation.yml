@@ -178,6 +178,7 @@ Analysis:
       - title: "Summary of Operators in Hilbert Space"
         url: /analysis/advmat/
   - title: "Stein - Real Analysis"
+    children:
       - title: "Ch1. Measure Theory"
         url: /analysis/steinanalysis1/
 
