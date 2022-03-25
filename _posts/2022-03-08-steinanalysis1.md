@@ -380,5 +380,73 @@ It states that the Lebesgue measure of some set have equal values with little bi
 
 
 
+## 5. Measurable Functions
+
+To make definition easily, we can use concepts of charateristic function and simple function. They have very clear and usefull properties and could approximate general functions. Moreover, we will define measurablility on functions which means that inputs and outputs of function could be measured stably.
+
+
+
+> **Definition**
+>
+> 1. **Characteristic Function**
+>
+>    A characteristic function $$\chi$$ on a set $$E$$ is defined by $$\chi_{E}(x) = \begin{cases} 1 \mbox{ if } x\in E \\ 0 \mbox{ o.w }\end{cases}$$
+>
+> 2. **Step Function**
+>
+>    A step function $$f$$ is defined by $$f = \sum_{k=1}^N \alpha_k \chi_{R_k}$$ where $$\alpha_k \in \mathbb{R}, R_k :$$ Rectangles in $$\mathbb{R}^d$$.
+>
+> 3. **Simple Function**
+>
+>    A simple function f is defined by $$f = \sum_{k=1}^N \alpha_k \chi_{E_k}$$ where $$\alpha_k \in \mathbb{R}, E_k$$: Measurable set in $$\mathbb{R}^d$$
+>
+> 4. **Measurable Function**
+>
+>    A function $$f: E \rightarrow \mathbb{R}$$ is measurable if $$\forall O$$:open set $$\subset \mathbb{R}^d, f^{-1}(O)$$ is a measurable set.
+>
+> 5. **Almost Everywhere**
+>
+>    A function $$f$$ is said to have a property P almost everywhere(a.e.) on set $$E$$ if $$m(x \in E ; f(x) \mbox{ does not have property P})=0$$.
+
+
+
+
+
+The measurable function have some properties like below.
+
+> **Property**
+>
+> 1. A finite-valued function f is measurable iff $$f^{-1}(O)$$ is measurable for all open set $$O \subset \mathbb{R}$$ iff $$f^{-1}(F)$$: is measurable for all closed set $$F \subset \mathbb{R}$$.
+> 2. If $$f$$ is continuous on $$\mathbb{R}^d$$, then $$f$$ is measurable. If $$f$$ is measurable and finite-valued, and $$g$$ is continuous, then $$g \circ f$$ is measurable.
+> 3. Suppose $$\{f_n\}$$ is a sequece of measurable functions, then $$\sup f_n, \inf f_n,\lim \sup f_n, \lim \inf f_n$$ are measurable.
+> 4. Suppose $$\{f_n\}$$ is a sequence of measurable functions and $$f(x) := \lim_{n\rightarrow \infty} f_n(x) , x\in E$$, then $$f$$ is measurable.
+> 5. If $$f$$ is measurable, then $$f^k , k \geq 1$$  are measurable. 
+> 6. If both $$f$$ and $$g$$ are a.e. finite-valued measurable functions, $$f+g$$ and $$fg$$ are measurable.
+> 7. If $$f$$ is measurable and $$f(x) = g(x)$$ a.e. then $$g$$ is measurable. 
+
+
+
+ As we said above, we can approximate measurable function $$f$$ with simple functions.
+
+> **Theorem [Approximation by Simple fucntions]**
+>
+>  Suppose $$f$$ is a measurable function on $$\mathbb{R}^d$$, then there exists a sequence of simple functions $$\{\phi_{k}\}$$ that satisfies $$\mid \phi_{k} \mid \leq \mid \phi_{k+1} \mid$$ and $$\lim_{k \rightarrow \infty}\phi_{k}(x) = f(x) , \forall x \in \mathbb{R}^d$$.
+>
+> **Theorem [Approximation by Step fucntions]**
+>
+>  Suppose $$f$$ is a measurable function on $$\mathbb{R}^d$$, then there exists a sequence of step functions $$\{\phi_{k}\}$$ that satisfies $$\mid \phi_{k} \mid \leq \mid \phi_{k+1} \mid$$ and $$\lim_{k \rightarrow \infty}\phi_{k}(x) = f(x)$$ for almost everywhere on $$\mathbb{R}^d$$
+
+
+
+By using the concepts of measurable functions and measure zero, we can say strong analytic concepts in little bit weak sence. 
+
+> Egorov's Theorem. 
+>
+> Suppose that $$\{f_k\}$$ is a sequence of measurable functions defined on a measurable set $$E$$ with $$m(E) < \infty$$, and assume that $$f_k \rightarrow f$$ a.e. on $$E$$. Given $$\epsilon>0$$, we can find a closed set $$A_\epsilon \subset E$$ such that $$m(E-A_{\epsilon}) \leq \epsilon$$ and $$f_k \rightarrow f$$ uniformly on $$A_{\epsilon}$$
+>
+> Rusin's Theorem.
+>
+> Suppose $$f$$ is measurable and finite valued on $$E$$ with $$E$$ of finite measure then $$\forall \epsilon>0 , \exists F_\epsilon$$ with $$F_{\epsilon}\subset E$$ and $$m(E-F_{\epsilon})<\epsilon$$ and $$f \mid _{F_{\epsilon}}$$ is continuous
+
 
 
