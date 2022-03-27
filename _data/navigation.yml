@@ -4,14 +4,16 @@ main:
     url: /all/
   - title: "Quantum Computing"
     url: /categories/quantum/
-  - title: "Dimension Reduction"
-    url: /categories/Dimension/
-  - title: "Bayesian Statistics"
-    url: /categories/Bayesian/
-  - title: "Convex Optimization"
-    url: /categories/Convex/
   - title: "Analysis"
     url: /categories/Analysis/
+  - title: "Random Matrix Theory"
+    url: /categoires/RMT/
+  - title: "Dimension Reduction"
+    url: /categories/Dimension/
+  - title: "Convex Optimization"
+    url: /categories/Convex/
+  - title: "Bayesian Statistics"
+    url: /categories/Bayesian/
   - title: "Others"
     url: /categories/others/
   # - title: "Sitemap"
