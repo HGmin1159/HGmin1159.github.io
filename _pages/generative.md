@@ -1,7 +1,7 @@
 ---
-title: "Generative Model"
+title: "Random Matrix Theory"
 author_profile: true
 layout: category
-permalink: /categories/generative/
-taxonomy: generative
+permalink: /categories/rmt/
+taxonomy: rmt
 ---
