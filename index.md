@@ -59,6 +59,15 @@ feature_row3:
     url: "/categories/Analysis/"
     btn_label: "Read More"
     btn_class: "btn--primary"
+  - image_path: /assets/img/rmt.png
+    alt: "placeholder image 6"
+    title: "Random Matrix Theory"
+    excerpt: 'Random matrix thoery for statistics and quantum compuing'
+    url: "/categories/RMT/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+    
+feature_row4:
   - image_path: /assets/img/others.png
     alt: "placeholder image 6"
     title: "Others"
