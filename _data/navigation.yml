@@ -183,7 +183,13 @@ Analysis:
     children:
       - title: "Ch1. Measure Theory"
         url: /analysis/steinanalysis1/
+      - title: "Ch1. Integration Theory"
+        url: /analysis/steinanalysis2/
+      
 
 RMT:
   - title: "Ch1. Probability Theory"
     url: /RMT/RMT1/
+  - title: "Ch2. Striling's Formula and  Eigenvalue Theory"
+    url: /RMT/RMT2/
+  
