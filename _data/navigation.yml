@@ -18,7 +18,22 @@ main:
     url: /categories/others/
   # - title: "Sitemap"
   #   url: /sitemap/
-  
+
+Quantum_Basic:
+  - title: "1.양자 컴퓨터와 큐빗"
+    url: /quantum/quantum1/
+  - title: "2.양자 게이트와 회로"
+    url: /quantum/quantum2/
+  - title: "3.복소수의 기본과 푸리에 변환"
+    url: /quantum/quantum3/
+  - title: "4.페이즈 추정과 내적 계산법"
+    url: /quantum/quantum4/
+  - title: "5.그로버 알고리즘과 도이치 알고리즘"
+    url: /quantum/quantum_algorithm/
+  - title: "6.키스킷 시작하기"
+    url: /quantum/qiskit1/
+  - title: "7.RSA 보안체계와 양자 프로토콜"
+    url: /quantum/qiskit2/
 
 Bayesian:
   - title: "Bayesian Statistics"
