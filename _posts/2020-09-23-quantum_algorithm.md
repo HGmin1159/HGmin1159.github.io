@@ -3,6 +3,12 @@ title: \[양자컴퓨터 기초 이론\] 5. 그로버 알고리즘과 도이치 
 categories: [Quantum]
 tags: [양자컴퓨터]
 excerpt: 오라클, 확률증폭, Grover's Algorithm과 Deutsch's Algorithm
+sidebar:
+  - title: "Basic of Quantum Computer(KOR)"
+    image: /assets/img/quantum.png
+    image_alt: "image"
+    nav: Quantum_Basic
+author_profile: False
 ---
 $\def\ket#1{\mid #1 \rangle}$
 
