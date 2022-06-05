@@ -198,8 +198,12 @@ Analysis:
     children:
       - title: "Ch1. Measure Theory"
         url: /analysis/steinanalysis1/
-      - title: "Ch1. Integration Theory"
+      - title: "Ch2. Integration Theory"
         url: /analysis/steinanalysis2/
+      - title: "Ch3. Differentiation and Integration"
+        url: /analysis/steinanalysis3/
+      - title: "Ch4. Hilbert Space"
+        url: /analysis/steinanalysis4/
       
 
 RMT:
