@@ -173,10 +173,10 @@ The visual expression of the cantor set is below.(From wikipedia https://en.wiki
 
 There are several interesting properties about the Cantor set. 
 
-> 1. It is not empty set
-> 2. It is closed and bounded. Therefore, the cantor set is compact. 
-> 3. The cantor set is totally disconnected. That is, between any elements $$x,y \in C$$, there is an element z which is not in the set $$C$$.
-> 4. The total length of the Cantor set is zero. 
+> 1. It is not empty set  
+> 2. It is closed and bounded. Therefore, the cantor set is compact.  
+> 3. The cantor set is totally disconnected. That is, between any elements $$x,y \in C$$, there is an element z which is not in the set $$C$$.  
+> 4. The total length of the Cantor set is zero.   
 
 The last property could be proved as follow. The volum of $$C_k$$ is $$\left( \frac{2}{3}\right) ^{k}$$. And the Cantor set is subset of the $$C_k, \forall k$$. By lemma 2, we can easily know that $$0 \leq \mid C \mid \leq \mid C_k \mid, \forall k$$ . By using the sandwitch lemma, we can know that $$\mid C \mid =0.$$
 
@@ -336,8 +336,10 @@ It states that the Lebesgue measure of some set have equal values with little bi
 >
 > 1) **Transaction Invariance (Location Invariance)**
 >    - For a measurable set $$E \subset \mathbb{R}^d$$ and any point $$h \in \mathbb{R}^d$$ , measure of $$E+h = \{x+h ; x \in E\}$$ equals with the measure of $$E$$ i.e. $$m(E+h)=m(E)$$.  
+>    
 > 2) **Dilation Invariance (Scale Invariance)**
->    - For a measurable set $$E \subset \mathbb{R}^d$$ and some scalar $$\delta \in \mathbb{R}^+$$, measure of $$\delta E = \{\delta x ; x \in E\}$$ equals with $$\delta^d$$ times of the measure of E i.e. $$m(\delta E) = \delta^d m(E)$$  
+>    - For a measurable set $$E \subset \mathbb{R}^d$$ and some scalar $$\delta \in \mathbb{R}^+$$, measure of $$\delta E = \{\delta x ; x \in E\}$$ equals with $$\delta^d$$ times of the measure of E i.e. $$m(\delta E) = \delta^d m(E)$$   
+>    
 > 3) **Reflection Invariance**
 >    - For a measurable set $$E \subset \mathbb{R}^d$$, measure of $$- E = \{-x ; x \in E\}$$ equals with the measure of E i.e. $$m(- E) = m(E)$$
 
@@ -440,11 +442,11 @@ The measurable function have some properties like below.
 
 By using the concepts of measurable functions and measure zero, we can say strong analytic concepts in little bit weak sence. 
 
-> Egorov's Theorem. 
+> **Egorov's Theorem** 
 >
 > Suppose that $$\{f_k\}$$ is a sequence of measurable functions defined on a measurable set $$E$$ with $$m(E) < \infty$$, and assume that $$f_k \rightarrow f$$ a.e. on $$E$$. Given $$\epsilon>0$$, we can find a closed set $$A_\epsilon \subset E$$ such that $$m(E-A_{\epsilon}) \leq \epsilon$$ and $$f_k \rightarrow f$$ uniformly on $$A_{\epsilon}$$
 >
-> Rusin's Theorem.
+> **Rusin's Theorem**
 >
 > Suppose $$f$$ is measurable and finite valued on $$E$$ with $$E$$ of finite measure then $$\forall \epsilon>0 , \exists F_\epsilon$$ with $$F_{\epsilon}\subset E$$ and $$m(E-F_{\epsilon})<\epsilon$$ and $$f \mid _{F_{\epsilon}}$$ is continuous
 
