@@ -23,7 +23,9 @@ author_profile: False
 
 There is an important proposition. 
 
-> **Proposition**. Let $f$ be a continuous function on $\mathbb{R}^d$,then for all $x \in \mathbb{R}^d$, $\underset{m(B)\rightarrow 0 , x \in B}{\lim} \frac{1}{m(B)} \int_B f(y) dy = f(x)$.
+> **Proposition**. Let $f$ be a continuous function on $\mathbb{R}^d$,then for all $x \in \mathbb{R}^d$,  
+> 
+> $\underset{m(B)\rightarrow 0 , x \in B}{\lim} \frac{1}{m(B)} \int_B f(y) dy = f(x)$.
 
 ***
 
@@ -43,7 +45,9 @@ To develop the relation, we'll define the concept called as Hardy-Littlewood Max
 
 > **Hardy-Littlewood Maximal Function**
 >
-> Let $f$ be integrable on $\mathbb{R}^d$. Define its maximal function denoted by $f^{\ast}$ such that $f^{\ast}(x) = \underset{x \in B}{\sup} \frac{1}{m(B)}\int_B \mid f(y) \mid dy , x \in \mathbb{R}^d$.
+> Let $f$ be integrable on $\mathbb{R}^d$. Define its maximal function denoted by $f^{\ast}$ such that  
+> 
+> $f^{\ast}(x) = \underset{x \in B}{\sup} \frac{1}{m(B)}\int_B \mid f(y) \mid dy , x \in \mathbb{R}^d$.
 
 Check that $\underset{m(B) \rightarrow 0}{\lim} f^{\ast}(x) = \mid f (x) \mid$.
 
@@ -61,9 +65,11 @@ About the Hardy-Littlewood Maximal Function, there are theorems.
 
 >  Suppose $f$ is integrable on $\mathbb{R}^d$, then
 >
-> 1) $f^{\ast}$ is measurable
-> 2) $f^{\ast}(x)$ almost everywhere on $x$.
-> 3) $f^{\ast}$ satisfies $m(\{x\in \mathbb{R}^d ; f^{\ast}(x) > \alpha \}) \leq \frac{3^d}{\alpha} \parallel f \parallel_{L_1} , \forall \alpha >0$ .
+> 1) $f^{\ast}$ is measurable  
+> 
+> 2) $f^{\ast}(x)$ almost everywhere on $x$.  
+> 
+> 3) $f^{\ast}$ satisfies $m(\{x\in \mathbb{R}^d ; f^{\ast}(x) > \alpha \}) \leq \frac{3^d}{\alpha} \parallel f \parallel_{L_1} , \forall \alpha >0$.  
 
 
 
@@ -122,17 +128,17 @@ We say that  $x$ is a point of Lebesgue density of $E$, if $\ud{m(B) \rightarrow
 
 pf)
 
-$\frac{m(B\cap E)}{m(B)}=\frac{1}{m(B)} \int_B \chi_{E}(y) dy  \rightarrow \chi_E(x)$ as $m(B) \rightarrow 0$.
+$$\frac{m(B\cap E)}{m(B)}=\frac{1}{m(B)} \int_B \chi_{E}(y) dy  \rightarrow \chi_E(x)$$ as $$m(B) \rightarrow 0$$.
 
 ***
 
 
 
-Let's define the Lebegue set $\mathcal{L}_f$ as a set of $\overline{x}$ such that $\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B}\mid f(y)- f(\bar{x}) \mid dy =0$
+Let's define the Lebegue set $$\mathcal{L}_f$$ as a set of $$\overline{x}$$ such that $$\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B}\mid f(y)- f(\bar{x}) \mid dy =0$$
 
-Then we can know that if $f$ is continuous at $\bar{x}$, then $\bar{x}$ is in $\mathcal{L}_f$. If $\bar{x} \in \mathcal{L}_{f}$, then $\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B} f(y) dy =f(\bar{x})$
+Then we can know that if $$f$$ is continuous at $$\bar{x}$$, then $$\bar{x}$$ is in $$\mathcal{L}_f$$. If $$\bar{x} \in \mathcal{L}_{f}$$, then $$\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B} f(y) dy =f(\bar{x})$$
 
-By corollary, if $f$ is locally integrable on $\mathbb{R}^d$, then almost every point belongs to $\mathcal{L}_f$.
+By corollary, if $$f$$ is locally integrable on $$\mathbb{R}^d$$, then almost every point belongs to $$\mathcal{L}_f$$.
 
 
 
@@ -146,7 +152,7 @@ There is a concept called by kernels. By using the kernel and convolution, we ca
 
 > **Good Kernels**
 >
-> Let $\{k_{\delta}\}_{\delta>0}$ be a collection of integrable functions, we say $k_{\delta}$ are good kernels if for $\delta>0$
+> Let $$\{k_{\delta}\}_{\delta>0}$$ be a collection of integrable functions, we say $$k_{\delta}$$ are good kernels if for $$\delta>0$$
 >
 > 1. $\int k_{\delta}(x) dx = 1$
 > 2. $\int \mid k_{\delta}(x) \mid dx \leq A$ for some $A >0$ independent of $\delta$
@@ -156,11 +162,13 @@ There is a weaker concept than the Good kernels.
 
 > **Approximation to the Identity**
 >
-> Let $\{k_{\delta}\}_{\delta>0}$ be a collection of integrable functions, we say $k_{\delta}$ are approximations to the idenity if for $\delta>0$
+> Let $$\{k_{\delta}\}_{\delta>0}$$ be a collection of integrable functions, we say $$k_{\delta}$$ are approximations to the idenity if for $$\delta>0$$
 >
-> 1. $\int k_{\delta}(x) dx = 1$
-> 2. $\mid k_{\delta}(x) \mid  \leq A \delta^{-d}$ for some $A >0$ independent of $\delta$ for all $x \in \mathbb{R}^d$
-> 3. $\mid k_{\delta}(x) \mid  \leq \frac{A \delta}{\mid x \mid ^{d+1}}$ for some $A >0$ independent of $\delta$ for all $x \in \mathbb{R}^d$
+> 1. $$\int k_{\delta}(x) dx = 1$$  
+> 
+> 2. $$\mid k_{\delta}(x) \mid  \leq A \delta^{-d}$$ for some $$A >0$$ independent of $$\delta$$ for all $$x \in \mathbb{R}^d$$  
+> 
+> 3. $$\mid k_{\delta}(x) \mid  \leq \frac{A \delta}{\mid x \mid ^{d+1}}$$ for some $$A >0$$ independent of $$\delta$$ for all $$x \in \mathbb{R}^d$$
 
 
 
@@ -186,13 +194,13 @@ Now, we'll expand the result $(f\ast k_{\delta}) \rightarrow f$ into integrable 
 
 > **Lemma**
 >
-> Suppose $f$ is integrable and $x \in \mathcal{L}_f$. Let $A(r)=\frac{1}{r^d} \int_{\mid y \mid \leq r} \mid f(x-y)-f(x) \mid dy$ whenever $r>0$. Then $A(r)$ is continuous for $r>0$ and $A(r) \rightarrow 0$ as $r \rightarrow 0$. Moreover, $A(r)$ is bounded.
+> Suppose $$f$$ is integrable and $$x \in \mathcal{L}_f$$. Let $$A(r)=\frac{1}{r^d} \int_{\mid y \mid \leq r} \mid f(x-y)-f(x) \mid dy$$ whenever $$r>0$$. Then $$A(r)$$ is continuous for $$r>0$$ and $$A(r) \rightarrow 0$$ as $$r \rightarrow 0$$. Moreover, $$A(r)$$ is bounded.
 
 By using the lemma, we can prove a following theorem.
 
 > **Theorem (Pointwise Convergence)**
 >
-> Let $f$ be integrable and let $\{k_{\delta}\}$ be an approximation to the identity. Then $(f \ast k_{\delta})(x) \rightarrow f(x)$ as $\delta \rightarrow 0$ for $x \in \mathcal{L}_f$. The limit hold for almost every $x$.
+> Let $$f$$ be integrable and let $$\{k_{\delta}\}$$ be an approximation to the identity. Then $$(f \ast k_{\delta})(x) \rightarrow f(x)$$ as $$\delta \rightarrow 0$$ for $$x \in \mathcal{L}_f$$. The limit hold for almost every $$x$$.
 
 ***
 
@@ -208,7 +216,7 @@ $\mid (f \ast k_{\delta})(x) -f(x) \mid = \int_{\mid y \mid \leq r}F_{\delta}(x,
 
 Since $\mid K_{\delta}(x) \mid \leq c \delta^{-d}$, we have $\int_{\mid y \mid \leq \delta} F_{\delta}(x,y) dy \leq c A(\delta)$.
 
-$\begin{align*}\int_{2^k \delta \leq \mid y \mid \leq 2^{k+1}\delta}F_{\delta}(x,y) dy &\leq \frac{c \delta}{(2^k \delta)^{d+1}} \int_{\mid y \mid \leq 2^{k+1}}\mid f(x-y)-f(x) \mid dy \\ &= \frac{c2^d}{2^k }  A(2^{k+1}\delta)\end{align*}$
+$$\begin{align*}\int_{2^k \delta \leq \mid y \mid \leq 2^{k+1}\delta}F_{\delta}(x,y) dy &\leq \frac{c \delta}{(2^k \delta)^{d+1}} \int_{\mid y \mid \leq 2^{k+1}}\mid f(x-y)-f(x) \mid dy \\ &= \frac{c2^d}{2^k }  A(2^{k+1}\delta)\end{align*}$$
 
 $\Rightarrow \mid (f \ast k_{\delta})(x) -f(x) \mid \leq cA(\delta) + c2^d \sum_{k=0}^{\infty}2^{-k}A(2^{k+1}\delta)$
 
@@ -254,7 +262,7 @@ For this $\eta >0$, we can find $r >0$ such that if $\delta < r$,then $\int_{\mi
 
 Moreover, if $\delta < r$, then
 
-$\begin{align*} \parallel (f \ast k_{\delta})- f \parallel & \leq \int_{\mid y \mid < \eta} \mid k_{\delta}(y) \mid (\int \mid f(x-y)-f(x) \mid dx )dy +\int_{\mid y \mid \geq \eta} \mid k_{\delta}(y) \mid (\int \mid f(x-y)-f(x) \mid dx )dy \\ & < \frac{\epsilon}{2}+\frac{\epsilon}{2} = \epsilon \end{align*}$
+$$\begin{align*} \parallel (f \ast k_{\delta})- f \parallel & \leq \int_{\mid y \mid < \eta} \mid k_{\delta}(y) \mid (\int \mid f(x-y)-f(x) \mid dx )dy +\int_{\mid y \mid \geq \eta} \mid k_{\delta}(y) \mid (\int \mid f(x-y)-f(x) \mid dx )dy \\ & < \frac{\epsilon}{2}+\frac{\epsilon}{2} = \epsilon \end{align*}$$
 
 ***
 
@@ -310,7 +318,7 @@ Now, we'll see how the conditions are connected with the differentiability. We n
 
 
 
-> **Corollary.**
+> **Corollary**
 >
 > If $f$ is increasing and continuous, then $F'$ exists almost everywhere.
 >
@@ -340,7 +348,7 @@ There are properties about the absolutely continuous function.
 
 > **Lemma.** Let $E$ be a set of finite measure, and let $B$ be a Vitali covering of $E$. For any $\delta >0$, we can find finite many balls $B_j\in B, j=1,2,...,N$ such that $\ud{j=1}{N}{\sum}m(B_j) \geq m(E)-\delta$
 >
-> **Corollary. ** Let $E$ be a set of finite measure and let $B$ be a Vitali covering of $E$. For any $\delta >0$, we can find finitely many balls $B_j$ such that $m(E-\ud{j=1}{N}{\bigcup} B_j)<2 \delta$
+> **Corollary** Let $E$ be a set of finite measure and let $B$ be a Vitali covering of $E$. For any $\delta >0$, we can find finitely many balls $B_j$ such that $m(E-\ud{j=1}{N}{\bigcup} B_j)<2 \delta$
 
 > **Theorem**
 >
