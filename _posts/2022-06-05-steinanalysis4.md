@@ -23,11 +23,11 @@ author_profile: False
 >
 > The components of the space is defined as follows.
 >
-> **Inner  Product : ** $\langle f, g\rangle_{L^2} = \int_{\mathbb{R}^d} f(x) \overline{g(x)} dx$
+> **Inner  Product :** $\langle f, g\rangle_{L^2} = \int_{\mathbb{R}^d} f(x) \overline{g(x)} dx$
 >
-> **Norm : ** $\parallel f \parallel_{L^2} = (\int_{\mathbb{R}^d} \mid f(x) \mid ^2 dx)^{1/2} = \langle f,f\rangle_{L^2}^{1/2}$
+> **Norm :** $\parallel f \parallel_{L^2} = (\int_{\mathbb{R}^d} \mid f(x) \mid ^2 dx)^{1/2} = \langle f,f\rangle_{L^2}^{1/2}$
 >
-> **Metric : ** $d(f,g)_{L^2} = (\int_{\mathbb{R}^d} \mid f(x)- g(x) \mid^2 dx )^{1/2} = \parallel f-g \parallel_{L^2}$
+> **Metric :** $d(f,g)_{L^2} = (\int_{\mathbb{R}^d} \mid f(x)- g(x) \mid^2 dx )^{1/2} = \parallel f-g \parallel_{L^2}$
 
 
 
