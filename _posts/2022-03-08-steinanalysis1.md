@@ -299,7 +299,7 @@ As we have seen, the property of exterior measure and Lebesgue measure satisfies
 
 
 
-But as we said above, to say the theorem holds, we need secondary lemma that if $$F$$ is closed, $$K$$ is compact and they are disjoint, then $$d(F,K) >0$$.
+But as we said above, to say the theorem holds, we need secondary lemma that if $$F$$ is closed, $$K$$ is compact and they are disjoint, then $$d(F,K) >0$$.  
 
 
 
@@ -309,12 +309,12 @@ For the measurable sets, there are useful concepts for analytic proof of additio
 >
 > Suppose E is measurable, then $$\forall \epsilon >0$$
 >
-> 1) $$\exists O:$$ open set with $$E \subset O$$ and $$m(O-E) \leq \epsilon$$
-> 2) $$\exists F :$$ closed set with $$F \subset E$$ and $$m(E-F) \leq \epsilon$$
-> 3) If $$m(E)$$ is finite, then $$\exists K : $$ compact set with $K \subset E$ and $$m(E-K)\leq \epsilon$$
-> 4) If $$m(E)$$ is finite, $$\exists F = \bigcup_{j=1}^N Q_j, (Q_j$$ is a closed cube$$)$$ such that $$m ( E \triangle F) \leq \epsilon$$.
+> 1) $$\exists O:$$ open set with $$E \subset O$$ and $$m(O-E) \leq \epsilon$$  
+> 2) $$\exists F :$$ closed set with $$F \subset E$$ and $$m(E-F) \leq \epsilon$$  
+> 3) If $$m(E)$$ is finite, then $$\exists K : $$ compact set with $K \subset E$ and $$m(E-K)\leq \epsilon$$  
+> 4) If $$m(E)$$ is finite, $$\exists F = \bigcup_{j=1}^N Q_j, (Q_j$$ is a closed cube$$)$$ such that $$m ( E \triangle F) \leq \epsilon$$.  
 >
-> $$(\mbox{where } E \triangle F = (E-F) \cup (F-E))$$
+> $$(\mbox{where } E \triangle F = (E-F) \cup (F-E))$$  
 
 It states that the Lebesgue measure of some set have equal values with little bit bigger sets and little bit smaller sets. We can regard the property stating some kinds of continuity of measure. 
 
@@ -335,9 +335,9 @@ It states that the Lebesgue measure of some set have equal values with little bi
 > **Invariance Property of Lebesgue Measure**
 >
 > 1) **Transaction Invariance (Location Invariance)**
->    - For a measurable set $$E \subset \mathbb{R}^d$$ and any point $$h \in \mathbb{R}^d$$ , measure of $$E+h = \{x+h ; x \in E\}$$ equals with the measure of $$E$$ i.e. $$m(E+h)=m(E)$$.
+>    - For a measurable set $$E \subset \mathbb{R}^d$$ and any point $$h \in \mathbb{R}^d$$ , measure of $$E+h = \{x+h ; x \in E\}$$ equals with the measure of $$E$$ i.e. $$m(E+h)=m(E)$$.  
 > 2) **Dilation Invariance (Scale Invariance)**
->    - For a measurable set $$E \subset \mathbb{R}^d$$ and some scalar $$\delta \in \mathbb{R}^+$$, measure of $$\delta E = \{\delta x ; x \in E\}$$ equals with $$\delta^d$$ times of the measure of E i.e. $$m(\delta E) = \delta^d m(E)$$
+>    - For a measurable set $$E \subset \mathbb{R}^d$$ and some scalar $$\delta \in \mathbb{R}^+$$, measure of $$\delta E = \{\delta x ; x \in E\}$$ equals with $$\delta^d$$ times of the measure of E i.e. $$m(\delta E) = \delta^d m(E)$$  
 > 3) **Reflection Invariance**
 >    - For a measurable set $$E \subset \mathbb{R}^d$$, measure of $$- E = \{-x ; x \in E\}$$ equals with the measure of E i.e. $$m(- E) = m(E)$$
 
