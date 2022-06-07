@@ -362,7 +362,7 @@ The Hilbert Schmidt Operator has following properties.
 
 > **Compact Operator**
 >
-> Let $H$ be an infinite dimensional Hilbert space. A linear operator $T:H \rightarrow H$ is said to be compact if $cl(T(B)) = cl(\{T(f) ; f \in B\})$ is compact.
+> Let $H$ be an infinite dimensional Hilbert space. A linear operator $T:H \rightarrow H$ is said to be compact if for any bounded subset $B$, $cl(T(B)) = cl(\{T(f) ; f \in B\})$ is compact.
 
 Notice that the space $cl(T(B))$ is a function set. Therefore we cannot say the compactness of the set by closedness and boundedness using Heine-Borel Theorem. To check the compactness, we have to use the definition of the compactness i.e. $E$ is compact if for all open covering $E \subset \bigcup_j O_j$ have finite subcovering $E \subset \bigcup_{i=1}^N O_{j_i}$. Or, we can use the sequential compactness that $E$ is compact if for all sequence $\{f_n\} \subset E$, there is a subsequence converging into $E$ i.e. $\exists \{f_{n_j}\} \subset \{f_n\}$ such that $f_{n_j} \rightarrow f \in E$.
 
