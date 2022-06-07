@@ -27,7 +27,8 @@ author_profile: False
 >
 > **Norm :** $\parallel f \parallel_{L^2} = (\int_{\mathbb{R}^d} \mid f(x) \mid ^2 dx)^{1/2} = \langle f,f\rangle_{L^2}^{1/2}$
 >
-> **Metric :** $$d(f,g)_{L^2} = (\int_{\mathbb{R}^d} \mid f(x)- g(x) \mid^2 dx )^{1/2} = \parallel f-g \parallel_{L^2}$$
+> **Metric :** $d(f,g)_{L^2} = (\int_{\mathbb{R}^d} \mid f(x)- g(x) \mid^2 dx )^{1/2} = \parallel f-g \parallel_{L^2}$
+> 
 
 
 
