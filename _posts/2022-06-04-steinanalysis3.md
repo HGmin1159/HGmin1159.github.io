@@ -67,7 +67,7 @@ About the Hardy-Littlewood Maximal Function, there are theorems.
 >
 > 1) $f^{\ast}$ is measurable  
 > 
-> 2) $f^{\ast}(x)$ almost everywhere on $x$.  
+> 2) $f^{\ast}(x)$ is bounded almost everywhere on $x$.  
 > 
 > 3) $f^{\ast}$ satisfies $m(\{x\in \mathbb{R}^d ; f^{\ast}(x) > \alpha \}) \leq \frac{3^d}{\alpha} \parallel f \parallel_{L_1} , \forall \alpha >0$.  
 
@@ -111,7 +111,7 @@ This conclusion could be expanded into a set of locally integrable function. The
 
 
 
-> **Corollary.** If $f$ is a locally integrable function, then $\frac{1}{m(B)}\int_B f(y)dy = f(x)$ almost everywhere on $x$.
+> **Corollary.** If $f$ is a locally integrable function, then $\underset{m(B) \rightarrow 0}{\lim} \frac{1}{m(B)}\int_B f(y)dy = f(x)$ almost everywhere on $x$.
 
 
 
@@ -128,17 +128,17 @@ We say that  $x$ is a point of Lebesgue density of $E$, if $\ud{m(B) \rightarrow
 
 pf)
 
-$$\frac{m(B\cap E)}{m(B)}=\frac{1}{m(B)} \int_B \chi_{E}(y) dy  \rightarrow \chi_E(x)$$ as $$m(B) \rightarrow 0$$.
+$\frac{m(B\cap E)}{m(B)}=\frac{1}{m(B)} \int_B \chi_{E}(y) dy  \rightarrow \chi_E(x)$$ as $$m(B) \rightarrow 0$.
 
 ***
 
 
 
-Let's define the Lebegue set $$\mathcal{L}_f$$ as a set of $$\overline{x}$$ such that $$\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B}\mid f(y)- f(\bar{x}) \mid dy =0$$
+Let's define the Lebegue set $\mathcal{L}_f$ as a set of $\overline{x}$ such that $\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B}\mid f(y)- f(\bar{x}) \mid dy =0$
 
-Then we can know that if $$f$$ is continuous at $$\bar{x}$$, then $$\bar{x}$$ is in $$\mathcal{L}_f$$. If $$\bar{x} \in \mathcal{L}_{f}$$, then $$\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B} f(y) dy =f(\bar{x})$$
+Then we can know that if $f$ is continuous at $\bar{x}$, then $\bar{x}$ is in $\mathcal{L}_f$. If $\bar{x} \in \mathcal{L}_{f}$, then $\ud{m(B) \rightarrow 0,\bar{x} \in B}{}{\lim} \frac{1}{m(B)}\int_{B} f(y) dy =f(\bar{x})$
 
-By corollary, if $$f$$ is locally integrable on $$\mathbb{R}^d$$, then almost every point belongs to $$\mathcal{L}_f$$.
+By corollary, if $f$ is locally integrable on $\mathbb{R}^d$, then almost every point belongs to $\mathcal{L}_f$.
 
 
 
