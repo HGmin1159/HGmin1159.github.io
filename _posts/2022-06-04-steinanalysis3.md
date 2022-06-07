@@ -128,7 +128,7 @@ We say that  $x$ is a point of Lebesgue density of $E$, if $\ud{m(B) \rightarrow
 
 pf)
 
-$\frac{m(B\cap E)}{m(B)}=\frac{1}{m(B)} \int_B \chi_{E}(y) dy  \rightarrow \chi_E(x)$$ as $$m(B) \rightarrow 0$.
+$\frac{m(B\cap E)}{m(B)}=\frac{1}{m(B)} \int_B \chi_{E}(y) dy  \rightarrow \chi_E(x)$ as $m(B) \rightarrow 0$.
 
 ***
 
