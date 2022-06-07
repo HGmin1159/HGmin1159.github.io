@@ -102,10 +102,15 @@ The theory of Hilbert space is all about constructing clear structure for the el
 > A set $\{e_j\}$ is an orthonormal basis iff
 >
 > 1) Finite linear combinations in $\{e_j\}$ are dense in $H$
+> 
 > 2) If $f\in H$ and $\alpha_j = (f,e_j)=0,  \forall j,f=0$
+>
 > 3) If $f \in H$ and $S_N(f)=\sum_{j=1}^N \alpha_j e_j$, then $S_N(f) \rightarrow f$ as $N\rightarrow \infty$
+>
 > 4) (**Bessel's Inequality**) $\parallel f \parallel^2 \geq \sum_{j=1}^N \mid (f ,e_j) \mid^2$
+> 
 > 5) (**Parseval's Indentity**) $\parallel f \parallel^2 = \sum_{j =1}^{\infty} \mid ( f, e_j )\mid^2$.
+> 
 
 
 
@@ -346,7 +351,7 @@ The Hilbert Schmidt Operator has following properties.
 > Let $T$ be a Hilbert Schmidt operator on $L^2 (\mathbb{R}^d)$ with kernel $k(x,y)$
 >
 > 1. If $f \in L^2$, then the function $y \rightarrow k(x,y)f(y)$ is integrable for almost every on $x$.
-> 2. If $T$ is bounded , then $\norm{T} \leq \norm{k}_{L^2} = \norm{T}_{HS}$
+> 2. If $T$ is bounded , then $$\norm{T} \leq \norm{k}_{L^2} = \norm{T}_{HS}$$
 > 3. The adjoint $T^{\ast}$ has the kernel $\overline{k(y,x)}$
 
 
