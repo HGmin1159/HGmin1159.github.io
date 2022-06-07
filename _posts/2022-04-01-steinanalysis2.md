@@ -17,11 +17,11 @@ author_profile: False
 
 ## 1. Construction of Lebesgue Integral
 
- The Lebesgue integral is method of integration to define the integral for much more general function than Riemann's things. It uses the step function and measure to construct the integration theory. 
+ The Lebesgue integral is method of integration to define the integral for much more general function than Riemann's integrals. It uses the step function and measures to construct the integration theory. 
 
 
 
-The text book define the Lebesgue integral starting with simple function and expanding it into more general version. So let's see the **Lebesgue integral of simple function**.
+The text book defines the Lebesgue integral starting with simple function and expanding it into more general version. So let's see the **Lebesgue integral of simple function**.
 
 
 
@@ -48,6 +48,7 @@ There is a important lemma connecting the simple function with bounded function.
 > If $$\{\psi_n\}_{n \in \mathbb{N}}$$ is any sequence of simple functions bounded by M, supported on E and $$\psi_n(x) \rightarrow f(x) \ a.e.$$ on E, then 
 >
 > 1) There exists $$\underset{n \rightarrow \infty}{\lim} \int \psi_n$$
+> 
 > 2) If $$f=0$$ a.e. then the $$\underset{n \rightarrow \infty}{\lim} \int \psi_n =0$$
 
 This means that if we find the sequence of simple functions converges to our target function, we can define the integral of the target function by the limit of the integral of the simple functions. Therefore, it is defined as follow.
@@ -78,6 +79,7 @@ If we use the Lemma 1.2 then we can know that any two sequences satisfying the c
 > Let $f$ be a measurable function on $\mathbb{R}^d$.
 >
 > 1)  Define $f^{+}(x) = \max (f(x),0),f^{-}(x) = \max(-f(x),0)$, then $f = f^+-f^-$ and $\mid f\mid = f^+ +f^-$
+> 
 > 2) $f$ is integrable if $\mid f\mid $ is integrable i.e. $f^{+}$ and $f^-$ is integrable.
 >
 > In this case, the Lebesgue integral of $f$ is defined by $\int f = \int f^+ - \int f^-$
@@ -91,12 +93,12 @@ So far, we defined the Lebesgue integral. Now, let's see the important propositi
 > **Propositions about the Lebesgue Integral**
 >
 > 1. **Linearity :** $\int (af +bg) = a \int f + b \int g$
-> 2. **Additivity : ** $\int_{E \cup F} f = \int_E f + \int_F f$ when $E \cap F = \phi $
-> 3. **Monotonicity : ** If $f \leq g$ , then $\int f \leq \int g$.
-> 4. **Triangle Inequality : ** $\mid \int f \mid \leq \int \mid f \mid $
+> 2. **Additivity :** $\int_{E \cup F} f = \int_E f + \int_F f$ when $E \cap F = \phi $
+> 3. **Monotonicity :** If $f \leq g$ , then $\int f \leq \int g$.
+> 4. **Triangle Inequality :** $\mid \int f \mid \leq \int \mid f \mid $
 > 5. If g is integrable and $0 \leq \mid f \mid  \leq \mid g \mid$, then $f$ is integrable.
 > 6. If $f$ is integrable then $\mid f(x)\mid < \infty$ almost everywhere on $x$.
-> 7. If $\int \mid f\mid =0 $, then $f(x) =0$ almost everywhere on $x$.
+> 7. If $\int \mid f\mid =0$, then $f(x) =0$ almost everywhere on $x$.
 > 8. **Fatou's Lemma :** Suppose $\{f_n\}$ is a sequence of non-negative measurable function. If $\underset{n \rightarrow \infty}{\lim} \mid f_n(x) \mid =\mid f(x)\mid$ for almost everywhere on $x$, then $\int \mid f\mid \leq \underset{n \rightarrow \infty}{\lim} \int \mid f_n \mid$.
 > 9. Suppose that $f$ is integrable in $\mathbb{R}^d$, then $\forall \epsilon>0$,
 >    1. $\exists B$ of finite measure such that $\int_{B^c} \mid f\mid <\epsilon$
@@ -104,8 +106,8 @@ So far, we defined the Lebesgue integral. Now, let's see the important propositi
 > 10. If $\{f_n\}$ is a Cauchy sequence in $L^1$, then there exists $\{f_{n_k}\}$ such that $\parallel f_{n_{k+1}}-f_{n_{k}} \parallel_{L^1} < \frac{1}{2^k}$
 > 11. **Invariance Property**
 >     1. **Translation Invariance :** For $f_h(x) = f(x-h), h \in \mathbb{R}^d, \int_{\mathbb{R}^d}f(x) dx = \int_{\mathbb{R}^d}f_h(x) dx$
->     2. **Dilation Invariance : ** $\delta^d \int_{\mathbb{R}^d} f(\delta x)dx = \int_{\mathbb{R}^d}f(x) dx ,\delta >0$
->     3. **Reflection Invariance : ** $\int_{\mathbb{R}^d}f(x) dx = \int_{\mathbb{R}^d}f(-x) dx$
+>     2. **Dilation Invariance :** $\delta^d \int_{\mathbb{R}^d} f(\delta x)dx = \int_{\mathbb{R}^d}f(x) dx ,\delta >0$
+>     3. **Reflection Invariance :** $\int_{\mathbb{R}^d}f(x) dx = \int_{\mathbb{R}^d}f(-x) dx$
 
 
 
@@ -146,6 +148,7 @@ Before proving it, we have to define the slice of function as follow.
 > Let $\mathbb{R}^d = \mathbb{R}^{d_1}\times \mathbb{R}^{d_2}$. Let $f$ be a measurable function on $\mathbb{R}^d$ and $E\subset \mathbb{R}^d$ be a measurable set.
 >
 > 1) The slice of $f$ corresponding to $y \in \mathbb{R}^{d_2}$ is a function $f^{y}$ of $x \in \mathbb{R}^d$ variable, given by $f^{y}(x) = f(x,y)$
+> 
 > 2) The slice of $E$ corresponding to $y \in \mathbb{R}^{d_2}$ is a set $E^{y}$ given by $E^{y} = \{x \in \mathbb{R}^{d_1} ; (x,y) \in E\}$
 
 
@@ -157,7 +160,9 @@ Then the Fubini Theorem states as follow.
 > Suppose that $f(x,y)$ is integrable on $\mathbb{R}^{d_1} \times \mathbb{R}^{d_2}$, then for almost every $y \in \mathbb{R}^d$
 >
 > 1) The slice $f^y$ is integrable on $\mathbb{R}^d$
+> 
 > 2) The function defined by $\int_{\mathbb{R}^{d_1}} f^{y}(x) dx$ is integrable on $\mathbb{R}^d$
+> 
 > 3) $\int_{\mathbb{R}^d}(\int_{\mathbb{R}^d} f^{y} dx) dy = \int_{\mathbb{R}^d}(\int_{\mathbb{R}^d} f^{y}dy)dx = \int_{\mathbb{R}^d}f$
 
 The proof of the Fubini Theorem takes long steps. Below one is a summary of the proof.
@@ -180,7 +185,9 @@ There is little bit different version of the Fubini Theorem.
 >Suppose $f(x,y)$ is a nonnegative measurable function on $\mathbb{R}^{d_1}\times \mathbb{R}^{d_2}$. Then almost every $y \in \mathbb{R}^d$,
 >
 >1) The slice $f^y$ is integrable on $\mathbb{R}^d$
+>
 >2) The function defined by $\int_{\mathbb{R}^{d_1}} f^{y}(x) dx$ is integrable on $\mathbb{R}^d$
+>
 >3) $\int_{\mathbb{R}^d}(\int_{\mathbb{R}^d} f^{y} dx) dy = \int_{\mathbb{R}^d}(\int_{\mathbb{R}^d} f^{y}dy)dx = \int_{\mathbb{R}^d}f$
 
 Notice that the conclusion of both theorem is the same, but the conditions are little bit different. The Fubini theorem states that any integrable function could be decomposed with the integrations of two domains of the function and the Tonelli theorem states that any non-negative function could be decomposed with the integrations of two domains of the function
