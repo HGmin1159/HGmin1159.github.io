@@ -83,6 +83,8 @@ Quantum_eng:
         url: /quantum/quantumml4/
       - title: "Part 5. Quantum Algorithm for Finance"
         url: /quantum/quantumml5/
+      - title: "Part 6. Quantum Algorithm for Combinatorial Optimization"
+        url: /quantum/quantumml6/
   
 Dimension:
   - title: "Basic Dimension Reduction"
