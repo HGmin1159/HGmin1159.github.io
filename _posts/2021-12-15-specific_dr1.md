@@ -71,7 +71,7 @@ We will use following setting
 >
 >$m_L,m_R:$ Dimensions of $S_{\circ U},S_{U\circ}$
 >
->$L_2^{k_1 \times k_2}(\Omega_W) = \{f:\Omega_W \rightarrow \mathbb{R}^{k_1\times k_2} \mid E \parallel f(W) \parallel^2 < \infty\}$
+>$L_2^{k_1 \times k_2}(\Omega_W) =\left{f:\Omega_W \rightarrow \mathbb{R}^{k_1\times k_2} \mid E \parallel f(W) \parallel^2 < \infty\right}$
 
 
 
