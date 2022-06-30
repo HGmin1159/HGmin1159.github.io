@@ -50,9 +50,10 @@ Therefore, we can see the relation between $S_{Y \mid vec(X)}$ and $S_{Y \mid \c
 However, because the exact relation is $S_{Y \mid vec(X) }\subset S_{Y \circ X \circ}$, the original paper claimed that $S_{Y \mid vec(X) }$ can reduce the information more but if we want to preserve the data structure, then $S_{\circ X \circ}$ is better method. 
 
 Moreover, the original paper also claimed the concept of Kronecker Envelope which is defined as follows. 
-$$
-\mbox{For a random matrix }U \in \mathbb{R}^{(d_R d_L) \times k}, \mbox{ the smallest Kronecker product }S_{U \circ} \otimes S_{\circ U} \mbox{ satisfying } \\\ S(U) \subset S_{U \circ} \otimes S_{\circ U} \mbox{ almost surely} \mbox{ is Kronecker Envelopes and written as }\Epsilon^{\otimes}(U)
-$$
+
+
+> $\mbox{For a random matrix }U \in \mathbb{R}^{(d_R d_L) \times k}, \mbox{ the smallest Kronecker product }S_{U \circ} \otimes S_{\circ U} \mbox{ satisfying } \\\ S(U) \subset S_{U \circ} \otimes S_{\circ U} \mbox{ almost surely} \mbox{ is Kronecker Envelopes and written as }\epsilon^{\otimes}(U)$
+
 
 Based on the theory, we can develop various SDR methods.
 
