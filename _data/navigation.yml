@@ -14,10 +14,11 @@ main:
     url: /categories/Convex/
   - title: "Bayesian Statistics"
     url: /categories/Bayesian/
+  - title: "Personal Space"
+    url: /categories/ps/
   - title: "Others"
     url: /categories/others/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
 
 Quantum_Basic:
   - title: "1.양자 컴퓨터와 큐빗"
