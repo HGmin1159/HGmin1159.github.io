@@ -1,6 +1,5 @@
 ---
 title: "Analysis"
-author_profile: true
 layout: category
 permalink: /categories/Analysis/
 taxonomy: Analysis
