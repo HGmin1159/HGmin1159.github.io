@@ -1,5 +1,5 @@
 ---
-title: "Personal Space"
+title: "Poets"
 author_profile: true
 layout: category
 permalink: /categories/ps/
