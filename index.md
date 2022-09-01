@@ -55,15 +55,6 @@ feature_row2:
     btn_class: "btn--primary"
     
 feature_row3:
-  - image_path: /assets/img/others.png
-    alt: "placeholder image 6"
-    title: "Others"
-    excerpt: 'Other Data Science Methodology'
-    url: "/categories/others/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    
-feature_row4:
   - image_path: /assets/img/avatar2.jpg
     alt: "placeholder image 4"
     title: "H.G Min"
