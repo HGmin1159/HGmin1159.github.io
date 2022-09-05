@@ -6,8 +6,8 @@ main:
     url: /categories/quantum/
   - title: "Analysis"
     url: /categories/Analysis/
-  - title: "Random Matrix Theory"
-    url: /categories/RMT/
+  - title: "Advanced Statistical Theory"
+    url: /categories/Advanced/
   - title: "Dimension Reduction"
     url: /categories/Dimension/
   - title: "Convex Optimization"
