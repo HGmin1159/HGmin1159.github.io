@@ -46,11 +46,11 @@ feature_row2:
     url: "/categories/Analysis/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/img/RMT.png
+  - image_path: /assets/img/Advanced.png
     alt: "placeholder image 6"
-    title: "Random Matrix Theory"
-    excerpt: 'Random matrix thoery for statistics and quantum compuing'
-    url: "/categories/RMT/"
+    title: "Advanced Statistical Theory"
+    excerpt: 'Advanced Statistical Theory to reach stars'
+    url: "/categories/Advanced/"
     btn_label: "Read More"
     btn_class: "btn--primary"
     
