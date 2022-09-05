@@ -16,6 +16,22 @@ feature_row1:
     url: "/categories/quantum/"
     btn_label: "Read More"
     btn_class: "btn--primary"
+  - image_path: /assets/img/Analysis.png
+    alt: "placeholder image 6"
+    title: "Analysis"
+    excerpt: 'Real, Complex and Functional Analysis'
+    url: "/categories/Analysis/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/img/Advanced.png
+    alt: "placeholder image 6"
+    title: "Advanced Statistical Theory"
+    excerpt: 'Advanced Statistical Theory to reach stars'
+    url: "/categories/Advanced/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+    
+feature_row2:
   - image_path: /assets/img/dimension.png
     alt: "placeholder image 3"
     title: "Dimension Reduction"
@@ -30,27 +46,11 @@ feature_row1:
     url: "/categories/Convex/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-    
-feature_row2:
   - image_path: /assets/img/bayes.png
     alt: "placeholder image 2"
     title: "Bayesian Statistics"
     excerpt: 'Theory and Experiment of Bayesian Statistics'
     url: "categories/Bayesian/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/Analysis.png
-    alt: "placeholder image 6"
-    title: "Analysis"
-    excerpt: 'Real, Complex and Functional Analysis'
-    url: "/categories/Analysis/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/Advanced.png
-    alt: "placeholder image 6"
-    title: "Advanced Statistical Theory"
-    excerpt: 'Advanced Statistical Theory to reach stars'
-    url: "/categories/Advanced/"
     btn_label: "Read More"
     btn_class: "btn--primary"
     
