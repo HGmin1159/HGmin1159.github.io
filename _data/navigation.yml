@@ -4,7 +4,7 @@ main:
     url: /all/
   - title: "Quantum Computing"
     url: /categories/quantum/
-  - title: "Analysis"
+  - title: "Mathematical Analysis"
     url: /categories/Analysis/
   - title: "Advanced Statistical Theory"
     url: /categories/Advanced/
