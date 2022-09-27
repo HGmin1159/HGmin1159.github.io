@@ -65,7 +65,7 @@ feature_row3:
   - url: "/assets/SOP.pdf"
     btn_label: "My SOP"
     btn_class: "btn--primary"
-    excerpt: '**Fields of Interest** <br> - **Dimensionality Reduction** <br> - **Quantum Machine Learning** <br> - **Optimization** - **Nonparametric Statistics**'
+    excerpt: '**Fields of Interest** <br> - **Dimensionality Reduction** <br> - **Quantum Machine Learning** <br> - **Optimization** <br> - **Nonparametric Statistics**'
     
 ---
 
