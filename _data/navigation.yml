@@ -213,10 +213,10 @@ Advanced:
   - title: "Random Matrix Theory"
     children:
       - title: "Ch1. Probability Theory"
-        url: /Advanced/RMT1/
+        url: /advanced/rmt1/
       - title: "Ch2. Striling's Formula and  Eigenvalue Theory"
-        url: /Advanced/RMT2/
+        url: /advanced/rmt2/
   - title: "Envenlopes Theory"
     children:
       - title: "Ch1. Response Envelopes"
-        url: /Advanced/envelope1
+        url: /advanced/envelope1
