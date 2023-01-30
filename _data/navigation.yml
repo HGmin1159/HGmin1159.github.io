@@ -86,6 +86,8 @@ Quantum_eng:
         url: /quantum/quantumml5/
       - title: "Part 6. Quantum Algorithm for Combinatorial Optimization"
         url: /quantum/quantumml6/
+      - title: "Part 7. Quantum Factoring Algorithm using Schnorr's algorithm"
+        url: /quantum/quantumml6/
   
 Dimension:
   - title: "Basic Dimension Reduction"
