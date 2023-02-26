@@ -61,7 +61,7 @@ feature_row3:
   - url: "/assets/CV.pdf"
     btn_label: "My CV"
     btn_class: "btn--primary"
-    excerpt: "**Yonsei University** <br> - Master's degree expected in Statitstics (2020~2022) <br> - Bachelor's degree in Applied Statistics (2014~2020) <br> **Yonsei Institute of Data Science** <br> - Consulting Assistant (2021) <br> - Chief Consulting Assistant (2021~) <br> **Korea Quantum Computing** <br> - Senior Researcher (2022~)" 
+    excerpt: "**Yonsei University** <br> - Master's degree expected in Statitstics (2020~2022) <br> - Bachelor's degree in Applied Statistics (2014~2020) <br> **Yonsei Institute of Data Science** <br> - Consulting Assistant (2021) <br> - Chief Consulting Assistant (2021~) <br> **Korea Quantum Computing** <br> - Researcher (2022~)" 
   - url: "/assets/SOP.pdf"
     btn_label: "My SOP"
     btn_class: "btn--primary"
