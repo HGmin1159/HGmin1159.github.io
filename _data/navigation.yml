@@ -2,14 +2,14 @@
 main:
   - title: "All Posts"
     url: /all/
-  - title: "Quantum Computing"
-    url: /categories/quantum/
-  - title: "Mathematical Analysis"
-    url: /categories/Analysis/
   - title: "Advanced Statistical Theory"
     url: /categories/Advanced/
   - title: "Dimension Reduction"
     url: /categories/Dimension/
+  - title: "Quantum Computing"
+    url: /categories/quantum/
+  - title: "Mathematical Analysis"
+    url: /categories/Analysis/
   - title: "Convex Optimization"
     url: /categories/Convex/
   - title: "Bayesian Statistics"
