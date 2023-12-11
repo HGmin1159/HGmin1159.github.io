@@ -20,7 +20,7 @@ title: "Statistics and DataScience"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "H.G Min"
-description              : "Learning Data Science at Yonsei University"
+description              : "Blog for Academic Documentation"
 url                      : "https://hgmin1159.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "HGmin1159/HGmin1159.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
