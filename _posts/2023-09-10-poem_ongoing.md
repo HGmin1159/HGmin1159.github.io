@@ -5,6 +5,8 @@ tags: [ps]
 excerpt: 
 ---
 
+![](/assets/img/post/2023-09-10/figure1.png)
+
 #### 개인주의 낭만
 
 부딫히며 거절당하고,  
@@ -114,6 +116,7 @@ excerpt:
 따듯한 바람이 불날이   
 머지 않은 듯 하다  
 
+![](/assets/img/post/2023-09-10/figure2.png)
 
 #### 아픔은 나눌 수록 옅어질까 
 
@@ -166,6 +169,7 @@ excerpt:
 나의 평생은,  
 아마도 밤과 함께할 것이다.  
 
+![](/assets/img/post/2023-09-10/figure3.png)
 
 #### 귀뚜라미 별
 
