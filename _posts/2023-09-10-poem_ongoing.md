@@ -2,8 +2,10 @@
 title: 계속 쓰는 시 
 categories: [ps]
 tags: [ps]
-excerpt: 
+excerpt: 계속 쓰는 시
 ---
+
+
 
 ![](/assets/img/post/2023-09-10/figure1.png)
 
