@@ -6,7 +6,7 @@ header:
   image: /assets/img/mintwall.jpg
   
 intro: 
-  - excerpt: "Welcome. This blog was created to organize my studies and use them in lectures and group studies. The posts on this blog deal with theories, implementations, and my intuitions in various fields. My email address is mhg9511@gmail.com. If you find any errors or have some issues, please contact me."
+  - excerpt: "Welcome. This blog is dedicated to organizing my studies for use in lectures and group studies. It features posts about theories, implementations, and my personal insights across various fields. Should you notice any errors or have any concerns, please feel free to reach out to me at mhg9511@gmail.com."
 
 feature_row1:
   - image_path: /assets/img/quantum.png
