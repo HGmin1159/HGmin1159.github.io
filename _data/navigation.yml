@@ -2,6 +2,8 @@
 main:
   - title: "All Posts"
     url: /all/
+  - title: "Computational Biology"
+    url: /cetegories/compbio/
   - title: "Advanced Statistical Theory"
     url: /categories/Advanced/
   - title: "Dimension Reduction"
