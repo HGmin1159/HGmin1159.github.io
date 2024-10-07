@@ -4,8 +4,6 @@ main:
     url: /all/
   - title: "Computational Biology"
     url: /cetegories/compbio/
-  - title: "Advanced Statistical Theory"
-    url: /categories/Advanced/
   - title: "Dimension Reduction"
     url: /categories/Dimension/
   - title: "Quantum Computing"
@@ -20,6 +18,8 @@ main:
     url: /categories/ps/
   - title: "Others"
     url: /categories/others/
+  - title: "Advanced Statistical Theory"
+    url: /categories/Advanced/
 
 
 Quantum_Basic:
