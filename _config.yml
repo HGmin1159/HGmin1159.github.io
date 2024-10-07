@@ -109,8 +109,8 @@ analytics:
 author:
   name             : "H.G Min"
   avatar           : "/assets/img/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Yonsei University,Korea Mar.14-present <br> - M.A. expected in applied statitstics <br> - B.A. in applied statistics"
-  location         : "Seoul S.Korea"
+  bio              : "University of North Carolina at Chapel Hill <br> - Ph.D. in Biostatistics <br>Yonsei University <br> - M.A. expected in applied statitstics <br> - B.A. in applied statistics"
+  location         : "Chapel Hill, NC"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
