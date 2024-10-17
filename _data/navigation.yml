@@ -3,7 +3,7 @@ main:
   - title: "All Posts"
     url: /all/
   - title: "Computational Biology"
-    url: /cetegories/compbio/
+    url: /categories/compbio/
   - title: "Dimension Reduction"
     url: /categories/Dimension/
   - title: "Quantum Computing"
