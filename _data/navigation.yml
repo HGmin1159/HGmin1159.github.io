@@ -224,3 +224,6 @@ Advanced:
     children:
       - title: "Ch1. Response Envelopes"
         url: /advanced/envelope1
+
+compbio:
+  - title: "Computational Biology"
