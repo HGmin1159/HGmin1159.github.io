@@ -1,75 +1,58 @@
 ---
 layout: splash
 permalink: /
-
-header:
-  image: /assets/img/mintwall.jpg
-  
-intro: 
-  - excerpt: "Welcome. This blog is dedicated to organizing my studies for use in lectures and group studies. It features posts about theories, implementations, and my personal insights across various fields. Should you notice any errors or have any concerns, please feel free to reach out to me at mhg9511@gmail.com."
-
-feature_row1:
-  - image_path: /assets/img/quantum.png
-    alt: "placeholder image 4"
-    title: "Quantum Computing"
-    excerpt: 'Theory and Experiment of Quantum Computing'
-    url: "/categories/quantum/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/Analysis.png
-    alt: "placeholder image 6"
-    title: "Analysis"
-    excerpt: 'Real, Complex and Functional Analysis'
-    url: "/categories/Analysis/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/Advanced.png
-    alt: "placeholder image 6"
-    title: "Advanced Statistical Theory"
-    excerpt: 'Advanced Statistical Theory to reach stars'
-    url: "/categories/Advanced/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    
-feature_row2:
-  - image_path: /assets/img/dimension.png
-    alt: "placeholder image 3"
-    title: "Dimension Reduction"
-    excerpt: 'Theory and Experiment of Dimension Reduction'
-    url: "categories/Dimension/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/convex.png
-    alt: "placeholder image 1"
-    title: "Convex Optimization"
-    excerpt: 'Theory and Experiment of Convex Optimization'
-    url: "/categories/Convex/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/img/bayes.png
-    alt: "placeholder image 2"
-    title: "Bayesian Statistics"
-    excerpt: 'Theory and Experiment of Bayesian Statistics'
-    url: "categories/Bayesian/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-    
-feature_row3:
-  - image_path: /assets/img/avatar2.jpg
-    alt: "placeholder image 4"
-    title: "H.G Min"
-  - url: "/assets/CV.pdf"
-    btn_label: "My CV"
-    btn_class: "btn--primary"
-    excerpt: "**University of North Carolina at Chapel Hill** <br> - Ph.D. student in Biostatistics (2023~) <br> **Yonsei University** <br> - Master's degree in Statitstics (2020~2023) <br> - Bachelor's degree in Applied Statistics (2014~2020) <br> **Yonsei Institute of Data Science** <br> - Consulting Assistant (2021) <br> - Chief Consulting Assistant (2021~2023) <br> **Korea Quantum Computing** <br> - Researcher (2022~2023)" 
-  - url: "/assets/SOP.pdf"
-    btn_label: "My SOP"
-    btn_class: "btn--primary"
-    excerpt: '**Fields of Interest** <br> - **Dimensionality Reduction** <br> - **Quantum Machine Learning** <br> - **Optimization** <br> - **Nonparametric Statistics**'
-    
+title: "Hyunggyu Min | Statistical & Computational Genomics"
+excerpt: "Biostatistics PhD student at UNC-Chapel Hill studying single-cell, functional, and regulatory genomics."
 ---
 
-{% include feature_row id="intro" type="center"%}
-{% include feature_row id="feature_row1" %}
-{% include feature_row id="feature_row2" %}
-{% include feature_row id="feature_row3" %}
+<div class="research-home">
+  <section class="research-intro" aria-labelledby="intro-title">
+    <div>
+      <p class="research-eyebrow">UNC-Chapel Hill · Biostatistics PhD student</p>
+      <h1 id="intro-title">Hyunggyu Min</h1>
+      <p class="research-lead">Statistical &amp; computational genomics</p>
+      <p>I study how genetic variation and perturbations shape gene regulation and cellular function. My research brings statistical methodology to single-cell, functional, and regulatory genomics.</p>
+      <p>I am a PhD student in Biostatistics at the University of North Carolina at Chapel Hill and conduct research in the <a href="https://www.wonlab.org/">Won Lab</a>.</p>
+      <div class="research-actions">
+        <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Explore research</a>
+        <a class="btn btn--inverse" href="{{ '/assets/CV.pdf' | relative_url }}">CV (PDF)</a>
+        <a href="https://github.com/HGmin1159">GitHub</a>
+        <a href="mailto:mhg9511@gmail.com">Email</a>
+      </div>
+    </div>
+    <img class="research-portrait" src="{{ '/assets/img/avatar2.jpg' | relative_url }}" alt="Hyunggyu Min" width="220" height="220">
+  </section>
+
+  <section aria-labelledby="focus-title">
+    <h2 id="focus-title">Research focus</h2>
+    <div class="research-grid">
+      <div class="research-card">
+        <h3>Single-cell genomics</h3>
+        <p>Cell-type-specific responses to genetic perturbations, with a focus on single-cell data and CROP-seq.</p>
+      </div>
+      <div class="research-card">
+        <h3>Functional &amp; regulatory genomics</h3>
+        <p>Connecting genetic variants to regulatory activity through high-throughput perturbation experiments and massively parallel reporter assays (MPRA).</p>
+      </div>
+      <div class="research-card">
+        <h3>Statistical methodology</h3>
+        <p>Statistical and computational methods for high-dimensional genomic data, differential expression, and perturbation analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-links" aria-labelledby="work-title">
+    <h2 id="work-title">Publications &amp; software</h2>
+    <p><strong>MPRA and psychiatric genetics.</strong> Co-author of a 2025 <em>Cell</em> study investigating shared genetic variants across eight psychiatric disorders.</p>
+    <p><strong>Single-cell perturbation analysis.</strong> Co-author of a 2026 bioRxiv preprint on schizophrenia risk genes and cilia programs.</p>
+    <p><a href="{{ '/publications/' | relative_url }}">Publications and preprints →</a></p>
+    <p><strong>MPRA barcode mapping.</strong> A public pipeline for mapping barcodes to elements from long-read Nanopore sequencing.</p>
+    <p><a href="{{ '/software/' | relative_url }}">Software &amp; Packages →</a></p>
+  </section>
+
+  <section class="research-archive" aria-labelledby="archive-title">
+    <h2 id="archive-title">Notes, teaching &amp; personal writing</h2>
+    <p>My study notes remain a resource for students, lectures, and reading groups: dimension reduction, optimization, quantum computing, analysis, and statistical theory.</p>
+    <p><a href="{{ '/blog/' | relative_url }}">Browse the Blog &amp; Archive</a> · <a href="{{ '/categories/ps/' | relative_url }}">Read Poems</a></p>
+  </section>
+</div>

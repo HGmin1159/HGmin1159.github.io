@@ -42,3 +42,38 @@ html {
   font-size: $type-size-5;
   background: #c0ffee;
 }
+
+// Academic landing page; retain the existing Mint skin and article styling.
+.research-home {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  h1 { margin: 0 0 .3em; font-size: clamp(2.2rem, 5vw, 3.3rem); }
+  h2 { margin-top: 0; }
+  h3 { margin: 0 0 .65em; font-size: 1.1rem; }
+  > section { padding: 2rem 0; }
+  a:not(.btn) { text-underline-offset: .18em; }
+  .research-intro { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 3rem; align-items: center; padding-top: 2.5rem; }
+  .research-eyebrow { font-size: .85rem; font-weight: bold; letter-spacing: .025em; margin-bottom: .75rem; }
+  .research-lead { font-size: 1.45rem; line-height: 1.35; }
+  .research-portrait { width: 220px; height: 220px; object-fit: cover; border-radius: 50%; }
+  .research-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1.2rem; margin-top: 1.5rem; }
+  .research-actions .btn { margin: 0; font-size: .85rem; }
+  .research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+  .research-card { padding: 1.4rem; border-top: 3px solid $link-color; background: mix(#fff, $background-color, 45%); border-radius: 3px; }
+  .research-card p { margin-bottom: 0; font-size: .95rem; }
+  .research-links, .research-archive { border-top: 1px solid $border-color; }
+  .research-archive { font-size: .95rem; }
+}
+@media (max-width: 700px) {
+  .research-home {
+    font-size: 16px;
+    .research-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+    .research-portrait { width: 140px; height: 140px; }
+    .research-grid { grid-template-columns: 1fr; }
+    .research-card p, .research-archive { font-size: 16px; }
+    .research-eyebrow { font-size: 13px; }
+    .research-actions .btn { font-size: 14px; }
+  }
+}

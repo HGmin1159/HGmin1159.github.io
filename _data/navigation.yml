@@ -1,25 +1,17 @@
-# main links
+# Primary navigation; study-topic sidebars below remain available in the archive.
 main:
-  - title: "All Posts"
-    url: /all/
-  - title: "Computational Biology"
-    url: /categories/compbio/
-  - title: "Dimension Reduction"
-    url: /categories/Dimension/
-  - title: "Quantum Computing"
-    url: /categories/quantum/
-  - title: "Mathematical Analysis"
-    url: /categories/Analysis/
-  - title: "Convex Optimization"
-    url: /categories/Convex/
-  - title: "Bayesian Statistics"
-    url: /categories/Bayesian/
-  - title: "Poems"
-    url: /categories/ps/
-  - title: "Others"
-    url: /categories/others/
-  - title: "Advanced Statistical Theory"
-    url: /categories/Advanced/
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Software"
+    url: /software/
+  - title: "CV"
+    url: /cv/
+  - title: "Blog"
+    url: /blog/
+  - title: "Personal"
+    url: /personal/
 
 
 Quantum_Basic:

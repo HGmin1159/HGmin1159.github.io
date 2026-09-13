@@ -15,12 +15,12 @@ remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "Seoul S.Korea"
-title: "Statistics and DataScience"
+locale                   : "en-US"
+title: "Hyunggyu Min"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "H.G Min"
-description              : "Blog for Academic Documentation"
+name                     : "Hyunggyu Min"
+description              : "Biostatistics PhD student at UNC-Chapel Hill working in statistical and computational genomics."
 url                      : "https://hgmin1159.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "HGmin1159/HGmin1159.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,14 +107,17 @@ analytics:
 
 # Site Author
 author:
-  name             : "H.G Min"
-  avatar           : "/assets/img/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "University of North Carolina at Chapel Hill <br> - Ph.D. in Biostatistics <br>Yonsei University <br> - M.A. expected in applied statitstics <br> - B.A. in applied statistics"
+  name             : "Hyunggyu Min"
+  avatar           : "/assets/img/avatar2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Biostatistics PhD student at UNC-Chapel Hill. Statistical and computational genomics."
   location         : "Chapel Hill, NC"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:mhg9511@gmail.com
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/CV.pdf"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
