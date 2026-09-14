@@ -38,6 +38,17 @@ genomics_home: true
           </div>
         </section>
         <section class="min-personal"><h2><a href="{{ '/personal/' | relative_url }}">Other things →</a></h2></section>
+        <section class="min-author-note" aria-labelledby="min-author-name">
+          <img class="min-author-photo" src="{{ '/assets/img/avatar2.jpg' | relative_url }}" alt="Hyunggyu Min" width="170" height="210" loading="lazy">
+          <div class="min-author-copy">
+            <p class="min-author-kicker">BEHIND THE NOTES</p>
+            <h2 id="min-author-name">Hyunggyu Min</h2>
+            <p class="min-author-role">Biostatistics PhD student · UNC–Chapel Hill</p>
+            <p class="min-author-bio" lang="ko">유전체 데이터를 통해 생물학을 이해하는 통계적 방법을 연구합니다.<br>이곳에는 공부하고, 구현하고, 이해한 것들을 기록합니다.</p>
+            <p class="min-author-bio" lang="en">I study statistical methods for understanding biology through genomic data.<br>This is where I keep notes on what I learn, build, and come to understand.</p>
+            <div class="min-author-links"><a href="{{ '/research/' | relative_url }}">About &amp; Research ↗</a><a href="mailto:mhg9511@gmail.com">Email ↗</a></div>
+          </div>
+        </section>
       </div>
 
     </div>

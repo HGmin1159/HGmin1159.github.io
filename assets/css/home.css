@@ -142,3 +142,18 @@ html, body, .masthead, .greedy-nav, .page__footer {
 .greedy-nav .hidden-links::after { border-color: var(--home-bg) transparent; }
 .greedy-nav .hidden-links li { border-color: var(--home-line); }
 .greedy-nav__toggle.close .navicon { background: transparent; }
+
+/* Portrait and bilingual author note below Other things. */
+#min-genomics-design-a .min-author-note { display: flex; align-items: flex-start; gap: 30px; padding: 32px 0; border-top: 1px solid var(--min-line); }
+#min-genomics-design-a .min-author-photo { width: 170px; height: 210px; flex-shrink: 0; object-fit: cover; object-position: 30% 50%; border-radius: 3px; }
+#min-genomics-design-a .min-author-copy { min-width: 0; padding-top: 9px; }
+#min-genomics-design-a .min-author-kicker { font-size: 11px; letter-spacing: 1.4px; margin: 0 0 12px; }
+#min-genomics-design-a #min-author-name { font: 400 25px/1.25 Georgia, serif; margin: 0 0 7px; }
+#min-genomics-design-a .min-author-role { font-size: 12px; margin: 0 0 16px; }
+#min-genomics-design-a .min-author-bio { font-size: 14px; line-height: 1.8; color: var(--min-ink); margin: 0 0 12px; max-width: 600px; word-break: keep-all; }
+#min-genomics-design-a .min-author-links { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 18px; font-size: 12px; }
+@media (max-width: 600px) {
+  #min-genomics-design-a .min-author-note { flex-direction: column; gap: 20px; }
+  #min-genomics-design-a .min-author-photo { width: 140px; height: 170px; }
+  #min-genomics-design-a .min-author-copy { padding-top: 0; }
+}
