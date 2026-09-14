@@ -15,6 +15,6 @@ author_profile: true
 
 My current research focuses on statistical and computational genomics, including single-cell, functional, and regulatory genomics.
 
-The downloadable CV is the existing document. See [Publications]({{ '/publications/' | relative_url }}) for the updated publication and preprint records.
+The downloadable CV was updated in September 2026. See [Publications]({{ '/publications/' | relative_url }}) for the updated publication and preprint records.
 
 [GitHub](https://github.com/HGmin1159) · [Research]({{ '/research/' | relative_url }})

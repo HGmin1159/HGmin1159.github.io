@@ -3,3 +3,7 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
+{% if page.genomics_home %}
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+{% endif %}

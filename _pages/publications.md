@@ -33,9 +33,9 @@ Won-Young Bae, **Hyunggyu Min**, So Lim Shin, Tae-Rahk Kim, Hakbae Lee, Minn Soh
 
 Jiseok Lee, **Hyunggyu Min**, Cristine Casingal, Austin T. Ledford, Hannah Lee, Won Ma, Yangzhenyu Gao, Hanqian Mao, Eric S. McCoy, Lei Xing, Cindy Fang, Sang Ho Kwon, Mark J. Zylka, Keri Martinowich, Kristen R. Maynard, Stephanie C. Hicks, E. S. Anton, Hyejung Won.
 
-*bioRxiv* (2026). [Preprint](https://doi.org/10.64898/2026.06.09.731172) · [PubMed record](https://pubmed.ncbi.nlm.nih.gov/42327190/). This entry describes a preprint, which has not been peer reviewed.
+*bioRxiv* (2026). [Preprint](https://doi.org/10.64898/2026.06.09.731172) · [PubMed record](https://pubmed.ncbi.nlm.nih.gov/42327190/). The manuscript is in revision (author update, September 2026). The linked version is a preprint, not a published journal article.
 
 {% comment %}
-TODO: Confirm any subsequent journal publication of the CROP-seq preprint before changing its status.
+TODO: Update the journal citation when acceptance/publication is confirmed. Current status: in revision, confirmed by the author.
 TODO: Manuscripts in preparation — obtain approved titles, complete author lists/order, status, and permission to list before adding entries. Do not infer entries from ongoing projects.
 {% endcomment %}

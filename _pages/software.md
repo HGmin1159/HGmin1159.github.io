@@ -15,11 +15,13 @@ A pipeline for mapping barcodes to elements from long-read Nanopore sequencing o
 
 ## In development
 
-Statistical software for differential expression in CROP-seq perturbation data is in development. Further details will be added when ready.
+### MSF
 
-{% comment %}
-TODO: mZINB/CROP-seq DEG package — confirm final name (ZiPert/ZiPEX are undecided candidates), public repository, release status, documentation, and citation before listing it as an available package. Do not invent a repository URL.
-{% endcomment %}
+An algorithm for fast querying of similar sequences. The repository is currently private.
+
+### ZiPert
+
+Software for differential gene expression analysis in Perturb-seq data using zero-inflated models. The repository is currently private.
 
 ## Earlier research and study code
 

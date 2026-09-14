@@ -1,0 +1,103 @@
+
+#min-genomics-design-a .min-site{--min-bg:light-dark(#f4f7f6,#192322);--min-ink:light-dark(#303f3d,#e4eeeb);--min-secondary:light-dark(#576e68,#a9c1b9);--min-line:light-dark(#d1deda,#3d514b);--min-accent:light-dark(#337d78,#8ccbc1);--min-tile:light-dark(#e3efea,#243d35);background:var(--min-bg);color:var(--min-ink);font-family:'Segoe UI',Arial,sans-serif;line-height:1.55;margin-top:16px;border:1px solid var(--min-line)}
+#min-genomics-design-a .min-site *{box-sizing:border-box}
+#min-genomics-design-a .min-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 30px;border-bottom:1px solid var(--min-line);font-size:13px}
+#min-genomics-design-a .min-brand{font-weight:500;white-space:nowrap;font-size:17px}
+#min-genomics-design-a .min-nav nav{display:flex;flex-wrap:wrap;gap:18px;color:var(--min-secondary)}
+#min-genomics-design-a .min-current{color:var(--min-accent);border-bottom:1px solid var(--min-accent)}
+#min-genomics-design-a .min-main{padding:0 40px}
+#min-genomics-design-a .min-intro{padding:36px 0 30px;border-bottom:1px solid var(--min-line)}
+#min-genomics-design-a .min-overline{font-size:11px;letter-spacing:2px;font-weight:500;color:var(--min-secondary)}
+#min-genomics-design-a .min-site h1{font-size:38px;font-weight:500;line-height:1.15;letter-spacing:-1px;margin:15px 0 18px;color:var(--min-ink)}
+#min-genomics-design-a .min-site p{font-size:13px;margin:8px 0;color:var(--min-secondary)}
+#min-genomics-design-a .min-description{line-height:1.7}
+#min-genomics-design-a .min-profile-links{font-size:12px;margin-top:18px;color:var(--min-accent)}
+#min-genomics-design-a .min-profile-links b{font-weight:400;margin:0 12px;color:var(--min-secondary)}
+#min-genomics-design-a .min-section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin:27px 0 15px}
+#min-genomics-design-a .min-site h2{font-size:20px;font-weight:500;margin:0;color:var(--min-ink)}
+#min-genomics-design-a .min-section-heading>span{font-size:11px;color:var(--min-secondary)}
+#min-genomics-design-a .min-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+#min-genomics-design-a .min-cover{height:130px;position:relative;overflow:hidden;background:var(--min-tile);color:var(--min-accent)}
+#min-genomics-design-a .min-cover>span{position:absolute;bottom:10px;left:14px;font-size:10px;letter-spacing:1px}
+#min-genomics-design-a .min-cluster{position:absolute;width:65px;height:60px;background:radial-gradient(circle,var(--min-accent) 2px,transparent 3px) 0 0 / 11px 11px;clip-path:ellipse(48% 47%)}
+#min-genomics-design-a .min-cluster.one{left:15%;top:14px;transform:rotate(20deg)}
+#min-genomics-design-a .min-cluster.two{left:46%;top:25px;transform:rotate(-15deg);opacity:.6}
+#min-genomics-design-a .min-cluster.three{left:34%;top:49px;transform:scale(.7);opacity:.8}
+#min-genomics-design-a .min-sequence{padding:22px 16px;font:500 17px/1.5 monospace;letter-spacing:3px}
+#min-genomics-design-a .min-sequence>div:nth-child(2){letter-spacing:5px;font-size:25px}
+#min-genomics-design-a .min-methods>div:first-child{font:italic 28px Georgia,serif;text-align:center;margin-top:28px}
+#min-genomics-design-a .min-rule{height:1px;width:60%;margin:12px auto;background:var(--min-accent);transform:rotate(-9deg)}
+#min-genomics-design-a .min-topic-copy{padding:13px 0 5px}
+#min-genomics-design-a .min-site h3{font-size:16px;font-weight:500;margin:0 0 7px;color:var(--min-ink);line-height:1.4}
+#min-genomics-design-a .min-read{display:block;font-size:12px;color:var(--min-accent);margin-top:13px}
+#min-genomics-design-a .min-topic-index{display:none}
+#min-genomics-design-a .min-library{margin-top:30px;border-top:1px solid var(--min-line)}
+#min-genomics-design-a .min-archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 19px;padding-bottom:26px}
+#min-genomics-design-a .min-old-cover{height:80px;background:var(--min-tile);display:flex;align-items:center;justify-content:center;font:italic 26px Georgia,serif;margin-bottom:12px;color:var(--min-secondary)}
+#min-genomics-design-a .min-archive-grid p{font-size:11px}
+#min-genomics-design-a .min-archive-grid h3{font-size:14px}
+#min-genomics-design-a .min-personal{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid var(--min-line);padding:27px 0}
+#min-genomics-design-a .min-personal h2{font:24px Georgia,serif;margin-top:8px}
+#min-genomics-design-a .min-personal p{font-size:12px}
+#min-genomics-design-a .min-poem-link{font-size:12px;color:var(--min-accent);white-space:nowrap}
+#min-genomics-design-a .min-footer{padding:18px 30px;display:flex;justify-content:space-between;border-top:1px solid var(--min-line);font-size:11px;color:var(--min-secondary)}
+#min-genomics-design-a .min-title-a,#min-genomics-design-a .min-title-c,#min-genomics-design-a .min-label-a,#min-genomics-design-a .min-label-c{display:none}
+#min-genomics-design-a [data-design="heritage"] .min-title-b,#min-genomics-design-a [data-design="heritage"] .min-label-b{display:none}
+#min-genomics-design-a [data-design="heritage"] .min-title-a,#min-genomics-design-a [data-design="heritage"] .min-label-a{display:inline}
+#min-genomics-design-a [data-design="heritage"] .min-intro{margin:20px -20px 0;padding:44px 22px;text-align:center;background:repeating-linear-gradient(90deg,transparent 0 55px,var(--min-line) 56px 58px),linear-gradient(135deg,var(--min-tile),var(--min-bg));border:0}
+#min-genomics-design-a [data-design="heritage"] h1{font-family:Georgia,serif;font-size:42px;letter-spacing:0}
+#min-genomics-design-a [data-design="heritage"] .min-overline{display:none}
+#min-genomics-design-a [data-design="heritage"] .min-cover{height:165px}
+#min-genomics-design-a [data-design="heritage"] .min-old-cover{height:120px}
+#min-genomics-design-a [data-design="balanced"] .min-old-cover{display:none}
+#min-genomics-design-a [data-design="balanced"] .min-archive-grid article{padding:14px 0;border-top:1px solid var(--min-line)}
+#min-genomics-design-a [data-design="notebook"]{--min-bg:light-dark(#fbfaf6,#24231f);--min-tile:light-dark(#eeece3,#34332c);--min-accent:light-dark(#6a6f43,#bbc295);--min-line:light-dark(#dcd9ca,#514e41)}
+#min-genomics-design-a [data-design="notebook"] .min-title-b,#min-genomics-design-a [data-design="notebook"] .min-label-b{display:none}
+#min-genomics-design-a [data-design="notebook"] .min-title-c,#min-genomics-design-a [data-design="notebook"] .min-label-c{display:inline}
+#min-genomics-design-a [data-design="notebook"] h1{font-family:Georgia,serif;font-size:45px}
+#min-genomics-design-a [data-design="notebook"] .min-intro{padding-bottom:24px}
+#min-genomics-design-a [data-design="notebook"] .min-cover,#min-genomics-design-a [data-design="notebook"] .min-old-cover{display:none}
+#min-genomics-design-a [data-design="notebook"] .min-topic-grid{display:block}
+#min-genomics-design-a [data-design="notebook"] .min-topic-copy{display:grid;grid-template-columns:25px 1fr 1fr 110px;gap:16px;align-items:baseline;border-top:1px solid var(--min-line);padding:20px 0}
+#min-genomics-design-a [data-design="notebook"] .min-topic-index{display:inline;color:var(--min-secondary);font:italic 14px Georgia,serif}
+#min-genomics-design-a [data-design="notebook"] .min-topic-copy p,#min-genomics-design-a [data-design="notebook"] .min-read{margin:0}
+#min-genomics-design-a [data-design="notebook"] .min-topic-copy br{display:none}
+#min-genomics-design-a [data-design="notebook"] .min-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px}
+#min-genomics-design-a [data-design="notebook"] .min-archive-grid article{padding:14px 0;border-top:1px solid var(--min-line)}
+@media(max-width:600px){#min-genomics-design-a .min-nav{align-items:flex-start;flex-direction:column;padding:16px 20px;gap:12px}#min-genomics-design-a .min-nav nav{gap:12px;font-size:12px}#min-genomics-design-a .min-main{padding:0 20px}#min-genomics-design-a .min-site h1{font-size:32px!important}#min-genomics-design-a .min-topic-grid{grid-template-columns:1fr}#min-genomics-design-a .min-cover{height:110px!important}#min-genomics-design-a .min-topic{padding-bottom:16px}#min-genomics-design-a .min-section-heading{align-items:flex-start;flex-direction:column;gap:5px}#min-genomics-design-a .min-archive-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}#min-genomics-design-a .min-personal{align-items:flex-start;flex-direction:column;gap:6px}#min-genomics-design-a [data-design="notebook"] .min-topic-copy{grid-template-columns:22px 1fr;gap:6px 10px}#min-genomics-design-a [data-design="notebook"] .min-topic-copy p,#min-genomics-design-a [data-design="notebook"] .min-read{grid-column:2}#min-genomics-design-a .min-old-cover{font-size:23px}}
+
+
+#min-genomics-design-a .min-art{background:linear-gradient(135deg,var(--min-tile),var(--min-bg));color:var(--min-accent);position:relative}
+#min-genomics-design-a .min-illustration{display:block;width:100%;height:100%;overflow:visible;padding:5px 7px 19px}
+#min-genomics-design-a .min-old-cover .min-illustration{padding:8px 12px}
+#min-genomics-design-a .min-illustration .art-grid{fill:none;stroke:var(--min-secondary);stroke-width:.7;opacity:.16}
+#min-genomics-design-a .min-illustration .art-region{fill:var(--min-accent);opacity:.09;stroke:var(--min-accent);stroke-width:1}
+#min-genomics-design-a .min-illustration .art-area{fill:var(--min-accent);opacity:.18}
+#min-genomics-design-a .min-illustration .art-points,#min-genomics-design-a .min-illustration .art-solid{fill:var(--min-accent)}
+#min-genomics-design-a .min-illustration .art-curve{fill:none;stroke:var(--min-accent);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+#min-genomics-design-a .min-illustration .art-line{fill:none;stroke:var(--min-accent);stroke-width:1.5}
+#min-genomics-design-a .min-illustration .art-dashed{fill:none;stroke:var(--min-secondary);stroke-width:1.2;stroke-dasharray:3 4;opacity:.6}
+#min-genomics-design-a .min-illustration .art-observations{fill:var(--min-bg);stroke:var(--min-accent);stroke-width:1.5}
+#min-genomics-design-a .min-illustration .art-marker{fill:var(--min-bg);stroke:var(--min-accent);stroke-width:2}
+#min-genomics-design-a .min-illustration .art-gate{fill:var(--min-tile);stroke:var(--min-accent);stroke-width:1.5}
+#min-genomics-design-a .min-illustration .art-text{fill:var(--min-ink);font:14px Georgia,serif;text-anchor:middle}
+#min-genomics-design-a .min-illustration .art-contours{fill:none;stroke:var(--min-accent);stroke-width:1;opacity:.4}
+#min-genomics-design-a .min-cover>span{font-size:10px;letter-spacing:1.2px;bottom:10px;left:16px}
+
+
+#min-genomics-design-a .min-formula{padding:12px;font-style:normal}
+#min-genomics-design-a .min-formula math{font-size:18px;color:var(--min-accent);margin:0}
+@media(max-width:600px){#min-genomics-design-a .min-formula math{font-size:17px}#min-genomics-design-a .min-formula{padding:4px}}
+
+
+@media(max-width:440px){#min-genomics-design-a .min-archive-grid{grid-template-columns:1fr}#min-genomics-design-a .min-formula math{font-size:18px}}
+
+/* Use the site's existing Mint skin and masthead around the approved landing page. */
+#min-genomics-design-a .min-site { color-scheme: light; margin-top: 0; border: 0; }
+#min-genomics-design-a .min-main { max-width: 1150px; margin: 0 auto; }
+#min-genomics-design-a a { color: var(--min-accent); text-decoration: none; }
+#min-genomics-design-a a:hover { text-decoration: underline; }
+#min-genomics-design-a a:focus-visible { outline: 2px solid var(--min-accent); outline-offset: 4px; }
+#min-genomics-design-a .min-section-heading > a { font-size: 12px; }
+#min-genomics-design-a .min-archive-grid h3 a { color: var(--min-ink); }
+#min-genomics-design-a .min-illustration { max-width: 100%; }

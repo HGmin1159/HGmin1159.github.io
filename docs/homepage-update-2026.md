@@ -47,3 +47,18 @@ This file lives in docs/, already excluded from the public Jekyll build.
 - All 114 tracked files under _posts (including assets), all 15 poems, and assets/CV.pdf are byte-identical to the original revision.
 - All linked public software repositories, Won Lab, and the historical SOP link return HTTP 200.
 - Browser verification at 390px: no horizontal overflow; responsive menu exposes CV, Blog, and Personal; landing image loads.
+
+
+## Author-confirmed CV update, September 2026
+
+This update supersedes the earlier package-name and manuscript-status TODOs above.
+- CROP-seq manuscript remains in revision; no journal acceptance is claimed.
+- MSF: algorithm for fast querying of similar sequences; private repository.
+- ZiPert: zero-inflated-model-based DEG analysis for Perturb-seq; private repository.
+- CV updated as a two-page PDF. Original preserved at assets/archive/CV-before-2026-09-update.pdf.
+- Local CV, Software, and Publications pages brought into agreement; public deployment still pending GitHub write access.
+
+
+## Approved landing design
+
+The final homepage follows option A: Genomics & Data Science banner, current research topic cards without links to nonexistent notes, preserved study-topic cards with their original category URLs, and a quiet Other things link to Personal. Poems remains available from Personal and Blog. Nine topic illustrations include compact calculus and central-limit-theorem formulas. The previous CV-oriented landing page is superseded.
