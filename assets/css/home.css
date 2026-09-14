@@ -92,8 +92,8 @@
 
 @media(max-width:440px){#min-genomics-design-a .min-archive-grid{grid-template-columns:1fr}#min-genomics-design-a .min-formula math{font-size:18px}}
 
-/* Use the site's existing Mint skin and masthead around the approved landing page. */
-#min-genomics-design-a .min-site { color-scheme: light; margin-top: 0; border: 0; }
+/* Match the approved dark-green mockup. This stylesheet loads only on the landing page. */
+#min-genomics-design-a .min-site { color-scheme: dark; margin-top: 0; border: 0; }
 #min-genomics-design-a .min-main { max-width: 1150px; margin: 0 auto; }
 #min-genomics-design-a a { color: var(--min-accent); text-decoration: none; }
 #min-genomics-design-a a:hover { text-decoration: underline; }
@@ -101,3 +101,44 @@
 #min-genomics-design-a .min-section-heading > a { font-size: 12px; }
 #min-genomics-design-a .min-archive-grid h3 a { color: var(--min-ink); }
 #min-genomics-design-a .min-illustration { max-width: 100%; }
+
+/* Keep the landing page palette independent of the visitor's system theme. */
+:root {
+  color-scheme: dark;
+  --home-bg: #192322;
+  --home-ink: #e4eeeb;
+  --home-secondary: #a9c1b9;
+  --home-line: #3d514b;
+  --home-accent: #8ccbc1;
+  --home-tile: #243d35;
+}
+#min-genomics-design-a .min-site {
+  --min-bg: var(--home-bg);
+  --min-ink: var(--home-ink);
+  --min-secondary: var(--home-secondary);
+  --min-line: var(--home-line);
+  --min-accent: var(--home-accent);
+  --min-tile: var(--home-tile);
+}
+html, body, .masthead, .greedy-nav, .page__footer {
+  background: var(--home-bg);
+  color: var(--home-ink);
+}
+.masthead, .page__footer { border-color: var(--home-line); }
+.greedy-nav a, .page__footer, .page__footer-follow .social-icons .svg-inline--fa {
+  color: var(--home-secondary);
+}
+.greedy-nav .site-title, .greedy-nav a:hover, .page__footer a:hover {
+  color: var(--home-accent);
+}
+.greedy-nav .visible-links a::before,
+.navicon, .navicon::before, .navicon::after { background: var(--home-accent); }
+.greedy-nav .hidden-links {
+  background: var(--home-bg);
+  border-color: var(--home-line);
+}
+.greedy-nav .hidden-links a:hover { background: var(--home-tile); }
+.greedy-nav .hidden-links::before { border-color: var(--home-line) transparent; }
+.greedy-nav .hidden-links::after { border-color: var(--home-bg) transparent; }
+.greedy-nav .hidden-links li { border-color: var(--home-line); }
+.greedy-nav__toggle.close .navicon { background: transparent; }
