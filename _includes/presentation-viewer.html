@@ -1,0 +1,23 @@
+{% assign slides = page.presentation %}
+{% if slides %}
+<link rel="stylesheet" href="{{ '/assets/css/presentation-viewer.css' | relative_url }}">
+<section class="presentation-viewer" data-pdf="{{ slides.pdf | relative_url }}" aria-label="{{ slides.title | escape }}" tabindex="0">
+  <h2 id="full-presentation" class="presentation-viewer__title">Full presentation</h2>
+  <p>{{ slides.title | escape }} · {{ slides.pages }} slides</p>
+  <div class="presentation-viewer__toolbar" role="group" aria-label="Presentation controls">
+    <button type="button" data-action="previous" disabled aria-label="Previous slide">←</button>
+    <label>Slide <input type="number" data-page min="1" max="{{ slides.pages }}" value="1" aria-label="Slide number" disabled></label>
+    <span data-total>/ {{ slides.pages }}</span>
+    <button type="button" data-action="next" disabled aria-label="Next slide">→</button>
+    <button type="button" data-action="fullscreen">Fullscreen</button>
+    <a href="{{ slides.pdf | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+    <a href="{{ slides.pdf | relative_url }}" download>Download</a>
+  </div>
+  <p class="presentation-viewer__status" role="status" aria-live="polite">Loading presentation…</p>
+  <div class="presentation-viewer__stage">
+    <canvas role="img" aria-label="Presentation slide"></canvas>
+  </div>
+  <noscript><p>JavaScript is disabled. <a href="{{ slides.pdf | relative_url }}">Open the full PDF presentation</a>.</p></noscript>
+</section>
+<script type="module" src="{{ '/assets/js/presentation-viewer.js' | relative_url }}"></script>
+{% endif %}

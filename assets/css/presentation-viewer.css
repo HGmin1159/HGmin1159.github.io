@@ -1,0 +1,42 @@
+.presentation-viewer {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1rem;
+  border: 1px solid #d8dce1;
+  border-radius: 8px;
+  background: #f7f8fa;
+  color: #20252b;
+}
+.presentation-viewer .presentation-viewer__title { margin: 0 0 .4rem; }
+.presentation-viewer > p { font-size: .8em; margin: .4rem 0 .8rem; }
+.presentation-viewer__toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+  margin-bottom: .6rem; font-size: 14px;
+}
+.presentation-viewer__toolbar button,
+.presentation-viewer__toolbar a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: .45rem .7rem; margin: 0;
+  border: 1px solid #aeb7c2; border-radius: 4px;
+  background: #fff; color: #17466f; text-decoration: none;
+  font: inherit; cursor: pointer;
+}
+.presentation-viewer__toolbar button:disabled { opacity: .4; cursor: default; }
+.presentation-viewer__toolbar label { display: inline-flex; align-items: center; gap: .4rem; margin: 0; font: inherit; }
+.presentation-viewer__toolbar input {
+  display: inline-block; width: 4.5em; min-height: 44px; margin: 0;
+  border: 1px solid #aeb7c2; border-radius: 4px; padding: .4rem; font: inherit;
+  background: white; color: #20252b;
+}
+.presentation-viewer :focus-visible { outline: 3px solid #2675c5; outline-offset: 2px; }
+.presentation-viewer__stage { width: 100%; min-height: 140px; overflow: auto; }
+.presentation-viewer__stage canvas { display: block; max-width: 100%; margin: 0 auto; }
+.presentation-viewer:fullscreen {
+  box-sizing: border-box; width: 100%; height: 100%; overflow: auto;
+  margin: 0; border: 0; border-radius: 0;
+}
+.presentation-viewer:fullscreen .presentation-viewer__stage { height: calc(100vh - 190px); }
+@media (max-width: 600px) {
+  .presentation-viewer { padding: .6rem; }
+  .presentation-viewer__toolbar { gap: .35rem; }
+  .presentation-viewer__toolbar a { padding: .4rem; }
+}
