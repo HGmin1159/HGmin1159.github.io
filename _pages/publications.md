@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Published articles, publicly available preprints, and submitted manuscripts. Last updated October 20, 2026, using public bibliographic records and author-provided submission status. [Google Scholar](https://scholar.google.com/citations?user=1Pjb7F4AAAAJ&hl=en).
+Published articles, publicly available preprints, submitted manuscripts, and work in preparation. Last updated October 20, 2026, using public bibliographic records and author-provided submission status. [Google Scholar](https://scholar.google.com/citations?user=1Pjb7F4AAAAJ&hl=en).
 
 ## Published
 
@@ -54,6 +54,12 @@ Jiseok Lee, **Hyunggyu Min**, Cristine Casingal, Austin T. Ledford, Hannah Lee, 
 Alejandro Gomez, Jessica McAfee, **Hyunggyu Min**, Tatiana Ulloa Avila, Sean Jones, Jessica L. Bell, Yangzhenyu Gao, Ellen Hu, Haoyue Li, Sool Lee, Ratchell Sadovnik, Zheng Fan, Nan Yang, Adriana S. Beltran, Hyejung Won.
 
 Submitted to *Neuron*. A preprint has not yet been posted to bioRxiv (author update, October 2026).
+
+## In preparation
+
+- Invivo MPRA
+- ZiPert
+- MSF
 
 {% comment %}
 TODO: Update the journal citation when acceptance/publication is confirmed. Current status: in revision, confirmed by the author.
