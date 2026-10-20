@@ -219,3 +219,20 @@ Advanced:
 
 compbio:
   - title: "Computational Biology"
+    children:
+      - title: "All computational biology notes"
+        url: /categories/compbio/
+      - title: "Basic Genetic Concepts"
+        url: /compbio/compbio1/
+  - title: "Single-cell Methods"
+    children:
+      - title: "01. cNMF and V2G2P"
+        url: /compbio/compbio2/
+      - title: "02. GLUE"
+        url: /compbio/compbio3/
+      - title: "03. MAGIC"
+        url: /compbio/compbio4/
+      - title: "04. muscat"
+        url: /compbio/compbio5/
+      - title: "05. Techniques of scRNA-seq"
+        url: /compbio/compbio6/
