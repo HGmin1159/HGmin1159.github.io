@@ -112,9 +112,12 @@ author:
   bio              : "Biostatistics PhD student at UNC-Chapel Hill. Statistical and computational genomics."
   location         : "Chapel Hill, NC"
   links:
-    - label: "Email"
+    - label: "mhg9511@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:mhg9511@gmail.com
+    - label: "mhg@unc.edu"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:mhg@unc.edu
     - label: "CV"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/CV.pdf"
@@ -146,9 +149,12 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url:  "https://github.com/HGmin1159"
-    - label: "Email"
+    - label: "mhg9511@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:mhg9511@gmail.com
+    - label: "mhg@unc.edu"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:mhg@unc.edu
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
