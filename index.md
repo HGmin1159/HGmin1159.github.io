@@ -17,7 +17,7 @@ genomics_home: true
           <p>Hyunggyu Min · Biostatistics PhD student, UNC-Chapel Hill</p>
           <p class="min-description">Single-cell &amp; functional genomics. Statistical methods.<br>공부하고, 구현하고, 이해한 것을 기록합니다.</p>
           <div class="min-profile-links"><a href="{{ '/research/' | relative_url }}">About &amp; Research ↗</a> <b>·</b> <a href="https://github.com/HGmin1159">GitHub ↗</a> <b>·</b> <a href="{{ '/assets/CV.pdf' | relative_url }}">CV ↗</a></div>
-          <p class="min-contact">Contact: <a href="mailto:mhg9511@gmail.com">mhg9511@gmail.com</a> · <a href="mailto:mhg@unc.edu">mhg@unc.edu</a></p>
+          <p class="min-contact">Contact: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mhg9511%40gmail.com" target="_blank" rel="noopener noreferrer" title="Compose in Gmail">mhg9511@gmail.com</a> · <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mhg%40unc.edu" target="_blank" rel="noopener noreferrer" title="Compose in Gmail">mhg@unc.edu</a></p>
         </section>
         <section class="min-topic-section">
           <div class="min-section-heading"><h2><span class="min-label-a">Explore the topics</span><span class="min-label-b">What I’m working on</span><span class="min-label-c">Research notebooks</span></h2></div>
@@ -47,7 +47,7 @@ genomics_home: true
             <p class="min-author-role">Biostatistics PhD student · UNC–Chapel Hill</p>
             <p class="min-author-bio" lang="ko">유전체 데이터를 통해 생물학을 이해하는 통계적 방법을 연구합니다.<br>이곳에는 공부하고, 구현하고, 이해한 것들을 기록합니다.</p>
             <p class="min-author-bio" lang="en">I study statistical methods for understanding biology through genomic data.<br>This is where I keep notes on what I learn, build, and come to understand.</p>
-            <div class="min-author-links"><a href="{{ '/research/' | relative_url }}">About &amp; Research ↗</a><a href="mailto:mhg9511@gmail.com">mhg9511@gmail.com ↗</a><a href="mailto:mhg@unc.edu">mhg@unc.edu ↗</a></div>
+            <div class="min-author-links"><a href="{{ '/research/' | relative_url }}">About &amp; Research ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mhg9511%40gmail.com" target="_blank" rel="noopener noreferrer" title="Compose in Gmail">mhg9511@gmail.com ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mhg%40unc.edu" target="_blank" rel="noopener noreferrer" title="Compose in Gmail">mhg@unc.edu ↗</a></div>
           </div>
         </section>
       </div>

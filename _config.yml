@@ -114,10 +114,10 @@ author:
   links:
     - label: "mhg9511@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:mhg9511@gmail.com
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=mhg9511%40gmail.com"
     - label: "mhg@unc.edu"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:mhg@unc.edu
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=mhg%40unc.edu"
     - label: "CV"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/CV.pdf"
@@ -151,10 +151,10 @@ footer:
       url:  "https://github.com/HGmin1159"
     - label: "mhg9511@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:mhg9511@gmail.com
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=mhg9511%40gmail.com"
     - label: "mhg@unc.edu"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:mhg@unc.edu
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=mhg%40unc.edu"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
