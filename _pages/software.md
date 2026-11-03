@@ -7,6 +7,12 @@ author_profile: true
 
 ## Genomics software
 
+### ZiPert
+
+A Python package for differential expression analysis using negative binomial count models, with support for zero inflation and gene-set-level shared dropout.
+
+[GitHub ↗](https://github.com/thewonlab/ZiPert)
+
 ### MPRA barcode–element mapping
 
 A pipeline for mapping barcodes to elements from long-read Nanopore sequencing of MPRA libraries. The repository documents its configuration, dependencies, and output tables; it is currently tailored to a specific plasmid configuration.
@@ -15,13 +21,11 @@ A pipeline for mapping barcodes to elements from long-read Nanopore sequencing o
 
 ## In development
 
-### MSF
+### Massive Seq Finder (MSF)
 
-An algorithm for fast querying of similar sequences. The repository is currently private.
+A fast nearest-reference search tool for noisy DNA/RNA sequences, combining FAISS candidate retrieval with exact Levenshtein verification. Applications include barcode-to-variant mapping, sequence deduplication, and large-scale short-reference assignment.
 
-### ZiPert
-
-Software for differential gene expression analysis in Perturb-seq data using zero-inflated models. The repository is currently private.
+*Repository currently private*
 
 ## Earlier research and study code
 
