@@ -131,7 +131,7 @@ Jiseok Lee, **Hyunggyu Min**, Cristine Casingal, Austin T. Ledford, Hannah Lee, 
 ### Systematic Functional Interrogation of Neurodevelopmental Disorder Risk Variants
 
 <div class="pub-authors" markdown="1">
-Alejandro Gomez, Jessica C. McAfee, **Hyunggyu Min**, Tatiana Ulloa Avila, Sean Jones, Jessica L. Bell, Yangzhenyu Gao, Ellen Hu, Haoyue Li, Sool Lee, Ratchell Sadovnik, Zheng Fan, Nan Yang, Adriana S. Beltran, Hyejung Won.
+Alejandro Gomez, Jessica C. McAfee, **Hyunggyu Min** (co-first author), Tatiana Ulloa Avila, Sean Jones, Jessica L. Bell, Yangzhenyu Gao, Ellen Hu, Haoyue Li, Sool Lee, Ratchell Sadovnik, Zheng Fan, Nan Yang, Adriana S. Beltran, Hyejung Won.
 </div>
 
 <div class="pub-links" markdown="1">
