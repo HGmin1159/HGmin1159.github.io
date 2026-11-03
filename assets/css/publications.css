@@ -1,0 +1,27 @@
+/* Scoped to Publications; preserve the site's existing Mint palette. */
+.publications-page .page__inner-wrap { max-width: 920px; }
+.publications-page .page__title { font-size: 2rem; margin-bottom: 0.75rem; }
+.publications-page .pub-intro p { font-size: 16px; line-height: 1.65; margin-bottom: 0.5rem; }
+.publications-page .pub-updated { display: block; font-size: 12px; color: #596b67; }
+.publications-page .pub-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 22px 0 36px; padding: 15px 0; border-top: 1px solid #cbd8d4; border-bottom: 1px solid #cbd8d4; }
+.publications-page .pub-nav a { color: #236e66; font-size: 14px; text-decoration: none; padding: 5px 0; }
+.publications-page .page__content h2 { font-size: 23px; line-height: 1.35; margin: 40px 0 4px; padding-bottom: 12px; border-bottom: 2px solid #9bbdb4; scroll-margin-top: 24px; }
+.publications-page .pub-entry { padding: 25px 0 28px; border-bottom: 1px solid #d3dfdb; }
+.publications-page .page__content .pub-venue { color: #236e66; font-size: 14px; font-weight: 600; line-height: 1.5; margin: 0 0 9px; }
+.publications-page .page__content .pub-entry h3 { margin: 0 0 12px; font-size: 20px; line-height: 1.45; letter-spacing: -0.2px; color: #243b35; border: 0; padding: 0; }
+.publications-page .pub-authors p { font-size: 15px; line-height: 1.8; color: #586963; margin: 0; }
+.publications-page .pub-authors strong { color: #243b35; font-weight: 700; }
+.publications-page .pub-links p { font-size: 14px; line-height: 1.6; margin: 13px 0 0; }
+.publications-page .pub-links a, .publications-page .pub-intro a { color: #236e66; text-underline-offset: 3px; }
+.publications-page .page__content .pub-note { font-size: 13px; line-height: 1.65; color: #596b67; margin: 10px 0 0; }
+.publications-page .page__content > ul { font-size: 16px; line-height: 1.8; margin-top: 20px; }
+.publications-page a:focus-visible { outline: 2px solid #236e66; outline-offset: 4px; }
+.publications-page .pub-nav a:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+  .publications-page .page__title { font-size: 1.7rem; }
+  .publications-page .page__content .pub-entry h3 { font-size: 18px; }
+  .publications-page .pub-authors p { font-size: 14px; }
+  .publications-page .pub-nav { gap: 6px 20px; margin-bottom: 24px; }
+  .publications-page .pub-nav a { padding: 10px 0; }
+  .publications-page .pub-entry { padding: 22px 0; }
+}

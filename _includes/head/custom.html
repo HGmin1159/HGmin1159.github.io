@@ -7,3 +7,7 @@
 {% if page.genomics_home %}
 <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
 {% endif %}
+
+{% if page.url == '/publications/' %}
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v=20261103">
+{% endif %}
