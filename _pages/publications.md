@@ -102,7 +102,7 @@ Yuanjun Gu, Amir Ebneabbasi, Yuankai He, Clara Pecci-Terroba, Kuldeep Kumar, Seb
 [Preprint](https://doi.org/10.64898/2026.09.19.752830)
 </div>
 
-<p class="pub-note">In revision - Science</p>
+<p class="pub-note">Under revision — Science</p>
 
 </div>
 
@@ -120,7 +120,7 @@ Jiseok Lee, **Hyunggyu Min**, Cristine Casingal, Austin T. Ledford, Hannah Lee, 
 [Preprint](https://doi.org/10.64898/2026.06.09.731172) · [PubMed record](https://pubmed.ncbi.nlm.nih.gov/42327190/)
 </div>
 
-<p class="pub-note">In revision - Cell</p>
+<p class="pub-note">Under revision — Cell</p>
 
 </div>
 
@@ -138,7 +138,7 @@ Alejandro Gomez, Jessica C. McAfee, **Hyunggyu Min**, Tatiana Ulloa Avila, Sean 
 [Preprint](https://doi.org/10.64898/2026.10.21.760732)
 </div>
 
-<p class="pub-note">In revision - Neuron</p>
+<p class="pub-note">Under revision — Neuron</p>
 
 </div>
 
