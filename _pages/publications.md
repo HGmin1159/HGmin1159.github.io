@@ -9,13 +9,12 @@ author_profile: true
 <div class="pub-intro" markdown="1">
 Journal articles, preprints, and ongoing work. [Google Scholar ↗](https://scholar.google.com/citations?user=1Pjb7F4AAAAJ&hl=en)
 
-<span class="pub-updated">Bibliographic records and author-provided status last updated October 20, 2026.</span>
+<span class="pub-updated">Publication list updated November 3, 2026; journal review statuses provided by the author.</span>
 </div>
 
 <nav class="pub-nav" aria-label="Publication sections">
 <a href="#published">Published · 4</a>
-<a href="#preprints">Preprints · 2</a>
-<a href="#submitted-manuscripts">Submitted · 1</a>
+<a href="#preprints">Preprints · 3</a>
 <a href="#in-preparation">In preparation · 3</a>
 </nav>
 
@@ -103,6 +102,8 @@ Yuanjun Gu, Amir Ebneabbasi, Yuankai He, Clara Pecci-Terroba, Kuldeep Kumar, Seb
 [Preprint](https://doi.org/10.64898/2026.09.19.752830)
 </div>
 
+<p class="pub-note">In revision - Science</p>
+
 </div>
 
 <div class="pub-entry" markdown="1">
@@ -119,23 +120,25 @@ Jiseok Lee, **Hyunggyu Min**, Cristine Casingal, Austin T. Ledford, Hannah Lee, 
 [Preprint](https://doi.org/10.64898/2026.06.09.731172) · [PubMed record](https://pubmed.ncbi.nlm.nih.gov/42327190/)
 </div>
 
-<p class="pub-note">The manuscript is in revision (author update, September 2026). The linked version is a preprint, not a published journal article.</p>
+<p class="pub-note">In revision - Cell</p>
 
 </div>
 
-## Submitted manuscripts
-
 <div class="pub-entry" markdown="1">
 
-<p class="pub-venue">Submitted · Neuron</p>
+<p class="pub-venue">2026 · bioRxiv · Preprint</p>
 
 ### Systematic Functional Interrogation of Neurodevelopmental Disorder Risk Variants
 
 <div class="pub-authors" markdown="1">
-Alejandro Gomez, Jessica McAfee, **Hyunggyu Min**, Tatiana Ulloa Avila, Sean Jones, Jessica L. Bell, Yangzhenyu Gao, Ellen Hu, Haoyue Li, Sool Lee, Ratchell Sadovnik, Zheng Fan, Nan Yang, Adriana S. Beltran, Hyejung Won.
+Alejandro Gomez, Jessica C. McAfee, **Hyunggyu Min**, Tatiana Ulloa Avila, Sean Jones, Jessica L. Bell, Yangzhenyu Gao, Ellen Hu, Haoyue Li, Sool Lee, Ratchell Sadovnik, Zheng Fan, Nan Yang, Adriana S. Beltran, Hyejung Won.
 </div>
 
-<p class="pub-note">A preprint has not yet been posted to bioRxiv (author update, October 2026).</p>
+<div class="pub-links" markdown="1">
+[Preprint](https://doi.org/10.64898/2026.10.21.760732)
+</div>
+
+<p class="pub-note">In revision - Neuron</p>
 
 </div>
 
