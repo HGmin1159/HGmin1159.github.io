@@ -19,7 +19,7 @@ I work with high-throughput functional experiments, including massively parallel
 
 I am interested in statistical modeling and scalable computation for high-dimensional genomic data, including count data and differential expression in perturbation studies.
 
-[Publications and preprints]({{ '/publications/' | relative_url }}) · [Software & Packages]({{ '/software/' | relative_url }})
+[Publications and preprints]({{ '/publications/' | relative_url }}) · [Software & Packages]({{ '/publications/' | relative_url }}#software)
 
 ## Earlier work and study notes
 

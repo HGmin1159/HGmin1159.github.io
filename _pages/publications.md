@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 <div class="pub-intro" markdown="1">
-Journal articles, preprints, and ongoing work. [Google Scholar ↗](https://scholar.google.com/citations?user=1Pjb7F4AAAAJ&hl=en)
+Journal articles, preprints, ongoing work, and research software. [Google Scholar ↗](https://scholar.google.com/citations?user=1Pjb7F4AAAAJ&hl=en)
 
 <span class="pub-updated">Publication list updated November 3, 2026; journal review statuses provided by the author.</span>
 </div>
@@ -15,7 +15,8 @@ Journal articles, preprints, and ongoing work. [Google Scholar ↗](https://scho
 <nav class="pub-nav" aria-label="Publication sections">
 <a href="#published">Published · 4</a>
 <a href="#preprints">Preprints · 3</a>
-<a href="#in-preparation">In preparation · 3</a>
+<a href="#in-preparation">In preparation · 1</a>
+<a href="#software">Software</a>
 </nav>
 
 ## Published
@@ -146,10 +147,38 @@ Alejandro Gomez, Jessica C. McAfee, **Hyunggyu Min** (co-first author), Tatiana 
 
 
 - Invivo MPRA
-- ZiPert
-- MSF
 
 {% comment %}
 TODO: Update the journal citation when acceptance/publication is confirmed. Current status: in revision, confirmed by the author.
 TODO: Manuscripts in preparation — obtain approved titles, complete author lists/order, status, and permission to list before adding entries. Do not infer entries from ongoing projects.
 {% endcomment %}
+
+## Software & Packages
+{: #software}
+
+
+### ZiPert
+
+A Python package for differential expression analysis using negative binomial count models, with support for zero inflation and gene-set-level shared dropout.
+
+[GitHub ↗](https://github.com/thewonlab/ZiPert)
+
+### MPRA barcode–element mapping
+
+A pipeline for mapping barcodes to elements from long-read Nanopore sequencing of MPRA libraries. The repository documents its configuration, dependencies, and output tables; it is currently tailored to a specific plasmid configuration.
+
+[View the public repository](https://github.com/HGmin1159/Nanopore_BC_Mapping_viral_mapping)
+
+### Massive Seq Finder (MSF)
+
+A fast nearest-reference search tool for noisy DNA/RNA sequences, combining FAISS candidate retrieval with exact Levenshtein verification. Applications include barcode-to-variant mapping, sequence deduplication, and large-scale short-reference assignment.
+
+*Repository currently private*
+
+### Earlier research and study code
+
+- [Quantum kernel investigation](https://github.com/HGmin1159/quantum_kernel_investigation): notebooks exploring kernel regression and dimension reduction.
+- [Binary dimension reduction](https://github.com/HGmin1159/binary_Dimension_Reduction): earlier code repository.
+- [Convex optimization](https://github.com/HGmin1159/convex_opt): earlier code repository.
+
+See my [GitHub profile](https://github.com/HGmin1159) for all public repositories and the [Blog & Archive]({{ '/blog/' | relative_url }}) for related notes.

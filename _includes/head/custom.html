@@ -11,3 +11,7 @@
 {% if page.url == '/publications/' %}
 <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v=20261103">
 {% endif %}
+
+{% if page.software_redirect %}
+<meta http-equiv="refresh" content="0; url={{ '/publications/' | relative_url }}#software">
+{% endif %}

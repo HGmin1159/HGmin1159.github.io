@@ -5,7 +5,7 @@ main:
   - title: "Publications"
     url: /publications/
   - title: "Software"
-    url: /software/
+    url: /publications/#software
   - title: "CV"
     url: /cv/
   - title: "Blog"
