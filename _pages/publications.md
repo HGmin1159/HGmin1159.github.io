@@ -9,13 +9,13 @@ author_profile: true
 <div class="pub-intro" markdown="1">
 Journal articles, preprints, ongoing work, and research software. [Google Scholar ↗](https://scholar.google.com/citations?user=1Pjb7F4AAAAJ&hl=en)
 
-<span class="pub-updated">Publication list updated November 3, 2026; journal review statuses provided by the author.</span>
+<span class="pub-updated">Publication list updated November 11, 2026; journal review statuses provided by the author.</span>
 </div>
 
 <nav class="pub-nav" aria-label="Publication sections">
 <a href="#published">Published · 4</a>
 <a href="#preprints">Preprints · 3</a>
-<a href="#in-preparation">In preparation · 1</a>
+<a href="#in-preparation">In preparation · 4</a>
 <a href="#software">Software</a>
 </nav>
 
@@ -145,12 +145,37 @@ Alejandro Gomez, Jessica C. McAfee, **Hyunggyu Min** (co-first author), Tatiana 
 
 ## In preparation
 
+Project descriptions below are working summaries, not finalized manuscript titles.
 
-- Invivo MPRA
+<div class="pub-entry" markdown="1">
+
+<p class="pub-venue">IGVF consortium · First author</p>
+
+### In vivo MPRA — Addiction Library
+
+A large-scale in vivo MPRA study testing 12,000 variants from the Addiction Library, prepared as part of the IGVF consortium paper package.
+
+<p class="pub-note">Manuscript in preparation. Target journal: Nature.</p>
+
+</div>
+
+<div class="pub-entry" markdown="1">
+
+<p class="pub-venue">PGC consortium · First author · Lead analyst</p>
+
+### MPRA meta-analysis
+
+A PGC consortium study integrating 11 MPRA datasets encompassing 130,000 variants tested across 96 replicates. I am leading the analysis as first author.
+
+<p class="pub-note">Manuscript in preparation.</p>
+
+</div>
+
+- **ZiPert** — First-author methods paper on differential expression analysis using negative binomial and zero-inflated count models. In preparation.
+- **Massive Seq Finder (MSF)** — First-author methods paper on fast nearest-reference search for noisy DNA/RNA sequences. In preparation.
 
 {% comment %}
-TODO: Update the journal citation when acceptance/publication is confirmed. Current status: in revision, confirmed by the author.
-TODO: Manuscripts in preparation — obtain approved titles, complete author lists/order, status, and permission to list before adding entries. Do not infer entries from ongoing projects.
+TODO: Replace working project labels with finalized manuscript titles and add approved full author lists when available.
 {% endcomment %}
 
 ## Software & Packages
