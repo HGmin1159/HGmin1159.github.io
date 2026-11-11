@@ -171,8 +171,29 @@ A PGC consortium study integrating 11 MPRA datasets encompassing 130,000 variant
 
 </div>
 
-- **ZiPert** — First-author methods paper on differential expression analysis using negative binomial and zero-inflated count models. In preparation.
-- **Massive Seq Finder (MSF)** — First-author methods paper on fast nearest-reference search for noisy DNA/RNA sequences. In preparation.
+<div class="pub-entry" markdown="1">
+
+<p class="pub-venue">Methods paper · First author</p>
+
+### ZiPert
+
+A methods paper on differential expression analysis using negative binomial and zero-inflated count models.
+
+<p class="pub-note">Manuscript in preparation.</p>
+
+</div>
+
+<div class="pub-entry" markdown="1">
+
+<p class="pub-venue">Methods paper · First author</p>
+
+### Massive Seq Finder (MSF)
+
+A methods paper on fast nearest-reference search for noisy DNA/RNA sequences.
+
+<p class="pub-note">Manuscript in preparation.</p>
+
+</div>
 
 {% comment %}
 TODO: Replace working project labels with finalized manuscript titles and add approved full author lists when available.
